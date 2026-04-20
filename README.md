@@ -8,7 +8,7 @@
 
 ### 简介
 
-本仓库是基于亚历山大·奥斯特瓦德（Alexander Osterwalder）等著《价值主张设计：如何构建商业模式最重要的环节》全书的系统化知识库与可调用Skill。
+本仓库是基于亚历山大·奥斯特瓦德（Alexander Osterwalder）等著《价值主张设计：如何构建商业模式最重要的环节》全书的系统化知识库与可调用 Skill。
 
 全书从头到尾仔细阅读后，将核心内容整理为八大模块，覆盖商业模式建构的完整生命周期。
 
@@ -17,25 +17,26 @@
 | 模块 | 核心内容 |
 |------|---------|
 | 商业模式建构工作原理 | 价值主张画布、商业模式画布、三种契合类型 |
-| 信息采集方法 | 六种客户洞察技巧、采访八大原则、B2B多角色采集 |
+| 信息采集方法 | 六种客户洞察技巧、采访八大原则、B2B 多角色采集 |
 | 信息整理方法 | 客户概况绘制最佳实践、分级排序、模式定义 |
-| 升级迭代方法 | 原型创建10大原则、设计-验证-重复循环 |
-| 支撑业务决策 | 成功价值主张10大特性、战略画布、六顶思考帽 |
-| 创新方法论 | 五种设计约束点、六种创新方法、推动vs拉动 |
-| 量化分析方法 | 10大测试原则、实验库工具集、CTA分层、五个数据陷阱 |
+| 升级迭代方法 | 原型创建 10 大原则、设计 - 验证 - 重复循环 |
+| 支撑业务决策 | 成功价值主张 10 大特性、战略画布、六顶思考帽 |
+| 创新方法论 | 五种设计约束点、六种创新方法、推动 vs 拉动 |
+| 量化分析方法 | 10 大测试原则、实验库工具集、CTA 分层、五个数据陷阱 |
 | 价值放大核心理念 | 三层价值放大架构、多重契合、持续重塑 |
 
 ### 文件结构
 
 - README.md — 本文件（中英文说明）
-- SKILL.md — Skill定义文件（可被AI Agent调用）
-- knowledge-base.md — 完整知识库文档（八大模块+术语表）
+- SKILL.md — Skill 定义文件（可被 AI Agent 调用）
+- knowledge-base.md — 完整知识库文档（八大模块 + 术语表）
+- vpd/ — Python 代码实现
 
 ### 使用方式
 
-- 作为AI Agent的Skill调用：将SKILL.md放入 ~/.aoneclaw/skills/value-proposition-design/ 目录
-- 作为知识库参考：直接阅读 knowledge-base.md
-- 作为团队共享资源：fork本仓库供团队使用
+- **作为 AI Agent 的 Skill**：将 SKILL.md 放入你的 Agent 系统 skills 目录
+- **作为知识库参考**：直接阅读 knowledge-base.md
+- **作为团队共享资源**：fork 本仓库供团队使用
 
 ---
 
@@ -63,10 +64,11 @@ This repository contains a systematically organized knowledge base and callable 
 - README.md — This file (bilingual documentation)
 - SKILL.md — Skill definition file (callable by AI Agents)
 - knowledge-base.md — Complete knowledge base (8 modules + glossary)
+- vpd/ — Python implementation
 
 ### Usage
 
-- **As an AI Agent Skill**: Place SKILL.md in ~/.aoneclaw/skills/value-proposition-design/
+- **As an AI Agent Skill**: Place SKILL.md in your Agent system's skills directory
 - **As a knowledge base**: Read knowledge-base.md directly
 - **As a team resource**: Fork this repository
 
