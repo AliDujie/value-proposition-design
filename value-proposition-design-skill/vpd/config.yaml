@@ -1,0 +1,143 @@
+priority:
+  dimensions:
+    importance:
+      label: "重要性(I)"
+      description: "该项对客户完成核心工作的重要程度"
+      min: 1
+      max: 5
+      anchors:
+        1: "无关紧要"
+        2: "有点重要"
+        3: "一般重要"
+        4: "比较重要"
+        5: "不可或缺"
+    dissatisfaction:
+      label: "不满意度(D)"
+      description: "客户对当前状态的不满程度"
+      min: 1
+      max: 5
+      anchors:
+        1: "非常满意"
+        2: "比较满意"
+        3: "一般"
+        4: "比较不满"
+        5: "极度不满"
+    frequency:
+      label: "频率(F)"
+      description: "客户遇到该项的频率"
+      min: 1
+      max: 5
+      anchors:
+        1: "极少发生"
+        2: "偶尔发生"
+        3: "有时发生"
+        4: "经常发生"
+        5: "每次都遇到"
+    viability:
+      label: "可行性(V)"
+      description: "我方解决该项的技术和资源可行性"
+      min: 1
+      max: 5
+      anchors:
+        1: "极难实现"
+        2: "较难实现"
+        3: "有一定难度"
+        4: "较易实现"
+        5: "立即可做"
+
+  grade_thresholds:
+    P0: 60
+    P1: 30
+    P2: 15
+    P3: 0
+
+  competition_coverage:
+    not_covered: 1.5
+    partially_covered: 1.0
+    fully_covered: 0.5
+
+canvas:
+  customer_profile:
+    jobs:
+      categories: ["functional", "social", "emotional", "supporting"]
+      labels:
+        functional: "功能性工作"
+        social: "社会性工作"
+        emotional: "个人/情感工作"
+        supporting: "支持性工作"
+    pains:
+      severity_levels: ["critical", "severe", "moderate", "minor"]
+      labels:
+        critical: "🔴 严重"
+        severe: "🔴 严重"
+        moderate: "🟡 中等"
+        minor: "🟢 轻微"
+    gains:
+      desire_levels: ["required", "expected", "desired", "unexpected"]
+      labels:
+        required: "必需的"
+        expected: "期望的"
+        desired: "渴望的"
+        unexpected: "意外的"
+
+  value_map:
+    products:
+      categories: ["tangible", "intangible", "digital", "financial"]
+      labels:
+        tangible: "有形产品"
+        intangible: "无形服务"
+        digital: "数字产品"
+        financial: "财务产品"
+
+  fit_thresholds:
+    excellent: 80
+    good: 60
+    fair: 40
+    poor: 0
+
+strategy:
+  scoring:
+    min: 0
+    max: 10
+  advantage_threshold: 2
+  weakness_threshold: -2
+  no_mans_land_threshold: 4
+
+experiment:
+  cta_levels:
+    L1:
+      label: "点击按钮/链接"
+      interest_strength: 1
+    L2:
+      label: "填写问卷/留邮箱"
+      interest_strength: 2
+    L3:
+      label: "注册/预约"
+      interest_strength: 3
+    L4:
+      label: "预付/下定金"
+      interest_strength: 4
+    L5:
+      label: "正式付款/签约"
+      interest_strength: 5
+
+  investment_readiness:
+    levels:
+      1: "仅有想法，未验证任何假设"
+      2: "已完成客户访谈，初步理解工作/痛点/收益"
+      3: "已完成问题-方案契合验证"
+      4: "已有MVP原型并获得早期用户反馈"
+      5: "已验证产品-市场契合，有重复使用数据"
+      6: "已验证收入模型，有付费用户"
+      7: "已验证增长模型，有可复制的获客渠道"
+      8: "已验证规模化能力，单位经济模型健康"
+      9: "已实现可持续盈利，商业模式契合验证完成"
+
+sample:
+  confidence_z:
+    90: 1.645
+    95: 1.960
+    99: 2.576
+  default_confidence: 95
+  default_margin_of_error: 0.05
+  default_proportion: 0.5
