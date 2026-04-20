@@ -261,6 +261,101 @@ def test_experiment_designer():
     print("✅ ExperimentDesigner passed")
 
 
+def test_vpd_skill_full_workflow():
+    from vpd import VPDSkill
+    skill = VPDSkill("飞猪国内酒店预订", "25-35岁商旅用户")
+    assert skill.business_scenario == "飞猪国内酒店预订"
+    assert skill.target_customer == "25-35岁商旅用户"
+
+    interview_md = skill.generate_interview(stage="探索期")
+    assert "阶段一：暖场与背景" in interview_md
+    assert "飞猪国内酒店预订" in interview_md
+
+    survey_md = skill.generate_survey(
+        hypotheses=["用户最大痛点是价格不透明", "用户愿意为无忧退改额外付费"],
+        jobs=["预订酒店", "比价", "查看评价"],
+        pains=["价格不透明", "退改困难"],
+        gains=["一键预订省时间", "获得专属优惠"],
+    )
+    assert "Part 1：筛选题" in survey_md
+    assert "价格不透明" in survey_md
+
+    priority_md = skill.calculate_priority([
+        {"name": "价格不透明", "importance": 5, "dissatisfaction": 5, "frequency": 4, "viability": 4},
+        {"name": "退改困难", "importance": 4, "dissatisfaction": 4, "frequency": 3, "viability": 3},
+        {"name": "客服响应慢", "importance": 3, "dissatisfaction": 3, "frequency": 5, "viability": 5},
+    ])
+    assert "价格不透明" in priority_md
+    assert "P0" in priority_md or "P1" in priority_md
+
+    canvas_md = skill.analyze_canvas(
+        product_name="飞猪酒店预订",
+        jobs=[{"description": "预订合适的家庭房", "category": "functional", "importance": 5}],
+        pains=[{"description": "价格不透明", "severity": "critical"}],
+        gains=[{"description": "一键预订省时间", "desire_level": "required"}],
+        products=[{"description": "智能比价引擎", "category": "digital"}],
+        pain_relievers=[{"description": "实时比价展示", "target_pain": "价格不透明", "coverage": "full"}],
+        gain_creators=[{"description": "一键下单功能", "target_gain": "一键预订省时间", "coverage": "full"}],
+    )
+    assert "契合度" in canvas_md
+
+    competitor_md = skill.analyze_competitor(
+        my_name="飞猪",
+        factors=["价格", "品质", "速度", "服务"],
+        players={"飞猪": [7, 8, 5, 6], "携程": [8, 7, 7, 5], "美团": [6, 6, 8, 4]},
+    )
+    assert "蓝海" in competitor_md
+    assert "飞猪" in competitor_md
+
+    experiment_md = skill.design_experiment(
+        hypotheses=[
+            {"description": "用户愿意为无忧退改额外付费30元", "lethality": "lethal"},
+            {"description": "用户最大痛点是价格不透明", "lethality": "important", "evidence_strength": "weak"},
+        ],
+        test_cards=[{
+            "hypothesis": "用户愿意为无忧退改额外付费30元",
+            "test_method": "登录页MVP",
+            "metric": "点击率",
+            "threshold": "5%",
+            "falsification": "点击率<2%则否定",
+            "cta_level": "L3",
+        }],
+    )
+    assert "测试卡" in experiment_md
+
+    sample_md = skill.calculate_sample_size(confidence=95, margin_of_error=0.05)
+    assert "385" in sample_md
+
+    s = skill.summary()
+    assert s["modules_count"] == 7
+    assert "interview" in s["modules_executed"]
+    assert "canvas" in s["modules_executed"]
+    assert s["canvas_fit_score"] > 0
+    assert s["top_priority"] == "价格不透明"
+    assert s["hypotheses_count"] == 2
+    assert s["test_cards_count"] == 1
+
+    full_report = skill.render_all()
+    assert "价值主张设计全景报告" in full_report
+    assert "7 个分析模块" in full_report
+    assert "阶段一：暖场与背景" in full_report
+    assert "蓝海" in full_report
+    print("✅ VPDSkill full workflow passed")
+
+
+def test_vpd_skill_partial():
+    from vpd import VPDSkill
+    skill = VPDSkill("在线教育平台", "职场新人")
+    md = skill.generate_interview(customer_type="B2C", duration_minutes=30)
+    assert "在线教育平台" in md
+    s = skill.summary()
+    assert s["modules_count"] == 1
+    assert s["modules_executed"] == ["interview"]
+    report = skill.render_all()
+    assert "1 个分析模块" in report
+    print("✅ VPDSkill partial workflow passed")
+
+
 if __name__ == "__main__":
     test_interview_generator_b2c()
     test_interview_generator_b2b()
@@ -274,4 +369,6 @@ if __name__ == "__main__":
     test_strategy_scorer()
     test_sample_calculator()
     test_experiment_designer()
-    print("\n🎉 All 12 tests passed! All 6 modules verified!")
+    test_vpd_skill_full_workflow()
+    test_vpd_skill_partial()
+    print("\n🎉 All 14 tests passed! All 6 modules + VPDSkill verified!")

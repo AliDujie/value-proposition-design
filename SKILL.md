@@ -1041,20 +1041,140 @@ ed.create_test_card(
 print(ed.render_markdown())
 ```
 
+### VPDSkill 统一入口类
+
+`VPDSkill` 是所有模块的统一入口，只需传入业务场景和目标客户群即可调用全部功能，适合一站式完成价值主张设计全流程。
+
+#### 方法一览
+
+| 方法 | 功能 | 返回值 |
+|------|------|--------|
+| `generate_interview()` | 生成访谈提纲 | Markdown文本 |
+| `generate_survey()` | 设计调研问卷 | Markdown文本 |
+| `calculate_priority()` | 计算优先级矩阵 | Markdown文本 |
+| `analyze_canvas()` | 分析价值主张画布 | Markdown文本 |
+| `analyze_competitor()` | 竞争战略分析 | Markdown文本 |
+| `design_experiment()` | 设计验证实验 | Markdown文本 |
+| `calculate_sample_size()` | 计算最小样本量 | Markdown文本 |
+| `render_all()` | 汇总所有已执行模块为全景报告 | Markdown文本 |
+| `summary()` | 返回结构化摘要数据 | dict |
+
+#### 快速上手示例
+
+```python
+from vpd import VPDSkill
+
+skill = VPDSkill("飞猪国内酒店预订", "25-35岁商旅用户")
+
+# 1. 生成访谈提纲
+print(skill.generate_interview(stage="探索期"))
+
+# 2. 设计问卷
+print(skill.generate_survey(
+    hypotheses=["用户最大痛点是价格不透明", "用户愿意为无忧退改额外付费"],
+    jobs=["预订酒店", "比价", "查看评价"],
+    pains=["价格不透明", "退改困难"],
+    gains=["一键预订省时间", "获得专属优惠"],
+))
+
+# 3. 优先级排序
+print(skill.calculate_priority([
+    {"name": "价格不透明", "importance": 5, "dissatisfaction": 5, "frequency": 4, "viability": 4},
+    {"name": "退改困难", "importance": 4, "dissatisfaction": 4, "frequency": 3, "viability": 3},
+    {"name": "客服响应慢", "importance": 3, "dissatisfaction": 3, "frequency": 5, "viability": 5},
+]))
+
+# 4. 画布分析
+print(skill.analyze_canvas(
+    product_name="飞猪酒店预订",
+    jobs=[{"description": "预订合适的家庭房", "category": "functional", "importance": 5}],
+    pains=[{"description": "价格不透明", "severity": "critical"}],
+    gains=[{"description": "一键预订省时间", "desire_level": "required"}],
+    products=[{"description": "智能比价引擎", "category": "digital"}],
+    pain_relievers=[{"description": "实时比价展示", "target_pain": "价格不透明", "coverage": "full"}],
+    gain_creators=[{"description": "一键下单功能", "target_gain": "一键预订省时间", "coverage": "full"}],
+))
+
+# 5. 竞品分析
+print(skill.analyze_competitor(
+    my_name="飞猪",
+    factors=["价格", "品质", "速度", "服务"],
+    players={"飞猪": [7, 8, 5, 6], "携程": [8, 7, 7, 5], "美团": [6, 6, 8, 4]},
+))
+
+# 6. 实验设计
+print(skill.design_experiment(
+    hypotheses=[
+        {"description": "用户愿意为无忧退改额外付费30元", "lethality": "lethal"},
+        {"description": "用户最大痛点是价格不透明", "lethality": "important", "evidence_strength": "weak"},
+    ],
+    test_cards=[{
+        "hypothesis": "用户愿意为无忧退改额外付费30元",
+        "test_method": "登录页MVP", "metric": "点击率",
+        "threshold": "5%", "falsification": "点击率<2%则否定",
+    }],
+))
+
+# 7. 样本量计算
+print(skill.calculate_sample_size(confidence=95, margin_of_error=0.05))
+
+# 8. 汇总全景报告
+print(skill.render_all())
+
+# 9. 结构化摘要
+print(skill.summary())
+# → {'business_scenario': '飞猪国内酒店预订', 'modules_count': 7,
+#     'top_priority': '价格不透明', 'canvas_fit_score': 100.0, ...}
+```
+
+#### 按需调用
+
+VPDSkill 支持按需调用任意子集的模块，`render_all()` 只会汇总已执行的模块：
+
+```python
+skill = VPDSkill("在线教育平台", "职场新人")
+skill.generate_interview(duration_minutes=30)
+skill.calculate_priority([
+    {"name": "课程质量差", "importance": 5, "dissatisfaction": 5, "frequency": 4, "viability": 3},
+    {"name": "学完无法实践", "importance": 4, "dissatisfaction": 4, "frequency": 3, "viability": 4},
+])
+print(skill.render_all())  # 只包含访谈提纲和优先级矩阵两个模块
+```
+
+#### 直接访问底层模块
+
+VPDSkill 暴露了所有底层模块实例，可直接操作：
+
+```python
+skill = VPDSkill("飞猪国内酒店预订", "25-35岁商旅用户")
+skill.priority.add_item("价格不透明", importance=5, dissatisfaction=5, frequency=4, viability=4)
+print(skill.priority.rank())  # 直接调用底层 PriorityCalculator
+```
+
 ### 配置文件
 
 `vpd/config.yaml` 包含所有可调参数：评分维度锚点、P0-P3阈值、竞品覆盖系数、画布契合度阈值、CTA层级定义、投资就绪水平量表、置信度Z值表等。可根据业务需要修改。
 
 ### AI Agent 调用规则
 
-当用户需求涉及以下场景时，Agent应自动调用Python代码：
-1. 优先级排序/打分 → `PriorityCalculator`
-2. 画布填充/契合度分析 → `CanvasAnalyzer`
-3. 竞品对比/差异化分析 → `StrategyScorer`
-4. 样本量计算 → `SampleCalculator`
-5. 实验方案设计 → `ExperimentDesigner`
+当用户需求涉及以下场景时，Agent 应优先使用 `VPDSkill` 统一入口：
 
-调用流程：先通过对话收集用户输入，然后调用对应模块的方法计算，最后用 `render_markdown()` 生成结构化报告输出给用户。
+```python
+from vpd import VPDSkill
+skill = VPDSkill(业务场景, 目标客户群)
+```
+
+然后根据用户需求调用对应方法：
+1. 访谈提纲 → `skill.generate_interview()`
+2. 问卷设计 → `skill.generate_survey()`
+3. 优先级排序/打分 → `skill.calculate_priority()`
+4. 画布填充/契合度分析 → `skill.analyze_canvas()`
+5. 竞品对比/差异化分析 → `skill.analyze_competitor()`
+6. 实验方案设计 → `skill.design_experiment()`
+7. 样本量计算 → `skill.calculate_sample_size()`
+8. 全景报告 → `skill.render_all()`
+
+也可以直接使用独立模块（`PriorityCalculator`、`CanvasAnalyzer` 等），适合只需单一功能的场景。
 
 ## 完整知识库
 
