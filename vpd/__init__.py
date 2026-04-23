@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 """
 Value Proposition Design (VPD) - Python工具包
 
