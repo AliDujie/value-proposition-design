@@ -1,6 +1,6 @@
 ---
 name: value-proposition-design
-description: 价值主张设计方法论 Skill - 基于奥斯特瓦德《价值主张设计》全书，覆盖客户洞察、画布分析、优先级计算、竞争战略、问卷设计、实验验证的完整方法论与可执行 Python 工具包
+description: 价值主张设计方法论 Skill - 基于奥斯特瓦德《价值主张设计》全书，覆盖客户洞察、画布分析、优先级计算、竞争战略、问卷设计、实验验证的完整方法论与可执行 Python 工具包，以及CEO决策视角的商业化路径、竞争护城河与ROI估算
 ---
 
 # Value Proposition Design Skill
