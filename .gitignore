@@ -3,6 +3,10 @@ __pycache__/
 *.pyc
 *.pyo
 *.pyd
+*.egg-info/
+dist/
+build/
+.eggs/
 .Python
 pip-log.txt
 pip-delete-this-directory.txt
@@ -25,3 +29,7 @@ Thumbs.db
 venv/
 env/
 .venv/
+
+# Tools
+.ruff_cache/
+.pytest_cache/

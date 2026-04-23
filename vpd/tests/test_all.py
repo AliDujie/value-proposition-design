@@ -12,13 +12,13 @@ from vpd import (
 def test_interview_generator_b2c():
     ig = InterviewGenerator()
     cfg = ig.configure(
-        business_scenario="飞猪国内酒店预订",
+        business_scenario="在线酒店预订平台",
         target_customer="25-35岁商旅用户",
         duration_minutes=45,
         customer_type="B2C",
         stage="探索期",
     )
-    assert cfg.business_scenario == "飞猪国内酒店预订"
+    assert cfg.business_scenario == "在线酒店预订平台"
     info = ig.generate()
     assert info["total_questions"] == 25
     assert info["is_b2b"] is False
@@ -31,7 +31,7 @@ def test_interview_generator_b2c():
     assert "阶段四：收益发现" in md
     assert "阶段五：收尾与拓展" in md
     assert "八大原则" in md
-    assert "飞猪国内酒店预订" in md
+    assert "在线酒店预订平台" in md
     assert "B2B多角色" not in md
     print("✅ InterviewGenerator (B2C) passed")
 
@@ -85,7 +85,7 @@ def test_interview_generator_validation():
 def test_survey_designer_basic():
     sd = SurveyDesigner()
     sd.configure(
-        business_scenario="飞猪国内酒店预订",
+        business_scenario="在线酒店预订平台",
         target_customer="25-35岁商旅用户",
         hypotheses=[
             {"description": "用户最大痛点是价格不透明", "category": "customer_profile"},
@@ -190,7 +190,7 @@ def test_priority_with_competition():
 def test_canvas_analyzer():
     ca = CanvasAnalyzer()
     ca.customer_name = "亲子家庭用户"
-    ca.product_name = "飞猪酒店预订"
+    ca.product_name = "酒店预订平台"
     ca.add_job("预订合适的家庭房", "functional", 5)
     ca.add_job("让家人觉得安排周到", "social", 4)
     ca.add_pain("价格不透明", "critical", "比其他平台贵10%以上")
@@ -263,13 +263,13 @@ def test_experiment_designer():
 
 def test_vpd_skill_full_workflow():
     from vpd import VPDSkill
-    skill = VPDSkill("飞猪国内酒店预订", "25-35岁商旅用户")
-    assert skill.business_scenario == "飞猪国内酒店预订"
+    skill = VPDSkill("在线酒店预订平台", "25-35岁商旅用户")
+    assert skill.business_scenario == "在线酒店预订平台"
     assert skill.target_customer == "25-35岁商旅用户"
 
     interview_md = skill.generate_interview(stage="探索期")
     assert "阶段一：暖场与背景" in interview_md
-    assert "飞猪国内酒店预订" in interview_md
+    assert "在线酒店预订平台" in interview_md
 
     survey_md = skill.generate_survey(
         hypotheses=["用户最大痛点是价格不透明", "用户愿意为无忧退改额外付费"],
@@ -289,7 +289,7 @@ def test_vpd_skill_full_workflow():
     assert "P0" in priority_md or "P1" in priority_md
 
     canvas_md = skill.analyze_canvas(
-        product_name="飞猪酒店预订",
+        product_name="酒店预订平台",
         jobs=[{"description": "预订合适的家庭房", "category": "functional", "importance": 5}],
         pains=[{"description": "价格不透明", "severity": "critical"}],
         gains=[{"description": "一键预订省时间", "desire_level": "required"}],
@@ -300,12 +300,12 @@ def test_vpd_skill_full_workflow():
     assert "契合度" in canvas_md
 
     competitor_md = skill.analyze_competitor(
-        my_name="飞猪",
+        my_name="我方产品",
         factors=["价格", "品质", "速度", "服务"],
-        players={"飞猪": [7, 8, 5, 6], "携程": [8, 7, 7, 5], "美团": [6, 6, 8, 4]},
+        players={"我方产品": [7, 8, 5, 6], "携程": [8, 7, 7, 5], "美团": [6, 6, 8, 4]},
     )
     assert "蓝海" in competitor_md
-    assert "飞猪" in competitor_md
+    assert "我方产品" in competitor_md
 
     experiment_md = skill.design_experiment(
         hypotheses=[

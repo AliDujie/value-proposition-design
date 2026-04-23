@@ -5,7 +5,7 @@ Value Proposition Design (VPD) - Python工具包
 
 统一入口:
     from vpd import VPDSkill
-    skill = VPDSkill("飞猪国内酒店预订", "25-35岁商旅用户")
+    skill = VPDSkill("在线酒店预订平台", "25-35岁商旅用户")
     print(skill.generate_interview())
     print(skill.render_all())
 
@@ -19,7 +19,7 @@ Value Proposition Design (VPD) - Python工具包
     - ExperimentDesigner: 实验设计（测试卡/学习卡）
 """
 
-from typing import Optional
+from typing import Dict, List, Optional, Union
 from vpd.interview_generator import InterviewGenerator, InterviewConfig
 from vpd.survey_designer import SurveyDesigner, SurveyConfig, SurveyHypothesis
 from vpd.priority_calculator import PriorityCalculator, PriorityItem
@@ -42,9 +42,9 @@ class VPDSkill:
         self.experiment = ExperimentDesigner()
         self.sample = SampleCalculator()
         self.canvas.customer_name = target_customer
-        self._sections: dict[str, str] = {}
+        self._sections: Dict[str, str] = {}
 
-    def generate_interview(self, known_hypotheses: Optional[list[str]] = None,
+    def generate_interview(self, known_hypotheses: Optional[List[str]] = None,
                            duration_minutes: int = 45, customer_type: str = "B2C",
                            stage: str = "探索期") -> str:
         self.interview.configure(
@@ -59,12 +59,12 @@ class VPDSkill:
         self._sections["interview"] = md
         return md
 
-    def generate_survey(self, hypotheses: list[str | dict],
-                        jobs: Optional[list[str]] = None,
-                        pains: Optional[list[str]] = None,
-                        gains: Optional[list[str]] = None,
-                        value_propositions: Optional[list[str]] = None,
-                        alternatives: Optional[list[str]] = None,
+    def generate_survey(self, hypotheses: List[Union[str, Dict]],
+                        jobs: Optional[List[str]] = None,
+                        pains: Optional[List[str]] = None,
+                        gains: Optional[List[str]] = None,
+                        value_propositions: Optional[List[str]] = None,
+                        alternatives: Optional[List[str]] = None,
                         survey_type: str = "客户概况验证",
                         target_sample_size: int = 200,
                         channel: str = "线上") -> str:
@@ -90,7 +90,7 @@ class VPDSkill:
         self._sections["survey"] = md
         return md
 
-    def calculate_priority(self, items: list[dict],
+    def calculate_priority(self, items: List[Dict],
                            title: str = "优先级评估矩阵",
                            evaluation_type: str = "痛点") -> str:
         self.priority.clear()
@@ -108,12 +108,12 @@ class VPDSkill:
         return md
 
     def analyze_canvas(self, product_name: str,
-                       jobs: list[dict],
-                       pains: list[dict],
-                       gains: list[dict],
-                       products: list[dict],
-                       pain_relievers: list[dict],
-                       gain_creators: list[dict]) -> str:
+                       jobs: List[Dict],
+                       pains: List[Dict],
+                       gains: List[Dict],
+                       products: List[Dict],
+                       pain_relievers: List[Dict],
+                       gain_creators: List[Dict]) -> str:
         self.canvas = CanvasAnalyzer()
         self.canvas.customer_name = self.target_customer
         self.canvas.product_name = product_name
@@ -134,8 +134,8 @@ class VPDSkill:
         return md
 
     def analyze_competitor(self, my_name: str,
-                           factors: list[str],
-                           players: dict[str, list[int]]) -> str:
+                           factors: List[str],
+                           players: Dict[str, List[int]]) -> str:
         self.competitor = StrategyScorer()
         self.competitor.set_factors(factors)
         for name, scores in players.items():
@@ -144,7 +144,7 @@ class VPDSkill:
         self._sections["competitor"] = md
         return md
 
-    def design_experiment(self, hypotheses: list[dict],
+    def design_experiment(self, hypotheses: List[Dict],
                           test_cards: Optional[list[dict]] = None) -> str:
         self.experiment = ExperimentDesigner()
         for h in hypotheses:
