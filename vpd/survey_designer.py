@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from dataclasses import dataclass, field
 from vpd.sample_calculator import SampleCalculator
 

@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 import math
 from vpd.utils import load_config
 
