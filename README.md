@@ -2,7 +2,7 @@
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
-![Last Updated](https://img.shields.io/badge/last%20updated-2026--04--25-brightgreen.svg)
+![Last Updated](https://img.shields.io/badge/last%20updated-2026--04--26-brightgreen.svg)
 
 > 💎 **一句话介绍**: 基于《价值主张设计》（亚历山大·奥斯特瓦德著）的完整方法论工具包。覆盖客户洞察、画布分析、优先级计算、竞争战略、实验验证，内置 CEO 视角的商业化路径分析。
 
@@ -359,6 +359,7 @@ MIT License — 基于《Value Proposition Design》by Alexander Osterwalder et 
 
 | 版本 | 日期 | 变更 |
 |------|------|------|
+| v1.8 | 2026-04-26 | 更新 Last Updated 日期，维护技能生态一致性 |
 | v1.7 | 2026-04-25 | 统一技能生态格式，更新交叉引用 |
 | v1.6 | 2026-04-23 | 添加 badges、技能生态系统 ASCII 图、双语支持、Why Use This Skill?、Quick Start、最佳实践、作者信息 |
 | v1.5 | 2026-04-23 | 添加实际案例、故障排除、扩展阅读、技能生态导航 |
@@ -367,4 +368,4 @@ MIT License — 基于《Value Proposition Design》by Alexander Osterwalder et 
 
 ---
 
-*Last Updated: 2026-04-25 | AliDujie Skill Ecosystem*
+*Last Updated: 2026-04-26 | AliDujie Skill Ecosystem*
