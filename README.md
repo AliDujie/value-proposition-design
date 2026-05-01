@@ -4,7 +4,7 @@
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
 [![Version](https://img.shields.io/badge/version-2.4.0-green.svg)](CHANGELOG.md)
-![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--01-brightgreen.svg)
+![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--02-brightgreen.svg)
 
 > 💎 **一句话介绍**: 基于《价值主张设计》（亚历山大·奥斯特瓦德著）的完整方法论工具包。覆盖客户洞察、画布分析、优先级计算、竞争战略、实验验证，内置 CEO 视角的商业化路径分析。
 
@@ -22,6 +22,7 @@
 | 需要定量验证假设、设计 A/B 测试、计算样本量 | → [Quantitative UX Research](https://github.com/AliDujie/Quantitative-UX-Research) |
 | 需要创建人物角色、用户细分、设计指导 | → [Web Persona](https://github.com/AliDujie/web-persona-skill) |
 | 需要将研究结果转化为数据叙事、图表呈现 | → [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) |
+| 需要商业分析框架、结构化思维、战略决策 | → [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) |
 
 > 💡 **提示**: VPD 与 JTBD 配合使用，将 JTBD 发现的"工作"映射到价值主张画布，实现产品-市场契合验证。
 
@@ -256,7 +257,7 @@ value-proposition-design/
 - **VPD + Persona** → 用人物角色驱动价值设计
 - **VPD + SWD** → 用数据叙事向高管呈现价值主张效果
 
-👉 **探索完整生态系统**: [通用设计方法](https://github.com/AliDujie/universal-design-methods) | [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) | [人物角色](https://github.com/AliDujie/web-persona-skill) | [量化 UX 研究](https://github.com/AliDujie/Quantitative-UX-Research) | [数据叙事](https://github.com/AliDujie/storytelling-with-data)
+👉 **探索完整生态系统**: [通用设计方法](https://github.com/AliDujie/universal-design-methods) | [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) | [人物角色](https://github.com/AliDujie/web-persona-skill) | [量化 UX 研究](https://github.com/AliDujie/Quantitative-UX-Research) | [数据叙事](https://github.com/AliDujie/storytelling-with-data) | [结构化思维](https://github.com/AliDujie/Structured-Thinking-Model)
 
 ### 🛠️ 故障排查 (Troubleshooting)
 
@@ -379,6 +380,9 @@ print(report)  # Moat + Monetization + ROI
 | 5 | **Competitive Strategy Scoring** | `strategy.py` | Differentiated competition assessment |
 | 6 | **Experiment Design** | `experiment.py` | Value hypothesis validation experiments |
 | 7 | **Sample Size Calculation** | `sample.py` | Statistical significance sample size |
+| 8 | **CEO: Monetization Path** | `vpd.py` | Revenue model, CAC/LTV unit economics, 3-phase scaling |
+| 9 | **CEO: Competitive Moat** | `vpd.py` | 5 moat types assessment, 12-month build plan, replication risk |
+| 10 | **CEO: ROI Estimation** | `vpd.py` | 3-year revenue forecast, sensitivity analysis |
 
 ### 🔧 Practical Examples
 
@@ -465,7 +469,7 @@ This skill is part of the **AliDujie UX Research Skills Ecosystem**. Using the c
 - ✅ **Zero Dependencies** — Pure Python standard library, ready to use out of the box
 - ✅ **Bilingual Support** — Complete CN/EN documentation for international team collaboration
 
-👉 **Explore More Skills**: [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) | [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) | [Web Persona](https://github.com/AliDujie/web-persona-skill) | [Quantitative UX Research](https://github.com/AliDujie/Quantitative-UX-Research) | [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data)
+👉 **Explore More Skills**: [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) | [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) | [Web Persona](https://github.com/AliDujie/web-persona-skill) | [Quantitative UX Research](https://github.com/AliDujie/Quantitative-UX-Research) | [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) | [Structured Thinking](https://github.com/AliDujie/Structured-Thinking-Model)
 ### 📦 Dependencies
 
 - Python >= 3.9
@@ -570,7 +574,7 @@ MIT License — 基于《Value Proposition Design》by Alexander Osterwalder et 
 
 | 版本 | 日期 | 变更 |
 |------|------|------|
-| v2.3 | 2026-05-01 | 添加 "When to Use This Skill?" 决策指南，更新维护 |
+| v2.4.1 | 2026-05-02 | 修复 SKILL.md 版本号 (添加 v2.4.0)，补充 CEO 能力到英文能力表，添加 Structured-Thinking-Model 交叉引用 |
 | v2.2 | 2026-04-30 | 更新维护，清理格式 |
 | v2.0 | 2026-04-29 | 统一交叉引用为 GitHub 绝对链接，添加 GitHub Topics，更新 Last Updated 日期 |
 | v1.7 | 2026-04-25 | 统一技能生态格式，更新交叉引用 |
@@ -581,4 +585,4 @@ MIT License — 基于《Value Proposition Design》by Alexander Osterwalder et 
 
 ---
 
-*Last Updated: 2026-05-01 | AliDujie Skill Ecosystem | v2.4.0*
+*Last Updated: 2026-05-02 | AliDujie Skill Ecosystem | v2.4.1*
