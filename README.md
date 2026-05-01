@@ -2,7 +2,8 @@
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
-[![Version](https://img.shields.io/badge/version-2.3.0-green.svg)](CHANGELOG.md)
+[![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
+[![Version](https://img.shields.io/badge/version-2.4.0-green.svg)](CHANGELOG.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--01-brightgreen.svg)
 
 > 💎 **一句话介绍**: 基于《价值主张设计》（亚历山大·奥斯特瓦德著）的完整方法论工具包。覆盖客户洞察、画布分析、优先级计算、竞争战略、实验验证，内置 CEO 视角的商业化路径分析。
@@ -409,18 +410,6 @@ report = skill.generate_canvas(include_ceo_analysis=True)
 print(report)  # Includes moat, monetization, ROI analysis
 ```
 
-### 👥 Who Is This For?
-
-| Role | How This Skill Helps |
-|------|---------------------|
-| **Product Managers** | Validate product-market fit with structured canvas analysis |
-| **UX Researchers** | Connect user insights to value proposition design |
-| **Startup Founders** | Systematically test value hypotheses before building |
-| **Business Strategists** | Competitive differentiation and moat analysis |
-| **AI Agents** | Zero-dependency Python package for automated VPD workflows |
-
-### 🛠️ Troubleshooting
-
 | Issue | Solution |
 |-------|----------|
 | Fit score is low | Check if pains/gains map directly to jobs — misalignment lowers fit |
@@ -477,24 +466,6 @@ This skill is part of the **AliDujie UX Research Skills Ecosystem**. Using the c
 - ✅ **Bilingual Support** — Complete CN/EN documentation for international team collaboration
 
 👉 **Explore More Skills**: [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) | [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) | [Web Persona](https://github.com/AliDujie/web-persona-skill) | [Quantitative UX Research](https://github.com/AliDujie/Quantitative-UX-Research) | [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data)
-
-### 🛠️ Troubleshooting
-
-| Issue | Solution |
-|-------|----------|
-| Fit score is low | Check if pains/gains map directly to jobs — misalignment lowers fit |
-| Experiment sample size too large | Increase your expected effect size or accept lower statistical power |
-| Competitive analysis unclear | Focus on unique value differentiators, not feature parity |
-| Canvas feels incomplete | Ensure each customer job has at least one corresponding pain and gain |
-
-### 🤝 Best Practices
-
-1. **Start with customer jobs** — Jobs drive everything; get them right first
-2. **Validate with real users** — Use experiments to test hypotheses, not assumptions
-3. **Focus on high-severity pains** — Address the most painful problems first
-4. **Measure fit score** — Track how well your value map addresses customer profile
-5. **Include CEO perspective** — Always consider moat, monetization, and ROI
-
 ### 📦 Dependencies
 
 - Python >= 3.9
@@ -502,6 +473,56 @@ This skill is part of the **AliDujie UX Research Skills Ecosystem**. Using the c
 - Cross-platform: macOS / Linux / Windows
 
 ---
+
+## 🔗 技能生态工作流 (Skill Ecosystem Workflow)
+
+VPD 是 **AliDujie UX 研究技能生态系统** 的价值设计核心。以下是与其他技能配合使用的典型工作流：
+
+### 🧭 快速决策指南 (Quick Decision Guide)
+
+| 你的问题 | 推荐技能 |
+|----------|----------|
+| "我的产品价值够不够？" | → **Value Proposition Design** (本技能) — 契合度诊断 |
+| "我不知道该研究什么" | → [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) — 方法推荐帮你找到方向 |
+| "我想理解用户为什么这样做" | → [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) — 挖掘用户背后的"工作" |
+| "我需要验证一个假设" | → [Quantitative UX Research](https://github.com/AliDujie/Quantitative-UX-Research) — A/B 测试和样本量计算 |
+| "我需要知道用户是谁" | → [Web Persona](https://github.com/AliDujie/web-persona-skill) — 创建具体的人物角色 |
+| "我怎么把研究结果讲清楚？" | → [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) — 数据叙事和图表改造 |
+
+### 工作流 1: JTBD → VPD → 实验验证
+
+```
+JTBD (Jobs 发现) → VPD (画布填充) → QuantUX (实验验证)
+```
+
+**场景**: 产品-市场契合验证
+1. 用 JTBD 机会分数识别高价值未满足需求
+2. 用 VPD 画布将 Jobs 映射到痛点和收益
+3. 用 QuantUX 设计 A/B 测试验证价值假设
+
+### 工作流 2: Persona → VPD → 汇报
+
+```
+Persona (目标/痛点) → VPD (价值设计) → SWD (数据叙事)
+```
+
+**场景**: 产品方向决策
+1. 用 Persona 定义首要角色的目标和痛点
+2. 用 VPD 画布分析契合度，找出缺口
+3. 用 SWD 将画布数据转化为高管汇报故事
+
+### 工作流 3: 用户研究 → 价值主张
+
+```
+UDM (用户访谈) → VPD (优先级排序) → VPD (CEO 视角)
+```
+
+**场景**: 功能优先级决策
+1. 用 UDM 访谈收集客户洞察
+2. 用 VPD 4 维优先级模型排序需求
+3. 用 VPD CEO 视角评估商业化路径和护城河
+
+> 💡 **提示**: VPD 的契合度评分 (Fit Score) 是量化产品-市场契合的核心指标，>0.7 表示良好契合。
 
 ## Run Tests / 运行测试
 
@@ -560,4 +581,4 @@ MIT License — 基于《Value Proposition Design》by Alexander Osterwalder et 
 
 ---
 
-*Last Updated: 2026-05-01 | AliDujie Skill Ecosystem | v2.3.0*
+*Last Updated: 2026-05-01 | AliDujie Skill Ecosystem | v2.4.0*

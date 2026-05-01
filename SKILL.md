@@ -274,6 +274,7 @@ python -m pytest vpd/tests/test_all.py -v  # 或 pytest
 | JTBD 深度研究 | jtbd-knowledge-skill | JTBD 分析 -> VPD 画布填充 + 优先级排序 |
 | 定量研究验证 | quantitative-ux-research | VPD 问卷设计 -> UXR 执行 -> VPD 优先级计算 |
 | 竞品分析展示 | storytelling-with-data | VPD 竞争战略 -> SWD 图表改造 + 故事构建 |
+| 商业策略分析 | structured-thinking-model | STM 商业画布 → VPD 价值验证 → STM 战略决策 |
 
 ---
 
