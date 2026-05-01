@@ -1,5 +1,6 @@
 ---
 name: value-proposition-design
+version: "2.3.0"
 description: 价值主张设计方法论 Skill - 基于奥斯特瓦德《价值主张设计》全书，覆盖客户洞察、画布分析、优先级计算、竞争战略、问卷设计、实验验证的完整方法论与可执行 Python 工具包，以及CEO决策视角的商业化路径、竞争护城河与ROI估算
 ---
 
@@ -305,8 +306,25 @@ python -m pytest vpd/tests/test_all.py -v  # 或 pytest
 
 ### 相关 Skill
 
-| Skill | 协作方式 |
-|-------|---------|
-| storytelling-with-data | VPD 画布数据 -> SWD 图表展示与故事构建 |
-| jtbd-knowledge-skill | JTBD 研究结果 -> VPD 画布填充与优先级排序 |
-| quantitative-ux-research | VPD 问卷设计 -> UXR 定量执行与分析 |
+VPD 是 AliDujie UX 研究技能生态系统的产品-市场验证层：
+
+| 协作场景 | 协作 Skill | 工作流 |
+|---------|-----------|--------|
+| 画布数据可视化 | Storytelling with Data | VPD 画布 -> SWD 图表展示 -> SWD 故事构建 |
+| JTBD 到价值主张 | JTBD Knowledge | JTBD Jobs -> VPD 画布填充 -> VPD 优先级排序 |
+| 价值主张验证 | Quantitative UX Research | VPD 假设 -> QuantUX A/B 测试 -> VPD 实验设计 |
+| 角色到价值主张 | Web Persona | Persona 目标/痛点 -> VPD 画布 -> Persona 验证 |
+| 研究到价值主张 | Universal Design Methods | UDM 用户研究 -> VPD 画布 -> VPD 实验验证 |
+
+**协作示例（JTBD → VPD → SWD）**：
+```python
+# Step 1: JTBD 发现用户核心 Job
+# Step 2: VPD 将 Job 映射到价值主张画布
+from vpd import VPDSkill
+vpd = VPDSkill("旅行平台", "商务人士")
+vpd.analyze_canvas(product_name="旅行预订", jobs=[...], pains=[...])
+# Step 3: SWD 将画布数据可视化
+from swd import SWDSkill
+swd = SWDSkill("价值主张汇报")
+story = swd.build_story(protagonist="决策层", imbalance="产品-市场契合度不足")
+```
