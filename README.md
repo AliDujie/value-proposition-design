@@ -478,6 +478,58 @@ This skill is part of the **AliDujie UX Research Skills Ecosystem**. Using the c
 
 ---
 
+## 🔗 Skill Ecosystem Workflow
+
+VPD is the value-design core of the **AliDujie UX Research Skills Ecosystem**. Here are typical workflows combining it with other skills:
+
+### 🧭 Quick Decision Guide
+
+| Your Question | Recommended Skill |
+|---------------|------------------|
+| "Is my product value strong enough?" | → **Value Proposition Design** (this skill) — Fit diagnosis |
+| "I don't know what research to do" | → [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) — Method recommendation |
+| "I want to understand why users do this" | → [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) — Uncover the underlying "jobs" |
+| "I need to validate a hypothesis" | → [Quantitative UX Research](https://github.com/AliDujie/Quantitative-UX-Research) — A/B testing & sample size |
+| "I need to know who my users are" | → [Web Persona](https://github.com/AliDujie/web-persona-skill) — Create concrete personas |
+| "How do I present research results clearly?" | → [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) — Data storytelling |
+
+### Workflow 1: JTBD → VPD → Experiment Validation
+
+```
+JTBD (job discovery) → VPD (value canvas) → QuantUX (validation)
+```
+
+**Scenario**: Product-market fit validation
+1. Use JTBD to discover user "jobs" and opportunity scores
+2. Use VPD to map pains/gains to the value proposition canvas
+3. Use QuantUX to design experiments and measure PMF
+
+### Workflow 2: Competitive Strategy → Market Positioning
+
+```
+JTBD (competitive analysis) → VPD (strategy canvas) → SWD (presentation)
+```
+
+**Scenario**: Competitive differentiation
+1. Use JTBD to identify competitive alternatives and switching triggers
+2. Use VPD competitive strategy canvas to find differentiation opportunities
+3. Use SWD to create compelling competitive positioning presentations
+
+### Workflow 3: User Research → Value Iteration
+
+```
+UDM (usability testing) → Persona (user segments) → VPD (value iteration)
+```
+
+**Scenario**: Value proposition iteration
+1. Use UDM to identify pain points in the current user experience
+2. Use Persona to define target user segments
+3. Use VPD to iterate value proposition based on segment-specific needs
+
+> 💡 **Tip**: VPD pairs naturally with JTBD — map JTBD-discovered "jobs" to the value proposition canvas for product-market fit validation.
+
+---
+
 ## 🔗 技能生态工作流 (Skill Ecosystem Workflow)
 
 VPD 是 **AliDujie UX 研究技能生态系统** 的价值设计核心。以下是与其他技能配合使用的典型工作流：
