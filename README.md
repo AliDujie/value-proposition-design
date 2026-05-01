@@ -2,6 +2,7 @@
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
+[![Version](https://img.shields.io/badge/version-1.1.0-green.svg)](CHANGELOG.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--01-brightgreen.svg)
 
 > 💎 **一句话介绍**: 基于《价值主张设计》（亚历山大·奥斯特瓦德著）的完整方法论工具包。覆盖客户洞察、画布分析、优先级计算、竞争战略、实验验证，内置 CEO 视角的商业化路径分析。
@@ -26,6 +27,33 @@
 ---
 
 ## 中文说明
+
+### 🎯 Features at a Glance / 功能一览
+
+| 功能 | 说明 |
+|------|------|
+| 7 大执行能力 | 访谈提纲、调查问卷、优先级计算、价值主张画布、竞争战略、实验设计、样本量计算 |
+| 价值主张画布 | 客户画像 × 价值地图 适配分析，量化匹配度 |
+| CEO 视角分析 | 护城河分析 + 商业化路径 + ROI 估算 |
+| 实验设计 | 价值假设验证，自动计算样本量 |
+| 双语支持 | 完整中英文文档和代码示例 |
+
+### 👥 适合谁？(Who Is This For?)
+
+| 角色 | 使用场景 |
+|------|----------|
+| **产品经理** | 验证产品-市场契合度，系统化测试价值假设 |
+| **UX 研究员** | 将用户洞察连接到价值主张设计 |
+| **创业者** | 在构建前验证价值假设，避免方向错误 |
+| **商业策略师** | 竞争差异化和护城河分析 |
+| **AI Agent** | 作为工具调用，自动化 VPD 分析流程 |
+
+### 🏷️ GitHub Topics（推荐）
+
+```
+value-proposition canvas product-market-fit experimentation
+competitive-strategy python-toolkit openclaw-skill alicloud
+```
 
 ### 🌟 为什么使用这个技能？(Why Use This Skill?)
 
@@ -284,6 +312,26 @@ value-proposition-design/
 - **Bilingual Support** — Complete CN/EN documentation for international teams
 - **Plug-and-Play** — Intuitive API, rich code examples, produce value proposition reports immediately
 
+### 🎯 Features at a Glance
+
+| Feature | Description |
+|---------|-------------|
+| 7 Core Capabilities | Interview guides, surveys, priority calculation, canvas analysis, competitive strategy, experiment design, sample size |
+| Value Proposition Canvas | Customer profile × Value map fit analysis, quantified match score |
+| CEO Perspective | Moat analysis + monetization paths + ROI estimation |
+| Experiment Design | Value hypothesis validation with auto-calculated sample size |
+| Bilingual Support | Complete CN/EN documentation and code examples |
+
+### 👥 Who Is This For?
+
+| Role | Use Case |
+|------|----------|
+| **Product Managers** | Validate product-market fit, systematically test value hypotheses |
+| **UX Researchers** | Connect user insights to value proposition design |
+| **Startup Founders** | Test value hypotheses before building |
+| **Business Strategists** | Competitive differentiation and moat analysis |
+| **AI Agents** | Zero-dependency Python package for automated VPD workflows |
+
 ### 🚀 Quick Start
 
 ```python
@@ -430,6 +478,23 @@ This skill is part of the **AliDujie UX Research Skills Ecosystem**. Using the c
 
 👉 **Explore More Skills**: [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) | [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) | [Web Persona](https://github.com/AliDujie/web-persona-skill) | [Quantitative UX Research](https://github.com/AliDujie/Quantitative-UX-Research) | [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data)
 
+### 🛠️ Troubleshooting
+
+| Issue | Solution |
+|-------|----------|
+| Fit score is low | Check if pains/gains map directly to jobs — misalignment lowers fit |
+| Experiment sample size too large | Increase your expected effect size or accept lower statistical power |
+| Competitive analysis unclear | Focus on unique value differentiators, not feature parity |
+| Canvas feels incomplete | Ensure each customer job has at least one corresponding pain and gain |
+
+### 🤝 Best Practices
+
+1. **Start with customer jobs** — Jobs drive everything; get them right first
+2. **Validate with real users** — Use experiments to test hypotheses, not assumptions
+3. **Focus on high-severity pains** — Address the most painful problems first
+4. **Measure fit score** — Track how well your value map addresses customer profile
+5. **Include CEO perspective** — Always consider moat, monetization, and ROI
+
 ### 📦 Dependencies
 
 - Python >= 3.9
@@ -437,6 +502,27 @@ This skill is part of the **AliDujie UX Research Skills Ecosystem**. Using the c
 - Cross-platform: macOS / Linux / Windows
 
 ---
+
+## Run Tests / 运行测试
+
+```bash
+cd /path/to/value-proposition-design
+python3 -m pytest vpd/tests/ -v 2>/dev/null || echo "No test suite yet — run manual validation"
+```
+
+## 🤝 参与贡献 (Contributing)
+
+欢迎贡献！请查看 [CONTRIBUTING.md](CONTRIBUTING.md) 了解贡献指南。
+
+- 🐛 **报告 Bug**: 提交 [Issue](https://github.com/AliDujie/value-proposition-design/issues)
+- 💡 **功能建议**: 提交 [Feature Request](https://github.com/AliDujie/value-proposition-design/issues/new?template=feature_request.md)
+- 📝 **改进文档**: PR 欢迎，特别是参考文档和代码示例
+
+## 🆘 获取帮助 (Getting Help)
+
+- 📖 查看 [故障排查](#故障排查-troubleshooting) 部分
+- 📚 阅读 [references/](references/) 目录下的知识库文档
+- 💬 在 [Issues](https://github.com/AliDujie/value-proposition-design/issues) 中提问
 
 ## 📖 扩展阅读
 
