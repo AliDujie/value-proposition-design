@@ -2,7 +2,7 @@
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
-![Last Updated](https://img.shields.io/badge/last%20updated-2026--04--30-brightgreen.svg)
+![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--01-brightgreen.svg)
 
 > 💎 **一句话介绍**: 基于《价值主张设计》（亚历山大·奥斯特瓦德著）的完整方法论工具包。覆盖客户洞察、画布分析、优先级计算、竞争战略、实验验证，内置 CEO 视角的商业化路径分析。
 
@@ -167,6 +167,7 @@ print(report)
 value-proposition-design/
 ├── SKILL.md              # AI Agent 技能定义
 ├── README.md             # 本文件
+├── INSTALL.md            # 安装指南
 ├── pyproject.toml        # Python 包构建配置
 ├── vpd/                  # Python 包（纯标准库）
 │   ├── __init__.py       # VPDSkill 统一入口
