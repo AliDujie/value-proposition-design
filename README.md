@@ -648,7 +648,9 @@ UDM (用户访谈) → VPD (优先级排序) → VPD (CEO 视角)
 
 ```bash
 cd /path/to/value-proposition-design
-python3 -m pytest vpd/tests/ -v 2>/dev/null || echo "No test suite yet — run manual validation"
+python3 -m pytest vpd/tests/ -v
+# 或直接运行测试
+python3 vpd/tests/test_all.py
 ```
 
 ## 🤝 参与贡献 (Contributing)
