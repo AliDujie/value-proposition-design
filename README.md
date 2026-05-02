@@ -116,22 +116,42 @@ print(f"每组需要 {experiment.sample_size} 个用户")
 # ===== 场景 4: CEO 视角商业分析 =====
 report = skill.generate_canvas(include_ceo_analysis=True)
 print(report)  # 护城河 + 商业化路径 + ROI 估算
+
+# ===== 场景 5: 竞争战略分析 =====
+strategy = skill.analyze_competitor(
+    my_name="我方产品",
+    factors=["价格", "易用性", "集成能力", "客服质量"],
+    players={
+        "我方产品": [7, 8, 5, 6],
+        "竞品A": [8, 6, 7, 5],
+        "竞品B": [6, 7, 8, 4],
+    }
+)
+print(strategy)  # 评分表 + 价值曲线 + 蓝海四项行动框架
+
+# ===== 场景 6: 实验设计验证 =====
+experiment = skill.design_experiment(
+    hypotheses=[{"description": "用户愿意额外付费 50 元/月", "lethality": "lethal"}],
+    test_cards=[{"hypothesis": "用户愿意额外付费 50 元/月", "test_method": "登录页 MVP",
+        "metric": "注册率", "threshold": "5%", "cta_level": "L3", "duration_days": 14}]
+)
+print(experiment)  # 假设排序 + 测试卡 + 学习卡
 ```
 
 ### 💡 10 大核心能力
 
 | # | 能力 | 模块 | 功能 |
 |---|------|------|------|
-| 1 | **访谈提纲生成** | `interview.py` | 客户洞察访谈框架 |
-| 2 | **调查问卷设计** | `survey.py` | 价值主张验证问卷 |
-| 3 | **优先级计算** | `priority.py` | 痛点/收益优先级排序 |
-| 4 | **价值主张画布** | `canvas.py` | 客户画像 × 价值地图 适配分析 |
-| 5 | **竞争战略评分** | `strategy.py` | 差异化竞争评估 |
-| 6 | **实验设计** | `experiment.py` | 价值假设验证实验 |
-| 7 | **样本量计算** | `sample.py` | 统计显著性样本量 |
-| 8 | **CEO: 商业化路径** | `vpd.py` | 收入模型、CAC/LTV、三阶段增长 |
-| 9 | **CEO: 竞争护城河** | `vpd.py` | 5 种护城河评估、12 个月建设计划、复制风险 |
-| 10 | **CEO: ROI 估算** | `vpd.py` | 3 年收入预测、敏感性分析 |
+| 1 | **访谈提纲生成** | `interview_generator.py` | 五阶段访谈（暖场→工作探索→痛点→收益→收尾），B2B/B2C |
+| 2 | **调查问卷设计** | `survey_designer.py` | 六 Part 问卷（筛选→工作→痛点→收益→验证→人口统计） |
+| 3 | **优先级计算** | `priority_calculator.py` | 4 维评分（重要性×不满意度×频率×可行性），P0-P3 分级 |
+| 4 | **价值主张画布** | `canvas_analyzer.py` | 客户概况 + 价值图填充，契合度评分 + 缺口分析 |
+| 5 | **竞争战略** | `strategy_scorer.py` | 竞争因素评分 + 价值曲线 + 蓝海四项行动框架 |
+| 6 | **实验设计** | `experiment_designer.py` | 假设拆解排序 + 测试卡/学习卡 + CTA 分层 |
+| 7 | **样本量计算** | `sample_calculator.py` | 统计显著性样本量计算 |
+| 8 | **CEO: 商业化路径** | `vpd/__init__.py` | 收入模型、CAC/LTV 单位经济、三阶段规模化 |
+| 9 | **CEO: 竞争护城河** | `vpd/__init__.py` | 5 大护城河评估、12 月建设路径、被复制风险 |
+| 10 | **CEO: ROI 估算** | `vpd/__init__.py` | 3 年收入预测、敏感性分析、投入产出比 |
 
 ### 🔧 实用示例
 
@@ -369,22 +389,41 @@ print(f"Sample size per group: {experiment.sample_size}")
 # CEO Perspective Analysis
 report = skill.generate_canvas(include_ceo_analysis=True)
 print(report)  # Moat + Monetization + ROI
+
+# Competitive strategy analysis
+strategy = skill.analyze_competitor(
+    my_name="Our Product",
+    factors=["Price", "Ease of Use", "Integration", "Support"],
+    players={"Our Product": [7, 8, 5, 6], "Competitor A": [8, 6, 7, 5]},
+)
+print(strategy)  # Score table + value curve + Blue Ocean actions
+
+# Experiment design
+experiment = skill.design_experiment(
+    hypotheses=[{"description": "Users willing to pay extra $50/mo", "lethality": "lethal"}],
+)
+print(experiment)  # Hypothesis ranking + test cards + learning cards
+
+# CEO individual modules
+print(skill.generate_commercialization_path())  # Revenue model + CAC/LTV
+print(skill.generate_competitive_moat())       # Moat analysis + build plan
+print(skill.generate_roi_estimate())           # 3-year forecast + sensitivity
 ```
 
-### 💡 Core Capabilities
+### 💡 10 Core Capabilities
 
 | # | Capability | Module | Description |
 |---|------------|--------|-------------|
-| 1 | **Interview Guide Generation** | `interview.py` | Customer insight interview framework |
-| 2 | **Survey Design** | `survey.py` | Value proposition validation surveys |
-| 3 | **Priority Calculation** | `priority.py` | Pain point / gain priority ranking |
-| 4 | **Value Proposition Canvas** | `canvas.py` | Customer profile × Value map fit analysis |
-| 5 | **Competitive Strategy Scoring** | `strategy.py` | Differentiated competition assessment |
-| 6 | **Experiment Design** | `experiment.py` | Value hypothesis validation experiments |
-| 7 | **Sample Size Calculation** | `sample.py` | Statistical significance sample size |
-| 8 | **CEO: Monetization Path** | `vpd.py` | Revenue model, CAC/LTV unit economics, 3-phase scaling |
-| 9 | **CEO: Competitive Moat** | `vpd.py` | 5 moat types assessment, 12-month build plan, replication risk |
-| 10 | **CEO: ROI Estimation** | `vpd.py` | 3-year revenue forecast, sensitivity analysis |
+| 1 | **Interview Guide** | `interview_generator.py` | 5-stage interview (warmup → jobs → pains → gains → closing) |
+| 2 | **Survey Design** | `survey_designer.py` | 6-part survey (screening → jobs → pains → gains → validation → demographics) |
+| 3 | **Priority Calculation** | `priority_calculator.py` | 4-dimension scoring, P0-P3 prioritization |
+| 4 | **Value Proposition Canvas** | `canvas_analyzer.py` | Customer profile × Value map fit analysis, gap diagnosis |
+| 5 | **Competitive Strategy** | `strategy_scorer.py` | Factor scoring + value curve + Blue Ocean four-action framework |
+| 6 | **Experiment Design** | `experiment_designer.py` | Hypothesis ranking + test cards + learning cards + CTA levels |
+| 7 | **Sample Size** | `sample_calculator.py` | Statistical significance sample size |
+| 8 | **CEO: Monetization Path** | `vpd/__init__.py` | Revenue model, CAC/LTV unit economics, 3-phase scaling |
+| 9 | **CEO: Competitive Moat** | `vpd/__init__.py` | 5 moat types, 12-month build plan, replication risk |
+| 10 | **CEO: ROI Estimation** | `vpd/__init__.py` | 3-year forecast, sensitivity analysis |
 
 ### 🔧 Practical Examples
 
@@ -414,6 +453,26 @@ print(f"Need {experiment.sample_size} participants per group")
 # Example 3: CEO perspective with moat analysis
 report = skill.generate_canvas(include_ceo_analysis=True)
 print(report)  # Includes moat, monetization, ROI analysis
+
+# Example 4: Competitive strategy + Blue Ocean
+strategy = skill.analyze_competitor(
+    my_name="OurProduct",
+    factors=["Price", "Ease of Use", "Features", "Support"],
+    players={"OurProduct": [7, 8, 5, 6], "CompetitorA": [8, 6, 7, 5]},
+)
+print(strategy)  # Factor scoring + Blue Ocean eliminate-reduce-raise-create
+
+# Example 5: Experiment design for value hypothesis
+experiment = skill.design_experiment(
+    hypotheses=[
+        {"description": "AI drafts reduce creation time by 60%", "lethality": "lethal"},
+    ],
+    test_cards=[
+        {"hypothesis": "AI drafts reduce creation time by 60%",
+         "test_method": "Landing page MVP", "metric": "Sign-up rate",
+         "threshold": "5%", "cta_level": "L3", "duration_days": 21},
+    ],
+)
 ```
 
 ### 🛠️ Troubleshooting
