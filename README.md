@@ -421,7 +421,7 @@ strategy = skill.analyze_competitor(
 )
 print(strategy)  # Score table + value curve + Blue Ocean actions
 
-# Experiment design
+# Experiment design (multi-hypothesis form — ranks by lethality)
 experiment = skill.design_experiment(
     hypotheses=[{"description": "Users willing to pay extra $50/mo", "lethality": "lethal"}],
 )
