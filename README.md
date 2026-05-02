@@ -496,6 +496,27 @@ experiment = skill.design_experiment(
          "threshold": "5%", "cta_level": "L3", "duration_days": 21},
     ],
 )
+
+# Example 6: End-to-end product-market fit validation
+skill = VPDSkill("AI Writing Assistant", "Content Creators")
+canvas = skill.analyze_canvas(
+    product_name="WriteAI",
+    jobs=[{"job": "Draft blog posts quickly", "type": "functional", "importance": "high"}],
+    pains=[{"pain": "Writer's block", "severity": "high"}],
+    gains=[{"gain": "Publish 3x more content", "relevance": "high"}],
+    products=[{"product": "AI-powered first drafts"}],
+    pain_relievers=[{"reliever": "Topic suggestions and outlines"}],
+    gain_creators=[{"creator": "One-click brand voice adaptation"}],
+)
+print(f"Fit Score: {canvas.fit_score:.2f}")
+if canvas.fit_score >= 0.7:
+    print("Good product-market fit — proceed to experiment validation")
+    experiment = skill.design_experiment(
+        hypothesis="AI drafts reduce content creation time by 60%",
+        metric="Hours per blog post",
+        duration_days=21,
+    )
+    print(f"Need {experiment.sample_size} participants per group")
 ```
 
 ### 🛠️ Troubleshooting
