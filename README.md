@@ -520,6 +520,7 @@ This skill is part of the **AliDujie UX Research Skills Ecosystem**:
 - **[Web-Persona-Skill](https://github.com/AliDujie/web-persona-skill)** — Persona creation
 - **[Quantitative-UX-Research](https://github.com/AliDujie/Quantitative-UX-Research)** — Quantitative research, HEART framework
 - **[Storytelling-with-Data](https://github.com/AliDujie/storytelling-with-data)** — Data storytelling
+- **[Structured-Thinking-Model](https://github.com/AliDujie/Structured-Thinking-Model)** — 70+ business analysis frameworks
 
 ### 🌟 Why Choose AliDujie Skill Ecosystem?
 
@@ -534,11 +535,20 @@ This skill is part of the **AliDujie UX Research Skills Ecosystem**. Using the c
 
 👉 **Explore More Skills**: [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) | [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) | [Web Persona](https://github.com/AliDujie/web-persona-skill) | [Quantitative UX Research](https://github.com/AliDujie/Quantitative-UX-Research) | [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) | [Structured Thinking](https://github.com/AliDujie/Structured-Thinking-Model)
 
-### 📦 Dependencies
+### 🏷️ GitHub Topics (Recommended)
 
-- Python >= 3.9
-- **No external dependencies** (pure standard library)
-- Cross-platform: macOS / Linux / Windows
+```
+value-proposition canvas product-market-fit experimentation
+competitive-strategy python-toolkit openclaw-skill alicloud
+```
+
+### 📋 Changelog
+
+| Version | Date | Changes |
+|---------|------|--------|
+| v2.4.2 | 2026-05-02 | Repo maintenance: improved experiment design example clarity, added GitHub Topics and changelog to English section, added Structured-Thinking-Model to Related Skills |
+| v2.4.1 | 2026-05-02 | Fixed SKILL.md version, added CEO capabilities to English table |
+| v2.4 | 2026-04-30 | Updated maintenance, cleaned up formatting |
 
 ---
 
