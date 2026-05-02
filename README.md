@@ -34,7 +34,7 @@
 
 | 功能 | 说明 |
 |------|------|
-| 7 大执行能力 | 访谈提纲、调查问卷、优先级计算、价值主张画布、竞争战略、实验设计、样本量计算 |
+| 10 大执行能力 | 访谈提纲、调查问卷、优先级计算、价值主张画布、竞争战略、实验设计、样本量计算、CEO 视角商业分析 |
 | 价值主张画布 | 客户画像 × 价值地图 适配分析，量化匹配度 |
 | CEO 视角分析 | 护城河分析 + 商业化路径 + ROI 估算 |
 | 实验设计 | 价值假设验证，自动计算样本量 |
@@ -118,7 +118,7 @@ report = skill.generate_canvas(include_ceo_analysis=True)
 print(report)  # 护城河 + 商业化路径 + ROI 估算
 ```
 
-### 💡 核心能力
+### 💡 10 大核心能力
 
 | # | 能力 | 模块 | 功能 |
 |---|------|------|------|
@@ -129,6 +129,9 @@ print(report)  # 护城河 + 商业化路径 + ROI 估算
 | 5 | **竞争战略评分** | `strategy.py` | 差异化竞争评估 |
 | 6 | **实验设计** | `experiment.py` | 价值假设验证实验 |
 | 7 | **样本量计算** | `sample.py` | 统计显著性样本量 |
+| 8 | **CEO: 商业化路径** | `vpd.py` | 收入模型、CAC/LTV、三阶段增长 |
+| 9 | **CEO: 竞争护城河** | `vpd.py` | 5 种护城河评估、12 个月建设计划、复制风险 |
+| 10 | **CEO: ROI 估算** | `vpd.py` | 3 年收入预测、敏感性分析 |
 
 ### 🔧 实用示例
 
@@ -318,7 +321,7 @@ value-proposition-design/
 
 | Feature | Description |
 |---------|-------------|
-| 7 Core Capabilities | Interview guides, surveys, priority calculation, canvas analysis, competitive strategy, experiment design, sample size |
+| 10 Core Capabilities | Interview guides, surveys, priority calculation, canvas analysis, competitive strategy, experiment design, sample size, CEO decision support |
 | Value Proposition Canvas | Customer profile × Value map fit analysis, quantified match score |
 | CEO Perspective | Moat analysis + monetization paths + ROI estimation |
 | Experiment Design | Value hypothesis validation with auto-calculated sample size |
@@ -414,6 +417,8 @@ report = skill.generate_canvas(include_ceo_analysis=True)
 print(report)  # Includes moat, monetization, ROI analysis
 ```
 
+### 🛠️ Troubleshooting
+
 | Issue | Solution |
 |-------|----------|
 | Fit score is low | Check if pains/gains map directly to jobs — misalignment lowers fit |
@@ -470,6 +475,7 @@ This skill is part of the **AliDujie UX Research Skills Ecosystem**. Using the c
 - ✅ **Bilingual Support** — Complete CN/EN documentation for international team collaboration
 
 👉 **Explore More Skills**: [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) | [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) | [Web Persona](https://github.com/AliDujie/web-persona-skill) | [Quantitative UX Research](https://github.com/AliDujie/Quantitative-UX-Research) | [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) | [Structured Thinking](https://github.com/AliDujie/Structured-Thinking-Model)
+
 ### 📦 Dependencies
 
 - Python >= 3.9
