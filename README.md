@@ -3,7 +3,7 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.4.0-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.4.2-green.svg)](CHANGELOG.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--02-brightgreen.svg)
 
 > 💎 **一句话介绍**: 基于《价值主张设计》（亚历山大·奥斯特瓦德著）的完整方法论工具包。覆盖客户洞察、画布分析、优先级计算、竞争战略、实验验证，内置 CEO 视角的商业化路径分析。
@@ -632,6 +632,7 @@ MIT License — 基于《Value Proposition Design》by Alexander Osterwalder et 
 
 | 版本 | 日期 | 变更 |
 |------|------|------|
+| v2.4.2 | 2026-05-02 | 仓库维护：优化实验设计示例代码清晰度，增强技能生态工作流 2 描述，统一交叉引用格式，补充 Features at a Glance 表 |
 | v2.4.1 | 2026-05-02 | 修复 SKILL.md 版本号 (添加 v2.4.0)，补充 CEO 能力到英文能力表，添加 Structured-Thinking-Model 交叉引用 |
 | v2.2 | 2026-04-30 | 更新维护，清理格式 |
 | v2.0 | 2026-04-29 | 统一交叉引用为 GitHub 绝对链接，添加 GitHub Topics，更新 Last Updated 日期 |
@@ -643,4 +644,4 @@ MIT License — 基于《Value Proposition Design》by Alexander Osterwalder et 
 
 ---
 
-*Last Updated: 2026-05-02 | AliDujie Skill Ecosystem | v2.4.1*
+*Last Updated: 2026-05-02 | AliDujie Skill Ecosystem | v2.4.2*
