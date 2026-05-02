@@ -226,9 +226,8 @@ value-proposition-design/
 │   ├── strategy.py       # 竞争战略评分
 │   ├── experiment.py     # 实验设计器
 │   └── sample.py         # 样本量计算
-├── references/           # 知识库文档
-│   └── knowledge-base.md
-└── README.md
+└── references/           # 知识库文档
+    └── knowledge-base.md
 ```
 
 ### 🔗 相关技能
