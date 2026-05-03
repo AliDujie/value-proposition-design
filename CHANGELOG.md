@@ -1,5 +1,11 @@
 # Changelog
 
+## [R27] - 2026-05-03
+
+### Changed
+- Improved Example 1 canvas analysis code formatting consistency
+- Aligned SKILL.md version with README.md (v2.4.7)
+
 ## [R26] - 2026-05-03
 
 ### Fixed
