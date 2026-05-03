@@ -3,7 +3,7 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.4.11-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.4.12-green.svg)](CHANGELOG.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--04-brightgreen.svg)
 
 > 💎 **一句话介绍**: 基于《价值主张设计》（亚历山大·奥斯特瓦德著）的完整方法论工具包。覆盖客户洞察、画布分析、优先级计算、竞争战略、实验验证，内置 CEO 视角的商业化路径分析。
@@ -388,7 +388,7 @@ from vpd import VPDSkill
 
 skill = VPDSkill("SaaS Collaboration Platform", "SMB Team Leads")
 
-# Value Proposition Canvas Analysis
+# ===== Scenario 1: Value Proposition Canvas Analysis =====
 canvas = skill.analyze_canvas(
     product_name="TeamFlow",
     jobs=[{"job": "Team collaboration", "type": "functional", "importance": "high"}],
@@ -398,9 +398,9 @@ canvas = skill.analyze_canvas(
     pain_relievers=[{"reliever": "Instant notifications"}],
     gain_creators=[{"creator": "Automated workflows"}],
 )
-print(f"Fit Score: {canvas.fit_score}")  # 0.85 (High fit)
+print(f"Fit Score: {canvas.fit_score}")  # >0.7 = good fit
 
-# Experiment Design
+# ===== Scenario 2: Experiment Design + Sample Size =====
 experiment = skill.design_experiment(
     hypothesis="Real-time editing reduces communication time by 30%",
     metric="Daily message count",
@@ -409,11 +409,11 @@ experiment = skill.design_experiment(
 )
 print(f"Sample size per group: {experiment.sample_size}")
 
-# CEO Perspective Analysis
+# ===== Scenario 3: CEO Perspective (Moat + Monetization + ROI) =====
 report = skill.generate_canvas(include_ceo_analysis=True)
-print(report)  # Moat + Monetization + ROI
+print(report)  # Moat analysis + Commercialization path + ROI estimate
 
-# Competitive strategy analysis
+# ===== Scenario 4: Competitive Strategy + Blue Ocean =====
 strategy = skill.analyze_competitor(
     my_name="Our Product",
     factors=["Price", "Ease of Use", "Integration", "Support"],
@@ -421,13 +421,13 @@ strategy = skill.analyze_competitor(
 )
 print(strategy)  # Score table + value curve + Blue Ocean actions
 
-# Experiment design (multi-hypothesis form — ranks by lethality)
+# ===== Scenario 5: Multi-Hypothesis Experiment (Ranked by Lethality) =====
 experiment = skill.design_experiment(
     hypotheses=[{"description": "Users willing to pay extra $50/mo", "lethality": "lethal"}],
 )
 print(experiment)  # Hypothesis ranking + test cards + learning cards
 
-# CEO individual modules
+# ===== Scenario 6: CEO Individual Modules =====
 print(skill.generate_commercialization_path())  # Revenue model + CAC/LTV
 print(skill.generate_competitive_moat())       # Moat analysis + build plan
 print(skill.generate_roi_estimate())           # 3-year forecast + sensitivity
