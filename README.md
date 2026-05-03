@@ -3,7 +3,7 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.4.9-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.4.10-green.svg)](CHANGELOG.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--03-brightgreen.svg)
 
 > 💎 **一句话介绍**: 基于《价值主张设计》（亚历山大·奥斯特瓦德著）的完整方法论工具包。覆盖客户洞察、画布分析、优先级计算、竞争战略、实验验证，内置 CEO 视角的商业化路径分析。
@@ -745,10 +745,21 @@ MIT License — 基于《Value Proposition Design》by Alexander Osterwalder et 
 - **Emp ID**: 27768
 - **Nickname**: 渡劫
 
+### 💡 Pro Tips / 专业提示
+
+- **从客户 Jobs 开始** — Jobs 驱动一切，先搞清楚再画布
+- **Fit Score > 0.7 才能推进** — 低于 0.7 说明价值主张与客户画像不匹配
+- **实验先验证致命假设** — 用 lethality 排序，先测试最可能推翻你的假设
+- **竞争战略避免同质化** — 用蓝海四项行动框架（消除-减少-提升-创造）
+- **VPD + JTBD 是最佳搭档** — 将 JTBD 发现的 Jobs 映射到价值主张画布
+- **CEO 视角不可省略** — 画布完成后务必做护城河和商业化路径分析
+
+
 ## 📋 版本历史 (Changelog)
 
 | 版本 | 日期 | 变更 |
 | v2.4.8 | 2026-05-03 | 仓库维护：修复版本历史表格格式（删除错误分隔符行），统一 SKILL.md 与 README.md 版本引用
+| v2.4.10 | 2026-05-03 | 仓库维护：添加 Pro Tips 专业提示章节（中英双语），完善画布分析指导 |
 | v2.4.9 | 2026-05-03 | 仓库维护：修复英文版版本历史表格格式（删除错误分隔符行），SKILL.md 版本对齐，新增实验设计最佳实践 |
 | v2.4.7 | 2026-05-03 | 仓库维护：优化示例 1 画布分析代码格式一致性，统一 SKILL.md 与 README.md 版本引用 |
 | v2.4.5 | 2026-05-03 | 仓库维护：添加英文版版本历史表，统一 pyproject.toml 元数据 |
@@ -766,10 +777,21 @@ MIT License — 基于《Value Proposition Design》by Alexander Osterwalder et 
 
 ---
 
+### 💡 Pro Tips
+
+- **Start with Customer Jobs** — Jobs drive everything; get them right first
+- **Fit Score > 0.7 to proceed** — Below 0.7 means value proposition doesn't match customer profile
+- **Test Lethal Hypotheses First** — Rank by lethality, test what could most disprove your assumption
+- **Avoid Homogenization** — Use Blue Ocean four-action framework (eliminate-reduce-raise-create)
+- **VPD + JTBD is the best pairing** — Map JTBD-discovered Jobs to the value proposition canvas
+- **CEO perspective is mandatory** — Always do moat and monetization path analysis after canvas
+
+
 ## 📋 Version History (English)
 
 | Version | Date | Changes |
 | v2.4.8 | 2026-05-03 | Repo maintenance: fixed changelog table formatting, aligned SKILL.md version with README.md
+| v2.4.10 | 2026-05-03 | Repo maintenance: added Pro Tips section (CN/EN) for canvas analysis guidance |
 | v2.4.9 | 2026-05-03 | Repo maintenance: fixed English changelog table formatting, aligned SKILL.md version, added experiment design best practices |
 | v2.4.5 | 2026-05-03 | Repo maintenance: added English version history table at README end, added classifiers and project.urls to pyproject.toml |
 | v2.4.4 | 2026-05-03 | Repo maintenance: cross-ecosystem consistency review, verified cross-references and version alignment |
@@ -784,4 +806,4 @@ MIT License — 基于《Value Proposition Design》by Alexander Osterwalder et 
 
 ---
 
-*Last Updated: 2026-05-03 | AliDujie Skill Ecosystem | v2.4.9*
+*Last Updated: 2026-05-03 | AliDujie Skill Ecosystem | v2.4.10*
