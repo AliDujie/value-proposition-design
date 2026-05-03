@@ -789,7 +789,6 @@ Phase 4: 呈现与决策
 - **VPD + JTBD 是最佳搭档** — 将 JTBD 发现的 Jobs 映射到价值主张画布
 - **CEO 视角不可省略** — 画布完成后务必做护城河和商业化路径分析
 
-
 ## 📋 版本历史 (Changelog)
 
 | 版本 | 日期 | 变更 |
@@ -824,7 +823,6 @@ Phase 4: 呈现与决策
 - **VPD + JTBD is the best pairing** — Map JTBD-discovered Jobs to the value proposition canvas
 - **CEO perspective is mandatory** — Always do moat and monetization path analysis after canvas
 
-
 ## 📋 Version History (English)
 
 | Version | Date | Changes |
@@ -843,6 +841,14 @@ Phase 4: 呈现与决策
 | v1.7 | 2026-04-25 | Unified skill ecosystem format, updated cross-references |
 | v1.6 | 2026-04-23 | Added badges, ASCII diagram, bilingual support, Why Use This Skill?, Quick Start, best practices |
 | v1.3 | 2026-04-22 | Initial release |
+
+---
+
+### 👨‍💻 Credits
+
+Based on *Value Proposition Design* by Alexander Osterwalder, Yves Pigneur, et al. (Wiley, 2014), covering the Value Proposition Canvas, customer profiling, and fit testing.
+
+**Applicable to:** Product Managers, Entrepreneurs, Designers, Marketers
 
 ---
 
