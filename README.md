@@ -3,8 +3,8 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.4.10-green.svg)](CHANGELOG.md)
-![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--03-brightgreen.svg)
+[![Version](https://img.shields.io/badge/version-2.4.11-green.svg)](CHANGELOG.md)
+![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--04-brightgreen.svg)
 
 > 💎 **一句话介绍**: 基于《价值主张设计》（亚历山大·奥斯特瓦德著）的完整方法论工具包。覆盖客户洞察、画布分析、优先级计算、竞争战略、实验验证，内置 CEO 视角的商业化路径分析。
 
@@ -745,6 +745,41 @@ MIT License — 基于《Value Proposition Design》by Alexander Osterwalder et 
 - **Emp ID**: 27768
 - **Nickname**: 渡劫
 
+### 🚀 完整端到端工作流：从画布到商业化 (End-to-End Workflow)
+
+以下是一个真实场景中，6 个技能如何协作完成从价值主张设计到商业化的完整工作流：
+
+**场景**: B2B SaaS 协作工具需要验证产品-市场契合并制定商业化路径
+
+```
+Phase 1: 客户洞察
+  UDM: 利益相关者访谈 (8 决策者) → 理解采购决策因素
+  JTBD: 核心"工作"=让团队高效协作 → 机会分数 42.3
+  Persona: "中小企业团队负责人" 作为首要角色
+
+Phase 2: VPD 画布分析 (本技能)
+  → analyze_canvas: TeamFlow 价值主张画布分析
+     Jobs: 团队协作/项目管理/知识共享
+     Pains: 沟通不及时/信息分散/版本混乱
+     → Fit Score: 0.78 (超过 0.7 阈值 ✅)
+  → prioritize_experiments: 3 个价值假设按 lethality 排序
+  → design_experiment: "实时协作编辑" 假设验证 (n=150)
+  → blue_ocean_analysis: 消除-减少-提升-创造 四行动框架
+
+Phase 3: 量化验证
+  QuantUX: A/B 测试新协作功能，NPS 从 32 → 58
+
+Phase 4: 呈现与决策
+  SWD: 将 VPD 分析结果和实验数据转化为投资汇报
+  CEO 视角: 护城河分析 + 商业化路径 + 3 年 ROI 估算
+```
+
+> 💡 **VPD 是工作流的商业验证**: JTBD 发现需求 → VPD 验证价值 → QuantUX 量化效果 → SWD 说服决策者
+
+👉 **尝试完整工作流**: [UDM](https://github.com/AliDujie/universal-design-methods) · [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) · [QuantUX](https://github.com/AliDujie/Quantitative-UX-Research) · [Persona](https://github.com/AliDujie/web-persona-skill) · [SWD](https://github.com/AliDujie/storytelling-with-data)
+
+---
+
 ### 💡 Pro Tips / 专业提示
 
 - **从客户 Jobs 开始** — Jobs 驱动一切，先搞清楚再画布
@@ -758,6 +793,7 @@ MIT License — 基于《Value Proposition Design》by Alexander Osterwalder et 
 ## 📋 版本历史 (Changelog)
 
 | 版本 | 日期 | 变更 |
+| v2.4.11 | 2026-05-04 | 仓库维护：添加完整端到端工作流章节（展示从画布到商业化的 6 技能协作流程） |
 | v2.4.8 | 2026-05-03 | 仓库维护：修复版本历史表格格式（删除错误分隔符行），统一 SKILL.md 与 README.md 版本引用
 | v2.4.10 | 2026-05-03 | 仓库维护：添加 Pro Tips 专业提示章节（中英双语），完善画布分析指导 |
 | v2.4.9 | 2026-05-03 | 仓库维护：修复英文版版本历史表格格式（删除错误分隔符行），SKILL.md 版本对齐，新增实验设计最佳实践 |
@@ -790,6 +826,7 @@ MIT License — 基于《Value Proposition Design》by Alexander Osterwalder et 
 ## 📋 Version History (English)
 
 | Version | Date | Changes |
+| v2.4.11 | 2026-05-04 | Repo maintenance: added end-to-end workflow section showing 6-skill collaboration from canvas to commercialization
 | v2.4.8 | 2026-05-03 | Repo maintenance: fixed changelog table formatting, aligned SKILL.md version with README.md
 | v2.4.10 | 2026-05-03 | Repo maintenance: added Pro Tips section (CN/EN) for canvas analysis guidance |
 | v2.4.9 | 2026-05-03 | Repo maintenance: fixed English changelog table formatting, aligned SKILL.md version, added experiment design best practices |
@@ -806,4 +843,4 @@ MIT License — 基于《Value Proposition Design》by Alexander Osterwalder et 
 
 ---
 
-*Last Updated: 2026-05-03 | AliDujie Skill Ecosystem | v2.4.10*
+*Last Updated: 2026-05-04 | AliDujie Skill Ecosystem | v2.4.11*
