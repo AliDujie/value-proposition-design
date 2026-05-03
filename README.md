@@ -3,7 +3,7 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.4.7-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.4.8-green.svg)](CHANGELOG.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--03-brightgreen.svg)
 
 > 💎 **一句话介绍**: 基于《价值主张设计》（亚历山大·奥斯特瓦德著）的完整方法论工具包。覆盖客户洞察、画布分析、优先级计算、竞争战略、实验验证，内置 CEO 视角的商业化路径分析。
@@ -749,9 +749,9 @@ MIT License — 基于《Value Proposition Design》by Alexander Osterwalder et 
 ## 📋 版本历史 (Changelog)
 
 | 版本 | 日期 | 变更 |
+| v2.4.8 | 2026-05-03 | 仓库维护：修复版本历史表格格式（删除错误分隔符行），统一 SKILL.md 与 README.md 版本引用
 | v2.4.7 | 2026-05-03 | 仓库维护：优化示例 1 画布分析代码格式一致性，统一 SKILL.md 与 README.md 版本引用 |
 | v2.4.5 | 2026-05-03 | 仓库维护：添加英文版版本历史表，统一 pyproject.toml 元数据 |
-|------|------|------|
 | v2.4.4 | 2026-05-03 | 仓库维护：跨技能一致性审查，验证交叉引用和版本对齐 |
 | v2.4.3 | 2026-05-02 | 仓库维护：为英文版添加 Quick Decision Guide 导航表，增强技能间交叉引用 |
 | v2.4.2 | 2026-05-02 | 仓库维护：优化实验设计示例代码清晰度，增强技能生态工作流 2 描述，统一交叉引用格式，补充 Features at a Glance 表 |
@@ -769,6 +769,7 @@ MIT License — 基于《Value Proposition Design》by Alexander Osterwalder et 
 ## 📋 Version History (English)
 
 | Version | Date | Changes |
+| v2.4.8 | 2026-05-03 | Repo maintenance: fixed changelog table formatting, aligned SKILL.md version with README.md
 |---------|------|--------|
 | v2.4.5 | 2026-05-03 | Repo maintenance: added English version history table at README end, added classifiers and project.urls to pyproject.toml |
 | v2.4.4 | 2026-05-03 | Repo maintenance: cross-ecosystem consistency review, verified cross-references and version alignment |
@@ -783,4 +784,4 @@ MIT License — 基于《Value Proposition Design》by Alexander Osterwalder et 
 
 ---
 
-*Last Updated: 2026-05-03 | AliDujie Skill Ecosystem | v2.4.7*
+*Last Updated: 2026-05-03 | AliDujie Skill Ecosystem | v2.4.8*
