@@ -3,8 +3,8 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.4.17-green.svg)](CHANGELOG.md)
-![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--04-brightgreen.svg)
+[![Version](https://img.shields.io/badge/version-2.4.18-green.svg)](CHANGELOG.md)
+![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--05-brightgreen.svg)
 
 > 💎 **一句话介绍**: 基于《价值主张设计》（亚历山大·奥斯特瓦德著）的完整方法论工具包。覆盖客户洞察、画布分析、优先级计算、竞争战略、实验验证，内置 CEO 视角的商业化路径分析。
 
@@ -281,6 +281,9 @@ value-proposition-design/
 │              ↑                          ↑                   │
 │              │                    👤 Web Persona             │
 │              └────────────────────  (人物角色)               │
+│                                         ↓                   │
+│                                    🧠 Structured Thinking   │
+│                                    Model (结构化思维)        │
 └─────────────────────────────────────────────────────────────┘
 ```
 
@@ -630,6 +633,9 @@ This skill is part of the **AliDujie UX Research Skills Ecosystem**:
 │              ↑                          ↑                   │
 │              │                    👤 Web Persona             │
 │              └────────────────────  (personas)               │
+│                                         ↓                   │
+│                                    🧠 Structured Thinking   │
+│                                    Model                     │
 └─────────────────────────────────────────────────────────────┘
 ```
 
@@ -875,6 +881,7 @@ Phase 4: 呈现与决策
 
 | 版本 | 日期 | 变更 |
 | v2.4.17 | 2026-05-04 | 仓库维护：修复版本历史表格 `| |` 格式错误，补充英文目录中端到端工作流链接
+| v2.4.18 | 2026-05-05 | Repo maintenance: added Structured Thinking Model to ecosystem diagrams (CN+EN), verified cross-references consistency |
 | v2.4.16 | 2026-05-04 | 仓库维护：添加英文目录(Table of Contents)和5分钟快速开始检查清单；优化英文版 Quick Start 场景描述，增强 Features at a Glance 可读性
 | v2.4.14 | 2026-05-04 | 仓库维护：修复 SKILL.md 版本不一致 (2.4.11→2.4.13)，对齐所有版本引用
 | v2.4.12 | 2026-05-04 | 仓库维护：修复版本历史排序（v2.4.8→v2.4.10 顺序校正），增强英文版 Quick Start 场景注释 |
@@ -941,4 +948,5 @@ Based on *Value Proposition Design* by Alexander Osterwalder, Yves Pigneur, et a
 
 ---
 
-*Last Updated: 2026-05-04 | AliDujie Skill Ecosystem | v2.4.17*
+*Last Updated: 2026-05-05 | AliDujie Skill Ecosystem | v2.4.17*
+| v2.4.18 | 2026-05-05 | Repo maintenance: added Structured Thinking Model to ecosystem diagrams, verified cross-references |
