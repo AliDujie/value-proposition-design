@@ -3,7 +3,7 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.4.13-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.4.14-green.svg)](CHANGELOG.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--04-brightgreen.svg)
 
 > 💎 **一句话介绍**: 基于《价值主张设计》（亚历山大·奥斯特瓦德著）的完整方法论工具包。覆盖客户洞察、画布分析、优先级计算、竞争战略、实验验证，内置 CEO 视角的商业化路径分析。
@@ -311,6 +311,20 @@ value-proposition-design/
 | **有时限** | 实验必须有明确周期 | "运行 14 天" |
 | **有基准** | 需要对照组或历史数据 | "相比上周下降 30%" |
 
+### ❓ 常见问题 (FAQ)
+
+**Q: 价值主张画布和精益画布有什么区别？**
+A: 精益画布侧重商业模式整体（问题、方案、渠道、收入等），价值主张画布深入聚焦"客户-产品"匹配。VPD 是精益画布中"价值主张"模块的展开和深化。
+
+**Q: Fit Score < 0.7 怎么办？**
+A: 说明价值主张与客户画像不匹配。优先解决差距最大的部分：可能是客户痛点没被缓解，或者收益没被充分传递。回到客户访谈，重新理解 Jobs/Pains/Gains。
+
+**Q: 实验设计和 A/B 测试是一回事吗？**
+A: 不完全。VPD 的实验设计侧重验证"价值假设"（用户是否在意这个价值），A/B 测试侧重比较两个版本的性能差异。建议先用 VPD 验证价值假设，再用 QuantUX 做 A/B 测试。
+
+**Q: CEO 视角分析包含什么？**
+A: 包含护城河分析（网络效应/转换成本/品牌/规模）、商业化路径（免费增值/订阅/交易抽成）、ROI 估算（获客成本 vs 生命周期价值）。
+
 ### 📚 关于《Value Proposition Design》
 
 - **书名**: Value Proposition Design: How to Create Products and Services Customers Want
@@ -535,6 +549,20 @@ if canvas.fit_score >= 0.7:
 3. **Focus on high-severity pains** — Address the most painful problems first
 4. **Measure fit score** — Track how well your value map addresses customer profile
 5. **Include CEO perspective** — Always consider moat, monetization, and ROI
+
+### ❓ FAQ
+
+**Q: What's the difference between the Value Proposition Canvas and Lean Canvas?**
+A: Lean Canvas covers the entire business model (problem, solution, channels, revenue, etc.); the Value Proposition Canvas zooms deep into the "customer-product" fit. VPD is an expansion of the "value proposition" module from Lean Canvas.
+
+**Q: What if Fit Score < 0.7?**
+A: It means the value proposition doesn't match the customer profile. Address the biggest gaps first: either customer pains aren't being relieved, or gains aren't being delivered. Return to customer interviews and re-understand Jobs/Pains/Gains.
+
+**Q: Is experiment design the same as A/B testing?**
+A: Not exactly. VPD experiment design focuses on validating "value hypotheses" (do users care about this value?), while A/B testing compares two versions' performance. Validate value hypotheses with VPD first, then use QuantUX for A/B testing.
+
+**Q: What does CEO-perspective analysis include?**
+A: Moat analysis (network effects/switching costs/brand/scale), monetization paths (freemium/subscription/transaction fees), and ROI estimation (CAC vs LTV).
 
 ### 🌟 User Reviews
 
@@ -792,7 +820,7 @@ Phase 4: 呈现与决策
 ## 📋 版本历史 (Changelog)
 
 | 版本 | 日期 | 变更 |
-| v2.4.13 | 2026-05-04 | 仓库维护：修复 SKILL.md 版本不一致 (2.4.11→2.4.13)，对齐所有版本引用
+| v2.4.14 | 2026-05-04 | 仓库维护：修复 SKILL.md 版本不一致 (2.4.11→2.4.13)，对齐所有版本引用
 | v2.4.12 | 2026-05-04 | 仓库维护：修复版本历史排序（v2.4.8→v2.4.10 顺序校正），增强英文版 Quick Start 场景注释 |
 | v2.4.11 | 2026-05-04 | 仓库维护：添加完整端到端工作流章节（展示从画布到商业化的 6 技能协作流程） |
 | v2.4.10 | 2026-05-03 | 仓库维护：添加 Pro Tips 专业提示章节（中英双语），完善画布分析指导 |
@@ -826,7 +854,7 @@ Phase 4: 呈现与决策
 ## 📋 Version History (English)
 
 | Version | Date | Changes |
-| v2.4.13 | 2026-05-04 | Repo maintenance: fixed SKILL.md version mismatch (2.4.11→2.4.13), aligned all version references, added Credits section |
+| v2.4.14 | 2026-05-04 | Repo maintenance: fixed SKILL.md version mismatch (2.4.11→2.4.13), aligned all version references, added Credits section |
 | v2.4.12 | 2026-05-04 | Repo maintenance: fixed changelog ordering (v2.4.8→v2.4.10 sequence corrected), enhanced English Quick Start scenario comments |
 | v2.4.11 | 2026-05-04 | Repo maintenance: added end-to-end workflow section showing 6-skill collaboration from canvas to commercialization |
 | v2.4.10 | 2026-05-03 | Repo maintenance: added Pro Tips section (CN/EN) for canvas analysis guidance |
@@ -854,4 +882,4 @@ Based on *Value Proposition Design* by Alexander Osterwalder, Yves Pigneur, et a
 
 ---
 
-*Last Updated: 2026-05-04 | AliDujie Skill Ecosystem | v2.4.13*
+*Last Updated: 2026-05-04 | AliDujie Skill Ecosystem | v2.4.14*
