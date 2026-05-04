@@ -8,6 +8,17 @@
 
 > 💎 **一句话介绍**: 基于《价值主张设计》（亚历山大·奥斯特瓦德著）的完整方法论工具包。覆盖客户洞察、画布分析、优先级计算、竞争战略、实验验证，内置 CEO 视角的商业化路径分析。
 
+### ✅ 5 分钟快速开始检查清单
+
+- [ ] **安装** — `cp -r value-proposition-design /your/agent/skills/`
+- [ ] **导入** — `from vpd import VPDSkill`
+- [ ] **初始化** — `skill = VPDSkill("产品名", "目标用户")`
+- [ ] **价值主张画布** — `skill.analyze_canvas(product_name="...", jobs=[...], pains=[...], gains=[...])`
+- [ ] **访谈提纲** — `skill.generate_interview()`
+- [ ] **实验设计** — `skill.design_experiment(hypothesis="...", metric="...")`
+- [ ] **CEO 分析** — `skill.generate_canvas(include_ceo_analysis=True)`
+- [ ] **竞争战略** — `skill.analyze_competitor(...)`
+
 [English](#english) | [中文](#中文说明)
 
 ---
@@ -342,6 +353,23 @@ A: 包含护城河分析（网络效应/转换成本/品牌/规模）、商业�
 ---
 
 ## English
+
+### 📑 Table of Contents
+
+- [Why Use This Skill?](#-why-use-this-skill)
+- [Quick Decision Guide](#-quick-decision-guide)
+- [Features at a Glance](#-features-at-a-glance)
+- [Quick Start](#-quick-start)
+- [10 Core Capabilities](#-10-core-capabilities)
+- [Practical Examples](#-practical-examples)
+- [Who Is This For?](#-who-is-this-for)
+- [Troubleshooting](#-troubleshooting)
+- [Best Practices](#-best-practices)
+- [FAQ](#-faq)
+- [User Reviews](#-user-reviews)
+- [Extended Reading](#-extended-reading)
+- [Related Skills](#-related-skills-1)
+- [Version History](#-version-history-english)
 
 ### 🌟 Why Use This Skill?
 
