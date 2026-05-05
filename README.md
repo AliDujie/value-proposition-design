@@ -757,6 +757,7 @@ competitive-strategy python-toolkit openclaw-skill alicloud
 ### 📋 Changelog
 
 | Version | Date | Changes |
+|---------|------|--------|
 | v2.4.7 | 2026-05-03 | Repo maintenance: improved Example 1 canvas analysis code formatting consistency, aligned SKILL.md version with README.md |
 | v2.4.5 | 2026-05-03 | Repo maintenance: added English version history table at README end, added classifiers and project.urls to pyproject.toml |
 | v2.4.4 | 2026-05-03 | Repo maintenance: cross-ecosystem consistency review, verified cross-references and version alignment |
@@ -960,8 +961,8 @@ Phase 4: 呈现与决策
 ## 📋 版本历史 (Changelog)
 
 | 版本 | 日期 | 变更 |
+|------|------|------|
 | v2.4.19 | 2026-05-05 | Repo maintenance: aligned SKILL.md + pyproject.toml versions, deduplicated English changelog, enhanced experiment design examples |
-| v2.4.19 | 2026-05-05 | Repo maintenance: aligned SKILL.md + pyproject.toml versions, deduplicated English changelog, enhanced experiment design examples
 | v2.4.18 | 2026-05-05 | Repo maintenance: added Structured Thinking Model to ecosystem diagrams (CN+EN), verified cross-references consistency |
 | v2.4.17 | 2026-05-04 | 仓库维护：修复版本历史表格 `| |` 格式错误，补充英文目录中端到端工作流链接
 | v2.4.16 | 2026-05-04 | 仓库维护：添加英文目录(Table of Contents)和5分钟快速开始检查清单；优化英文版 Quick Start 场景描述，增强 Features at a Glance 可读性
@@ -999,9 +1000,9 @@ Phase 4: 呈现与决策
 ## 📋 Version History (English)
 
 | Version | Date | Changes |
+|---------|------|--------|
 | v2.4.19 | 2026-05-05 | Repo maintenance: aligned SKILL.md + pyproject.toml versions, deduplicated English changelog, enhanced experiment design examples |
-| v2.4.19 | 2026-05-05 | Repo maintenance: aligned SKILL.md + pyproject.toml versions, deduplicated English changelog, enhanced experiment design examples
-| v2.4.18 | 2026-05-05 | Repo maintenance: added Structured Thinking Model to ecosystem diagrams, verified cross-references
+| v2.4.18 | 2026-05-05 | Repo maintenance: added Structured Thinking Model to ecosystem diagrams, verified cross-references |
 | v2.4.17 | 2026-05-04 | Repo maintenance: fixed changelog table `| |` formatting, added end-to-end workflow English TOC link
 | v2.4.16 | 2026-05-04 | Repo maintenance: added English TOC and 5-min checklist; improved English Quick Start scenario descriptions, enhanced Features at a Glance readability
 | v2.4.14 | 2026-05-04 | Repo maintenance: fixed SKILL.md version mismatch (2.4.11→2.4.13), aligned all version references, added Credits section |
