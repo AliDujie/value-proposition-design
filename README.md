@@ -4,8 +4,8 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.4.19-green.svg)](CHANGELOG.md)
-![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--05-brightgreen.svg)
+[![Version](https://img.shields.io/badge/version-2.4.20-green.svg)](CHANGELOG.md)
+![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--06-brightgreen.svg)
 
 > 💎 **一句话介绍**: 基于《价值主张设计》（亚历山大·奥斯特瓦德著）的完整方法论工具包。覆盖客户洞察、画布分析、优先级计算、竞争战略、实验验证，内置 CEO 视角的商业化路径分析。
 
@@ -962,6 +962,7 @@ Phase 4: 呈现与决策
 
 | 版本 | 日期 | 变更 |
 |------|------|------|
+| v2.4.20 | 2026-05-06 | 仓库维护：添加 Structured Thinking Model 协作引用，优化技能生态工作流描述一致性 |
 | v2.4.19 | 2026-05-05 | Repo maintenance: aligned SKILL.md + pyproject.toml versions, deduplicated English changelog, enhanced experiment design examples |
 | v2.4.18 | 2026-05-05 | Repo maintenance: added Structured Thinking Model to ecosystem diagrams (CN+EN), verified cross-references consistency |
 | v2.4.17 | 2026-05-04 | 仓库维护：修复版本历史表格 `| |` 格式错误，补充英文目录中端到端工作流链接
@@ -1001,6 +1002,7 @@ Phase 4: 呈现与决策
 
 | Version | Date | Changes |
 |---------|------|--------|
+| v2.4.20 | 2026-05-06 | Repo maintenance: added Structured Thinking Model collaboration reference, improved skill ecosystem workflow description consistency |
 | v2.4.19 | 2026-05-05 | Repo maintenance: aligned SKILL.md + pyproject.toml versions, deduplicated English changelog, enhanced experiment design examples |
 | v2.4.18 | 2026-05-05 | Repo maintenance: added Structured Thinking Model to ecosystem diagrams, verified cross-references |
 | v2.4.17 | 2026-05-04 | Repo maintenance: fixed changelog table `| |` formatting, added end-to-end workflow English TOC link
@@ -1034,4 +1036,4 @@ Based on *Value Proposition Design* by Alexander Osterwalder, Yves Pigneur, et a
 
 ---
 
-*Last Updated: 2026-05-05 | AliDujie Skill Ecosystem | v2.4.19*
+*Last Updated: 2026-05-06 | AliDujie Skill Ecosystem | v2.4.20*
