@@ -4,7 +4,7 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.4.20-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.4.21-green.svg)](CHANGELOG.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--06-brightgreen.svg)
 
 > 💎 **一句话介绍**: 基于《价值主张设计》（亚历山大·奥斯特瓦德著）的完整方法论工具包。覆盖客户洞察、画布分析、优先级计算、竞争战略、实验验证，内置 CEO 视角的商业化路径分析。
@@ -946,6 +946,30 @@ Phase 4: 呈现与决策
 > 💡 **VPD 是工作流的商业验证**: JTBD 发现需求 → VPD 验证价值 → QuantUX 量化效果 → SWD 说服决策者
 
 👉 **尝试完整工作流**: [UDM](https://github.com/AliDujie/universal-design-methods) · [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) · [QuantUX](https://github.com/AliDujie/Quantitative-UX-Research) · [Persona](https://github.com/AliDujie/web-persona-skill) · [SWD](https://github.com/AliDujie/storytelling-with-data)
+
+---
+
+### 🌟 为什么选择 AliDujie 技能生态系统？
+
+本技能是 **AliDujie UX 研究技能生态系统** 的价值设计核心，与其他技能无缝协作：
+
+| 技能 | 角色 | 协作方式 |
+|------|------|----------|
+| [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) | 方法核心 | UDM 访谈/观察 → VPD 画布填充 |
+| [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) | 需求洞察 | JTBD Jobs → VPD 价值主张映射 |
+| [Quantitative UX Research](https://github.com/AliDujie/Quantitative-UX-Research) | 定量验证 | VPD 假设 → QuantUX A/B 测试验证 |
+| [Web Persona](https://github.com/AliDujie/web-persona-skill) | 用户角色 | Persona 角色 → VPD 客户画像对接 |
+| [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) | 数据叙事 | VPD 分析结果 → SWD 高管汇报 |
+
+**使用完整生态系统的优势：**
+
+- ✅ **全流程覆盖** — 从发现需求 → 角色创建 → 价值验证 → 数据呈现
+- ✅ **一致 API 设计** — 所有技能使用统一的 Skill("产品名") 入口
+- ✅ **零外部依赖** — 纯 Python 标准库实现，开箱即用
+- ✅ **双语支持** — 完整中英文文档，适合国际化团队
+- ✅ **积极维护** — 定期更新新功能和改进文档
+
+👉 **探索完整生态系统**: [UDM](https://github.com/AliDujie/universal-design-methods) · [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) · [QuantUX](https://github.com/AliDujie/Quantitative-UX-Research) · [Persona](https://github.com/AliDujie/web-persona-skill) · [SWD](https://github.com/AliDujie/storytelling-with-data)
 
 ---
 
