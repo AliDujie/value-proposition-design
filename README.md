@@ -1026,6 +1026,7 @@ Phase 4: 呈现与决策
 
 | Version | Date | Changes |
 |---------|------|--------|
+| v2.4.21 | 2026-05-06 | Repo maintenance: fixed footer version alignment |
 | v2.4.20 | 2026-05-06 | Repo maintenance: added Structured Thinking Model collaboration reference, improved skill ecosystem workflow description consistency |
 | v2.4.19 | 2026-05-05 | Repo maintenance: aligned SKILL.md + pyproject.toml versions, deduplicated English changelog, enhanced experiment design examples |
 | v2.4.18 | 2026-05-05 | Repo maintenance: added Structured Thinking Model to ecosystem diagrams, verified cross-references |
@@ -1060,4 +1061,4 @@ Based on *Value Proposition Design* by Alexander Osterwalder, Yves Pigneur, et a
 
 ---
 
-*Last Updated: 2026-05-06 | AliDujie Skill Ecosystem | v2.4.20*
+*Last Updated: 2026-05-06 | AliDujie Skill Ecosystem | v2.4.21*
