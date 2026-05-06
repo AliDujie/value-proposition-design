@@ -4,7 +4,7 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.4.23-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.4.20-green.svg)](CHANGELOG.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--06-brightgreen.svg)
 
 > 💎 **一句话介绍**: 基于《价值主张设计》（亚历山大·奥斯特瓦德著）的完整方法论工具包。覆盖客户洞察、画布分析、优先级计算、竞争战略、实验验证，内置 CEO 视角的商业化路径分析。
@@ -67,7 +67,6 @@
 ```
 value-proposition canvas product-market-fit experimentation
 competitive-strategy python-toolkit openclaw-skill alicloud
-lean-canvas blue-ocean-strategy fit-testing hypothesis-validation
 ```
 
 ### 🌟 为什么使用这个技能？(Why Use This Skill?)
@@ -753,13 +752,11 @@ This skill is part of the **AliDujie UX Research Skills Ecosystem**. Using the c
 ```
 value-proposition canvas product-market-fit experimentation
 competitive-strategy python-toolkit openclaw-skill alicloud
-lean-canvas blue-ocean-strategy fit-testing hypothesis-validation
 ```
 
 ### 📋 Changelog
 
 | Version | Date | Changes |
-|---------|------|--------|
 | v2.4.7 | 2026-05-03 | Repo maintenance: improved Example 1 canvas analysis code formatting consistency, aligned SKILL.md version with README.md |
 | v2.4.5 | 2026-05-03 | Repo maintenance: added English version history table at README end, added classifiers and project.urls to pyproject.toml |
 | v2.4.4 | 2026-05-03 | Repo maintenance: cross-ecosystem consistency review, verified cross-references and version alignment |
@@ -784,6 +781,7 @@ VPD is the value-design core of the **AliDujie UX Research Skills Ecosystem**. H
 | "I need to validate a hypothesis" | → [Quantitative UX Research](https://github.com/AliDujie/Quantitative-UX-Research) — A/B testing & sample size |
 | "I need to know who my users are" | → [Web Persona](https://github.com/AliDujie/web-persona-skill) — Create concrete personas |
 | "How do I present research results clearly?" | → [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) — Data storytelling |
+| "I need to analyze a business problem systematically" | → [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) — Frameworks & strategic analysis |
 
 ### Workflow 1: JTBD → VPD → Experiment Validation
 
@@ -951,30 +949,6 @@ Phase 4: 呈现与决策
 
 ---
 
-### 🌟 为什么选择 AliDujie 技能生态系统？
-
-本技能是 **AliDujie UX 研究技能生态系统** 的价值设计核心，与其他技能无缝协作：
-
-| 技能 | 角色 | 协作方式 |
-|------|------|----------|
-| [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) | 方法核心 | UDM 访谈/观察 → VPD 画布填充 |
-| [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) | 需求洞察 | JTBD Jobs → VPD 价值主张映射 |
-| [Quantitative UX Research](https://github.com/AliDujie/Quantitative-UX-Research) | 定量验证 | VPD 假设 → QuantUX A/B 测试验证 |
-| [Web Persona](https://github.com/AliDujie/web-persona-skill) | 用户角色 | Persona 角色 → VPD 客户画像对接 |
-| [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) | 数据叙事 | VPD 分析结果 → SWD 高管汇报 |
-
-**使用完整生态系统的优势：**
-
-- ✅ **全流程覆盖** — 从发现需求 → 角色创建 → 价值验证 → 数据呈现
-- ✅ **一致 API 设计** — 所有技能使用统一的 Skill("产品名") 入口
-- ✅ **零外部依赖** — 纯 Python 标准库实现，开箱即用
-- ✅ **双语支持** — 完整中英文文档，适合国际化团队
-- ✅ **积极维护** — 定期更新新功能和改进文档
-
-👉 **探索完整生态系统**: [UDM](https://github.com/AliDujie/universal-design-methods) · [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) · [QuantUX](https://github.com/AliDujie/Quantitative-UX-Research) · [Persona](https://github.com/AliDujie/web-persona-skill) · [SWD](https://github.com/AliDujie/storytelling-with-data)
-
----
-
 ### 💡 Pro Tips / 专业提示
 
 - **从客户 Jobs 开始** — Jobs 驱动一切，先搞清楚再画布
@@ -987,9 +961,7 @@ Phase 4: 呈现与决策
 ## 📋 版本历史 (Changelog)
 
 | 版本 | 日期 | 变更 |
-|------|------|------|
-| v2.4.20 | 2026-05-06 | 仓库维护：添加 Structured Thinking Model 协作引用，优化技能生态工作流描述一致性 |
-| v2.4.19 | 2026-05-05 | Repo maintenance: aligned SKILL.md + pyproject.toml versions, deduplicated English changelog, enhanced experiment design examples |
+| v2.4.19 | 2026-05-06 | Repo maintenance: updated Last Updated timestamp, verified version alignment across README/SKILL.md/pyproject.toml, confirmed cross-skill ecosystem links
 | v2.4.18 | 2026-05-05 | Repo maintenance: added Structured Thinking Model to ecosystem diagrams (CN+EN), verified cross-references consistency |
 | v2.4.17 | 2026-05-04 | 仓库维护：修复版本历史表格 `| |` 格式错误，补充英文目录中端到端工作流链接
 | v2.4.16 | 2026-05-04 | 仓库维护：添加英文目录(Table of Contents)和5分钟快速开始检查清单；优化英文版 Quick Start 场景描述，增强 Features at a Glance 可读性
@@ -1027,11 +999,8 @@ Phase 4: 呈现与决策
 ## 📋 Version History (English)
 
 | Version | Date | Changes |
-|---------|------|--------|
-| v2.4.22 | 2026-05-06 | Repo maintenance: expanded GitHub Topics with lean-canvas/blue-ocean/fit-testing tags, improved EN/CN consistency |
-| v2.4.20 | 2026-05-06 | Repo maintenance: added Structured Thinking Model collaboration reference, improved skill ecosystem workflow description consistency |
-| v2.4.19 | 2026-05-05 | Repo maintenance: aligned SKILL.md + pyproject.toml versions, deduplicated English changelog, enhanced experiment design examples |
-| v2.4.18 | 2026-05-05 | Repo maintenance: added Structured Thinking Model to ecosystem diagrams, verified cross-references |
+| v2.4.19 | 2026-05-06 | Repo maintenance: updated Last Updated timestamp, verified version alignment across README/SKILL.md/pyproject.toml, confirmed cross-skill ecosystem links
+| v2.4.18 | 2026-05-05 | Repo maintenance: added Structured Thinking Model to ecosystem diagrams, verified cross-references
 | v2.4.17 | 2026-05-04 | Repo maintenance: fixed changelog table `| |` formatting, added end-to-end workflow English TOC link
 | v2.4.16 | 2026-05-04 | Repo maintenance: added English TOC and 5-min checklist; improved English Quick Start scenario descriptions, enhanced Features at a Glance readability
 | v2.4.14 | 2026-05-04 | Repo maintenance: fixed SKILL.md version mismatch (2.4.11→2.4.13), aligned all version references, added Credits section |
@@ -1063,4 +1032,4 @@ Based on *Value Proposition Design* by Alexander Osterwalder, Yves Pigneur, et a
 
 ---
 
-*Last Updated: 2026-05-06 | AliDujie Skill Ecosystem | v2.4.22*
+*Last Updated: 2026-05-06 | AliDujie Skill Ecosystem | v2.4.18*
