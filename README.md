@@ -4,7 +4,7 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.4.24-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.4.25-green.svg)](CHANGELOG.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--07-brightgreen.svg)
 
 > 💎 **一句话介绍**: 基于《价值主张设计》（亚历山大·奥斯特瓦德著）的完整方法论工具包。覆盖客户洞察、画布分析、优先级计算、竞争战略、实验验证，内置 CEO 视角的商业化路径分析。
@@ -754,6 +754,12 @@ value-proposition canvas product-market-fit experimentation
 competitive-strategy python-toolkit openclaw-skill alicloud
 ```
 
+### 📦 Dependencies
+
+- Python >= 3.9
+- **No external dependencies** (pure standard library)
+- Cross-platform: macOS / Linux / Windows
+
 ### 📋 Changelog
 
 | Version | Date | Changes |
@@ -966,6 +972,7 @@ Phase 4: 呈现与决策
 
 | 版本 | 日期 | 变更 |
 |------|------|------|
+| v2.4.25 | 2026-05-07 | Repo maintenance: added English Dependencies section, verified ecosystem cross-references |
 | v2.4.24 | 2026-05-07 | Repo maintenance: added experiment velocity Pro Tip, enhanced JTBD-VPD workflow integration example |
 | v2.4.23 | 2026-05-06 | 仓库维护：更新版本至 2.4.23，验证生态交叉引用和双语一致性 |
 | v2.4.19 | 2026-05-06 | Repo maintenance: updated Last Updated timestamp, verified version alignment across README/SKILL.md/pyproject.toml, confirmed cross-skill ecosystem links
@@ -1008,6 +1015,7 @@ Phase 4: 呈现与决策
 
 | Version | Date | Changes |
 |---------|------|--------|
+| v2.4.25 | 2026-05-07 | Repo maintenance: added English Dependencies section, verified ecosystem cross-references |
 | v2.4.24 | 2026-05-07 | Repo maintenance: added experiment velocity Pro Tip, enhanced JTBD-VPD workflow integration example |
 | v2.4.19 | 2026-05-06 | Repo maintenance: updated Last Updated timestamp, verified version alignment across README/SKILL.md/pyproject.toml, confirmed cross-skill ecosystem links
 | v2.4.18 | 2026-05-05 | Repo maintenance: added Structured Thinking Model to ecosystem diagrams, verified cross-references
