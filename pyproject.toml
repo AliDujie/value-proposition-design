@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "value-proposition-design"
-version = "2.4.21"
+version = "2.4.22"
 description = "Value Proposition Design Toolkit - 价值主张设计工具包"
 readme = "README.md"
 requires-python = ">=3.9"
