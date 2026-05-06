@@ -4,7 +4,7 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.4.21-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.4.22-green.svg)](CHANGELOG.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--06-brightgreen.svg)
 
 > 💎 **一句话介绍**: 基于《价值主张设计》（亚历山大·奥斯特瓦德著）的完整方法论工具包。覆盖客户洞察、画布分析、优先级计算、竞争战略、实验验证，内置 CEO 视角的商业化路径分析。
@@ -67,6 +67,7 @@
 ```
 value-proposition canvas product-market-fit experimentation
 competitive-strategy python-toolkit openclaw-skill alicloud
+lean-canvas blue-ocean-strategy fit-testing hypothesis-validation
 ```
 
 ### 🌟 为什么使用这个技能？(Why Use This Skill?)
@@ -752,6 +753,7 @@ This skill is part of the **AliDujie UX Research Skills Ecosystem**. Using the c
 ```
 value-proposition canvas product-market-fit experimentation
 competitive-strategy python-toolkit openclaw-skill alicloud
+lean-canvas blue-ocean-strategy fit-testing hypothesis-validation
 ```
 
 ### 📋 Changelog
@@ -1026,7 +1028,7 @@ Phase 4: 呈现与决策
 
 | Version | Date | Changes |
 |---------|------|--------|
-| v2.4.21 | 2026-05-06 | Repo maintenance: fixed footer version alignment |
+| v2.4.22 | 2026-05-06 | Repo maintenance: expanded GitHub Topics with lean-canvas/blue-ocean/fit-testing tags, improved EN/CN consistency |
 | v2.4.20 | 2026-05-06 | Repo maintenance: added Structured Thinking Model collaboration reference, improved skill ecosystem workflow description consistency |
 | v2.4.19 | 2026-05-05 | Repo maintenance: aligned SKILL.md + pyproject.toml versions, deduplicated English changelog, enhanced experiment design examples |
 | v2.4.18 | 2026-05-05 | Repo maintenance: added Structured Thinking Model to ecosystem diagrams, verified cross-references |
@@ -1061,4 +1063,4 @@ Based on *Value Proposition Design* by Alexander Osterwalder, Yves Pigneur, et a
 
 ---
 
-*Last Updated: 2026-05-06 | AliDujie Skill Ecosystem | v2.4.21*
+*Last Updated: 2026-05-06 | AliDujie Skill Ecosystem | v2.4.22*
