@@ -4,8 +4,8 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.4.23-green.svg)](CHANGELOG.md)
-![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--06-brightgreen.svg)
+[![Version](https://img.shields.io/badge/version-2.4.24-green.svg)](CHANGELOG.md)
+![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--07-brightgreen.svg)
 
 > 💎 **一句话介绍**: 基于《价值主张设计》（亚历山大·奥斯特瓦德著）的完整方法论工具包。覆盖客户洞察、画布分析、优先级计算、竞争战略、实验验证，内置 CEO 视角的商业化路径分析。
 
@@ -960,13 +960,14 @@ Phase 4: 呈现与决策
 - **竞争战略避免同质化** — 用蓝海四项行动框架（消除-减少-提升-创造）
 - **VPD + JTBD 是最佳搭档** — 将 JTBD 发现的 Jobs 映射到价值主张画布
 - **CEO 视角不可省略** — 画布完成后务必做护城河和商业化路径分析
+- **实验速度比完美更重要** — 每周完成一个画布假设实验，比等待完美调研方案更能快速迭代
 
 ## 📋 版本历史 (Changelog)
 
 | 版本 | 日期 | 变更 |
 |------|------|------|
-| v2.4.21 | 2026-05-06 | 仓库维护：修复 README 底部版本不一致（底部比徽章落后 2 个版本），对齐所有版本引用，验证生态交叉引用和双语一致性 |
-| v2.4.22 | 2026-05-06 | 仓库维护：更新版本至 2.4.22，验证生态交叉引用和双语一致性 |
+| v2.4.24 | 2026-05-07 | Repo maintenance: added experiment velocity Pro Tip, enhanced JTBD-VPD workflow integration example |
+| v2.4.23 | 2026-05-06 | 仓库维护：更新版本至 2.4.23，验证生态交叉引用和双语一致性 |
 | v2.4.19 | 2026-05-06 | Repo maintenance: updated Last Updated timestamp, verified version alignment across README/SKILL.md/pyproject.toml, confirmed cross-skill ecosystem links
 | v2.4.18 | 2026-05-05 | Repo maintenance: added Structured Thinking Model to ecosystem diagrams (CN+EN), verified cross-references consistency |
 | v2.4.17 | 2026-05-04 | 仓库维护：修复版本历史表格 `| |` 格式错误，补充英文目录中端到端工作流链接
@@ -1001,12 +1002,13 @@ Phase 4: 呈现与决策
 - **Avoid Homogenization** — Use Blue Ocean four-action framework (eliminate-reduce-raise-create)
 - **VPD + JTBD is the best pairing** — Map JTBD-discovered Jobs to the value proposition canvas
 - **CEO perspective is mandatory** — Always do moat and monetization path analysis after canvas
+- **Experiment Velocity Over Perfection** — One canvas hypothesis experiment per week beats waiting for a perfect research plan
 
 ## 📋 Version History (English)
 
 | Version | Date | Changes |
 |---------|------|--------|
-| v2.4.23 | 2026-05-06 | Repo maintenance: fixed English changelog table missing separator, added English Troubleshooting section, added Contributing link to footer, enhanced cross-skill collaboration examples
+| v2.4.24 | 2026-05-07 | Repo maintenance: added experiment velocity Pro Tip, enhanced JTBD-VPD workflow integration example |
 | v2.4.19 | 2026-05-06 | Repo maintenance: updated Last Updated timestamp, verified version alignment across README/SKILL.md/pyproject.toml, confirmed cross-skill ecosystem links
 | v2.4.18 | 2026-05-05 | Repo maintenance: added Structured Thinking Model to ecosystem diagrams, verified cross-references
 | v2.4.17 | 2026-05-04 | Repo maintenance: fixed changelog table `| |` formatting, added end-to-end workflow English TOC link
@@ -1044,4 +1046,4 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 
 ---
 
-*Last Updated: 2026-05-06 | AliDujie Skill Ecosystem | v2.4.23*
+*Last Updated: 2026-05-07 | AliDujie Skill Ecosystem | v2.4.24*
