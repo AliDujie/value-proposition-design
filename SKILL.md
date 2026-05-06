@@ -311,11 +311,12 @@ VPD 是 AliDujie UX 研究技能生态系统的产品-市场验证层：
 
 | 协作场景 | 协作 Skill | 工作流 |
 |---------|-----------|--------|
-| 画布数据可视化 | Storytelling with Data | VPD 画布 -> SWD 图表展示 -> SWD 故事构建 |
-| JTBD 到价值主张 | JTBD Knowledge | JTBD Jobs -> VPD 画布填充 -> VPD 优先级排序 |
-| 价值主张验证 | Quantitative UX Research | VPD 假设 -> QuantUX A/B 测试 -> VPD 实验设计 |
-| 角色到价值主张 | Web Persona | Persona 目标/痛点 -> VPD 画布 -> Persona 验证 |
-| 研究到价值主张 | Universal Design Methods | UDM 用户研究 -> VPD 画布 -> VPD 实验验证 |
+| 画布数据可视化 | [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) | VPD 画布 → SWD 图表展示 → SWD 故事构建 |
+| JTBD 到价值主张 | [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) | JTBD Jobs → VPD 画布填充 → VPD 优先级排序 |
+| 价值主张验证 | [Quantitative UX Research](https://github.com/AliDujie/Quantitative-UX-Research) | VPD 假设 → QuantUX A/B 测试 → VPD 实验设计 |
+| 角色到价值主张 | [Web Persona](https://github.com/AliDujie/web-persona-skill) | Persona 目标/痛点 → VPD 画布 → Persona 验证 |
+| 研究到价值主张 | [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) | UDM 用户研究 → VPD 画布 → VPD 实验验证 |
+| 结构化战略分析 | [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) | VPD 商业分析 → STM 战略框架 → STM 决策建议 |
 
 **协作示例（JTBD → VPD → SWD）**：
 ```python
