@@ -330,3 +330,38 @@ from swd import SWDSkill
 swd = SWDSkill("价值主张汇报")
 story = swd.build_story(protagonist="决策层", imbalance="产品-市场契合度不足")
 ```
+
+## 最佳实践
+
+| # | 原则 | 说明 |
+|---|------|------|
+| 1 | 先客户后方案 | 永远从客户概况（右侧）开始，再设计价值图（左侧） |
+| 2 | 量化具体化 | 痛点写"等待超过 5 分钟"而非"等待时间长" |
+| 3 | 事实非观点 | 访谈问"上次怎么做的"而非"你觉得怎么样" |
+| 4 | 致命假设优先 | 优先测试如果为假就毁掉整个方案的假设 |
+| 5 | 区分三种契合 | 书面契合 ≠ 市场契合 ≠ 商业模式契合，不要过早扩张 |
+| 6 | CEO 视角前置 | 早期考虑商业化路径和护城河，避免做出无法盈利的产品 |
+| 7 | 实验驱动 | 价值主张必须通过实验验证，而非团队投票或直觉 |
+
+## 参考资料
+
+| 书名 | 作者 | 关键贡献 |
+|------|------|---------|
+| **Value Proposition Design** | Alexander Osterwalder (2014) | 本 Skill 理论基础，价值主张画布 |
+| Business Model Generation | Alexander Osterwalder (2010) | 商业模式画布九构件 |
+| The Mom Test | Rob Fitzpatrick (2013) | 客户访谈方法论 |
+| Testing Business Ideas | David Bland & Alex Osterwalder (2020) | 实验验证方法论 |
+| Blue Ocean Strategy | W. Chan Kim & Renée Mauborgne (2004) | 蓝海四项行动框架 |
+
+### AliDujie 技能生态
+
+VPD 是 **AliDujie UX 研究技能生态系统** 的产品-市场验证层，与其他 6 个技能协作：
+
+| 技能 | 定位 | 协作模式 |
+|------|------|---------|
+| [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) | 方法论核心 | UDM 用户研究 → VPD 画布填充 |
+| [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) | 需求洞察 | JTBD Jobs → VPD 画布 → 优先级排序 |
+| [Quantitative UX Research](https://github.com/AliDujie/Quantitative-UX-Research) | 定量研究 | VPD 假设 → QuantUX A/B 测试验证 |
+| [Web Persona](https://github.com/AliDujie/web-persona-skill) | 用户角色 | Persona 目标/痛点 → VPD 画布 |
+| [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) | 数据叙事 | VPD 产出 → SWD 数据故事 |
+| [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) | 战略框架 | STM 商业画布 → VPD 价值验证 |
