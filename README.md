@@ -990,6 +990,62 @@ Phase 4: 呈现与决策
 
 ---
 
+### 💻 实用集成示例 (Practical Integration Examples)
+
+#### 示例 1: VPD + QuantUX — 实验验证价值假设
+
+```python
+# VPD 设计价值假设 → QuantUX 计算样本量并验证
+from vpd import VPDSkill
+from quantux import QuantUXSkill
+
+vpd = VPDSkill("电商平台", "时间敏感型买家")
+experiment = vpd.design_experiment(
+    hypotheses=[{"desc": "一键结账提升转化率", "metric": "checkout_completion_rate"}]
+)
+
+quantux = QuantUXSkill("电商平台")
+sample_size = quantux.calculate_sample_size(confidence=95, power=0.8, effect_size=0.3)
+print(f"需要 {sample_size} 样本量")
+```
+
+#### 示例 2: VPD + JTBD — 从"工作"到价值主张
+
+```python
+# JTBD 提供用户"工作" → VPD 转化为价值主张画布
+from jtbd import JTBDSkill
+from vpd import VPDSkill
+
+jtbd = JTBDSkill("电商平台")
+statement = jtbd.create_jtbd_statement(
+    verb="快速", struggle="在忙碌时完成购买", context="通勤路上"
+)
+
+vpd = VPDSkill("电商平台", "通勤族")
+canvas = vpd.analyze_canvas(
+    product_name="移动端一键结账",
+    jobs=["快速完成购买"],
+    pains=["屏幕小输入慢"],
+    gains=["语音输入", "历史订单复用"]
+)
+```
+
+#### 示例 3: VPD + SWD — 从画布到商业汇报
+
+```python
+from vpd import VPDSkill
+from swd import SWDSkill
+
+vpd = VPDSkill("电商平台", "时间敏感型买家")
+moat = vpd.generate_competitive_moat()
+roi = vpd.generate_roi_estimate()
+
+swd = SWDSkill("电商平台")
+ctx = swd.build_context(audience="投资人", cta="批准 A 轮融资")
+```
+
+> 💡 **VPD 是商业验证层** — 将用户洞察转化为可测试的价值假设，连接研究洞察与商业决策。
+
 ### 💡 Pro Tips / 专业提示
 
 - **从客户 Jobs 开始** — Jobs 驱动一切，先搞清楚再画布
@@ -1088,4 +1144,4 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 
 ---
 
-*Last Updated: 2026-05-07 | AliDujie Skill Ecosystem | v2.4.26*
+*Last Updated: 2026-05-07 | AliDujie Skill Ecosystem | v2.4.27*
