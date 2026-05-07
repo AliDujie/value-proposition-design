@@ -4,7 +4,7 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.4.26-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.4.27-green.svg)](CHANGELOG.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--07-brightgreen.svg)
 
 > 💎 **一句话介绍**: 基于《价值主张设计》（亚历山大·奥斯特瓦德著）的完整方法论工具包。覆盖客户洞察、画布分析、优先级计算、竞争战略、实验验证，内置 CEO 视角的商业化路径分析。
@@ -325,6 +325,22 @@ value-proposition-design/
 | **可测量** | 指标必须可量化 | "提升效率" ❌ → "每日消息减少" ✅ |
 | **有时限** | 实验必须有明确周期 | "运行 14 天" |
 | **有基准** | 需要对照组或历史数据 | "相比上周下降 30%" |
+
+### 💡 专业技巧
+
+- **用证据填空格，不是猜测** — 每个 Job、Pain、Gain 都应该来自真实用户研究，不是团队假设。用 UDM 访谈来填充
+- **契合度分数是指南针，不是终点** — 0.85 的契合度不意味着你完成了。它意味着你验证了当前假设。继续迭代
+- **从 Pains 开始，不是 Gains** — 用户切换产品主要是为了消除痛点，不是获取新收益。先解决最大痛点
+- **构建功能前先设计实验** — "测试卡"方法（假设→方法→指标→阈值）防止构建没人想要的东西
+- **运用蓝海策略思维** — 不要只是在现有因素上匹配竞品。问：什么因素可以消除、减少、提高、创造？
+
+### ❌ 常见错误
+
+- **画布瘫痪** — 不要等"完美"数据。用你当前最好的理解填充画布，然后用实验验证
+- **模糊的 Jobs 和 Pains** — "提升效率"不是一个 Job。"将周报时间从 2 小时减少到 15 分钟"才是
+- **跳过客户概况** — 不了解 Jobs、Pains、Gains 就无法设计价值图。不要直接跳到解决方案
+- **同时测试一切** — 按致命性排序（如果错了会杀死业务的假设）。先测试致命假设
+- **忽略单位经济学** — 一个很棒的价值主张但 CAC > LTV 是破产之路。从第一天就纳入 CEO 视角
 
 ### ❓ 常见问题 (FAQ)
 
@@ -661,6 +677,22 @@ if canvas.fit_score >= 0.7:
 3. **Focus on high-severity pains** — Address the most painful problems first
 4. **Measure fit score** — Track how well your value map addresses customer profile
 5. **Include CEO perspective** — Always consider moat, monetization, and ROI
+
+### 💡 Pro Tips
+
+- **Fill the canvas with evidence, not guesses** — Every Job, Pain, and Gain should come from real user research, not team assumptions. Use UDM interviews to populate.
+- **The fit score is a compass, not a destination** — A 0.85 fit score doesn't mean you're done. It means you've validated the current hypothesis. Keep iterating.
+- **Start with pains, not gains** — Users switch products primarily to eliminate pains, not to gain new benefits. Address the biggest pain first.
+- **Design experiments before building features** — The "Test Card" approach (hypothesis → method → metric → threshold) prevents building things nobody wants.
+- **Use Blue Ocean strategy thinking** — Don't just match competitors on existing factors. Ask: what factors can you eliminate, reduce, raise, or create?
+
+### ❌ Common Mistakes to Avoid
+
+- **Canvas paralysis** — Don't wait for "perfect" data. Fill the canvas with your best current understanding, then validate with experiments.
+- **Vague jobs and pains** — "Improve efficiency" is not a job. "Reduce time spent on weekly reporting from 2 hours to 15 minutes" is.
+- **Skipping the customer profile** — You can't design a value map without understanding Jobs, Pains, and Gains first. Don't jump to solutions.
+- **Testing everything at once** — Rank hypotheses by lethality (what kills the business if wrong). Test lethal hypotheses first.
+- **Ignoring unit economics** — A great value proposition with CAC > LTV is a path to bankruptcy. Include the CEO perspective from day one.
 
 ### ❓ FAQ
 
