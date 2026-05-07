@@ -1,12 +1,25 @@
 ---
 name: value-proposition-design
-version: "2.4.29"
+version: "2.4.30"
 description: 价值主张设计方法论 Skill - 基于奥斯特瓦德《价值主张设计》全书，覆盖客户洞察、画布分析、优先级计算、竞争战略、问卷设计、实验验证的完整方法论与可执行 Python 工具包，以及CEO决策视角的商业化路径、竞争护城河与ROI估算
 ---
 
 # Value Proposition Design Skill
 
 基于《价值主张设计：如何构建商业模式最重要的环节》（亚历山大·奥斯特瓦德著）的完整方法论技能，提供 7 大可执行模块，能够针对具体业务场景直接产出结构化交付物。
+
+## 🧭 快速决策：什么时候使用 VPD？
+
+| 你的需求 | 推荐技能 |
+|---------|---------|
+| 需要价值主张画布、实验验证、优先级排序 | ✅ **VPD（本技能）** |
+| 需要选择研究方法、设计访谈、执行可用性测试 | → [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) |
+| 需要理解用户"工作"、机会评分、竞争分析 | → [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) |
+| 需要定量验证假设、设计 A/B 测试、计算样本量 | → [Quantitative UX Research](https://github.com/AliDujie/Quantitative-UX-Research) |
+| 需要创建人物角色、用户细分、设计指导 | → [Web Persona](https://github.com/AliDujie/web-persona-skill) |
+| 需要将研究结果转化为数据叙事、图表呈现 | → [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) |
+
+> 💡 VPD 是验证层：把 JTBD/UDM 的发现映射到价值主张画布，用实验验证契合度。
 
 ## 🌐 AliDujie 技能生态系统
 
