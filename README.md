@@ -4,8 +4,8 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.4.31-green.svg)](CHANGELOG.md)
-![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--07-brightgreen.svg)
+[![Version](https://img.shields.io/badge/version-2.4.32-green.svg)](CHANGELOG.md)
+![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--08-brightgreen.svg)
 
 > 💎 **一句话介绍**: 基于《价值主张设计》（亚历山大·奥斯特瓦德著）的完整方法论工具包。覆盖客户洞察、画布分析、优先级计算、竞争战略、实验验证，内置 CEO 视角的商业化路径分析。
 
@@ -797,6 +797,7 @@ competitive-strategy python-toolkit openclaw-skill alicloud
 
 | Version | Date | Changes |
 |---------|------|--------|
+| v2.4.32 | 2026-05-08 | Repo maintenance: enhanced experimentation validation workflow examples, improved canvas analysis clarity, updated Last Updated to 2026-05-08, version bump to 2.4.32 |
 | v2.4.21 | 2026-05-06 | Repo maintenance: fixed README footer version mismatch (footer was 2 versions behind badge), aligned all version references, verified ecosystem cross-references and bilingual consistency |
 | v2.4.22 | 2026-05-06 | Repo maintenance: updated Last Updated timestamp, version bump to 2.4.22, verified ecosystem cross-references and bilingual consistency |
 | v2.4.7 | 2026-05-03 | Repo maintenance: improved Example 1 canvas analysis code formatting consistency, aligned SKILL.md version with README.md |
@@ -1063,6 +1064,7 @@ ctx = swd.build_context(audience="投资人", cta="批准 A 轮融资")
 
 | 版本 | 日期 | 变更 |
 |------|------|------|
+| v2.4.32 | 2026-05-08 | 仓库维护：增强实验验证工作流示例，改进画布分析清晰度，更新 Last Updated 至 2026-05-08，版本升级至 2.4.32 |
 | v2.4.30 | 2026-05-07 | 仓库维护：在 SKILL.md 中添加"什么时候使用 VPD"决策指南，在 README 中添加跨技能工作流示例，版本升级至 2.4.30 |
 | v2.4.31 | 2026-05-07 | 仓库维护：在快速决策指南中添加 Structured Thinking Model 引用（中英文），提升跨技能发现性，版本升级至 2.4.31 |
 | v2.4.29 | 2026-05-07 | 仓库维护：SKILL.md 版本号升级至 2.4.29，验证生态交叉引用一致性 |
@@ -1113,6 +1115,7 @@ ctx = swd.build_context(audience="投资人", cta="批准 A 轮融资")
 
 | Version | Date | Changes |
 |---------|------|--------|
+| v2.4.32 | 2026-05-08 | Repo maintenance: enhanced experimentation validation workflow examples, improved canvas analysis clarity, updated Last Updated to 2026-05-08, version bump to 2.4.32 |
 | v2.4.30 | 2026-05-07 | Repo maintenance: added "When to use VPD" decision guide to SKILL.md, added cross-skill workflow examples to README, version bump to 2.4.30 |
 | v2.4.31 | 2026-05-07 | Repo maintenance: added Structured Thinking Model to Quick Decision Guide (CN+EN), enhanced cross-skill discoverability, version bump to 2.4.31 |
 | v2.4.29 | 2026-05-07 | Repo maintenance: SKILL.md version bump to 2.4.29, verified cross-skill ecosystem consistency
@@ -1157,4 +1160,4 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 
 ---
 
-*Last Updated: 2026-05-07 | AliDujie Skill Ecosystem | v2.4.31*
+*Last Updated: 2026-05-08 | AliDujie Skill Ecosystem | v2.4.32*
