@@ -1,4 +1,8 @@
+## v2.4.33 (2026-05-08)
 ## v2.4.32 (2026-05-08)
+
+Repo maintenance: added English "End-to-End Workflow: All 6 Skills" section with B2B collaboration tool scenario and ecosystem code example, updated English TOC, enhanced cross-skill discoverability.
+
 - Enhanced experimentation validation workflow examples with realistic multi-hypothesis scenarios
 - Improved canvas analysis guidance clarity
 - Verified version alignment across README.md, SKILL.md, and pyproject.toml

@@ -4,7 +4,7 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.4.32-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.4.33-green.svg)](CHANGELOG.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--08-brightgreen.svg)
 
 > 💎 **一句话介绍**: 基于《价值主张设计》（亚历山大·奥斯特瓦德著）的完整方法论工具包。覆盖客户洞察、画布分析、优先级计算、竞争战略、实验验证，内置 CEO 视角的商业化路径分析。
@@ -468,6 +468,7 @@ priority = skill.calculate_priority(
 - [User Reviews](#-user-reviews)
 - [Extended Reading](#-extended-reading)
 - [Related Skills](#-related-skills-1)
+- [End-to-End Workflow: All 6 Skills](#-end-to-end-workflow-all-6-skills)
 - [Skill Ecosystem Workflow](#-skill-ecosystem-workflow-1)
 - [Version History](#-version-history-english)
 
@@ -861,6 +862,40 @@ UDM (usability testing) → Persona (user segments) → VPD (value iteration)
 3. Use VPD to iterate value proposition based on segment-specific needs
 
 > 💡 **Tip**: VPD pairs naturally with JTBD — map JTBD-discovered "jobs" to the value proposition canvas for product-market fit validation.
+
+### 🔄 End-to-End Workflow: All 6 Skills
+
+A complete value-design-to-commercialization workflow using the full AliDujie ecosystem:
+
+```
+Step 1          Step 2          Step 3          Step 4          Step 5          Step 6
+┌──────┐       ┌──────┐       ┌──────┐       ┌──────┐       ┌──────┐       ┌──────┐
+│Persona│  ──►  │ JTBD │  ──►  │ UDM  │  ──►  │QuantUX│  ──►  │ VPD  │  ──►  │ SWD  │
+│ 👤   │       │ 🎯   │       │ 📖   │       │ 📊   │       │ 💎   │       │ 📈   │
+│角色定义│       │需求洞察│       │定性研究│       │定量验证│       │价值验证│       │数据汇报│
+└──────┘       └──────┘       └──────┘       └──────┘       └──────┘       └──────┘
+```
+
+**Real-World Scenario: B2B Collaboration Tool Launch**
+
+1. **Persona**: Define "Team Lead Sarah" (primary) and "Individual Contributor Mike" (secondary)
+2. **JTBD**: Discover core Job is "keep my team aligned without endless meetings" (Opp Score: 8.1)
+3. **UDM**: Run semi-structured interviews (15 participants) → find 3 workflow bottlenecks
+4. **QuantUX**: CSat survey (n=1,200) + MaxDiff feature prioritization → "Async updates" ranked #1
+5. **VPD**: Value proposition canvas → "Cut meetings by 50%, stay aligned" — fit score 0.91
+6. **SWD**: Transform findings into investor pitch → competitive comparison chart → three-act story → $5M funding secured
+
+```python
+# VPD connects user needs to business value in the ecosystem
+from persona import PersonaSkill; persona = PersonaSkill("协作工具")
+from jtbd import JTBDSkill; jtbd = JTBDSkill("团队协作")
+from udm import UDMSkill; udm = UDMSkill("协作工具")
+from quantux import QuantUXSkill; quantux = QuantUXSkill("协作工具")
+from vpd import VPDSkill; vpd = VPDSkill("协作工具", "团队负责人")
+from swd import SWDSkill; swd = SWDSkill("产品商业化方案")
+
+# VPD transforms research insights into validated value propositions
+```
 
 ---
 
