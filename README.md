@@ -922,6 +922,55 @@ A: Not exactly. VPD experiment design focuses on validating "value hypotheses" (
 A: Moat analysis (network effects/switching costs/brand/scale), monetization paths (freemium/subscription/transaction fees), and ROI estimation (CAC vs LTV).
 
 
+### 📋 Cheat Sheet / Quick Reference Cards
+
+#### Value Proposition Canvas Checklist
+
+| Customer Profile | Value Map | Fit Check |
+|-----------------|-----------|-----------|
+| Customer Jobs (functional, social, emotional) | Products & Services | Does each job have a product? |
+| Pains (severity × frequency) | Pain Relievers | Does each pain have a reliever? |
+| Gains (expected, surprising) | Gain Creators | Does each gain have a creator? |
+
+**Fit Score > 0.7 = Good fit**
+
+#### Experiment Design Quick Reference
+
+| Hypothesis Lethality | Test Method | CTA Level |
+|---------------------|-------------|------------|
+| Lethal (kills business if wrong) | Concierge / Wizard of Oz | L3 (strong commitment) |
+| Important (impacts success) | Landing page MVP | L2 (medium commitment) |
+| Nice-to-know (optimization) | Survey / interview | L1 (low commitment) |
+
+#### Blue Ocean Four Actions
+
+| Action | Question | Example |
+|--------|----------|---------|
+| **Eliminate** | Which factors can be removed? | Remove industry-standard features nobody uses |
+| **Reduce** | Which factors can be reduced below standard? | Reduce complexity, reduce price |
+| **Raise** | Which factors should exceed industry standard? | Raise ease of use, raise support quality |
+| **Create** | Which factors can be newly created? | Create entirely new value dimensions |
+
+#### CAC/LTV Quick Reference
+
+| Metric | Healthy Range |
+|--------|---------------|
+| LTV/CAC Ratio | ≥ 3x |
+| Payback Period | < 12 months |
+| Gross Margin | > 70% (SaaS) |
+| Monthly Churn | < 5% (SMB), < 2% (Enterprise) |
+
+#### Cross-Skill Quick Reference
+
+| Need | Skill | Key Method |
+|------|-------|------------|
+| Choose research methods | [UDM](https://github.com/AliDujie/universal-design-methods) | `recommend_methods()` |
+| Validate quantitatively | [QuantUX](https://github.com/AliDujie/Quantitative-UX-Research) | `calculate_ab_sample_size()` |
+| Understand user "jobs" | [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) | `analyze()` |
+| Create personas | [Persona](https://github.com/AliDujie/web-persona-skill) | `add_persona()` |
+| Design value prop | **VPD** (this skill) | `analyze_canvas()` |
+| Present findings | [SWD](https://github.com/AliDujie/storytelling-with-data) | `build_story()` |
+
 ### 🏆 Case Studies
 
 #### Case Study 1: SaaS Product-Market Fit Validation
@@ -1435,8 +1484,9 @@ ctx = swd.build_context(audience="投资人", cta="批准 A 轮融资")
 
 | Version | Date | Changes |
 |---------|------|--------|
-| v2.4.32 | 2026-05-08 | Repo maintenance: enhanced experimentation validation workflow examples, improved canvas analysis clarity, updated Last Updated to 2026-05-08, version bump to 2.4.32 |
+| v2.4.41 | 2026-05-10 | Repo maintenance: added English cheat sheet (canvas checklist, experiment design guide, Blue Ocean quick reference), updated Last Updated badge |
 | v2.4.35 | 2026-05-09 | Repo maintenance: added English case studies section with practical code examples, enhanced bilingual content parity, added cross-skill integration code samples |
+| v2.4.32 | 2026-05-08 | Repo maintenance: enhanced experimentation validation workflow examples, improved canvas analysis clarity, updated Last Updated to 2026-05-08, version bump to 2.4.32 |
 | v2.4.30 | 2026-05-07 | Repo maintenance: added "When to use VPD" decision guide to SKILL.md, added cross-skill workflow examples to README, version bump to 2.4.30 |
 | v2.4.31 | 2026-05-07 | Repo maintenance: added Structured Thinking Model to Quick Decision Guide (CN+EN), enhanced cross-skill discoverability, version bump to 2.4.31 |
 | v2.4.29 | 2026-05-07 | Repo maintenance: SKILL.md version bump to 2.4.29, verified cross-skill ecosystem consistency
@@ -1494,4 +1544,4 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 
 ---
 
-*Last Updated: 2026-05-10 | AliDujie Skill Ecosystem | v2.4.40*
+*Last Updated: 2026-05-10 | AliDujie Skill Ecosystem | v2.4.41*
