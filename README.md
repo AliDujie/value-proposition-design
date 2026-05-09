@@ -4,7 +4,7 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.4.37-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.4.38-green.svg)](CHANGELOG.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026-05-09-brightgreen.svg)
 
 > 💎 **一句话介绍**: 基于《价值主张设计》（亚历山大·奥斯特瓦德著）的完整方法论工具包。覆盖客户洞察、画布分析、优先级计算、竞争战略、实验验证，内置 CEO 视角的商业化路径分析。
@@ -789,6 +789,27 @@ if canvas.fit_score >= 0.7:
     print(f"Need {experiment.sample_size} participants per group")
 ```
 
+### 📁 Project Structure
+
+```
+value-proposition-design/
+├── SKILL.md              # AI Agent skill definition
+├── README.md             # This file
+├── INSTALL.md            # Installation guide
+├── pyproject.toml        # Python package build config
+├── vpd/                  # Python package (pure stdlib)
+│   ├── __init__.py       # VPDSkill unified entry
+│   ├── interview.py      # Interview guide generator
+│   ├── survey.py         # Survey designer
+│   ├── priority.py       # Priority calculator
+│   ├── canvas.py         # Value Proposition Canvas analyzer
+│   ├── strategy.py       # Competitive strategy scorer
+│   ├── experiment.py     # Experiment designer
+│   └── sample.py         # Sample size calculator
+└── references/           # Knowledge base documents
+    └── knowledge-base.md
+```
+
 ### 🛠️ Troubleshooting
 
 | Issue | Solution |
@@ -990,6 +1011,7 @@ competitive-strategy python-toolkit openclaw-skill alicloud
 ### 📋 Changelog
 
 | Version | Date | Changes |
+| v2.4.38 | 2026-05-09 | Repo maintenance: added English Project Structure section for bilingual parity, enhanced documentation completeness |
 | v2.4.37 | 2026-05-09 | Repo maintenance: fixed SKILL.md version mismatch, aligned README footer version, verified ecosystem cross-references, improved changelog table ordering |
 |---------|------|--------|
 | v2.4.35 | 2026-05-09 | Repo maintenance: added English case studies section with practical code examples, enhanced bilingual content parity (CN/EN), added cross-skill integration code samples |
@@ -1294,6 +1316,8 @@ ctx = swd.build_context(audience="投资人", cta="批准 A 轮融资")
 ## 📋 版本历史 (Changelog)
 
 | 版本 | 日期 | 变更 |
+| v2.4.38 | 2026-05-09 | Repo maintenance: added English Project Structure section for bilingual parity, enhanced documentation completeness |
+| v2.4.38 | 2026-05-09 | 仓库维护：添加英文版项目结构，提升中英双语一致性，增强文档完整性 |
 | v2.4.37 | 2026-05-09 | 仓库维护：修复 SKILL.md 版本不一致，对齐 README 页脚版本引用，验证生态交叉引用一致性，改进版本历史表格排序 |
 |------|------|------|
 | v2.4.32 | 2026-05-08 | 仓库维护：增强实验验证工作流示例，改进画布分析清晰度，更新 Last Updated 至 2026-05-08，版本升级至 2.4.32 |
@@ -1406,4 +1430,4 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 
 ---
 
-*Last Updated: 2026-05-09 | AliDujie Skill Ecosystem | v2.4.37*
+*Last Updated: 2026-05-09 | AliDujie Skill Ecosystem | v2.4.38*
