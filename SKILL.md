@@ -305,6 +305,36 @@ python -m pytest vpd/tests/test_all.py -v  # 或 pytest
 | 定量研究验证 | quantitative-ux-research | VPD 问卷设计 -> UXR 执行 -> VPD 优先级计算 |
 | 竞品分析展示 | storytelling-with-data | VPD 竞争战略 -> SWD 图表改造 + 故事构建 |
 | 商业策略分析 | structured-thinking-model | STM 商业画布 → VPD 价值验证 → STM 战略决策 |
+| 角色驱动设计 | web-persona-skill | Persona 目标/痛点 → VPD 画布 → Persona 验证 |
+| 用户研究洞察 | universal-design-methods | UDM 用户研究 → VPD 画布填充 → 实验验证 |
+
+**协作示例（JTBD → VPD）**：
+```python
+# Step 1: JTBD 发现核心 Job 和机会分数
+from jtbd import JTBDSkill
+jtbd = JTBDSkill("旅行预订")
+opportunity = jtbd.score_opportunity("快速找到合适住处", struggle=4, alternative=3, market=4, budget=4)
+# Step 2: VPD 将 JTBD 发现映射到价值主张画布
+from vpd import VPDSkill
+vpd = VPDSkill("旅行预订平台", "商务人士")
+canvas = vpd.analyze_canvas(product_name="旅行预订",
+    jobs=[{"job": "快速找到合适住处", "importance": "高"}],
+    pains=[{"pain": "选择过多难以决策", "severity": "critical"}],
+    gains=[{"gain": "省时省力", "relevance": "高"}])
+print(f"匹配度: {canvas.fit_score}")
+```
+
+**协作示例（VPD → SWD）**：
+```python
+# Step 1: VPD 产出画布分析结果
+from vpd import VPDSkill
+vpd = VPDSkill("电商平台", "年轻消费者")
+canvas = vpd.analyze_canvas(product_name="电商平台", jobs=[...], pains=[...], gains=[...])
+# Step 2: SWD 将画布数据转化为汇报故事
+from swd import SWDSkill
+swd = SWDSkill("价值主张汇报")
+ctx = swd.build_context(audience="决策层", cta="批准价值主张优化预算")
+```
 
 ---
 
