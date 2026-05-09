@@ -4,10 +4,26 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.4.40-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.4.41-green.svg)](CHANGELOG.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026-05-10-brightgreen.svg)
 
 > 💎 **一句话介绍**: 基于《价值主张设计》（亚历山大·奥斯特瓦德著）的完整方法论工具包。覆盖客户洞察、画布分析、优先级计算、竞争战略、实验验证，内置 CEO 视角的商业化路径分析。
+
+---
+
+## 🌐 技能生态系统 (Skill Ecosystem)
+
+本技能是 AliDujie 用户研究技能生态系统的**价值设计核心**，负责将用户需求转化为可验证的价值主张。与其他技能协同使用，效果更佳：
+
+| 技能 | 角色 | 协同场景 |
+|------|------|----------|
+| [🔍 Universal Design Methods](https://github.com/AliDujie/universal-design-methods) | 研究方法 | UDM 访谈数据 → VPD 画布填充 → 客户洞察 |
+| [📊 Quantitative UX Research](https://github.com/AliDujie/Quantitative-UX-Research) | 定量验证 | VPD 价值假设 → QuantUX A/B 测试 → 统计验证 |
+| [📈 Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) | 数据叙事 | VPD 实验结果 → SWD 数据故事 → 投资决策 |
+| [🎯 JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) | 深度需求洞察 | JTBD 工作发现 → VPD 画布映射 → 价值设计 |
+| [👤 Web Persona](https://github.com/AliDujie/web-persona-skill) | 用户画像 | Persona 角色 → VPD 细分画布 → 精准定位 |
+
+---
 
 ### ✅ 5 分钟快速开始检查清单
 
@@ -794,6 +810,40 @@ if canvas.fit_score >= 0.7:
     )
     print(f"Need {experiment.sample_size} participants per group")
 ```
+
+### 🔄 End-to-End Ecosystem Workflow
+
+VPD is the **value design engine** of the ecosystem. Here's how it connects with the other 5 skills:
+
+```python
+# ===== From Opportunity to Value Proposition (All 6 Skills) =====
+# Step 1: UDM discovers user pains → Step 2: JTBD structures the Job
+# Step 3: QuantUX validates demand → Step 4: VPD designs value proposition
+# Step 5: Persona segments by user type → Step 6: SWD presents the pitch
+
+from vpd import VPDSkill
+vpd = VPDSkill("Fitness Tracker", "Active Millennials")
+
+# Analyze value proposition canvas
+canvas = vpd.analyze_canvas(
+    product_name="FitnessTracker",
+    jobs=["Track daily steps", "Monitor sleep quality"],
+    pains=["Battery dies quickly", "Inaccurate heart rate"],
+    gains=["Motivation from streaks", "Health insights"]
+)
+
+# Design experiment to validate value hypothesis
+experiment = vpd.design_experiment(
+    hypothesis="Users will pay $5/month for premium health insights",
+    metric="Conversion rate to premium",
+    confidence_level=0.95
+)
+
+# Generate CEO-perspective canvas
+dashboard = vpd.generate_canvas(include_ceo_analysis=True)
+```
+
+> 💡 **Pro Tip**: The fastest path to Product-Market Fit: JTBD (what users need) → VPD (how you deliver it) → QuantUX (does it work?)
 
 ### 📁 Project Structure
 
