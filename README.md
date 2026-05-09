@@ -4,7 +4,7 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.4.38-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.4.39-green.svg)](CHANGELOG.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026-05-09-brightgreen.svg)
 
 > 💎 **一句话介绍**: 基于《价值主张设计》（亚历山大·奥斯特瓦德著）的完整方法论工具包。覆盖客户洞察、画布分析、优先级计算、竞争战略、实验验证，内置 CEO 视角的商业化路径分析。
@@ -83,8 +83,11 @@ competitive-strategy python-toolkit openclaw-skill alicloud
 #### 步骤 1: 安装技能
 
 ```bash
-# 复制到你的 AI Agent skills 目录
+# 方式 A: 复制到你的 AI Agent skills 目录
 cp -r value-proposition-design /your/agent/skills/
+
+# 方式 B: 作为 Python 包安装（支持 pip import）
+cd value-proposition-design && pip install -e .
 ```
 
 > 📖 详细安装指南请查看 [INSTALL.md](INSTALL.md)
@@ -644,7 +647,11 @@ swd.build_context(audience="产品委员会", cta="批准产品迭代")
 #### Step 1: Install
 
 ```bash
+# Option A: Copy to your AI Agent skills directory
 cp -r value-proposition-design /your/agent/skills/
+
+# Option B: Install as a Python package (enables pip import)
+cd value-proposition-design && pip install -e .
 ```
 
 > 📖 See [INSTALL.md](INSTALL.md) for detailed installation guide
@@ -834,6 +841,14 @@ value-proposition-design/
 - **Start with pains, not gains** — Users switch products primarily to eliminate pains, not to gain new benefits. Address the biggest pain first.
 - **Design experiments before building features** — The "Test Card" approach (hypothesis → method → metric → threshold) prevents building things nobody wants.
 - **Use Blue Ocean strategy thinking** — Don't just match competitors on existing factors. Ask: what factors can you eliminate, reduce, raise, or create?
+
+### ⛔ When NOT to Use This Skill
+
+- **Choosing research methods or designing studies** — Use [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) for research design
+- **Statistical analysis or A/B testing** — Use [Quantitative UX Research](https://github.com/AliDujie/Quantitative-UX-Research) for quantitative validation
+- **Understanding user Jobs-to-be-Done** — Use [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) to define jobs before canvas filling
+- **Creating user personas and segmentation** — Use [Web Persona](https://github.com/AliDujie/web-persona-skill) for persona creation
+- **Data visualization and presentation design** — Use [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) for chart design and narratives
 
 ### ❌ Common Mistakes to Avoid
 
@@ -1430,4 +1445,4 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 
 ---
 
-*Last Updated: 2026-05-09 | AliDujie Skill Ecosystem | v2.4.38*
+*Last Updated: 2026-05-09 | AliDujie Skill Ecosystem | v2.4.39*
