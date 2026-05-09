@@ -4,8 +4,8 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.4.33-green.svg)](CHANGELOG.md)
-![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--08-brightgreen.svg)
+[![Version](https://img.shields.io/badge/version-2.4.34-green.svg)](CHANGELOG.md)
+![Last Updated](https://img.shields.io/badge/last%20updated-2026--05--09-brightgreen.svg)
 
 > 💎 **一句话介绍**: 基于《价值主张设计》（亚历山大·奥斯特瓦德著）的完整方法论工具包。覆盖客户洞察、画布分析、优先级计算、竞争战略、实验验证，内置 CEO 视角的商业化路径分析。
 
@@ -798,6 +798,7 @@ competitive-strategy python-toolkit openclaw-skill alicloud
 
 | Version | Date | Changes |
 |---------|------|--------|
+| v2.4.34 | 2026-05-09 | Repo maintenance: fixed footer version mismatch (v2.4.32→v2.4.34), enhanced cross-skill ecosystem workflow clarity, updated ecosystem links to all 5 sibling skills, aligned version across README/SKILL.md/pyproject.toml |
 | v2.4.32 | 2026-05-08 | Repo maintenance: enhanced experimentation validation workflow examples, improved canvas analysis clarity, updated Last Updated to 2026-05-08, version bump to 2.4.32 |
 | v2.4.21 | 2026-05-06 | Repo maintenance: fixed README footer version mismatch (footer was 2 versions behind badge), aligned all version references, verified ecosystem cross-references and bilingual consistency |
 | v2.4.22 | 2026-05-06 | Repo maintenance: updated Last Updated timestamp, version bump to 2.4.22, verified ecosystem cross-references and bilingual consistency |
@@ -1183,6 +1184,19 @@ ctx = swd.build_context(audience="投资人", cta="批准 A 轮融资")
 
 ---
 
+### 🚀 Next Steps / 下一步
+
+Ready to go deeper? Here's what to try next:
+
+1. **Master canvas analysis** — Explore [vpd/canvas.py](vpd/canvas.py) for systematic Value Proposition Canvas evaluation
+2. **Identify customer jobs first** — Use [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) to define jobs before filling the canvas
+3. **Research customer pains/gains** — Deploy [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) interviews to discover real pains and gains
+4. **Segment by persona** — Create separate canvases for each [Web Persona](https://github.com/AliDujie/web-persona-skill) to test fit per segment
+5. **Validate with experiments** — Use [Quantitative UX Research](https://github.com/AliDujie/Quantitative-UX-Research) for A/B tests and statistical validation
+6. **Pitch your value prop** — Present canvas findings with [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data)
+
+> 💡 **Pro Tip**: The fastest path to Product-Market Fit: JTBD (what users need) → VPD (how you deliver it) → QuantUX (does it work?)
+
 ### 👨‍💻 Credits
 
 Based on *Value Proposition Design* by Alexander Osterwalder, Yves Pigneur, et al. (Wiley, 2014), covering the Value Proposition Canvas, customer profiling, and fit testing.
@@ -1195,4 +1209,4 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 
 ---
 
-*Last Updated: 2026-05-08 | AliDujie Skill Ecosystem | v2.4.32*
+*Last Updated: 2026-05-09 | AliDujie Skill Ecosystem | v2.4.34*
