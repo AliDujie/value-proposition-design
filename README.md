@@ -4,7 +4,7 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.4.35-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.4.36-green.svg)](CHANGELOG.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026-05-09-brightgreen.svg)
 
 > 💎 **一句话介绍**: 基于《价值主张设计》（亚历山大·奥斯特瓦德著）的完整方法论工具包。覆盖客户洞察、画布分析、优先级计算、竞争战略、实验验证，内置 CEO 视角的商业化路径分析。
@@ -448,6 +448,132 @@ priority = skill.calculate_priority(
 - Python >= 3.9
 - **无外部依赖**（纯标准库实现）
 - 兼容 macOS / Linux / Windows
+
+---
+
+
+---
+
+### 🧭 快速决策指南 (Quick Decision Guide)
+
+| 你的问题 | 推荐技能 |
+|----------|----------|
+| "验证价值主张够不够强" | → **Value Proposition Design (本技能)** — 价值主张画布、实验验证 |
+| "不知道选什么研究方法" | → [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) — 方法推荐与执行 |
+| "想理解用户背后的「工作」" | → [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) — 用户"工作"挖掘、机会评分 |
+| "需要定量验证假设" | → [Quantitative UX Research](https://github.com/AliDujie/Quantitative-UX-Research) — A/B 测试、HEART 指标、样本量计算 |
+| "需要创建用户画像" | → [Web Persona](https://github.com/AliDujie/web-persona-skill) — 人物角色创建与细分 |
+| "研究结果怎么讲给高管听" | → [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) — 数据叙事与图表呈现 |
+| "需要结构化商业分析框架" | → [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) — PESTEL、五力模型、决策树 |
+
+---
+
+### 🔄 完整端到端工作流：从画布到商业化 (End-to-End Workflow)
+
+> VPD 将用户研究转化为可验证的商业假设，是产品-市场契合的关键环节。
+
+#### 阶段 1: 洞察收集
+1. **Universal Design Methods** → 用户研究、访谈
+2. **JTBD Knowledge** → 用户"工作"和需求洞察
+3. **Web Persona** → 目标用户画像
+
+#### 阶段 2: 价值主张设计与验证 (本技能)
+4. **Value Proposition Design (本技能)** → 画布分析 → 竞争战略 → 实验验证 → ROI 估算
+
+#### 阶段 3: 规模化
+5. **Quantitative UX Research** → 用数据验证规模化假设
+6. **Storytelling with Data** → 向投资人/高管呈现商业故事
+
+```python
+# 示例：VPD 端到端工作流
+from jtbd import JTBDSkill
+from vpd import VPDSkill
+from swd import SWDSkill
+
+# 阶段 1: JTBD 发现
+jtbd = JTBDSkill("SaaS 平台")
+jtbd.analyze(product="SaaS 平台", jobs=[{"context": "团队协作", "motivation": "提升效率"}])
+
+# 阶段 2: VPD 验证
+vpd = VPDSkill("SaaS 平台", "中小企业")
+vpd.analyze_canvas(product_name="SaaS 平台",
+    jobs=[{"job": "团队协作", "importance": "高"}],
+    pains=[{"pain": "沟通成本高", "severity": "高"}],
+    gains=[{"gain": "提升效率", "relevance": "高"}]
+)
+experiment = vpd.design_experiment(hypothesis="实时协作减少 30% 沟通时间")
+
+# 阶段 3: SWD 汇报
+swd = SWDSkill("商业化汇报")
+swd.build_context(audience="投资人", cta="完成 A 轮融资")
+```
+
+---
+
+### 💻 实用集成示例 (Practical Integration Examples)
+
+#### 集成 1: JTBD → VPD
+
+```python
+from jtbd import JTBDSkill
+from vpd import VPDSkill
+
+# JTBD 发现
+jtbd = JTBDSkill("产品名")
+report = jtbd.analyze(product="产品名",
+    jobs=[{"context": "出差时", "motivation": "快速找到住处"}]
+)
+
+# 映射到 VPD
+vpd = VPDSkill("产品名", "商务用户")
+vpd.analyze_canvas(product_name="产品名",
+    jobs=[{"job": report.jobs[0]["motivation"], "type": "功能性", "importance": "高"}],
+    pains=[{"pain": report.anxieties[0], "severity": "高"}],
+    gains=[{"gain": report.outcomes[0], "relevance": "高"}]
+)
+```
+
+#### 集成 2: Web Persona → VPD
+
+```python
+from persona import PersonaSkill
+from vpd import VPDSkill
+
+# 基于 Persona 定义目标用户
+persona = PersonaSkill("产品名")
+persona.add_persona(name="效率型用户", archetype="追求快速完成", goals=["省时"])
+
+# VPD 验证价值主张
+vpd = VPDSkill("产品名", "效率型用户")
+vpd.analyze_canvas(product_name="产品名",
+    jobs=[{"job": "快速完成任务", "importance": "高"}],
+    pains=[{"pain": "流程太慢", "severity": "高"}]
+)
+```
+
+#### 集成 3: VPD 实验 → SWD 汇报
+
+```python
+from vpd import VPDSkill
+from swd import SWDSkill
+
+vpd = VPDSkill("产品名", "目标用户")
+experiment = vpd.design_experiment(hypothesis="用户愿意付费")
+
+# 实验结果 → SWD 叙事
+swd = SWDSkill("实验结果汇报")
+swd.build_context(audience="产品委员会", cta="批准产品迭代")
+```
+
+---
+
+### 🚀 下一步 (Next Steps)
+
+1. **快速上手** — 复制技能到你的 skills 目录，5 分钟内完成首次调用
+2. **阅读 SKILL.md** — 了解 AI Agent 触发条件和完整 API 文档
+3. **安装 INSTALL.md** — 详细的安装和配置指南
+4. **贡献** — 查看 [CONTRIBUTING.md](CONTRIBUTING.md) 了解如何参与
+5. **探索生态** — 尝试其他 5 个技能，构建完整的用户研究工作流
 
 ---
 
