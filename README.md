@@ -4,7 +4,7 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.4.42-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.4.43-green.svg)](CHANGELOG.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026-05-11-brightgreen.svg)
 
 > 💎 **一句话介绍**: 基于《价值主张设计》（亚历山大·奥斯特瓦德著）的完整方法论工具包。覆盖客户洞察、画布分析、优先级计算、竞争战略、实验验证，内置 CEO 视角的商业化路径分析。
@@ -1126,6 +1126,8 @@ competitive-strategy python-toolkit openclaw-skill alicloud
 | Version | Date | Changes |
 |---------|------|--------|
 | v2.4.42 | 2026-05-11 | Repo maintenance: fixed broken file path reference in Next Steps (canvas.py→canvas_analyzer.py), enhanced cross-skill integration examples, updated Last Updated |
+| v2.4.43 | 2026-05-11 | Repo maintenance: added Beginner Quick Reference Card with 7 common use cases and quick commands
+
 | v2.4.38 | 2026-05-09 | Repo maintenance: added English Project Structure section for bilingual parity, enhanced documentation completeness |
 | v2.4.37 | 2026-05-09 | Repo maintenance: fixed SKILL.md version mismatch, aligned README footer version, verified ecosystem cross-references, improved changelog table ordering |
 | v2.4.35 | 2026-05-09 | Repo maintenance: added English case studies section with practical code examples, enhanced bilingual content parity (CN/EN), added cross-skill integration code samples |
@@ -1431,6 +1433,8 @@ ctx = swd.build_context(audience="投资人", cta="批准 A 轮融资")
 
 | 版本 | 日期 | 变更 |
 | v2.4.42 | 2026-05-11 | 仓库维护：修复 Next Steps 中的文件路径引用（canvas.py→canvas_analyzer.py），增强跨技能集成示例，更新 Last Updated
+| v2.4.43 | 2026-05-11 | 仓库维护：添加新手快速参考卡，覆盖 7 个常见使用场景和快捷命令
+
 | v2.4.38 | 2026-05-09 | 仓库维护：添加英文版项目结构，提升中英双语一致性，增强文档完整性 |
 | v2.4.37 | 2026-05-09 | 仓库维护：修复 SKILL.md 版本不一致，对齐 README 页脚版本引用，验证生态交叉引用一致性，改进版本历史表格排序 |
 | v2.4.32 | 2026-05-08 | 仓库维护：增强实验验证工作流示例，改进画布分析清晰度，更新 Last Updated 至 2026-05-08，版本升级至 2.4.32 |
@@ -1518,6 +1522,22 @@ ctx = swd.build_context(audience="投资人", cta="批准 A 轮融资")
 | v1.3 | 2026-04-22 | Initial release |
 
 ---
+
+### 🗺️ Beginner Quick Reference Card
+
+> **New to VPD? Start here.** This card covers the most common first-time use cases.
+
+| I want to… | Start with this | Quick command |
+|---|---|---|
+| Prepare customer interviews for VPD | Interview Guide | `skill.generate_interview(stage="探索期", customer_type="B2C")` |
+| Prioritize customer pains and gains | Priority Calculator | `skill.calculate_priority([{"name": "Slow load", "importance": 5, "dissatisfaction": 5, "frequency": 4, "viability": 4}])` |
+| Fill out a Value Proposition Canvas | Canvas Analysis | `skill.analyze_canvas(product_name="App", jobs=[...], pains=[...], gains=[...])` |
+| Compare against competitors | Competitive Strategy | `skill.analyze_competitor(my_name="Mine", factors=["Price", "UX"], players={...})` |
+| Design experiments to test assumptions | Experiment Design | `skill.design_experiment(hypotheses=[{"description": "Users pay extra", "lethality": "lethal"}])` |
+| Calculate required sample size | Sample Size | `skill.calculate_sample_size(confidence=95, margin_of_error=0.05, population=1000)` |
+| Plan commercialization and growth | CEO Perspective | `skill.generate_canvas(include_ceo_analysis=True)` |
+
+> 💡 **Most common first step**: `skill.analyze_canvas()` — start with the Value Proposition Canvas to map customer jobs, pains, and gains to your product's offerings.
 
 ### 🚀 Next Steps / 下一步
 
