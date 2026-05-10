@@ -657,6 +657,15 @@ swd.build_context(audience="产品委员会", cta="批准产品迭代")
 | **Business Strategists** | Competitive differentiation and moat analysis |
 | **AI Agents** | Zero-dependency Python package for automated VPD workflows |
 
+### ✅ 5-Minute Quick Start Checklist
+
+- [ ] **Install** — `cp -r value-proposition-design /your/agent/skills/`
+- [ ] **Import** — `from vpd import VPDSkill`
+- [ ] **Initialize** — `skill = VPDSkill("product", "target user")`
+- [ ] **Canvas analysis** — `skill.analyze_canvas(product_name="...", jobs=[...], pains=[...])`
+- [ ] **Experiment design** — `skill.design_experiment(hypothesis="...", metric="...")`
+- [ ] **CEO analysis** — `skill.generate_canvas(include_ceo_analysis=True)`
+
 ### 🚀 Quick Start
 
 #### Step 1: Install
