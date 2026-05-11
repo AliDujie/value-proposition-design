@@ -2,6 +2,9 @@
 
 Repo maintenance: fixed ecosystem workflow API calls (jtbd.analyze, persona.add_persona), updated 3 code blocks.
 
+- Fixed README footer version mismatch (v2.4.46→v2.4.47) to align with SKILL.md/badge
+- Added "Next Skill to Try" column to English "Who Is This For?" table with ecosystem cross-references
+
 ## v2.4.46 (2026-05-11)
 
 Repo maintenance: fixed changelog gap (CHANGELOG.md started at v2.4.44 while pyproject.toml/README badge were at v2.4.45), added missing v2.4.45 entry, fixed broken table formatting in README English inline changelog, verified Beginner Quick Reference Card present, aligned all version references.
