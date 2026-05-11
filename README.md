@@ -1093,11 +1093,10 @@ competitive-strategy python-toolkit openclaw-skill alicloud
 
 | Version | Date | Changes |
 |---------|------|--------|
-| v2.4.42 | 2026-05-11 | Repo maintenance: fixed broken file path reference in Next Steps (canvas.py→canvas_analyzer.py), enhanced cross-skill integration examples, updated Last Updated |
-| v2.4.43 | 2026-05-11 | Repo maintenance: added Beginner Quick Reference Card with 7 common use cases and quick commands |
-| v2.4.44 | 2026-05-11 | Repo maintenance: added English 5-minute Quick Start checklist, enhanced discoverability for English-speaking users, verified ecosystem cross-references |
 | v2.4.45 | 2026-05-11 | Repo maintenance: fixed missing changelog entries (v2.4.44–v2.4.45) in English inline changelog, fixed broken table formatting, aligned all version references |
-
+| v2.4.44 | 2026-05-11 | Repo maintenance: added English 5-minute Quick Start checklist, enhanced discoverability for English-speaking users, verified ecosystem cross-references |
+| v2.4.43 | 2026-05-11 | Repo maintenance: added Beginner Quick Reference Card with 7 common use cases and quick commands |
+| v2.4.42 | 2026-05-11 | Repo maintenance: fixed broken file path reference in Next Steps (canvas.py→canvas_analyzer.py), enhanced cross-skill integration examples, updated Last Updated |
 | v2.4.38 | 2026-05-09 | Repo maintenance: added English Project Structure section for bilingual parity, enhanced documentation completeness |
 | v2.4.37 | 2026-05-09 | Repo maintenance: fixed SKILL.md version mismatch, aligned README footer version, verified ecosystem cross-references, improved changelog table ordering |
 | v2.4.35 | 2026-05-09 | Repo maintenance: added English case studies section with practical code examples, enhanced bilingual content parity (CN/EN), added cross-skill integration code samples |
@@ -1392,15 +1391,15 @@ ctx = swd.build_context(audience="投资人", cta="批准 A 轮融资")
 ## 📋 版本历史 (Changelog)
 
 | 版本 | 日期 | 变更 |
-| v2.4.45 | 2026-05-11 | 仓库维护：修复页脚版本不一致（v2.4.42→v2.4.44），补齐缺失的变更日志条目（v2.4.44），确保 README/徽章/CHANGELOG 三端版本对齐 |
-| v2.4.42 | 2026-05-11 | 仓库维护：修复 Next Steps 中的文件路径引用（canvas.py→canvas_analyzer.py），增强跨技能集成示例，更新 Last Updated
-| v2.4.43 | 2026-05-11 | 仓库维护：添加新手快速参考卡，覆盖 7 个常见使用场景和快捷命令
-
+|------|------|------|
+| v2.4.45 | 2026-05-11 | 仓库维护：修复页脚版本不一致（v2.4.42→v2.4.44），补齐缺失的变更日志条目（v2.4.43–v2.4.44），确保 README/徽章/CHANGELOG 三端版本对齐 |
+| v2.4.43 | 2026-05-11 | 仓库维护：添加新手快速参考卡，覆盖 7 个常见使用场景和快捷命令 |
+| v2.4.42 | 2026-05-11 | 仓库维护：修复 Next Steps 中的文件路径引用（canvas.py→canvas_analyzer.py），增强跨技能集成示例，更新 Last Updated |
 | v2.4.38 | 2026-05-09 | 仓库维护：添加英文版项目结构，提升中英双语一致性，增强文档完整性 |
 | v2.4.37 | 2026-05-09 | 仓库维护：修复 SKILL.md 版本不一致，对齐 README 页脚版本引用，验证生态交叉引用一致性，改进版本历史表格排序 |
 | v2.4.32 | 2026-05-08 | 仓库维护：增强实验验证工作流示例，改进画布分析清晰度，更新 Last Updated 至 2026-05-08，版本升级至 2.4.32 |
-| v2.4.30 | 2026-05-07 | 仓库维护：在 SKILL.md 中添加"什么时候使用 VPD"决策指南，在 README 中添加跨技能工作流示例，版本升级至 2.4.30 |
 | v2.4.31 | 2026-05-07 | 仓库维护：在快速决策指南中添加 Structured Thinking Model 引用（中英文），提升跨技能发现性，版本升级至 2.4.31 |
+| v2.4.30 | 2026-05-07 | 仓库维护：在 SKILL.md 中添加"什么时候使用 VPD"决策指南，在 README 中添加跨技能工作流示例，版本升级至 2.4.30 |
 | v2.4.29 | 2026-05-07 | 仓库维护：SKILL.md 版本号升级至 2.4.29，验证生态交叉引用一致性 |
 | v2.4.28 | 2026-05-07 | 仓库维护：版本升级至 v2.4.28，对齐 SKILL.md 和 pyproject.toml 版本号，对齐变更日志条目 |
 | v2.4.27 | 2026-05-07 | 仓库维护：修复页脚版本不一致，添加生态系统工作流 Pro Tip，版本升级至 v2.4.27 |
