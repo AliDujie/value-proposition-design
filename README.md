@@ -4,7 +4,7 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.4.45-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.4.46-green.svg)](CHANGELOG.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026-05-11-brightgreen.svg)
 
 > 💎 **一句话介绍**: 基于《价值主张设计》（亚历山大·奥斯特瓦德著）的完整方法论工具包。覆盖客户洞察、画布分析、优先级计算、竞争战略、实验验证，内置 CEO 视角的商业化路径分析。
@@ -890,6 +890,23 @@ A: Not exactly. VPD experiment design focuses on validating "value hypotheses" (
 A: Moat analysis (network effects/switching costs/brand/scale), monetization paths (freemium/subscription/transaction fees), and ROI estimation (CAC vs LTV).
 
 
+### ⛔ When NOT to Use This Skill
+
+- **Choosing research methods or designing qualitative studies** — Use [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) for qualitative research
+- **Statistical analysis or A/B testing** — Use [Quantitative UX Research](https://github.com/AliDujie/Quantitative-UX-Research) for quantitative validation
+- **Understanding user Jobs-to-be-Done** — Use [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) for deep need analysis
+- **Creating user personas and segmentation** — Use [Web Persona](https://github.com/AliDujie/web-persona-skill) for persona creation
+- **Data visualization and narrative design** — Use [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) for chart design and data narratives
+
+### ❌ Common Mistakes to Avoid
+
+- **Treating the canvas as a one-time exercise** — The Value Proposition Canvas is iterative. Revisit it after every customer interview or experiment.
+- **Ignoring negative experiment results** — A falsified hypothesis is a success. It saves you from building the wrong thing. Celebrate learning.
+- **Filling the canvas with assumptions** — Every cell should be backed by customer evidence. If it's not validated, mark it clearly as "assumption."
+- **Skipping the fit score** — Don't proceed to experiments until Fit Score ≥ 0.7. Building on weak fit wastes resources.
+- **Designing for everyone** — Create separate canvases for each persona segment. A canvas that tries to serve everyone serves no one well.
+- **Confusing features with value** — Features are what you build; value is what customers get. Start with jobs, pains, and gains — not your product.
+
 ### 📋 Cheat Sheet / Quick Reference Cards
 
 #### Value Proposition Canvas Checklist
@@ -1093,6 +1110,7 @@ competitive-strategy python-toolkit openclaw-skill alicloud
 
 | Version | Date | Changes |
 |---------|------|--------|
+| v2.4.46 | 2026-05-11 | Repo maintenance: added missing "When NOT to Use This Skill" and "Common Mistakes to Avoid" sections to English README, verified English section completeness, verified cross-skill links, updated version badges |
 | v2.4.45 | 2026-05-11 | Repo maintenance: fixed missing changelog entries (v2.4.44–v2.4.45) in English inline changelog, fixed broken table formatting, aligned all version references |
 | v2.4.44 | 2026-05-11 | Repo maintenance: added English 5-minute Quick Start checklist, enhanced discoverability for English-speaking users, verified ecosystem cross-references |
 | v2.4.43 | 2026-05-11 | Repo maintenance: added Beginner Quick Reference Card with 7 common use cases and quick commands |
@@ -1437,6 +1455,7 @@ ctx = swd.build_context(audience="投资人", cta="批准 A 轮融资")
 
 | Version | Date | Changes |
 |---------|------|--------|
+| v2.4.46 | 2026-05-11 | Repo maintenance: added missing "When NOT to Use This Skill" and "Common Mistakes to Avoid" sections to English README, verified English section completeness, verified cross-skill links, updated version badges |
 | v2.4.45 | 2026-05-11 | Repo maintenance: fixed footer version mismatch (v2.4.42→v2.4.44), added missing changelog entries (v2.4.43–v2.4.44), ensured README/badge/CHANGELOG alignment |
 | v2.4.44 | 2026-05-11 | Repo maintenance: added English 5-minute Quick Start checklist, enhanced discoverability for English-speaking users, verified ecosystem cross-references |
 | v2.4.43 | 2026-05-11 | Repo maintenance: added Beginner Quick Reference Card with 7 common use cases and quick commands |
@@ -1516,4 +1535,4 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 
 ---
 
-*Last Updated: 2026-05-11 | AliDujie Skill Ecosystem | v2.4.45*
+*Last Updated: 2026-05-11 | AliDujie Skill Ecosystem | v2.4.46*
