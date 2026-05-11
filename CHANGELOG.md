@@ -1,3 +1,13 @@
+## v2.4.45 (2026-05-11)
+
+Repo maintenance: fixed changelog gap (CHANGELOG.md started at v2.4.44 while pyproject.toml/README badge were at v2.4.45), added missing v2.4.45 entry, fixed broken table formatting in README English inline changelog, verified Beginner Quick Reference Card present, aligned all version references.
+
+- Added missing v2.4.45 changelog entry to CHANGELOG.md
+- Fixed missing v2.4.44 and v2.4.45 entries in README English inline changelog table
+- Fixed broken markdown table formatting (blank line between rows) in English inline changelog
+- Verified Beginner Quick Reference Card exists at end of English section
+- Aligned CHANGELOG.md, README.md, SKILL.md, and pyproject.toml at v2.4.45
+
 ## v2.4.44 (2026-05-11)
 
 Repo maintenance: added English 5-minute Quick Start checklist to improve onboarding, enhanced discoverability for English-speaking users, verified all ecosystem cross-references.

@@ -124,14 +124,14 @@ skill = VPDSkill("SaaS 协作平台", "中小企业团队负责人")
 # ===== 场景 1: 价值主张画布分析 =====
 canvas = skill.analyze_canvas(
     product_name="TeamFlow",
-    jobs=[{"job": "团队协作", "type": "功能性", "importance": "高"}],
-    pains=[{"pain": "沟通不及时", "severity": "高"}],
-    gains=[{"gain": "提升效率", "relevance": "高"}],
-    products=[{"product": "实时协作编辑"}],
-    pain_relievers=[{"reliever": "即时通知"}],
-    gain_creators=[{"creator": "自动化工作流"}],
+    jobs=[{"description": "团队协作", "category": "functional", "importance": 5}],
+    pains=[{"description": "沟通不及时", "severity": "critical"}],
+    gains=[{"description": "提升效率", "desire_level": "expected"}],
+    products=[{"description": "实时协作编辑", "category": "digital"}],
+    pain_relievers=[{"description": "即时通知", "target_pain": "沟通不及时", "coverage": "full"}],
+    gain_creators=[{"description": "自动化工作流", "target_gain": "提升效率", "coverage": "full"}],
 )
-print(f"匹配度: {canvas.fit_score}")  # 0.85 (高匹配度)
+print(canvas)  # Markdown 输出：画布分析 + 契合度评分
 
 # ===== 场景 2: 访谈提纲生成 =====
 interview = skill.generate_interview()
@@ -139,12 +139,12 @@ print(interview)  # 结构化客户访谈提纲
 
 # ===== 场景 3: 实验设计验证 =====
 experiment = skill.design_experiment(
-    hypothesis="实时协作编辑能减少 30% 的沟通时间",
-    metric="每日消息数量",
-    success_criteria="消息数量减少 ≥ 30%",
-    duration_days=14
+    hypotheses=[{"description": "实时协作编辑能减少 30% 的沟通时间", "lethality": "lethal"}],
+    test_cards=[{"hypothesis": "实时协作编辑能减少 30% 的沟通时间", "test_method": "登录页 MVP",
+        "metric": "每日消息数量", "threshold": "减少 ≥ 30%", "falsification": "未减少则否定",
+        "cta_level": "L3", "duration_days": 14, "sample_size": 150}]
 )
-print(f"每组需要 {experiment.sample_size} 个用户")
+print(experiment)  # 假设排序 + 测试卡 + 学习卡
 
 # ===== 场景 4: CEO 视角商业分析 =====
 report = skill.generate_canvas(include_ceo_analysis=True)
@@ -162,13 +162,8 @@ strategy = skill.analyze_competitor(
 )
 print(strategy)  # 评分表 + 价值曲线 + 蓝海四项行动框架
 
-# ===== 场景 6: 实验设计验证 =====
-experiment = skill.design_experiment(
-    hypotheses=[{"description": "用户愿意额外付费 50 元/月", "lethality": "lethal"}],
-    test_cards=[{"hypothesis": "用户愿意额外付费 50 元/月", "test_method": "登录页 MVP",
-        "metric": "注册率", "threshold": "5%", "cta_level": "L3", "duration_days": 14}]
-)
-print(experiment)  # 假设排序 + 测试卡 + 学习卡
+# ===== 场景 6: 样本量计算 =====
+print(skill.calculate_sample_size(confidence=95, margin_of_error=0.05, population=1000))
 ```
 
 ### 💡 10 大核心能力
@@ -238,16 +233,17 @@ from vpd import VPDSkill
 
 skill = VPDSkill("电商平台", "年轻消费者")
 
-# 竞争战略评分
-strategy = skill.analyze_strategy(
-    competitors=[
-        {"name": "淘宝", "strengths": ["品类丰富"], "weaknesses": ["体验复杂"]},
-        {"name": "拼多多", "strengths": ["价格优势"], "weaknesses": ["品质参差"]}
-    ],
-    our_strengths=["社交推荐", "个性化"],
-    our_weaknesses=["品类较少"]
+# 竞争战略评分 — 蓝海四项行动框架
+strategy = skill.analyze_competitor(
+    my_name="我方产品",
+    factors=["价格", "易用性", "集成能力", "客服"],
+    players={
+        "我方产品": [7, 8, 5, 6],
+        "竞品A（淘宝）": [8, 6, 7, 5],
+        "竞品B（拼多多）": [6, 7, 8, 4],
+    }
 )
-print(strategy)
+print(strategy)  # 评分表 + 价值曲线 + 蓝海策略
 ```
 
 #### 示例 3: CEO 视角商业分析
@@ -266,21 +262,26 @@ print(report)
 
 ```
 value-proposition-design/
-├── SKILL.md              # AI Agent 技能定义
-├── README.md             # 本文件
-├── INSTALL.md            # 安装指南
-├── pyproject.toml        # Python 包构建配置
-├── vpd/                  # Python 包（纯标准库）
-│   ├── __init__.py       # VPDSkill 统一入口
-│   ├── interview.py      # 访谈提纲生成器
-│   ├── survey.py         # 问卷设计器
-│   ├── priority.py       # 优先级计算器
-│   ├── canvas.py         # 价值主张画布分析
-│   ├── strategy.py       # 竞争战略评分
-│   ├── experiment.py     # 实验设计器
-│   └── sample.py         # 样本量计算
-└── references/           # 知识库文档
-    └── knowledge-base.md
+├── SKILL.md                    # AI Agent 技能定义
+├── README.md                   # 本文件
+├── INSTALL.md                  # 安装指南
+├── pyproject.toml              # Python 包构建配置
+├── vpd/                        # Python 包（纯标准库）
+│   ├── __init__.py             # VPDSkill 统一入口
+│   ├── interview_generator.py  # 访谈提纲生成器
+│   ├── survey_designer.py      # 问卷设计器
+│   ├── priority_calculator.py  # 优先级计算器
+│   ├── canvas_analyzer.py      # 价值主张画布分析
+│   ├── strategy_scorer.py      # 竞争战略评分
+│   ├── experiment_designer.py  # 实验设计器
+│   ├── sample_calculator.py    # 样本量计算
+│   ├── utils.py                # 工具函数
+│   ├── config.yaml             # 可调配置
+│   └── tests/test_all.py       # 14 个单元测试
+├── references/                 # 知识库文档
+│   ├── knowledge-base.md       # 全书八大主题知识库
+│   └── README.md               # 知识库索引
+└── .gitignore
 ```
 
 ### 🔗 相关技能
@@ -328,37 +329,13 @@ value-proposition-design/
 
 ### 🤝 最佳实践
 
-#### 价值主张画布检查清单
-
-- [ ] **客户 Jobs** — 是否覆盖了功能性、情感性、社交性三类 Jobs？
-- [ ] **Pains** — 是否按严重程度和频率排序？
-- [ ] **Gains** — 是否区分了期望型和惊喜型收益？
-- [ ] **Products & Services** — 是否每个 Pain 都有对应的 Reliever？
-- [ ] **Fit Score** — 匹配度是否 > 0.7？
-
-#### 实验设计原则
-
-| 原则 | 说明 | 示例 |
-| **可证伪** | 假设必须能被数据证伪 | "实时协作减少 30% 沟通时间" ✅ |
-| **可测量** | 指标必须可量化 | "提升效率" ❌ → "每日消息减少" ✅ |
-| **有时限** | 实验必须有明确周期 | "运行 14 天" |
-| **有基准** | 需要对照组或历史数据 | "相比上周下降 30%" |
-
-### 💡 专业技巧
-
-- **用证据填空格，不是猜测** — 每个 Job、Pain、Gain 都应该来自真实用户研究，不是团队假设。用 UDM 访谈来填充
-- **契合度分数是指南针，不是终点** — 0.85 的契合度不意味着你完成了。它意味着你验证了当前假设。继续迭代
-- **从 Pains 开始，不是 Gains** — 用户切换产品主要是为了消除痛点，不是获取新收益。先解决最大痛点
-- **构建功能前先设计实验** — "测试卡"方法（假设→方法→指标→阈值）防止构建没人想要的东西
-- **运用蓝海策略思维** — 不要只是在现有因素上匹配竞品。问：什么因素可以消除、减少、提高、创造？
-
-### ❌ 常见错误
-
-- **画布瘫痪** — 不要等"完美"数据。用你当前最好的理解填充画布，然后用实验验证
-- **模糊的 Jobs 和 Pains** — "提升效率"不是一个 Job。"将周报时间从 2 小时减少到 15 分钟"才是
-- **跳过客户概况** — 不了解 Jobs、Pains、Gains 就无法设计价值图。不要直接跳到解决方案
-- **同时测试一切** — 按致命性排序（如果错了会杀死业务的假设）。先测试致命假设
-- **忽略单位经济学** — 一个很棒的价值主张但 CAC > LTV 是破产之路。从第一天就纳入 CEO 视角
+- **从客户 Jobs 开始** — Jobs 驱动一切，先搞清楚再画布
+- **Fit Score > 0.7 才能推进** — 低于 0.7 说明价值主张与客户画像不匹配
+- **实验先验证致命假设** — 用 lethality 排序，先测试最可能推翻你的假设
+- **竞争战略避免同质化** — 用蓝海四项行动框架（消除-减少-提升-创造）
+- **VPD + JTBD 是最佳搭档** — 将 JTBD 发现的 Jobs 映射到价值主张画布
+- **CEO 视角不可省略** — 画布完成后务必做护城河和商业化路径分析
+- **实验速度比完美更重要** — 每周完成一个画布假设实验，比等待完美调研方案更能快速迭代
 
 ### ❓ 常见问题 (FAQ)
 
@@ -858,21 +835,26 @@ dashboard = vpd.generate_canvas(include_ceo_analysis=True)
 
 ```
 value-proposition-design/
-├── SKILL.md              # AI Agent skill definition
-├── README.md             # This file
-├── INSTALL.md            # Installation guide
-├── pyproject.toml        # Python package build config
-├── vpd/                  # Python package (pure stdlib)
-│   ├── __init__.py       # VPDSkill unified entry
-│   ├── interview.py      # Interview guide generator
-│   ├── survey.py         # Survey designer
-│   ├── priority.py       # Priority calculator
-│   ├── canvas.py         # Value Proposition Canvas analyzer
-│   ├── strategy.py       # Competitive strategy scorer
-│   ├── experiment.py     # Experiment designer
-│   └── sample.py         # Sample size calculator
-└── references/           # Knowledge base documents
-    └── knowledge-base.md
+├── SKILL.md                    # AI Agent skill definition
+├── README.md                   # This file
+├── INSTALL.md                  # Installation guide
+├── pyproject.toml              # Python package build config
+├── vpd/                        # Python package (pure stdlib)
+│   ├── __init__.py             # VPDSkill unified entry
+│   ├── interview_generator.py  # Interview guide generator
+│   ├── survey_designer.py      # Survey designer
+│   ├── priority_calculator.py  # Priority calculator
+│   ├── canvas_analyzer.py      # Value Proposition Canvas analyzer
+│   ├── strategy_scorer.py      # Competitive strategy scorer
+│   ├── experiment_designer.py  # Experiment designer
+│   ├── sample_calculator.py    # Sample size calculator
+│   ├── utils.py                # Utility functions
+│   ├── config.yaml             # Tunable configuration
+│   └── tests/test_all.py       # 14 unit tests
+├── references/                 # Knowledge base documents
+│   ├── knowledge-base.md       # Full-book 8-topic knowledge base
+│   └── README.md               # Knowledge base index
+└── .gitignore
 ```
 
 ### 🛠️ Troubleshooting
@@ -891,30 +873,7 @@ value-proposition-design/
 3. **Focus on high-severity pains** — Address the most painful problems first
 4. **Measure fit score** — Track how well your value map addresses customer profile
 5. **Include CEO perspective** — Always consider moat, monetization, and ROI
-
-### 💡 Pro Tips
-
-- **Fill the canvas with evidence, not guesses** — Every Job, Pain, and Gain should come from real user research, not team assumptions. Use UDM interviews to populate.
-- **The fit score is a compass, not a destination** — A 0.85 fit score doesn't mean you're done. It means you've validated the current hypothesis. Keep iterating.
-- **Start with pains, not gains** — Users switch products primarily to eliminate pains, not to gain new benefits. Address the biggest pain first.
-- **Design experiments before building features** — The "Test Card" approach (hypothesis → method → metric → threshold) prevents building things nobody wants.
-- **Use Blue Ocean strategy thinking** — Don't just match competitors on existing factors. Ask: what factors can you eliminate, reduce, raise, or create?
-
-### ⛔ When NOT to Use This Skill
-
-- **Choosing research methods or designing studies** — Use [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) for research design
-- **Statistical analysis or A/B testing** — Use [Quantitative UX Research](https://github.com/AliDujie/Quantitative-UX-Research) for quantitative validation
-- **Understanding user Jobs-to-be-Done** — Use [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) to define jobs before canvas filling
-- **Creating user personas and segmentation** — Use [Web Persona](https://github.com/AliDujie/web-persona-skill) for persona creation
-- **Data visualization and presentation design** — Use [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) for chart design and narratives
-
-### ❌ Common Mistakes to Avoid
-
-- **Canvas paralysis** — Don't wait for "perfect" data. Fill the canvas with your best current understanding, then validate with experiments.
-- **Vague jobs and pains** — "Improve efficiency" is not a job. "Reduce time spent on weekly reporting from 2 hours to 15 minutes" is.
-- **Skipping the customer profile** — You can't design a value map without understanding Jobs, Pains, and Gains first. Don't jump to solutions.
-- **Testing everything at once** — Rank hypotheses by lethality (what kills the business if wrong). Test lethal hypotheses first.
-- **Ignoring unit economics** — A great value proposition with CAC > LTV is a path to bankruptcy. Include the CEO perspective from day one.
+6. **Use `skill.summary()`** — After `analyze_canvas()`, call `skill.summary()` to get the structured fit score and diagnostics
 
 ### ❓ FAQ
 
@@ -1135,7 +1094,9 @@ competitive-strategy python-toolkit openclaw-skill alicloud
 | Version | Date | Changes |
 |---------|------|--------|
 | v2.4.42 | 2026-05-11 | Repo maintenance: fixed broken file path reference in Next Steps (canvas.py→canvas_analyzer.py), enhanced cross-skill integration examples, updated Last Updated |
-| v2.4.43 | 2026-05-11 | Repo maintenance: added Beginner Quick Reference Card with 7 common use cases and quick commands
+| v2.4.43 | 2026-05-11 | Repo maintenance: added Beginner Quick Reference Card with 7 common use cases and quick commands |
+| v2.4.44 | 2026-05-11 | Repo maintenance: added English 5-minute Quick Start checklist, enhanced discoverability for English-speaking users, verified ecosystem cross-references |
+| v2.4.45 | 2026-05-11 | Repo maintenance: fixed missing changelog entries (v2.4.44–v2.4.45) in English inline changelog, fixed broken table formatting, aligned all version references |
 
 | v2.4.38 | 2026-05-09 | Repo maintenance: added English Project Structure section for bilingual parity, enhanced documentation completeness |
 | v2.4.37 | 2026-05-09 | Repo maintenance: fixed SKILL.md version mismatch, aligned README footer version, verified ecosystem cross-references, improved changelog table ordering |
@@ -1428,16 +1389,6 @@ ctx = swd.build_context(audience="投资人", cta="批准 A 轮融资")
 
 > 💡 **VPD 是商业验证层** — 将用户洞察转化为可测试的价值假设，连接研究洞察与商业决策。
 
-### 💡 Pro Tips / 专业提示
-
-- **从客户 Jobs 开始** — Jobs 驱动一切，先搞清楚再画布
-- **Fit Score > 0.7 才能推进** — 低于 0.7 说明价值主张与客户画像不匹配
-- **实验先验证致命假设** — 用 lethality 排序，先测试最可能推翻你的假设
-- **竞争战略避免同质化** — 用蓝海四项行动框架（消除-减少-提升-创造）
-- **VPD + JTBD 是最佳搭档** — 将 JTBD 发现的 Jobs 映射到价值主张画布
-- **CEO 视角不可省略** — 画布完成后务必做护城河和商业化路径分析
-- **实验速度比完美更重要** — 每周完成一个画布假设实验，比等待完美调研方案更能快速迭代
-
 ## 📋 版本历史 (Changelog)
 
 | 版本 | 日期 | 变更 |
@@ -1482,17 +1433,6 @@ ctx = swd.build_context(audience="投资人", cta="批准 A 轮融资")
 | v1.3 | 2026-04-22 | 初始版本 |
 
 ---
-
-### 💡 Pro Tips
-
-- **Start with Customer Jobs** — Jobs drive everything; get them right first
-- **Fit Score > 0.7 to proceed** — Below 0.7 means value proposition doesn't match customer profile
-- **Test Lethal Hypotheses First** — Rank by lethality, test what could most disprove your assumption
-- **Avoid Homogenization** — Use Blue Ocean four-action framework (eliminate-reduce-raise-create)
-- **VPD + JTBD is the best pairing** — Map JTBD-discovered Jobs to the value proposition canvas
-- **CEO perspective is mandatory** — Always do moat and monetization path analysis after canvas
-- **Experiment Velocity Over Perfection** — One canvas hypothesis experiment per week beats waiting for a perfect research plan
-- **Full Ecosystem Workflow** — VPD bridges insight and execution in the AliDujie ecosystem. JTBD provides the customer jobs, VPD maps them to value propositions, QuantUX validates hypotheses experimentally, and SWD presents results to stakeholders.
 
 ## 📋 Version History (English)
 
