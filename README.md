@@ -624,13 +624,13 @@ swd.build_context(audience="产品委员会", cta="批准产品迭代")
 
 ### 👥 Who Is This For?
 
-| Role | Use Case |
-|------|----------|
-| **Product Managers** | Validate product-market fit, systematically test value hypotheses |
-| **UX Researchers** | Connect user insights to value proposition design |
-| **Startup Founders** | Test value hypotheses before building |
-| **Business Strategists** | Competitive differentiation and moat analysis |
-| **AI Agents** | Zero-dependency Python package for automated VPD workflows |
+| Role | Use Case | Next Skill to Try |
+|------|----------|-------------------|
+| **Product Managers** | Validate product-market fit, systematically test value hypotheses | → [QuantUX](https://github.com/AliDujie/Quantitative-UX-Research) for A/B testing |
+| **UX Researchers** | Connect user insights to value proposition design | → [UDM](https://github.com/AliDujie/universal-design-methods) for customer interviews |
+| **Startup Founders** | Test value hypotheses before building | → [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) for job discovery |
+| **Business Strategists** | Competitive differentiation and moat analysis | → [SWD](https://github.com/AliDujie/storytelling-with-data) for pitching |
+| **AI Agents** | Zero-dependency Python package for automated VPD workflows | → Any of the 5 companion skills for full workflow |
 
 ### ✅ 5-Minute Quick Start Checklist
 
@@ -1547,4 +1547,4 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 
 ---
 
-*Last Updated: 2026-05-11 | AliDujie Skill Ecosystem | v2.4.46*
+*Last Updated: 2026-05-11 | AliDujie Skill Ecosystem | v2.4.47*
