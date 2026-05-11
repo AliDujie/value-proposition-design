@@ -587,6 +587,7 @@ swd.build_context(audience="产品委员会", cta="批准产品迭代")
 - [Best Practices](#-best-practices)
 - [FAQ](#-faq)
 - [User Reviews](#-user-reviews)
+- [Getting Help](#-getting-help)
 - [Extended Reading](#-extended-reading)
 - [Related Skills](#-related-skills-1)
 - [End-to-End Workflow: All 6 Skills](#-end-to-end-workflow-all-6-skills)
@@ -1528,6 +1529,20 @@ Ready to go deeper? Here's what to try next:
 Based on *Value Proposition Design* by Alexander Osterwalder, Yves Pigneur, et al. (Wiley, 2014), covering the Value Proposition Canvas, customer profiling, and fit testing.
 
 **Applicable to:** Product Managers, Entrepreneurs, Designers, Marketers
+
+### 🆘 Getting Help
+
+- 📖 Check the [Troubleshooting](#-troubleshooting) section for common issues
+- 📚 Read the methodology guides in [references/](references/)
+- 💬 Open an issue on [GitHub](https://github.com/AliDujie/value-proposition-design/issues)
+
+### 📖 Extended Reading
+
+| Book | Author | Related Capability |
+|------|--------|--------------------|
+| *Value Proposition Design* | Alexander Osterwalder et al. | Full VPD methodology — Canvas, fit testing |
+| *Business Model Generation* | Alexander Osterwalder | Business Model Canvas, ecosystem design |
+| *Testing Business Ideas* | David Bland & Alexander Osterwalder | Experiment design and validation |
 
 ### 🤝 Contributing
 
