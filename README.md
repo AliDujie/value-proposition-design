@@ -4,7 +4,7 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.4.48-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.4.49-green.svg)](CHANGELOG.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026-05-12-brightgreen.svg)
 
 > 💎 **一句话介绍**: 基于《价值主张设计》（亚历山大·奥斯特瓦德著）的完整方法论工具包。覆盖客户洞察、画布分析、优先级计算、竞争战略、实验验证，内置 CEO 视角的商业化路径分析。
@@ -887,6 +887,35 @@ A: Not exactly. VPD experiment design focuses on validating "value hypotheses" (
 **Q: What does CEO-perspective analysis include?**
 A: Moat analysis (network effects/switching costs/brand/scale), monetization paths (freemium/subscription/transaction fees), and ROI estimation (CAC vs LTV).
 
+### 📋 Canvas Quick-Fill Template
+
+Use this template to structure your first Value Proposition Canvas:
+
+```python
+from vpd import VPDSkill
+
+skill = VPDSkill("Fitness Tracker App", "Health-conscious professionals")
+
+# 1. Customer Profile (who they are)
+skill.analyze_canvas(
+    product_name="FitTrack Pro",
+    # Jobs: What are they trying to get done?
+    jobs=["Track daily exercise", "Monitor sleep quality", "Set fitness goals"],
+    # Pains: What frustrates them?
+    pains=["Manual tracking is tedious", "Apps don't sync with wearables", "Hard to see progress"],
+    # Gains: What would make them happy?
+    gains=["Automated health insights", "Social motivation", "Personalized plans"],
+    # Your products/services
+    products=["Auto-sync fitness tracker", "AI health coach", "Community challenges"],
+    # How you relieve their pains
+    pain_relievers=["Zero-effort tracking", "Cross-device sync", "Progress dashboards"],
+    # How you create gains
+    gain_creators=["Weekly health reports", "Leaderboards", "Adaptive workout plans"]
+)
+print(skill.summary())  # Outputs fit score + recommendations
+```
+
+> 💡 **Start small**: Fill in just 3 items per section. A focused canvas beats a bloated one.
 
 ### ⛔ When NOT to Use This Skill
 
@@ -1547,4 +1576,4 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 
 ---
 
-*Last Updated: 2026-05-12 | AliDujie Skill Ecosystem | v2.4.48*
+*Last Updated: 2026-05-12 | AliDujie Skill Ecosystem | v2.4.49*

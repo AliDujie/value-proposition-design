@@ -1,3 +1,7 @@
+## v2.4.49 (2026-05-12)
+
+Repo maintenance: added "Canvas Quick-Fill Template" with complete working code example in English README, reduced friction for first-time users.
+
 ## v2.4.48 (2026-05-12)
 
 Repo maintenance: updated README footer date (2026-05-11→2026-05-12), version bump, verified ecosystem cross-references and version alignment across README/SKILL.md/pyproject.toml.
