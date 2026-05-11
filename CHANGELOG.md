@@ -1,3 +1,7 @@
+## v2.4.50 (2026-05-12)
+
+Repo maintenance: added missing `__version__` to `__init__.py` (was absent, now 2.4.50), verified all Python module exports are importable, confirmed ecosystem cross-references.
+
 ## v2.4.49 (2026-05-12)
 
 Repo maintenance: added "Canvas Quick-Fill Template" with complete working code example in English README, reduced friction for first-time users.
