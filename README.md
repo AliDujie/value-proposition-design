@@ -487,7 +487,7 @@ from swd import SWDSkill
 
 # 阶段 1: JTBD 发现
 jtbd = JTBDSkill("SaaS 平台")
-jtbd.analyze(product="SaaS 平台", jobs=[{"context": "团队协作", "motivation": "提升效率"}])
+jtbd.analyze(include_ceo_analysis=True)  # JTBD analysis with CEO decision support
 
 # 阶段 2: VPD 验证
 vpd = VPDSkill("SaaS 平台", "中小企业")
@@ -515,17 +515,10 @@ from vpd import VPDSkill
 
 # JTBD 发现
 jtbd = JTBDSkill("产品名")
-report = jtbd.analyze(product="产品名",
-    jobs=[{"context": "出差时", "motivation": "快速找到住处"}]
-)
+report = jtbd.analyze(include_ceo_analysis=True)  # JTBD analysis report
 
-# 映射到 VPD
-vpd = VPDSkill("产品名", "商务用户")
-vpd.analyze_canvas(product_name="产品名",
-    jobs=[{"job": report.jobs[0]["motivation"], "type": "功能性", "importance": "高"}],
-    pains=[{"pain": report.anxieties[0], "severity": "高"}],
-    gains=[{"gain": report.outcomes[0], "relevance": "高"}]
-)
+# 映射到 VPD 画布（需要完整输入：jobs, pains, gains, products, pain_relievers, gain_creators）
+# vpd.analyze_canvas(product_name="产品名", jobs=[...], pains=[...], gains=[...], ...)
 ```
 
 #### 集成 2: Web Persona → VPD
@@ -536,7 +529,11 @@ from vpd import VPDSkill
 
 # 基于 Persona 定义目标用户
 persona = PersonaSkill("产品名")
-persona.add_persona(name="效率型用户", archetype="追求快速完成", goals=["省时"])
+persona.add_persona(
+    name="效率型用户", short_desc="追求快速完成", priority="primary",
+    quote="我想快速完成任务", goals=["省时"], behaviors=["高频使用"],
+    attitudes=["效率优先"], bio="追求效率的用户"
+)
 
 # VPD 验证价值主张
 vpd = VPDSkill("产品名", "效率型用户")
