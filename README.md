@@ -5,6 +5,7 @@
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
 [![Version](https://img.shields.io/badge/version-2.4.53-green.svg)](CHANGELOG.md)
+[![Install Guide](https://img.shields.io/badge/install-guide-orange.svg)](INSTALL.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026-05-12-brightgreen.svg)
 
 > 💎 **一句话介绍**: 基于《价值主张设计》（亚历山大·奥斯特瓦德著）的完整方法论工具包。覆盖客户洞察、画布分析、优先级计算、竞争战略、实验验证，内置 CEO 视角的商业化路径分析。
@@ -33,6 +34,49 @@
 | [👤 Web Persona](https://github.com/AliDujie/web-persona-skill) | 用户画像 | Persona 角色 → VPD 细分画布 → 精准定位 |
 
 ---
+
+### 🔗 Ecosystem Quick Start / 生态系统快速上手
+
+VPD 是 6 技能工作流的**价值设计核心**——将用户需求转化为可验证的价值主张。
+
+```
+Persona → JTBD → UDM → QuantUX → VPD (← 你在这里) → SWD
+```
+
+**组合调用示例：**
+```python
+# Step 1: JTBD 发现 Jobs → VPD 转化为价值主张
+from vpd import VPDSkill
+vpd = VPDSkill("在线旅行平台", "25-35 岁商旅用户")
+
+# 价值主张画布：客户画像 × 价值地图
+canvas = vpd.analyze_canvas(
+    product_name="旅行平台",
+    jobs=["快速找到性价比酒店", "一站式行程管理"],
+    pains=["搜索耗时", "信息不透明", "价格波动"],
+    gains=["节省时间", "价格保障", "个性化推荐"]
+)
+
+# Step 2: 设计验证实验
+experiment = vpd.design_experiment(
+    hypothesis="AI 推荐能将搜索时间减少 50%",
+    metric="平均搜索时长"
+)
+
+# Step 3: 竞争战略分析
+strategy = vpd.analyze_competitor(
+    name="携程",
+    advantages=["AI 智能推荐", "价格保障"],
+    weaknesses=["界面复杂"]
+)
+
+# Step 4: 将验证结果交给 SWD 做数据叙事
+from swd import SWDSkill
+swd = SWDSkill("价值主张验证报告")
+story = swd.build_story(protagonist="产品团队", imbalance="价值主张未验证", call_to_action="批准实验预算")
+```
+
+> 💡 **提示**: VPD 是桥梁——将 JTBD/UDM 发现的用户需求，转化为可测试的产品价值假设。
 
 ### ✅ 5 分钟快速开始检查清单
 
@@ -1652,4 +1696,4 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 
 ---
 
-*Last Updated: 2026-05-12 | AliDujie Skill Ecosystem | v2.4.52*
+*Last Updated: 2026-05-12 | AliDujie Skill Ecosystem | v2.4.53*
