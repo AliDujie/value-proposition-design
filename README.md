@@ -4,7 +4,7 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.4.50-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.4.51-green.svg)](CHANGELOG.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026-05-12-brightgreen.svg)
 
 > 💎 **一句话介绍**: 基于《价值主张设计》（亚历山大·奥斯特瓦德著）的完整方法论工具包。覆盖客户洞察、画布分析、优先级计算、竞争战略、实验验证，内置 CEO 视角的商业化路径分析。
@@ -1563,6 +1563,32 @@ Ready to go deeper? Here's what to try next:
 
 > 💡 **Pro Tip**: The fastest path to Product-Market Fit: JTBD (what users need) → VPD (how you deliver it) → QuantUX (does it work?)
 
+### ⚡ Power Workflow: Canvas-to-Experiment Pipeline
+
+```python
+from vpd import VPDSkill
+from quantux import QuantUXSkill
+
+# 1. VPD: Analyze value proposition canvas
+vpd = VPDSkill("SaaS 协作平台", "中小企业")
+canvas = vpd.analyze_canvas(
+    product_name="TeamFlow",
+    jobs=[{"description": "团队任务协调", "importance": 5, "category": "functional"}],
+    pains=[{"description": "信息分散在多个工具", "severity": "critical"}],
+    gains=[{"description": "一站式工作空间", "desire_level": "expected"}])
+
+# 2. VPD: Design experiments to test riskiest assumptions
+experiments = vpd.design_experiment(
+    hypotheses=[{"description": "一站式平台比多工具组合效率提升 30%",
+        "lethality": "lethal", "test_method": "登录页 MVP"}])
+
+# 3. QuantUX: Run the experiment validation
+quant = QuantUXSkill("协作平台")
+sample = quant.calculate_ab_sample_size(baseline=0.65, mde=0.05)
+
+# → From canvas analysis to validated product-market fit
+```
+
 ### 👨‍💻 Credits
 
 Based on *Value Proposition Design* by Alexander Osterwalder, Yves Pigneur, et al. (Wiley, 2014), covering the Value Proposition Canvas, customer profiling, and fit testing.
@@ -1589,4 +1615,4 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 
 ---
 
-*Last Updated: 2026-05-12 | AliDujie Skill Ecosystem | v2.4.50*
+*Last Updated: 2026-05-12 | AliDujie Skill Ecosystem | v2.4.51*

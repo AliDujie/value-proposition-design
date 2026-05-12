@@ -1,3 +1,7 @@
+## v2.4.51 (2026-05-12)
+
+Repo maintenance: added "Power Workflow: Canvas-to-Experiment Pipeline" code example in English README; removed duplicate "最佳实践" section from SKILL.md.
+
 ## v2.4.50 (2026-05-12)
 
 Repo maintenance: added missing `__version__` to `__init__.py` (was absent, now 2.4.50), verified all Python module exports are importable, confirmed ecosystem cross-references.
