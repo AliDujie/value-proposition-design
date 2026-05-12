@@ -434,3 +434,14 @@ VPD 是 **AliDujie UX 研究技能生态系统** 的产品-市场验证层，与
 | [Web Persona](https://github.com/AliDujie/web-persona-skill) | 用户角色 | Persona 目标/痛点 → VPD 画布 |
 | [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) | 数据叙事 | VPD 产出 → SWD 数据故事 |
 | [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) | 战略框架 | STM 商业画布 → VPD 价值验证 |
+
+### 🔗 扩展生态 (Extended Ecosystem)
+
+VPD 价值验证可与管理层技能结合，将产品-市场匹配转化为商业战略：
+
+| 扩展技能 | 协作场景 |
+|---------|----------|
+| [CEO Advisor](https://github.com/AliDujie/ceo-advisor) | VPD 护城河分析 → CEO 竞争战略决策 |
+| [CPO Advisor](https://github.com/AliDujie/cpo-advisor) | VPD 画布 → CPO 产品组合与 PMF 评估 |
+| [CMO Advisor](https://github.com/AliDujie/cmo-advisor) | VPD 价值主张 → CMO 品牌定位与 messaging |
+| [Plan CEO Review](https://github.com/AliDujie/plan-ceo-review) | VPD 实验验证 → CEO 计划调整与范围扩展 |
