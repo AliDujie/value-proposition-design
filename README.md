@@ -32,12 +32,13 @@
 | [📈 Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) | 数据叙事 | VPD 实验结果 → SWD 数据故事 → 投资决策 |
 | [🎯 JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) | 深度需求洞察 | JTBD 工作发现 → VPD 画布映射 → 价值设计 |
 | [👤 Web Persona](https://github.com/AliDujie/web-persona-skill) | 用户画像 | Persona 角色 → VPD 细分画布 → 精准定位 |
+| [🧠 Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) | 战略分析 | VPD 价值主张 → STM 竞争分析 → 市场战略 |
 
 ---
 
 ### 🔗 Ecosystem Quick Start / 生态系统快速上手
 
-VPD 是 6 技能工作流的**价值设计核心**——将用户需求转化为可验证的价值主张。
+VPD 是 7 技能工作流的**价值设计核心**——将用户需求转化为可验证的价值主张。
 
 ```
 Persona → JTBD → UDM → QuantUX → VPD (← 你在这里) → SWD
@@ -77,6 +78,14 @@ story = swd.build_story(protagonist="产品团队", imbalance="价值主张未�
 ```
 
 > 💡 **提示**: VPD 是桥梁——将 JTBD/UDM 发现的用户需求，转化为可测试的产品价值假设。
+
+> 💡 **Try it now / 立即尝试**:
+> ```python
+> from vpd import VPDSkill
+> skill = VPDSkill("你的产品", "目标用户")
+> canvas = skill.analyze_canvas(product_name="你的产品", jobs=["核心任务"], pains=["主要痛点"], gains=["期望收益"])
+> print(canvas)  # 立即生成价值主张画布
+> ```
 
 ### ✅ 5 分钟快速开始检查清单
 
@@ -668,7 +677,7 @@ swd.build_context(audience="产品委员会", cta="批准产品迭代")
 - [Getting Help](#-getting-help)
 - [Extended Reading](#-extended-reading)
 - [Related Skills](#-related-skills-1)
-- [End-to-End Workflow: All 6 Skills](#-end-to-end-workflow-all-6-skills)
+- [End-to-End Workflow: All 7 Skills](#-end-to-end-workflow-all-6-skills)
 - [Skill Ecosystem Workflow](#-skill-ecosystem-workflow-1)
 - [Version History](#-version-history-english)
 
@@ -895,7 +904,7 @@ if canvas.fit_score >= 0.7:
 VPD is the **value design engine** of the ecosystem. Here's how it connects with the other 5 skills:
 
 ```python
-# ===== From Opportunity to Value Proposition (All 6 Skills) =====
+# ===== From Opportunity to Value Proposition (All 7 Skills) =====
 # Step 1: UDM discovers user pains → Step 2: JTBD structures the Job
 # Step 3: QuantUX validates demand → Step 4: VPD designs value proposition
 # Step 5: Persona segments by user type → Step 6: SWD presents the pitch
@@ -1305,7 +1314,7 @@ UDM (usability testing) → Persona (user segments) → VPD (value iteration)
 
 > 💡 **Tip**: VPD pairs naturally with JTBD — map JTBD-discovered "jobs" to the value proposition canvas for product-market fit validation.
 
-### 🔄 End-to-End Workflow: All 6 Skills
+### 🔄 End-to-End Workflow: All 7 Skills
 
 A complete value-design-to-commercialization workflow using the full AliDujie ecosystem:
 
@@ -1438,7 +1447,7 @@ MIT License — 基于《Value Proposition Design》by Alexander Osterwalder et 
 
 ### 🚀 完整端到端工作流：从画布到商业化 (End-to-End Workflow)
 
-以下是一个真实场景中，6 个技能如何协作完成从价值主张设计到商业化的完整工作流：
+以下是一个真实场景中，7 个技能如何协作完成从价值主张设计到商业化的完整工作流：
 
 **场景**: B2B SaaS 协作工具需要验证产品-市场契合并制定商业化路径
 
@@ -1714,7 +1723,7 @@ Based on *Value Proposition Design* by Alexander Osterwalder, Yves Pigneur, et a
 
 ### 🌐 Explore the Full AliDujie UX Research Ecosystem
 
-This skill is part of a **6-skill UX research ecosystem** — each covers a different phase of the research lifecycle. Combine them for end-to-end workflows:
+This skill is part of a **7-skill UX research ecosystem** — each covers a different phase of the research lifecycle. Combine them for end-to-end workflows:
 
 | Skill | Role | When to Use |
 |-------|------|-------------|
