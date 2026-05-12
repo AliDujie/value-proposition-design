@@ -677,7 +677,7 @@ swd.build_context(audience="产品委员会", cta="批准产品迭代")
 - [Getting Help](#-getting-help)
 - [Extended Reading](#-extended-reading)
 - [Related Skills](#-related-skills-1)
-- [End-to-End Workflow: All 7 Skills](#-end-to-end-workflow-all-6-skills)
+- [End-to-End Workflow: All 7 Skills](#-end-to-end-workflow-all-7-skills)
 - [Skill Ecosystem Workflow](#-skill-ecosystem-workflow-1)
 - [Version History](#-version-history-english)
 
