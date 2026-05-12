@@ -4,10 +4,19 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.4.52-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.4.53-green.svg)](CHANGELOG.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026-05-12-brightgreen.svg)
 
 > 💎 **一句话介绍**: 基于《价值主张设计》（亚历山大·奥斯特瓦德著）的完整方法论工具包。覆盖客户洞察、画布分析、优先级计算、竞争战略、实验验证，内置 CEO 视角的商业化路径分析。
+
+```text
+┌─────────┐    ┌──────────┐    ┌─────┐    ┌──────────┐    ┌─────┐    ┌─────┐
+│ Persona │ →  │   JTBD   │ →  │ UDM │ →  │ QuantUX  │ →  │ VPD │ →  │ SWD │
+│ 角色定义 │    │ 需求洞察  │    │ 研究方法 │    │ 定量验证  │    │ 价值设计│    │ 数据叙事 │
+└─────────┘    └──────────┘    └─────┘    └──────────┘    └─────┘    └─────┘
+```
+
+**VPD is the value-design core** — transforming user needs into testable value propositions. Use it when you need to bridge "what users want" with "what you deliver".
 
 ---
 
@@ -102,6 +111,9 @@ competitive-strategy python-toolkit openclaw-skill alicloud
 - **经典方法论** — 基于 Alexander Osterwalder《Value Proposition Design》，全球 100 万+ 商业人士使用的价值主张框架
 - **完整方法论** — 覆盖客户洞察、画布分析、优先级计算、竞争战略、实验验证
 - **CEO 视角** — 内置商业化路径、护城河分析、ROI 估算
+- **实战验证** — 每个价值主张都通过实验设计 + 样本量计算进行验证，避免"我觉得"式的产品决策
+- **竞争差异化** — 内置竞争战略分析，帮你找到护城河和差异化机会
+- **从假设到验证** — 完整的"假设→实验→数据→决策"闭环，确保每一步都有据可查
 - **零依赖** — 纯 Python 标准库实现，无外部依赖，5 分钟上手
 - **双语支持** — 完整中英文文档，适合国际化团队
 - **即插即用** — API 设计直观，代码示例丰富，即刻产出价值主张分析报告
@@ -1213,7 +1225,6 @@ VPD is the value-design core of the **AliDujie UX Research Skills Ecosystem**. H
 | "I need to know who my users are" | → [Web Persona](https://github.com/AliDujie/web-persona-skill) — Create concrete personas |
 | "How do I present research results clearly?" | → [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) — Data storytelling |
 | "I need a structured framework for analysis" | → [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) — PESTEL, Five Forces, decision trees |
-| "I need to analyze a business problem systematically" | → [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) — Frameworks & strategic analysis |
 
 ### Workflow 1: JTBD → VPD → Experiment Validation
 
