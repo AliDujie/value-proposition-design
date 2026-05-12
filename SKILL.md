@@ -1,6 +1,6 @@
 ---
 name: value-proposition-design
-version: "2.4.54"
+version: "2.4.55"
 description: 价值主张设计方法论 Skill - 基于奥斯特瓦德《价值主张设计》全书，覆盖客户洞察、画布分析、优先级计算、竞争战略、问卷设计、实验验证的完整方法论与可执行 Python 工具包，以及CEO决策视角的商业化路径、竞争护城河与ROI估算
 ---
 
@@ -46,6 +46,30 @@ UDM 用户研究 ──► ┌────────────────�
 - **零学习成本** — 纯 Python 标准库，无外部依赖，`from vpd import VPDSkill` 即可使用
 - **实验驱动** — 价值主张必须通过实验验证，而非团队投票或直觉，内置样本量计算
 - **生态桥梁** — 连接 JTBD 的 Jobs 和 QuantUX 的验证，是产品-市场契合的关键环节
+
+## ⚡ 快速上手 (Quick Start)
+
+```python
+from vpd import VPDSkill
+
+vpd = VPDSkill("你的产品名", "目标用户")
+
+# 价值主张画布分析
+canvas = vpd.analyze_canvas(
+    product_name="产品名",
+    jobs=["快速完成任务"],
+    pains=["流程繁琐"],
+    gains=["省时省力"]
+)
+
+# 竞争战略画布
+strategy = vpd.analyze_competitor_canvas()
+
+# 实验设计
+experiment = vpd.design_experiment(hypothesis="一键预订可提升转化率")
+```
+
+> 💡 **5 分钟上手**: `from vpd import VPDSkill` → 纯标准库，零依赖，开箱即用。
 
 ## 一、核心框架
 
