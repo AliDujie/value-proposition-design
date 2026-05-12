@@ -4,7 +4,7 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.4.51-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.4.52-green.svg)](CHANGELOG.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026-05-12-brightgreen.svg)
 
 > 💎 **一句话介绍**: 基于《价值主张设计》（亚历山大·奥斯特瓦德著）的完整方法论工具包。覆盖客户洞察、画布分析、优先级计算、竞争战略、实验验证，内置 CEO 视角的商业化路径分析。
@@ -84,6 +84,18 @@
 value-proposition canvas product-market-fit experimentation
 competitive-strategy python-toolkit openclaw-skill alicloud
 ```
+
+### 🌍 实战场景指南
+
+| 你的场景 | 调用方式 | 输出结果 |
+|----------|---------|----------|
+| "我们的产品解决了真实问题吗？" | `analyze_canvas(product_name="...", jobs=[...], pains=[...])` | 画布适配度分析 + 差距识别 |
+| "该运行什么实验？" | `design_experiment(hypothesis="...", metric="...")` | 精益实验 + 成功标准 |
+| "如何击败竞争对手？" | `analyze_competitor(name="...", advantages=[...])` | 竞争定位策略 |
+| "估算商业机会" | `generate_roi_estimate()` | 3 年收入预测 + 敏感性分析 |
+| "有效访谈客户" | `generate_interview()` | 客户发现访谈指南 |
+
+> 💡 **提示**: 从画布开始——如果适配度 < 60%，在构建之前需要更多客户洞察。
 
 ### 🌟 为什么使用这个技能？(Why Use This Skill?)
 
@@ -721,6 +733,20 @@ print(skill.generate_commercialization_path())  # Revenue model + CAC/LTV
 print(skill.generate_competitive_moat())       # Moat analysis + build plan
 print(skill.generate_roi_estimate())           # 3-year forecast + sensitivity
 ```
+
+### 🌍 Real-World Scenario Guide
+
+> **Need to validate product-market fit?** Here are common scenarios and exactly how to use this skill.
+
+| Scenario | What to Call | Expected Output |
+|----------|-------------|----------------|
+| "Does our product solve real problems?" | `analyze_canvas(product_name="...", jobs=[...], pains=[...])` | Canvas fit analysis with gap identification |
+| "What experiments should we run?" | `design_experiment(hypothesis="...", metric="...")` | Lean experiment with success criteria |
+| "How do we beat competitors?" | `analyze_competitor(name="...", advantages=[...])` | Competitive positioning strategy |
+| "Estimate the business opportunity" | `generate_roi_estimate()` | 3-year revenue forecast + sensitivity |
+| "Interview customers effectively" | `generate_interview()` | Customer discovery interview guide |
+
+**Quick Tip:** Start with the canvas — if fit score < 60%, you need more customer insight before building.
 
 ### 💡 10 Core Capabilities
 
@@ -1615,4 +1641,4 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 
 ---
 
-*Last Updated: 2026-05-12 | AliDujie Skill Ecosystem | v2.4.51*
+*Last Updated: 2026-05-12 | AliDujie Skill Ecosystem | v2.4.52*
