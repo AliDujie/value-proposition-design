@@ -438,6 +438,13 @@ value-proposition-design/
 - **CEO 视角不可省略** — 画布完成后务必做护城河和商业化路径分析
 - **实验速度比完美更重要** — 每周完成一个画布假设实验，比等待完美调研方案更能快速迭代
 
+### 💡 专业技巧
+
+- **先用 JTBD 验证 Jobs 再画布** — 如果没有通过 JTBD 或 UDM 识别出客户的 Jobs、Pains、Gains，你的画布将充满假设。真实的客户数据才是画布的价值所在。
+- **Fit Score > 0.7 是硬性门槛** — 拟合度低于 0.7 时不要进入实验设计阶段，说明价值主张与客户画像不匹配，回到访谈重新理解用户。
+- **致命假设优先验证** — 实验设计时按 lethality 排序，最先测试最可能推翻你的假设。如果最危险的假设无法验证，其他验证都无意义。
+- **用蓝海框架打破同质化** — 如果你的价值主张看起来和竞品差不多，用消除-减少-提升-创造矩阵寻找未竞争的市场空间。
+
 ### ❓ 常见问题 (FAQ)
 
 **Q: 价值主张画布和精益画布有什么区别？**
@@ -1137,6 +1144,13 @@ value-proposition-design/
 4. **Measure fit score** — Track how well your value map addresses customer profile
 5. **Include CEO perspective** — Always consider moat, monetization, and ROI
 6. **Use `skill.summary()`** — After `analyze_canvas()`, call `skill.summary()` to get the structured fit score and diagnostics
+
+### 💡 Pro Tips
+
+- **Start with JTBD before drawing the canvas** — If you haven't identified customer Jobs, Pains, and Gains through research (using JTBD or UDM), your canvas will be full of assumptions. Real customer data makes the canvas valuable.
+- **Fit Score > 0.7 is your gate** — Don't proceed to experiment design until your fit score exceeds 0.7. Below that threshold, you're testing a hypothesis that's unlikely to work.
+- **Lethality > everything in experiment design** — When prioritizing experiments, always test the "lethal" assumption first. If the most dangerous hypothesis can't be validated, no amount of other validation matters.
+- **Use the Blue Ocean framework to escape competition** — If your value proposition looks like everyone else's, use the Eliminate-Reduce-Raise-Create grid to find uncontested market space.
 
 ### ❓ FAQ
 
