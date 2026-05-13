@@ -4,9 +4,9 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.4.58-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.4.59-green.svg)](CHANGELOG.md)
 [![Install Guide](https://img.shields.io/badge/install-guide-orange.svg)](INSTALL.md)
-![Last Updated](https://img.shields.io/badge/last%20updated-2026-05-13-brightgreen.svg)
+![Last Updated](https://img.shields.io/badge/last%20updated-2026-05-14-brightgreen.svg)
 
 > 💎 **一句话介绍**: 基于《价值主张设计》（亚历山大·奥斯特瓦德著）的完整方法论工具包。覆盖客户洞察、画布分析、优先级计算、竞争战略、实验验证，内置 CEO 视角的商业化路径分析。
 
@@ -1441,7 +1441,7 @@ competitive-strategy python-toolkit openclaw-skill alicloud
 ### 📋 版本历史 (Changelog)
 
 | 版本 | 日期 | 变更 |
-|------|------|------|| 2.4.57 | 2026-05-13 | 仓库维护：修复变更日志重复条目，清理独立的 Changelog 章节，增强版本历史表格一致性 |
+|------|------|------|| 2.4.59 | 2026-05-14 | 仓库维护：修复版本不一致（徽章 2.4.58 vs pyproject 2.4.57），对齐 README/徽章/SKILL.md/pyproject.toml 版本，更新 Last Updated 至 2026-05-14 |
 
 | v2.4.45 | 2026-05-11 | 仓库维护：修复页脚版本不一致（v2.4.42→v2.4.44），补齐缺失的变更日志条目（v2.4.43–v2.4.44），确保 README/徽章/CHANGELOG 三端版本对齐 |
 | v2.4.43 | 2026-05-11 | 仓库维护：添加新手快速参考卡，覆盖 7 个常见使用场景和快捷命令 |
@@ -1487,7 +1487,7 @@ competitive-strategy python-toolkit openclaw-skill alicloud
 ## 📋 Version History (English)
 
 | Version | Date | Changes |
-|---------|------|--------|| v2.4.57 | 2026-05-13 | Repo maintenance: deduplicated changelog entries, removed standalone Changelog section, enhanced changelog table consistency |
+|---------|------|--------|| v2.4.59 | 2026-05-14 | Repo maintenance: fixed version mismatch (badge 2.4.58 vs pyproject 2.4.57), aligned README badge/SKILL.md/pyproject.toml versions, updated Last Updated to 2026-05-14 |
 
 | v2.4.46 | 2026-05-11 | Repo maintenance: added missing "When NOT to Use This Skill" and "Common Mistakes to Avoid" sections to English README, verified English section completeness, verified cross-skill links, updated version badges |
 | v2.4.45 | 2026-05-11 | Repo maintenance: fixed footer version mismatch (v2.4.42→v2.4.44), added missing changelog entries (v2.4.43–v2.4.44), ensured README/badge/CHANGELOG alignment |
@@ -1664,4 +1664,4 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 
 ---
 
-*Last Updated: 2026-05-14 | AliDujie Skill Ecosystem | v2.4.58*
+*Last Updated: 2026-05-14 | AliDujie Skill Ecosystem | v2.4.59*
