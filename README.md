@@ -20,6 +20,28 @@
 **VPD is the value-design core** — transforming user needs into testable value propositions. Use it when you need to bridge "what users want" with "what you deliver".
 
 ---
+## 📑 目录 / Table of Contents
+
+- [中文说明](#中文说明)
+  - [🌐 技能生态系统](#-技能生态系统-skill-ecosystem)
+  - [🌟 为什么使用这个技能？](#-为什么使用这个技能why-use-this-skill)
+  - [⚡ 5 分钟快速开始](#-5-分钟快速开始-quick-start)
+  - [💡 9 大核心能力](#-9-大核心能力)
+  - [🔧 实用示例](#-实用示例)
+  - [📁 项目结构](#-项目结构)
+  - [👥 这个技能适合谁？](#-这个技能适合谁who-is-this-for)
+  - [🛠️ 疑难解答](#-疑难解答-troubleshooting)
+  - [🏆 案例研究](#-案例研究-case-studies)
+  - [🆘 获取帮助](#-获取帮助-getting-help)
+  - [🔗 相关技能](#-相关技能)
+- [English](#english)
+  - [🌟 Why Use This Skill?](#-why-use-this-skill)
+  - [🚀 Quick Start](#-quick-start)
+  - [🔗 Related Skills](#-related-skills-1)
+- [🤝 参与贡献](#-参与贡献-contributing)
+- [📜 许可](#-许可-license)
+- [🔗 技能生态工作流](#-技能生态工作流-skill-ecosystem-workflow)
+
 
 ## 🌐 技能生态系统 (Skill Ecosystem)
 
@@ -658,6 +680,89 @@ swd.build_context(audience="产品委员会", cta="批准产品迭代")
 3. **安装 INSTALL.md** — 详细的安装和配置指南
 4. **贡献** — 查看 [CONTRIBUTING.md](CONTRIBUTING.md) 了解如何参与
 5. **探索生态** — 尝试其他 5 个技能，构建完整的用户研究工作流
+
+### 👥 这个技能适合谁？(Who Is This For?)
+
+| 角色 | 使用场景 | 下一步尝试 |
+|------|---------|-----------|
+| **产品经理** | 验证产品-市场匹配度，系统测试价值假设 | → [QuantUX](https://github.com/AliDujie/Quantitative-UX-Research) A/B 测试 |
+| **UX 研究员** | 将用户洞察连接到价值主张设计 | → [UDM](https://github.com/AliDujie/universal-design-methods) 客户访谈 |
+| **创业者** | 在构建之前测试价值假设 | → [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) 工作发现 |
+| **商业分析师** | 竞争分析和差异化战略 | → [SWD](https://github.com/AliDujie/storytelling-with-data) 价值呈现 |
+
+---
+
+### 🛠️ 疑难解答 (Troubleshooting)
+
+| 问题 | 解决方案 |
+|------|---------|
+| 匹配分数很低 | 检查痛点/收益是否直接映射到工作——错位会降低匹配度 |
+| 实验样本量太大 | 增加预期效应量或接受较低的统计功效 |
+| 竞争分析不清晰 | 聚焦独特的价值差异化，而非功能对标 |
+| 画布感觉不完整 | 确保每个客户工作至少对应一个痛点和收益 |
+
+---
+
+### 🏆 案例研究 (Case Studies)
+
+#### 案例 1: SaaS 产品-市场匹配验证
+
+**背景**: 某协作 SaaS 不确定产品是否真正满足目标用户需求。
+
+```python
+from vpd import VPDSkill
+
+skill = VPDSkill("协作 SaaS", "SMB 团队负责人")
+
+# 步骤 1: 价值主张画布分析
+canvas = skill.analyze_canvas(
+    product_name="协作 SaaS",
+    jobs=["减少会议时间", "跟踪项目进度", "快速信息同步"],
+    pains=["信息分散在多个工具", "找不到最新版本"],
+    gains=["一站式协作", "自动版本管理"]
+)
+
+# 步骤 2: 设计验证实验
+experiment = skill.design_experiment(
+    hypothesis="一体化协作能将会议时间减少 30%",
+    metric="每周会议时长"
+)
+
+# 步骤 3: 竞争分析
+strategy = skill.analyze_competitor(
+    name="Slack",
+    advantages=["广泛集成", "用户基础"],
+    weaknesses=["信息噪音大", "深度工作干扰"]
+)
+```
+
+#### 案例 2: 电商新特性价值验证
+
+**背景**: 某电商平台计划推出 AI 推荐功能，需要验证其价值主张。
+
+```python
+from vpd import VPDSkill
+
+skill = VPDSkill("电商平台", "高频购物用户")
+
+canvas = skill.analyze_canvas(
+    product_name="AI 推荐功能",
+    jobs=["快速找到想要的商品", "发现新品"],
+    pains=["搜索结果不相关", "选择太多无从下手"],
+    gains=["个性化推荐", "节省浏览时间"]
+)
+```
+
+---
+
+### 🆘 获取帮助 (Getting Help)
+
+- 📖 **详细安装指南**: [INSTALL.md](INSTALL.md)
+- 🐛 **报告问题**: [GitHub Issues](https://github.com/AliDujie/value-proposition-design/issues)
+- 💬 **讨论与反馈**: 在项目仓库发起 Discussion
+- 📝 **贡献指南**: [CONTRIBUTING.md](CONTRIBUTING.md)
+- 🔄 **版本历史**: [CHANGELOG.md](CHANGELOG.md)
+
 
 ---
 
