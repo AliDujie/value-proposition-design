@@ -18,6 +18,7 @@ description: 价值主张设计方法论 Skill - 基于奥斯特瓦德《价值�
 | 需要定量验证假设、设计 A/B 测试、计算样本量 | → [Quantitative UX Research](https://github.com/AliDujie/Quantitative-UX-Research) |
 | 需要创建人物角色、用户细分、设计指导 | → [Web Persona](https://github.com/AliDujie/web-persona-skill) |
 | 需要将研究结果转化为数据叙事、图表呈现 | → [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) |
+| 需要结构化商业分析框架 | → [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) |
 
 > 💡 VPD 是验证层：把 JTBD/UDM 的发现映射到价值主张画布，用实验验证契合度。
 
@@ -33,10 +34,11 @@ UDM 用户研究 ──► ┌────────────────�
                  │  · 画布填充     │──────► QuantUX (A/B 验证)
                  │  · 实验设计     │──────► SWD (数据故事汇报)
                  │  · 竞争战略     │──────► CEO 决策(商业化路径)
+                 │                 │──────► STM (商业战略框架)
                  └────────────────┘
 ```
 
-**VPD 的典型协作**：JTBD 发现 Jobs → UDM 用户研究 → VPD 画布填充 → 实验验证 → SWD 汇报
+**VPD 的典型协作**：JTBD 发现 Jobs → UDM 用户研究 → VPD 画布填充 → 实验验证 → SWD 汇报 → STM 战略决策
 
 ## 🌟 为什么选择 VPD？
 
