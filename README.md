@@ -766,6 +766,58 @@ canvas = skill.analyze_canvas(
 
 ---
 
+## 🔗 技能生态工作流 (Skill Ecosystem Workflow)
+
+VPD 是 **AliDujie UX 研究技能生态系统** 的价值设计核心。以下是与其他技能配合使用的典型工作流：
+
+### 🧭 快速决策指南 (Quick Decision Guide)
+
+| 你的问题 | 推荐技能 |
+|----------|----------|
+| "我的产品价值够不够？" | → **Value Proposition Design** (本技能) — 契合度诊断 |
+| "我不知道该研究什么" | → [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) — 方法推荐帮你找到方向 |
+| "我想理解用户为什么这样做" | → [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) — 挖掘用户背后的"工作" |
+| "我需要验证一个假设" | → [Quantitative UX Research](https://github.com/AliDujie/Quantitative-UX-Research) — A/B 测试和样本量计算 |
+| "我需要知道用户是谁" | → [Web Persona](https://github.com/AliDujie/web-persona-skill) — 创建具体的人物角色 |
+| "我怎么把研究结果讲清楚？" | → [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) — 数据叙事和图表改造 |
+
+### 工作流 1: JTBD 发现 → VPD 画布 → 实验验证
+
+```
+JTBD (需求洞察) → VPD (价值设计) → QuantUX (实验验证)
+```
+
+**场景**: 产品-市场契合验证
+1. 用 JTBD 发现用户核心 Jobs 和未满足需求
+2. 用 VPD 将 JTBD 发现映射到价值主张画布，设计价值匹配
+3. 用 QuantUX 设计 A/B 测试验证价值主张假设
+
+### 工作流 2: 角色创建 → VPD 细分画布 → 精准定位
+
+```
+Persona (用户角色) → VPD (细分画布) → 营销策略
+```
+
+**场景**: 多细分市场产品策略
+1. 用 Persona 创建不同用户段的人物角色
+2. 为每个角色创建独立的价值主张画布
+3. 用 VPD 竞争战略分析识别差异化机会
+
+### 工作流 3: VPD 实验 → SWD 数据叙事 → 投资决策
+
+```
+VPD (实验结果) → SWD (数据故事) → 高管决策
+```
+
+**场景**: 产品投资决策
+1. 用 VPD 设计并跟踪实验验证价值假设
+2. 用 SWD 将实验结果转化为引人入胜的数据叙事
+3. 用 SWD 去杂乱诊断优化汇报材料
+
+> 💡 **提示**: VPD 最适合在需求明确后使用——帮你将 "用户想要什么" 转化为 "我们提供什么" 并通过实验验证。
+
+---
+
 ## English
 
 ### 📑 Table of Contents
@@ -1491,6 +1543,45 @@ sample = quant.calculate_ab_sample_size(baseline=0.65, mde=0.05)
 # → From canvas analysis to validated product-market fit
 ```
 
+### 🔗 Skill Ecosystem Workflow
+
+VPD is the **value-design core** of the AliDujie UX Research Skills Ecosystem. Typical cross-skill workflows:
+
+### Workflow 1: JTBD Discovery → VPD Canvas → Experiment Validation
+
+```
+JTBD (Needs Insight) → VPD (Value Design) → QuantUX (Experiment Validation)
+```
+
+**Scenario**: Product-market fit validation
+1. Use JTBD to discover core user Jobs and unmet needs
+2. Use VPD to map JTBD findings onto a Value Proposition Canvas, designing value fit
+3. Use QuantUX to design A/B tests validating value proposition hypotheses
+
+### Workflow 2: Persona Creation → VPD Segmented Canvas → Targeted Positioning
+
+```
+Persona (User Roles) → VPD (Segmented Canvas) → Marketing Strategy
+```
+
+**Scenario**: Multi-segment product strategy
+1. Use Persona to create user personas for different segments
+2. Create a separate Value Proposition Canvas for each persona
+3. Use VPD competitive strategy analysis to identify differentiation opportunities
+
+### Workflow 3: VPD Experiments → SWD Data Storytelling → Investment Decision
+
+```
+VPD (Experiment Results) → SWD (Data Story) → Executive Decision
+```
+
+**Scenario**: Product investment decision
+1. Use VPD to design and track experiments validating value hypotheses
+2. Use SWD to transform experiment results into compelling data narratives
+3. Use SWD clutter diagnosis to optimize presentation materials
+
+> 💡 **Tip**: VPD works best after needs are clear — helping you translate "what users want" into "what we deliver" and validating through experiments.
+
 ### 👨‍💻 Credits
 
 Based on *Value Proposition Design* by Alexander Osterwalder, Yves Pigneur, et al. (Wiley, 2014), covering the Value Proposition Canvas, customer profiling, and fit testing.
@@ -1533,4 +1624,4 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 
 ---
 
-*Last Updated: 2026-05-13 | AliDujie Skill Ecosystem | v2.4.56*
+*Last Updated: 2026-05-13 | AliDujie Skill Ecosystem | v2.4.57*
