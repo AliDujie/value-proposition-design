@@ -355,7 +355,9 @@ value-proposition-design/
 │   ├── utils.py                # 工具函数
 │   ├── config.yaml             # 可调配置
 │   └── tests/test_all.py       # 14 个单元测试
-├── references/                 # 知识库文档
+├── references/                 # 知识库文档（4 篇，含生态工作流指南）
+│   ├── 01-value-proposition-canvas.md  # 价值主张画布详解
+│   ├── 02-ecosystem-workflows.md       # 跨技能生态工作流指南
 │   ├── knowledge-base.md       # 全书八大主题知识库
 │   └── README.md               # 知识库索引
 └── .gitignore
@@ -953,7 +955,9 @@ value-proposition-design/
 │   ├── utils.py                # Utility functions
 │   ├── config.yaml             # Tunable configuration
 │   └── tests/test_all.py       # 14 unit tests
-├── references/                 # Knowledge base documents
+├── references/                 # Knowledge base (4 documents incl. ecosystem workflow guide)
+│   ├── 01-value-proposition-canvas.md  # Value Proposition Canvas deep dive
+│   ├── 02-ecosystem-workflows.md       # Cross-skill ecosystem workflow guide
 │   ├── knowledge-base.md       # Full-book 8-topic knowledge base
 │   └── README.md               # Knowledge base index
 └── .gitignore
