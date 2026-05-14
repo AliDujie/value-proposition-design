@@ -295,3 +295,17 @@ B2B环境中需识别多种角色：影响者（意见有价值的人）、建�
 - **学习卡**：捕获从研究和实验中得到的洞察力的战略学习工具
 - **进展板**：管理和监测商业模式和价值主张设计流程的战略管理工具
 - **环境图**：描绘价值主张和商业模式所处商业环境的战略远见工具
+
+## 🔗 跨技能协作 (Cross-Skill Collaboration)
+
+价值主张设计是连接用户需求和产品交付的**桥梁**——将洞察转化为可测试的假设：
+
+| 技能 | 协同方式 |
+|------|----------|
+| [🎯 JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) | JTBD 工作描述 → VPD 画布客户概况填充 |
+| [📊 Quantitative UX Research](https://github.com/AliDujie/Quantitative-UX-Research) | VPD 价值假设 → QuantUX A/B 测试验证 |
+| [📈 Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) | VPD 实验结果 → SWD 向高管展示 ROI |
+| [👤 Web Persona](https://github.com/AliDujie/web-persona-skill) | Persona 细分 → VPD 为每个角色定制画布 |
+| [🔍 Universal Design Methods](https://github.com/AliDujie/universal-design-methods) | UDM 用户访谈 → VPD 画布验证迭代 |
+
+> 💡 **推荐工作流**: `JTBD (发现 Jobs) → VPD (设计价值主张) → QuantUX (验证假设) → SWD (展示商业案例)`
