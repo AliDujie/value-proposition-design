@@ -1,14 +1,12 @@
 # Value Proposition Design Skill
 
 [![Ecosystem](https://img.shields.io/badge/AliDujie-Ecosystem-7B68EE.svg)](https://github.com/AliDujie)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.4.64-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.4.62-green.svg)](CHANGELOG.md)
 [![Install Guide](https://img.shields.io/badge/install-guide-orange.svg)](INSTALL.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026-05-14-brightgreen.svg)
-
-> 📌 **Maintenance note (2026-05-14)**: Standardized badge ordering (Python → License) across all 6 AliDujie skill repos for visual consistency.
 
 > 💎 **一句话介绍**: 基于《价值主张设计》（亚历山大·奥斯特瓦德著）的完整方法论工具包。覆盖客户洞察、画布分析、优先级计算、竞争战略、实验验证，内置 CEO 视角的商业化路径分析。
 
@@ -38,15 +36,8 @@
   - [🔗 相关技能](#-相关技能)
 - [English](#english)
   - [🌟 Why Use This Skill?](#-why-use-this-skill)
-  - [🎯 Features at a Glance](#-features-at-a-glance)
-  - [🧭 Quick Decision Guide](#-quick-decision-guide)
-  - [✅ 5-Minute Quick Start Checklist](#-5-minute-quick-start-checklist)
   - [🚀 Quick Start](#-quick-start)
-  - [💡 10 Core Capabilities](#-10-core-capabilities)
-  - [💡 Practical Examples](#-practical-examples)
-  - [👥 Who Is This For?](#-who-is-this-for)
   - [🔗 Related Skills](#-related-skills-1)
-  - [End-to-End Workflow: All 7 Skills](#-end-to-end-ecosystem-workflow)
 - [🤝 参与贡献](#-参与贡献-contributing)
 - [📜 许可](#-许可-license)
 - [🔗 技能生态工作流](#-技能生态工作流-skill-ecosystem-workflow)
@@ -799,16 +790,7 @@ canvas = skill.analyze_canvas(
 
 VPD 是 **AliDujie UX 研究技能生态系统** 的价值设计核心。以下是与其他技能配合使用的典型工作流：
 
-### 🧭 快速决策指南 (Quick Decision Guide)
-
-| 你的问题 | 推荐技能 |
-|----------|----------|
-| "我的产品价值够不够？" | → **Value Proposition Design** (本技能) — 契合度诊断 |
-| "我不知道该研究什么" | → [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) — 方法推荐帮你找到方向 |
-| "我想理解用户为什么这样做" | → [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) — 挖掘用户背后的"工作" |
-| "我需要验证一个假设" | → [Quantitative UX Research](https://github.com/AliDujie/Quantitative-UX-Research) — A/B 测试和样本量计算 |
-| "我需要知道用户是谁" | → [Web Persona](https://github.com/AliDujie/web-persona-skill) — 创建具体的人物角色 |
-| "我怎么把研究结果讲清楚？" | → [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) — 数据叙事和图表改造 |
+> 💡 **快速决策**: 参见上方 [快速决策指南](#-快速决策指南-quick-decision-guide) 选择适合的技能。
 
 ### 工作流 1: JTBD 发现 → VPD 画布 → 实验验证
 
@@ -846,17 +828,6 @@ VPD (实验结果) → SWD (数据故事) → 高管决策
 > 💡 **提示**: VPD 最适合在需求明确后使用——帮你将 "用户想要什么" 转化为 "我们提供什么" 并通过实验验证。
 
 ---
-
-### 🔗 探索更多技能 (Explore More Skills)
-
-本技能是 **AliDujie UX 研究技能生态系统** 的一部分，与其他 6 个技能协同工作，覆盖从用户研究到数据呈现的完整工作流：
-
-- [👤 Web Persona](https://github.com/AliDujie/web-persona-skill) — 人物角色创建（工作流起点）
-- [🎯 JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) — 深度需求洞察
-- [🔍 Universal Design Methods](https://github.com/AliDujie/universal-design-methods) — 研究方法
-- [📊 Quantitative UX Research](https://github.com/AliDujie/Quantitative-UX-Research) — 定量验证
-- [📈 Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) — 数据叙事
-- [🧠 Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) — 战略分析框架
 
 ## English
 
@@ -1461,11 +1432,8 @@ competitive-strategy python-toolkit openclaw-skill alicloud
 ### 📋 版本历史 (Changelog)
 
 | 版本 | 日期 | 变更 |
-|------|------|------|
-| 2.4.62 | 2026-05-14 | 仓库维护：修复变更日志表格格式（分隔符与数据行合并问题），标准化徽章顺序，验证生态交叉引用完整性
-| 2.4.61 | 2026-05-14 | 仓库维护：同步版本徽章/页脚到 pyproject.toml (v2.4.61)，修复中文 TOC 能力数量 (9→10)，修复 ruff target-version
-| 2.4.60 | 2026-05-14 | 仓库维护：修复 TOC 锚点链接，版本升级至 v2.4.60
-| 2.4.59 | 2026-05-14 | 仓库维护：修复版本不一致（徽章 2.4.58 vs pyproject 2.4.57），对齐 README/徽章/SKILL.md/pyproject.toml 版本，更新 Last Updated 至 2026-05-14 |
+| 2.4.62 | 2026-05-14 | 仓库维护：删除技能生态工作流章节中重复的快速决策指南表，提升文档简洁性和可读性 |
+|------|------|------|| 2.4.59 | 2026-05-14 | 仓库维护：修复版本不一致（徽章 2.4.58 vs pyproject 2.4.57），对齐 README/徽章/SKILL.md/pyproject.toml 版本，更新 Last Updated 至 2026-05-14 |
 
 | v2.4.45 | 2026-05-11 | 仓库维护：修复页脚版本不一致（v2.4.42→v2.4.44），补齐缺失的变更日志条目（v2.4.43–v2.4.44），确保 README/徽章/CHANGELOG 三端版本对齐 |
 | v2.4.43 | 2026-05-11 | 仓库维护：添加新手快速参考卡，覆盖 7 个常见使用场景和快捷命令 |
@@ -1511,13 +1479,8 @@ competitive-strategy python-toolkit openclaw-skill alicloud
 ## 📋 Version History (English)
 
 | Version | Date | Changes |
-|---------|------|--------|
-| v2.4.64 | 2026-05-14 | Repo maintenance: added cross-skill references to 01-value-proposition-canvas.md |
-| v2.4.63 | 2026-05-14 | Repo maintenance: added cross-skill references to knowledge-base.md, 02-ecosystem-workflows.md |
-| v2.4.62 | 2026-05-14 | Repo maintenance: fixed changelog table formatting (merged separator + data rows), standardized badge ordering, verified ecosystem cross-reference completeness
-| v2.4.61 | 2026-05-14 | Repo maintenance: synced version badges/footers to pyproject.toml (v2.4.61), fixed CN TOC capability count (9→10), fixed ruff target-version
-| v2.4.60 | 2026-05-14 | Repo maintenance: fixed TOC anchor link, version bump to v2.4.60
-| v2.4.59 | 2026-05-14 | Repo maintenance: fixed version mismatch (badge 2.4.58 vs pyproject 2.4.57), aligned README badge/SKILL.md/pyproject.toml versions, updated Last Updated to 2026-05-14 |
+| v2.4.62 | 2026-05-14 | Repo maintenance: removed duplicate Quick Decision Guide table from ecosystem workflow section, improved documentation conciseness and readability |
+|---------|------|--------|| v2.4.59 | 2026-05-14 | Repo maintenance: fixed version mismatch (badge 2.4.58 vs pyproject 2.4.57), aligned README badge/SKILL.md/pyproject.toml versions, updated Last Updated to 2026-05-14 |
 
 | v2.4.46 | 2026-05-11 | Repo maintenance: added missing "When NOT to Use This Skill" and "Common Mistakes to Avoid" sections to English README, verified English section completeness, verified cross-skill links, updated version badges |
 | v2.4.45 | 2026-05-11 | Repo maintenance: fixed footer version mismatch (v2.4.42→v2.4.44), added missing changelog entries (v2.4.43–v2.4.44), ensured README/badge/CHANGELOG alignment |
@@ -1694,4 +1657,4 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 
 ---
 
-*Last Updated: 2026-05-14 | AliDujie Skill Ecosystem | v2.4.64*
+*Last Updated: 2026-05-14 | AliDujie Skill Ecosystem | v2.4.62*
