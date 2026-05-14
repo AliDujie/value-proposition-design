@@ -11,10 +11,11 @@ This directory contains methodology reference documents for the Value Propositio
 | `01-value-proposition-canvas.md` | 价值主张画布详解（客户画像 × 价值地图） |
 | `knowledge-base.md` | VPD 完整知识库（客户洞察、实验设计、竞争战略、优先级框架） |
 | `02-ecosystem-workflows.md` | VPD 跨技能协作指南（JTBD/UDM/QuantUX/SWD 工作流） |
+| `03-ecosystem-collaboration.md` | 跨技能协作详细指南（含 Python 代码示例和完整工作流） |
 
 ## 使用方法 / Usage
 
-这些参考文档供 AI Agent 在执行价值主张分析时查阅。`knowledge-base.md` 包含完整的 VPD 方法论体系，`02-ecosystem-workflows.md` 提供跨技能协作指南。
+这些参考文档供 AI Agent 在执行价值主张分析时查阅。`knowledge-base.md` 包含完整的 VPD 方法论体系，`02-ecosystem-workflows.md` 和 `03-ecosystem-collaboration.md` 提供详细的跨技能协作指南和 Python 代码示例。
 
 These reference documents are consulted by the AI Agent during value proposition analysis. `knowledge-base.md` contains the complete VPD methodology system, and `02-ecosystem-workflows.md` provides cross-skill collaboration guides.
 
