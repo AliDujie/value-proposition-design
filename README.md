@@ -4,11 +4,13 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.4.62-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.4.64-green.svg)](CHANGELOG.md)
 [![Install Guide](https://img.shields.io/badge/install-guide-orange.svg)](INSTALL.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026-05-14-brightgreen.svg)
 
 > 💎 **一句话介绍**: 基于《价值主张设计》（亚历山大·奥斯特瓦德著）的完整方法论工具包。覆盖客户洞察、画布分析、优先级计算、竞争战略、实验验证，内置 CEO 视角的商业化路径分析。
+
+> 🆕 **What's New in v2.4.64**: Bilingual quick-reference card added to value proposition canvas docs. Standardized ecosystem cross-references with JTBD job mapping and QuantUX experiment validation.
 
 ```text
 ┌─────────┐    ┌──────────┐    ┌─────┐    ┌──────────┐    ┌─────┐    ┌─────┐    ┌─────┐
@@ -1396,6 +1398,45 @@ This skill is part of the **AliDujie UX Research Skills Ecosystem**:
 - **VPD + Persona** → Drive value proposition design from persona goals and pains
 - **VPD + SWD** → Present value proposition effectiveness with data narratives
 
+#### 💡 Cross-Skill Quick Recipes
+
+```python
+# Recipe: From customer insight to validated value proposition
+from vpd import VPDSkill; from quantux import QuantUXSkill; from swd import SWDSkill
+
+vpd = VPDSkill("project management tool", "remote teams of 10-50")
+
+# Step 1: Build the canvas
+canvas = vpd.analyze_canvas(
+    product_name="PM Tool",
+    jobs=["coordinate async work", "track project status at a glance"],
+    pains=["too many notifications", "context switching between tools"],
+    gains=["unified dashboard", "smart notification batching"]
+)
+
+# Step 2: Compete on the strategy canvas
+strategy = vpd.analyze_competitor(
+    name="Asana",
+    advantages=["large ecosystem", "enterprise features"],
+    weaknesses=["notification overload", "steep learning curve"]
+)
+
+# Step 3: Design a lean experiment
+experiment = vpd.design_experiment(
+    hypothesis="Smart notification batching reduces daily interruptions by 60%",
+    metric="average daily notification interactions"
+)
+print(f"Sample size needed: {experiment['sample_size']}")
+
+# Step 4: Present to leadership
+swd = SWDSkill("Value Proposition Validation Report")
+story = swd.build_story(
+    protagonist="Product team",
+    imbalance="Teams are overwhelmed by notification noise",
+    call_to_action="Invest in smart notification feature"
+)
+```
+
 - **[Universal-Design-Methods](https://github.com/AliDujie/universal-design-methods)** — 100 design research methods
 - **[JTBD-Knowledge-Skill](https://github.com/AliDujie/jtbd-knowledge-skill)** — Jobs-to-be-Done theory
 - **[Web-Persona-Skill](https://github.com/AliDujie/web-persona-skill)** — Persona creation
@@ -1657,4 +1698,4 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 
 ---
 
-*Last Updated: 2026-05-14 | AliDujie Skill Ecosystem | v2.4.62*
+*Last Updated: 2026-05-15 | AliDujie Skill Ecosystem | v2.4.64*
