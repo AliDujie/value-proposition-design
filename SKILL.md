@@ -22,20 +22,87 @@ description: 价值主张设计方法论 Skill - 基于奥斯特瓦德《价值�
 
 > 💡 VPD 是验证层：把 JTBD/UDM 的发现映射到价值主张画布，用实验验证契合度。
 
+### 💼 为什么团队选择 VPD
+
+| 挑战 | 没有 VPD | 使用 VPD |
+|------|----------|----------|
+| 价值主张 | "我们什么都能做"——模糊 | Jobs-Pains-Gains 精准映射 |
+| PMF 验证 | 先做再等用户来 | 结构化实验 + 契合度评分 |
+| 竞争策略 | 功能对比清单 | 价值曲线 + 蓝海四项行动 |
+| 客户理解 | 人口统计画像 | 行为驱动的真实 Jobs/Pains |
+| 投资决策 | "感觉能行"——直觉 | CEO 视角 + 护城河分析 |
+
+### 🔗 Ecosystem Quick Start / 生态系统快速上手
+
+VPD 是 7 技能工作流的**产品-市场验证层**——在 JTBD/UDM 完成用户研究后使用。
+
+```python
+# Step 1: VPD 价值主张画布分析
+from vpd import VPDSkill
+vpd = VPDSkill("SaaS协作平台", "中小企业团队负责人")
+canvas = vpd.analyze_canvas(product_name="TeamFlow",
+    jobs=[{"description": "团队协作", "category": "functional", "importance": 5}],
+    pains=[{"description": "沟通不及时", "severity": "critical"}],
+    gains=[{"description": "提升效率", "desire_level": "expected"}])
+
+# Step 2: 实验验证
+experiment = vpd.design_experiment(hypotheses=[{"description": "实时协作减少30%沟通时间", "lethality": "lethal"}])
+
+# Step 3: CEO 视角分析
+report = vpd.generate_canvas(include_ceo_analysis=True)
+```
+
+> 💡 **Try it now / 立即尝试**:
+> ```python
+> from vpd import VPDSkill
+> skill = VPDSkill("你的产品", "目标用户")
+> canvas = skill.analyze_canvas(product_name="产品名", jobs=[{"description": "核心任务"}], pains=[{"description": "痛点"}])
+> ```
+
+### ✅ 5 分钟快速开始检查清单
+
+- [ ] **安装** — `cp -r value-proposition-design /your/agent/skills/`
+- [ ] **导入** — `from vpd import VPDSkill`
+- [ ] **初始化** — `skill = VPDSkill("产品名", "目标用户")`
+- [ ] **画布分析** — `skill.analyze_canvas(product_name="...", jobs=[...], pains=[...])`
+- [ ] **优先级计算** — `skill.calculate_priority([...])`
+- [ ] **实验设计** — `skill.design_experiment(hypotheses=[...])`
+- [ ] **CEO 分析** — `skill.generate_canvas(include_ceo_analysis=True)`
+
+[English](#english) | [中文](#中文说明)
+
 ## 🌐 AliDujie 技能生态系统
 
 VPD 是 **产品-市场验证层**，接收 JTBD 的 Jobs 和 UDM 的用户研究，输出价值主张画布和实验验证：
 
 ```
-JTBD Jobs ──────────┐
-                    ▼
-UDM 用户研究 ──► ┌────────────────┐
-                 │  VPD 本技能     │ 💎 价值验证 — 画布分析、实验设计、竞争战略
-                 │  · 画布填充     │──────► QuantUX (A/B 验证)
-                 │  · 实验设计     │──────► SWD (数据故事汇报)
-                 │  · 竞争战略     │──────► CEO 决策(商业化路径)
-                 │                 │──────► STM (商业战略框架)
-                 └────────────────┘
+┌─────────────────────────────────────────────────────────────┐
+│                    AliDujie UX Research Ecosystem            │
+│                                                             │
+│   ┌──────────────┐                                          │
+│   │   Persona    │ 👤 用户定义层 — 创建证据驱动的人物角色      │
+│   └──────┬───────┘                                          │
+│          │ 研究数据                                           │
+│   ┌──────▼───────┐    ┌──────────────┐                      │
+│   │  JTBD Skill  │◄──►│  UDM Skill   │ 📖 方法论核心 — 100种 │
+│   └──────┬───────┘    └──────┬───────┘    设计研究方法       │
+│          │ 需求洞察           │ 定性发现                      │
+│   ┌──────▼───────┐    ┌──────▼───────┐                      │
+│   │ VPD 本技能   │◄──►│  QuantUX     │ 📊 定量研究 — HEART/  │
+│   └──────┬───────┘    └──────┬───────┘    A-B/MaxDiff        │
+│          │ 价值主张           │ 定量验证                      │
+│          └──────────┬────────┘                               │
+│                     │ 研究发现                                │
+│              ┌──────▼───────┐                                │
+│              │  SWD Skill   │ 📈 数据叙事 — 数据可视化与汇报    │
+│              └──────┬───────┘                                │
+│                     │ 数据洞察                                │
+│              ┌──────▼───────┐                                │
+│              │  STM Skill   │ 🧠 战略分析 — 商业框架与决策      │
+│              └──────────────┘                                │
+│                                                             │
+│  工作流: Persona → JTBD/UDM → QuantUX → VPD → SWD → STM    │
+└─────────────────────────────────────────────────────────────┘
 ```
 
 **VPD 的典型协作**：JTBD 发现 Jobs → UDM 用户研究 → VPD 画布填充 → 实验验证 → SWD 汇报 → STM 战略决策
