@@ -1461,7 +1461,11 @@ competitive-strategy python-toolkit openclaw-skill alicloud
 ### 📋 版本历史 (Changelog)
 
 | 版本 | 日期 | 变更 |
-|------|------|------|| 2.4.59 | 2026-05-14 | 仓库维护：修复版本不一致（徽章 2.4.58 vs pyproject 2.4.57），对齐 README/徽章/SKILL.md/pyproject.toml 版本，更新 Last Updated 至 2026-05-14 |
+|------|------|------|
+| 2.4.62 | 2026-05-14 | 仓库维护：修复变更日志表格格式（分隔符与数据行合并问题），标准化徽章顺序，验证生态交叉引用完整性
+| 2.4.61 | 2026-05-14 | 仓库维护：同步版本徽章/页脚到 pyproject.toml (v2.4.61)，修复中文 TOC 能力数量 (9→10)，修复 ruff target-version
+| 2.4.60 | 2026-05-14 | 仓库维护：修复 TOC 锚点链接，版本升级至 v2.4.60
+| 2.4.59 | 2026-05-14 | 仓库维护：修复版本不一致（徽章 2.4.58 vs pyproject 2.4.57），对齐 README/徽章/SKILL.md/pyproject.toml 版本，更新 Last Updated 至 2026-05-14 |
 
 | v2.4.45 | 2026-05-11 | 仓库维护：修复页脚版本不一致（v2.4.42→v2.4.44），补齐缺失的变更日志条目（v2.4.43–v2.4.44），确保 README/徽章/CHANGELOG 三端版本对齐 |
 | v2.4.43 | 2026-05-11 | 仓库维护：添加新手快速参考卡，覆盖 7 个常见使用场景和快捷命令 |
@@ -1507,7 +1511,11 @@ competitive-strategy python-toolkit openclaw-skill alicloud
 ## 📋 Version History (English)
 
 | Version | Date | Changes |
-|---------|------|--------|| v2.4.59 | 2026-05-14 | Repo maintenance: fixed version mismatch (badge 2.4.58 vs pyproject 2.4.57), aligned README badge/SKILL.md/pyproject.toml versions, updated Last Updated to 2026-05-14 |
+|---------|------|--------|
+| v2.4.62 | 2026-05-14 | Repo maintenance: fixed changelog table formatting (merged separator + data rows), standardized badge ordering, verified ecosystem cross-reference completeness
+| v2.4.61 | 2026-05-14 | Repo maintenance: synced version badges/footers to pyproject.toml (v2.4.61), fixed CN TOC capability count (9→10), fixed ruff target-version
+| v2.4.60 | 2026-05-14 | Repo maintenance: fixed TOC anchor link, version bump to v2.4.60
+| v2.4.59 | 2026-05-14 | Repo maintenance: fixed version mismatch (badge 2.4.58 vs pyproject 2.4.57), aligned README badge/SKILL.md/pyproject.toml versions, updated Last Updated to 2026-05-14 |
 
 | v2.4.46 | 2026-05-11 | Repo maintenance: added missing "When NOT to Use This Skill" and "Common Mistakes to Avoid" sections to English README, verified English section completeness, verified cross-skill links, updated version badges |
 | v2.4.45 | 2026-05-11 | Repo maintenance: fixed footer version mismatch (v2.4.42→v2.4.44), added missing changelog entries (v2.4.43–v2.4.44), ensured README/badge/CHANGELOG alignment |
