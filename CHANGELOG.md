@@ -1,6 +1,10 @@
 # Changelog
 
 
+## v2.4.64 (2026-05-14)
+
+- Repo maintenance: add bilingual quick-reference card to 01-value-proposition-canvas.md, standardize ecosystem cross-references
+
 ## v2.4.63 (2026-05-14)
 
 - Repo maintenance: add cross-skill reference sections to key reference docs (knowledge-base.md, 02-ecosystem-workflows.md), expand ecosystem collaboration coverage
