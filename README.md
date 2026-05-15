@@ -4,13 +4,13 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.4.70-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.4.71-green.svg)](CHANGELOG.md)
 [![Install Guide](https://img.shields.io/badge/install-guide-orange.svg)](INSTALL.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026-05-15-brightgreen.svg)
 
 > 💎 **一句话介绍**: 基于《价值主张设计》（亚历山大·奥斯特瓦德著）的完整方法论工具包。覆盖客户洞察、画布分析、优先级计算、竞争战略、实验验证，内置 CEO 视角的商业化路径分析。
 
-🆕 **What's New in v2.4.70**: Repository maintenance v2.4.70. Fixed duplicated 'What's New' paragraph in README.md. Verified all ecosystem cross-references and bilingual consistency. Refreshed last-updated date.
+🆕 **What's New in v2.4.71**: Repository maintenance v2.4.71. Verified ecosystem cross-references and bilingual consistency. Fixed VPDSkill init missing argument in cross-skill recipe. Checked all code examples for accuracy. Refreshed last-updated date.
 
 ```text
 ┌─────────┐    ┌──────────┐    ┌─────┐    ┌──────────┐    ┌─────┐    ┌─────┐    ┌─────┐
@@ -170,7 +170,7 @@ from vpd import VPDSkill
 from quantux import QuantUXSkill
 
 # Step 1: Get fit score from VPD
-vpd = VPDSkill("健身App")
+vpd = VPDSkill("健身App", "健身爱好者")
 fit = vpd.measure_product_market_fit(
     survey_responses=[4, 3, 4, 2, 4, 3, 4, 5, 3, 4],
     question="How disappointed would you be if you couldn't use this?"
@@ -1821,4 +1821,4 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 
 ---
 
-*Last Updated: 2026-05-15 | AliDujie Skill Ecosystem | v2.4.70*
+*Last Updated: 2026-05-15 | AliDujie Skill Ecosystem | v2.4.71*
