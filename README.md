@@ -4,13 +4,13 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.4.68-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.4.69-green.svg)](CHANGELOG.md)
 [![Install Guide](https://img.shields.io/badge/install-guide-orange.svg)](INSTALL.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026-05-15-brightgreen.svg)
 
 > 💎 **一句话介绍**: 基于《价值主张设计》（亚历山大·奥斯特瓦德著）的完整方法论工具包。覆盖客户洞察、画布分析、优先级计算、竞争战略、实验验证，内置 CEO 视角的商业化路径分析。
 
-🆕 **What's New in v2.4.68**: Repository maintenance. Updated version alignment across all files. Added practical VPD canvas quick-fill template with real product examples. Enhanced experiment design section with lethality ranking guide. Verified all ecosystem cross-references and bilingual consistency. Repository maintenance. Added practical VPD canvas quick-fill template with real product examples. Enhanced experiment design section with lethality ranking guide. Verified ecosystem cross-references and bilingual consistency.
+🆕 **What's New in v2.4.69**: Repository maintenance. Updated version alignment across all files. Added practical VPD canvas quick-fill template with real product examples. Enhanced experiment design section with lethality ranking guide. Verified all ecosystem cross-references and bilingual consistency. Repository maintenance. Added practical VPD canvas quick-fill template with real product examples. Enhanced experiment design section with lethality ranking guide. Verified ecosystem cross-references and bilingual consistency.
 
 ```text
 ┌─────────┐    ┌──────────┐    ┌─────┐    ┌──────────┐    ┌─────┐    ┌─────┐    ┌─────┐
@@ -110,6 +110,78 @@ story = swd.build_story(protagonist="产品团队", imbalance="价值主张未�
 > canvas = skill.analyze_canvas(product_name="你的产品", jobs=["核心任务"], pains=["主要痛点"], gains=["期望收益"])
 > print(canvas)  # 立即生成价值主张画布
 > ```
+
+
+### 🔀 Cross-Skill Recipes (跨技能配方)
+
+| Recipe | Workflow | Use Case |
+|--------|----------|----------|
+| **Canvas Workshop** | JTBD → VPD | Fill canvas with discovered jobs |
+| **Experiment Sprint** | VPD → QuantUX | Design + run validation experiments |
+| **Value Pitch** | VPD → SWD | Canvas results → investor narrative |
+| **Competitive Map** | JTBD → VPD | Job-based value curve analysis |
+| **PMF Check** | VPD → QuantUX → SWD | Fit score + metrics + report |
+
+#### Recipe: Value Proposition Canvas Workshop
+
+```python
+from vpd import VPDSkill
+
+vpd = VPDSkill("SaaS协作平台", "中小企业团队负责人")
+
+# Step 1: Build value proposition canvas
+canvas = vpd.analyze_canvas(
+    product_name="TeamFlow",
+    jobs=[
+        {"description": "任务分配与跟踪", "category": "functional", "importance": 5},
+        {"description": "团队实时沟通", "category": "functional", "importance": 4},
+        {"description": "项目进度可视化", "category": "social", "importance": 3},
+    ],
+    pains=[
+        {"description": "信息分散在多个工具", "severity": "critical"},
+        {"description": "新人上手困难", "severity": "moderate"},
+    ],
+    gains=[
+        {"description": "提升团队协作效率", "desire_level": "expected"},
+        {"description": "减少会议时间", "desire_level": "delightful"},
+    ],
+    fit_level="problem-solution"
+)
+
+# Step 2: Design experiments to validate hypotheses
+experiment = vpd.design_experiment(
+    hypotheses=[
+        {"description": "实时协作减少30%沟通时间", "lethality": "lethal", "cost": "low"},
+        {"description": "统一面板降低新人上手时间", "lethality": "lethal", "cost": "medium"},
+    ]
+)
+
+# Step 3: Competitive strategy
+strategy = vpd.analyze_competition(
+    competitors=["Slack", "Notion", "飞书"],
+    value_props={"TeamFlow": 8, "Slack": 7, "Notion": 6, "飞书": 7}
+)
+```
+
+#### Recipe: VPD + QuantUX = PMF Validation
+
+```python
+from vpd import VPDSkill
+from quantux import QuantUXSkill
+
+# Step 1: Get fit score from VPD
+vpd = VPDSkill("健身App")
+fit = vpd.measure_product_market_fit(
+    survey_responses=[4, 3, 4, 2, 4, 3, 4, 5, 3, 4],
+    question="How disappointed would you be if you couldn't use this?"
+)
+
+# Step 2: QuantUX validates with metrics
+q = QuantUXSkill("健身App")
+if fit["score"] >= 0.4:  # PMF threshold
+    retention = q.calculate_retention(cohort=[100, 65, 52, 45, 40, 38])
+    print(f"PMF score: {fit['score']}, Day-30 retention: {retention:.1%}")
+```
 
 ### ✅ 5 分钟快速开始检查清单
 
@@ -1749,4 +1821,4 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 
 ---
 
-*Last Updated: 2026-05-15 | AliDujie Skill Ecosystem | v2.4.68*
+*Last Updated: 2026-05-15 | AliDujie Skill Ecosystem | v2.4.69*

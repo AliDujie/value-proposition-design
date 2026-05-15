@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v2.4.65 (2026-05-15)
+
+- Repo maintenance: version bump; verified version alignment across SKILL.md, README, and pyproject.toml
+
+## v2.4.66 (2026-05-15)
+
+- Repo maintenance: version bump; verified version alignment across SKILL.md, README, and pyproject.toml
+
+## v2.4.67 (2026-05-15)
+
+- Repo maintenance: version bump; verified version alignment across SKILL.md, README, and pyproject.toml
+
+## v2.4.68 (2026-05-15)
+
+- Repo maintenance: version bump; verified version alignment across SKILL.md, README, and pyproject.toml
+
 ## v2.4.64 (2026-05-14)
 
 - Repo maintenance: add bilingual quick-reference card to 01-value-proposition-canvas.md, standardize ecosystem cross-references
