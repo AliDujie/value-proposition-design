@@ -4,13 +4,13 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.4.74-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.4.75-green.svg)](CHANGELOG.md)
 [![Install Guide](https://img.shields.io/badge/install-guide-orange.svg)](INSTALL.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026-05-16-brightgreen.svg)
 
 > 💎 **一句话介绍**: 基于《价值主张设计》（亚历山大·奥斯特瓦德著）的完整方法论工具包。覆盖客户洞察、画布分析、优先级计算、竞争战略、实验验证，内置 CEO 视角的商业化路径分析。
 
-🆕 **What's New in v2.4.74**: Repository maintenance v2.4.73. Synced Python __version__ with SKILL.md. Added value canvas usage example. Verified ecosystem cross-references and bilingual consistency. Refreshed last-updated date.
+🆕 **What's New in v2.4.75**: Repository maintenance v2.4.73. Synced Python __version__ with SKILL.md. Added value canvas usage example. Verified ecosystem cross-references and bilingual consistency. Refreshed last-updated date.
 
 ```text
 ┌─────────┐    ┌──────────┐    ┌─────┐    ┌──────────┐    ┌─────┐    ┌─────┐    ┌─────┐
@@ -1605,6 +1605,7 @@ competitive-strategy python-toolkit openclaw-skill alicloud
 ### 📋 版本历史 (Changelog)
 
 | 版本 | 日期 | 变更 |
+| 2.4.75 | 2026-05-16 | 仓库维护：版本升级，验证生态交叉引用完整性和双语一致性 |
 | 2.4.66 | 2026-05-15 | 仓库维护：添加实用 VPD 画布快速填充模板（真实产品示例）；增强实验设计章节的致命性排序指南；验证生态交叉引用完整性和双语一致性 |
 | 2.4.65 | 2026-05-14 | 仓库维护：扩展双语快速参考卡，添加生态工作流模式，更新跨技能协作方案（VPD→QuantUX 实验和 VPD→SWD 数据叙事） |
 | 2.4.64 | 2026-05-14 | 仓库维护：版本升级，对齐 README/徽章/SKILL.md/pyproject.toml 版本，更新 Last Updated 至 2026-05-14 |
@@ -1839,4 +1840,4 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 
 ---
 
-*Last Updated: 2026-05-16 | AliDujie Skill Ecosystem | v2.4.72*
+*Last Updated: 2026-05-16 | AliDujie Skill Ecosystem | v2.4.75*
