@@ -1,5 +1,13 @@
 # Changelog
 
+## v2.4.73 (2026-05-16)
+
+- Synced Python `__version__` with SKILL.md version
+- Verified all VPD canvas and experiment design code examples
+- Confirmed ecosystem cross-references across all 7 skills
+- Checked bilingual (CN/EN) consistency in README and SKILL.md
+- Refreshed last-updated badges
+
 ## v2.4.71 (2026-05-15)
 
 - Repo maintenance: fixed VPDSkill missing second argument in cross-skill recipe code example
