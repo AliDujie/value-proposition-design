@@ -4,13 +4,13 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.4.73-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.4.74-green.svg)](CHANGELOG.md)
 [![Install Guide](https://img.shields.io/badge/install-guide-orange.svg)](INSTALL.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026-05-16-brightgreen.svg)
 
 > 💎 **一句话介绍**: 基于《价值主张设计》（亚历山大·奥斯特瓦德著）的完整方法论工具包。覆盖客户洞察、画布分析、优先级计算、竞争战略、实验验证，内置 CEO 视角的商业化路径分析。
 
-🆕 **What's New in v2.4.73**: Repository maintenance v2.4.73. Synced Python __version__ with SKILL.md. Added value canvas usage example. Verified ecosystem cross-references and bilingual consistency. Refreshed last-updated date.
+🆕 **What's New in v2.4.74**: Repository maintenance v2.4.73. Synced Python __version__ with SKILL.md. Added value canvas usage example. Verified ecosystem cross-references and bilingual consistency. Refreshed last-updated date.
 
 ```text
 ┌─────────┐    ┌──────────┐    ┌─────┐    ┌──────────┐    ┌─────┐    ┌─────┐    ┌─────┐
@@ -584,6 +584,15 @@ A: 包含护城河分析（网络效应/转换成本/品牌/规模）、商业�
 - **《Business Model Generation》** - Alexander Osterwalder (商业模式画布)
 - **《Testing Business Ideas》** - David J. Bland & Alexander Osterwalder (实验验证)
 - **《The Lean Startup》** - Eric Ries (精益创业与假设验证)
+
+#### 📂 VPD 参考指南
+
+| 指南 | 重点 |
+|------|------|
+| [价值主张画布](references/01-value-proposition-canvas.md) | 画布深入：客户画像 + 价值地图 |
+| [生态系统工作流](references/02-ecosystem-workflows.md) | VPD + UDM/JTBD/QuantUX 工作流 |
+| [跨技能协作](references/03-ecosystem-collaboration.md) | VPD + Persona/SWD/STM 协作模式 |
+| [知识库](references/knowledge-base.md) | VPD 术语和方法论参考 |
 
 ### 🏆 实战案例 (Case Studies)
 
@@ -1476,6 +1485,15 @@ ceo = skill.generate_canvas(include_ceo_analysis=True)
 - **"Testing Business Ideas"** — David Bland, experiment design for value validation
 - **"The Lean Startup"** — Eric Ries, build-measure-learn feedback loop
 
+#### 📂 VPD Reference Guides
+
+| Guide | Focus |
+|-------|-------|
+| [Value Proposition Canvas](references/01-value-proposition-canvas.md) | Canvas deep-dive: customer profile + value map |
+| [Ecosystem Workflows](references/02-ecosystem-workflows.md) | VPD + UDM/JTBD/QuantUX workflows |
+| [Ecosystem Collaboration](references/03-ecosystem-collaboration.md) | VPD + Persona/SWD/STM collaboration patterns |
+| [Knowledge Base](references/knowledge-base.md) | VPD glossary and methodology reference |
+
 ### 📚 About This Skill
 
 This skill is based on the methodology from *"Value Proposition Design"* by Alexander Osterwalder, Yves Pigneur, and the Strategyzer team. The Value Proposition Canvas is used by over 1 million business professionals worldwide to design and test value hypotheses.
@@ -1821,4 +1839,4 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 
 ---
 
-*Last Updated: 2026-05-15 | AliDujie Skill Ecosystem | v2.4.72*
+*Last Updated: 2026-05-16 | AliDujie Skill Ecosystem | v2.4.72*
