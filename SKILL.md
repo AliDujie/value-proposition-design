@@ -1,6 +1,6 @@
 ---
 name: value-proposition-design
-version: "2.4.71"
+version: "2.4.72"
 description: 价值主张设计方法论 Skill - 基于奥斯特瓦德《价值主张设计》全书，覆盖客户洞察、画布分析、优先级计算、竞争战略、问卷设计、实验验证的完整方法论与可执行 Python 工具包，以及CEO决策视角的商业化路径、竞争护城河与ROI估算
 ---
 
@@ -455,6 +455,15 @@ ctx = swd.build_context(audience="决策层", cta="批准价值主张优化预�
 | 9 | CEO 视角前置 | 早期就考虑商业化路径和护城河，避免做出无法盈利的产品 |
 | 10 | 数据陷阱检查 | 每次实验后检查假正面、假负面和局部最大值风险 |
 
+### ⛔ 何时不使用 VPD
+
+- **选择研究方法或设计定性研究** — 使用 [Universal Design Methods](https://github.com/AliDujie/universal-design-methods)
+- **统计分析或 A/B 测试** — 使用 [Quantitative UX Research](https://github.com/AliDujie/Quantitative-UX-Research)
+- **理解用户 Jobs-to-be-Done** — 使用 [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill)
+- **创建人物角色** — 使用 [Web Persona](https://github.com/AliDujie/web-persona-skill)
+- **数据可视化与叙事** — 使用 [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data)
+
+
 ## 八、参考资料
 
 ### 核心书籍
@@ -493,7 +502,7 @@ swd = SWDSkill("价值主张汇报")
 story = swd.build_story(protagonist="决策层", imbalance="产品-市场契合度不足")
 ```
 
-## 参考资料
+## 参考资料（扩展）
 
 | 书名 | 作者 | 关键贡献 |
 |------|------|---------|
