@@ -4,7 +4,7 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.4.75-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.4.76-green.svg)](CHANGELOG.md)
 [![Install Guide](https://img.shields.io/badge/install-guide-orange.svg)](INSTALL.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026-05-16-brightgreen.svg)
 
@@ -1567,6 +1567,31 @@ story = swd.build_story(
     imbalance="Teams are overwhelmed by notification noise",
     call_to_action="Invest in smart notification feature"
 )
+```
+
+```python
+# Recipe: Persona-informed value proposition design
+from persona import PersonaSkill; from vpd import VPDSkill; from jtbd import JTBDSkill
+
+# Start with personas
+persona = PersonaSkill("SaaS analytics")
+persona.add_persona("DataAnalyst", "metric-driven decision maker", "primary")
+persona.add_persona("CFO", "ROI-focused executive", "primary")
+
+# Map different value propositions for each persona
+vpd = VPDSkill("SaaS analytics")
+
+# Analyst: cares about depth and flexibility
+vpd.analyze_canvas(product_name="Analytics Platform",
+    jobs=["build custom reports", "share dashboards"],
+    pains=["limited export options", "slow queries on large datasets"],
+    gains=["drag-and-drop builder", "materialized views"])
+
+# CFO: cares about business outcomes
+vpd.analyze_canvas(product_name="Analytics Platform",
+    jobs=["track ROI on marketing spend", "forecast revenue"],
+    pains=["can't tie metrics to revenue", "reports too technical for board"],
+    gains=["revenue attribution model", "one-click board summary"])
 ```
 
 - **[Universal-Design-Methods](https://github.com/AliDujie/universal-design-methods)** — 100 design research methods
