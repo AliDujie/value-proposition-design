@@ -222,8 +222,8 @@ from swd import SWDSkill            # Communicate results to stakeholders
 
 # 1. JTBD — Discover unmet jobs
 jtbd = JTBDSkill("Project Management", "Engineering Managers")
-jobs = jtbd.discover_jobs()
-# Output: prioritized list of customer jobs with struggle scores
+opportunity = jtbd.score_opportunity("Track cross-team dependencies", struggle=4, alternative=3, market=5, budget=4)
+# Output: opportunity score and four-forces analysis
 
 top_job = {"description": "Track cross-team dependencies", "importance": 5, "struggle": 4}
 
