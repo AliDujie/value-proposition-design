@@ -61,6 +61,8 @@ cp -r value-proposition-design /your/agent/skills/
 pip install pyyaml  # Only dependency
 ```
 
+For detailed installation steps, configuration options, and agent integration guides, see [INSTALL.md](INSTALL.md).
+
 ### Use in Python
 
 ```python
@@ -360,6 +362,13 @@ Yes. The `analyze_competitor()` function builds value curves across competitive 
 
 **Q: How does VPD connect to other AliDujie skills?**
 VPD receives Jobs from [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) and research findings from [UDM](https://github.com/AliDujie/universal-design-methods), validates experiments with [QuantUX](https://github.com/AliDujie/Quantitative-UX-Research), and presents results through [SWD](https://github.com/AliDujie/storytelling-with-data). It sits at the center of the product validation pipeline.
+
+## 📚 Resources
+
+- [INSTALL.md](INSTALL.md) — Detailed installation guide and agent integration
+- [CONTRIBUTING.md](CONTRIBUTING.md) — How to contribute
+- [CHANGELOG.md](CHANGELOG.md) — Version history
+- [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) — Community guidelines
 
 ## 📄 License
 
