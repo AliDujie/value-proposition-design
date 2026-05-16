@@ -4,13 +4,13 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Version](https://img.shields.io/badge/version-2.4.78-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.4.79-green.svg)](CHANGELOG.md)
 [![Install Guide](https://img.shields.io/badge/install-guide-orange.svg)](INSTALL.md)
 ![Last Updated](https://img.shields.io/badge/last%20updated-2026-05-16-brightgreen.svg)
 
 > 💎 **一句话介绍**: 基于《价值主张设计》（亚历山大·奥斯特瓦德著）的完整方法论工具包。覆盖客户洞察、画布分析、优先级计算、竞争战略、实验验证，内置 CEO 视角的商业化路径分析。
 
-🆕 **What's New in v2.4.78**: Added `__version__` to `__all__` export list. Verified version alignment across pyproject.toml, SKILL.md, README, and `__init__.py`.: Added value canvas usage example. Verified ecosystem cross-references and bilingual consistency across all 7 skills.
+🆕 **What's New in v2.4.79**: Added `__version__` to `__all__` export list. Verified version alignment across pyproject.toml, SKILL.md, README, and `__init__.py`.: Added value canvas usage example. Verified ecosystem cross-references and bilingual consistency across all 7 skills.
 
 ```text
 ┌─────────┐    ┌──────────┐    ┌─────┐    ┌──────────┐    ┌─────┐    ┌─────┐    ┌─────┐
@@ -1630,6 +1630,7 @@ competitive-strategy python-toolkit openclaw-skill alicloud
 ### 📋 版本历史 (Changelog)
 
 | 版本 | 日期 | 变更 |
+| 2.4.79 | 2026-05-16 | 仓库维护：修复页脚版本不一致，验证生态交叉引用完整性和双语一致性，全文件版本对齐 |
 | 2.4.75 | 2026-05-16 | 仓库维护：版本升级，验证生态交叉引用完整性和双语一致性 |
 | 2.4.66 | 2026-05-15 | 仓库维护：添加实用 VPD 画布快速填充模板（真实产品示例）；增强实验设计章节的致命性排序指南；验证生态交叉引用完整性和双语一致性 |
 | 2.4.65 | 2026-05-14 | 仓库维护：扩展双语快速参考卡，添加生态工作流模式，更新跨技能协作方案（VPD→QuantUX 实验和 VPD→SWD 数据叙事） |
@@ -1682,6 +1683,8 @@ competitive-strategy python-toolkit openclaw-skill alicloud
 ## 📋 Version History (English)
 
 | Version | Date | Changes |
+| v2.4.79 | 2026-05-16 | Repo maintenance: fixed footer version mismatch, verified ecosystem cross-references and bilingual consistency across all 7 skills, version alignment across all config files |
+| v2.4.79 | 2026-05-16 | Repo maintenance: fixed footer version mismatch (v2.4.75→v2.4.78), verified ecosystem cross-references and bilingual consistency across all 7 skills, version alignment across all config files |
 | v2.4.66 | 2026-05-15 | Previous maintenance
 | v2.4.67 | 2026-05-15 | Repo maintenance: added 3rd English case study (health app feature bloat analysis with fit score diagnosis and lethal experiment design); enhanced Blue Ocean Strategy examples | Repo maintenance: added practical VPD canvas quick-fill template with real product examples; enhanced experiment design section with lethality ranking guide; verified ecosystem cross-references and bilingual consistency |
 | v2.4.65 | 2026-05-14 | Repo maintenance: bilingual quick-reference card expanded with ecosystem workflow patterns. Updated cross-skill collaboration recipes for VPD→QuantUX experiments and VPD→SWD data storytelling. |
@@ -1865,4 +1868,4 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 
 ---
 
-*Last Updated: 2026-05-16 | AliDujie Skill Ecosystem | v2.4.75*
+*Last Updated: 2026-05-16 | AliDujie Skill Ecosystem | v2.4.79*
