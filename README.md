@@ -229,26 +229,19 @@ print(canvas.fit_score)  # e.g., 0.78 → promising
 
 # 3. QuantUX — Run A/B test on the top hypothesis
 quantux = QuantUXSkill("Dependency Dashboard A/B")
-experiment = vpd.design_experiment(
-    hypotheses=[{"description": "Engineers save 2+ hrs/week tracking dependencies", "lethality": "lethal"}]
-)
-test_result = quantux.run_ab_test(
-    hypothesis=experiment.top_hypothesis,
-    variant_a="Current workflow (no dashboard)",
-    variant_b="TeamSync dependency dashboard",
-    metric="hours_saved_per_week",
-)
-# Output: statistical significance, confidence intervals, recommended action
+n = quantux.calculate_ab_sample_size(baseline=0.35, mde=0.05)
+ab_result = quantux.analyze_ab_test("Current Workflow", 5000, 1750, "TeamSync Dashboard", 5000, 2000)
 
 # 4. SWD — Package findings for leadership
 swd = SWDSkill("PMF Validation Report")
-report = swd.build_context(
+ctx = swd.build_context(
     audience="VP of Engineering & CPO",
-    cta="Approve Q3 investment in TeamSync dependency features",
+    cta="Approve Q3 investment in TeamSync dependency features"
 )
-report.add_section("Value Proposition Canvas", canvas.summary())
-report.add_section("Experiment Results", test_result.chart_data())
-report.export("pmf_validation_report.pdf")
+story = swd.build_story(protagonist="Engineering Managers",
+    imbalance="Cross-team dependencies cause 40% missed deadlines",
+    evidence=["A/B test: new dashboard saves 2.1 hrs/week, p<0.001"],
+    call_to_action="Launch dependency dashboard in Q3")
 ```
 
 This pipeline turns **customer insight → validated value proposition → tested solution → stakeholder-ready story** in one coherent flow.
