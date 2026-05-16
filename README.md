@@ -17,6 +17,12 @@
 
 Based on *Value Proposition Design* by Alexander Osterwalder et al. (2014). A complete methodology skill covering customer insights, canvas analysis, priority calculation, competitive strategy, survey design, and experiment validation — with **7 executable modules** that produce structured deliverables for real business scenarios, plus CEO-level commercialization path and competitive moat analysis.
 
+## 💡 为什么选择 VPD？
+
+> **VPD 是整个 AliDujie UX 研究生态的产品-市场验证层。** 当 JTBD 发现 Jobs、UDM 完成用户研究后，VPD 帮你把发现映射到价值主张画布（Jobs-Pains-Gains），用实验验证 PMF，用蓝海战略找差异化路径。7 大可执行模块覆盖从访谈到实验的完整流程，CEO 视角延伸（商业化/护城河/ROI）让产品验证直通商业决策。
+>
+> *"VPD 让我们的价值主张从'什么都能做'变成'这三件事最重要'——优先级一下子清晰了。"*
+
 ## 🌟 Why VPD?
 
 | Challenge | Without VPD | With VPD |
@@ -28,12 +34,6 @@ Based on *Value Proposition Design* by Alexander Osterwalder et al. (2014). A co
 | Investment Decisions | "Feels right" — intuition | CEO perspective + moat analysis |
 
 > 🏆 **Proven Impact**: Teams using structured Value Proposition Design report **2.3× higher PMF success rates** compared to intuition-driven product development (Strategyzer, 2023). VPD turns "we think users want this" into evidence-backed decisions.
-
-## 💡 为什么选择 VPD？
-
-> **VPD 是整个 AliDujie UX 研究生态的产品-市场验证层。** 当 JTBD 发现 Jobs、UDM 完成用户研究后，VPD 帮你把发现映射到价值主张画布（Jobs-Pains-Gains），用实验验证 PMF，用蓝海战略找差异化路径。7 大可执行模块覆盖从访谈到实验的完整流程，CEO 视角延伸（商业化/护城河/ROI）让产品验证直通商业决策。
->
-> *"VPD 让我们的价值主张从'什么都能做'变成'这三件事最重要'——优先级一下子清晰了。"*
 
 ## 🔗 Ecosystem Quick Start
 
@@ -91,6 +91,17 @@ canvas = skill.analyze_canvas(
     gain_creators=[{"description": "Real-time dashboard", "target_gain": "Real-time status visibility", "coverage": "full"}],
 )
 print(canvas)
+```
+
+**One dependency** — `pyyaml` for config customization. Install with `pip install pyyaml`.
+
+## 🧪 Testing
+
+```bash
+cd value-proposition-design
+python vpd/tests/test_all.py
+# Or with pytest:
+python -m pytest vpd/tests/test_all.py -v
 ```
 
 ## 📋 Real-World Use Cases
@@ -293,15 +304,6 @@ value-proposition-design/
 │   └── tests/
 │       └── test_all.py   # 14 test cases
 └── .github/              # CI/CD workflows & issue templates
-```
-
-## 🧪 Testing
-
-```bash
-cd value-proposition-design
-python vpd/tests/test_all.py
-# Or with pytest:
-python -m pytest vpd/tests/test_all.py -v
 ```
 
 ## 📋 When NOT to Use VPD
