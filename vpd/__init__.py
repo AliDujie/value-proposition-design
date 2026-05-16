@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-__version__ = "2.4.77"
+__version__ = "2.4.78"
 
 """
 Value Proposition Design (VPD) - Python工具包
@@ -427,6 +427,7 @@ class VPDSkill:
 
 
 __all__ = [
+    "__version__",
     "VPDSkill",
     "InterviewGenerator", "InterviewConfig",
     "SurveyDesigner", "SurveyConfig", "SurveyHypothesis",
