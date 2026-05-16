@@ -6,6 +6,7 @@
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Dependencies](https://img.shields.io/badge/Dependencies-pyyaml-lightgrey)
+![Part of AliDujie Skills](https://img.shields.io/badge/AliDujie-UX%20Research%20Ecosystem-purple)
 
 ## 🇨🇳 中文概览
 
@@ -44,20 +45,7 @@ from vpd import VPDSkill
 
 # Initialize with business scenario and target customer
 skill = VPDSkill("SaaS Collaboration Platform", "SMB Team Leads")
-```
 
-## 📋 Real-World Use Cases
-
-| Scenario | What to Use | Outcome |
-|----------|------------|----------|
-| **SaaS Product-Market Fit Validation** | Canvas Analysis + Experiment Design | Map Jobs-Pains-Gains for target segment, run lethal-hypothesis tests to confirm PMF before investing in build |
-| **E-Commerce Value Proposition Audit** | Priority Calculation + Competitive Strategy | Score existing feature backlog against real customer pain severity, identify Blue Ocean whitespace vs. competitors |
-| **B2B Competitive Strategy (Blue Ocean)** | Competitive Strategy + CEO Extensions | Build value curves across buying criteria, apply Eliminate-Reduce-Raise-Create grid, produce CEO-ready moat analysis |
-| **New Market Entry Assessment** | Interview Guide + Survey Design + Canvas | Conduct structured discovery interviews, validate with quant surveys, produce value map for the new segment |
-
-## ⚡ Quick Start — Continued (Full Python Example)
-
-```python
 # 1. Value Proposition Canvas analysis
 canvas = skill.analyze_canvas(
     product_name="TeamFlow",
@@ -78,7 +66,20 @@ canvas = skill.analyze_canvas(
     gain_creators=[{"description": "Real-time dashboard", "target_gain": "Real-time status visibility", "coverage": "full"}],
 )
 print(canvas)
+```
 
+## 📋 Real-World Use Cases
+
+| Scenario | What to Use | Outcome |
+|----------|------------|----------|
+| **SaaS Product-Market Fit Validation** | Canvas Analysis + Experiment Design | Map Jobs-Pains-Gains for target segment, run lethal-hypothesis tests to confirm PMF before investing in build |
+| **E-Commerce Value Proposition Audit** | Priority Calculation + Competitive Strategy | Score existing feature backlog against real customer pain severity, identify Blue Ocean whitespace vs. competitors |
+| **B2B Competitive Strategy (Blue Ocean)** | Competitive Strategy + CEO Extensions | Build value curves across buying criteria, apply Eliminate-Reduce-Raise-Create grid, produce CEO-ready moat analysis |
+| **New Market Entry Assessment** | Interview Guide + Survey Design + Canvas | Conduct structured discovery interviews, validate with quant surveys, produce value map for the new segment |
+
+## ⚡ Quick Start — Continued (More Python Examples)
+
+```python
 # 2. Priority calculation (4-dimension scoring)
 priority = skill.calculate_priority([
     {"name": "Poor collaboration efficiency", "importance": 5, "dissatisfaction": 5, "frequency": 4, "viability": 4},
@@ -316,6 +317,23 @@ python -m pytest vpd/tests/test_all.py -v
 ## 🤝 Contributing
 
 We welcome contributions! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+
+## ❓ FAQ / Troubleshooting
+
+**Q: Why does VPD need pyyaml?**
+VPD uses YAML for its configuration file (`config.yaml`), which allows you to customize parameters like pain severity thresholds, gain desirability levels, and priority scoring weights without touching code.
+
+**Q: What's a "lethal hypothesis" in experiment design?**
+A lethal hypothesis is one that, if disproven, would kill the entire business idea. Test lethal hypotheses first — they're your biggest risks. Non-lethal hypotheses can wait.
+
+**Q: How do I interpret the canvas fit score?**
+Fit scores range 0-1. Above 0.7 = strong alignment between customer profile and value map. 0.5-0.7 = reasonable fit with identifiable gaps. Below 0.5 = significant misalignment — revisit your assumptions.
+
+**Q: Can I use the Blue Ocean framework for an existing product?**
+Yes. The `analyze_competitor()` function builds value curves across competitive factors, then applies the Eliminate-Reduce-Raise-Create (ERRC) grid to find differentiation whitespace.
+
+**Q: How does VPD connect to other AliDujie skills?**
+VPD receives Jobs from [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) and research findings from [UDM](https://github.com/AliDujie/universal-design-methods), validates experiments with [QuantUX](https://github.com/AliDujie/Quantitative-UX-Research), and presents results through [SWD](https://github.com/AliDujie/storytelling-with-data). It sits at the center of the product validation pipeline.
 
 ## 📄 License
 
