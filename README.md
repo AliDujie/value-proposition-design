@@ -29,6 +29,29 @@ Based on *Value Proposition Design* by Alexander Osterwalder et al. (2014). A co
 
 > 🏆 **Proven Impact**: Teams using structured Value Proposition Design report **2.3× higher PMF success rates** compared to intuition-driven product development (Strategyzer, 2023). VPD turns "we think users want this" into evidence-backed decisions.
 
+## 💡 为什么选择 VPD？
+
+> **VPD 是整个 AliDujie UX 研究生态的产品-市场验证层。** 当 JTBD 发现 Jobs、UDM 完成用户研究后，VPD 帮你把发现映射到价值主张画布（Jobs-Pains-Gains），用实验验证 PMF，用蓝海战略找差异化路径。7 大可执行模块覆盖从访谈到实验的完整流程，CEO 视角延伸（商业化/护城河/ROI）让产品验证直通商业决策。
+>
+> *"VPD 让我们的价值主张从'什么都能做'变成'这三件事最重要'——优先级一下子清晰了。"*
+
+## 🔗 Ecosystem Quick Start
+
+VPD sits after JTBD/UDM in the research pipeline — it maps discovered needs to a value proposition:
+
+```python
+# JTBD (discover Jobs) → VPD (map to canvas) → QuantUX (validate) → SWD (present)
+from jtbd import JTBDSkill
+from vpd import VPDSkill
+from quantux import QuantUXSkill
+from swd import SWDSkill
+
+j = JTBDSkill("Product")       # Discover high-opportunity Jobs
+v = VPDSkill("Product", "users") # Build value proposition canvas
+q = QuantUXSkill("Product")    # A/B test the hypothesis
+s = SWDSkill("Report")         # Present to stakeholders
+```
+
 ## ⚡ Quick Start (5 Minutes)
 
 ### Install
@@ -317,6 +340,16 @@ python -m pytest vpd/tests/test_all.py -v
 ## 🤝 Contributing
 
 We welcome contributions! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+
+### Related Skills in the AliDujie Ecosystem
+
+| Skill | What It Does | GitHub |
+|-------|-------------|--------|
+| [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) | 100 design research methods | `UDMSkill` |
+| [Web Persona](https://github.com/AliDujie/web-persona-skill) | Evidence-driven user persona creation | `PersonaSkill` |
+| [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) | Jobs-to-be-Done analysis (4-school fusion) | `JTBDSkill` |
+| [Quantitative UX Research](https://github.com/AliDujie/Quantitative-UX-Research) | HEART framework, A/B testing, MaxDiff | `QuantUXSkill` |
+| [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) | Data visualization & executive storytelling | `SWDSkill` |
 
 ## ❓ FAQ / Troubleshooting
 
