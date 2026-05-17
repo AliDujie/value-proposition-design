@@ -180,6 +180,32 @@ print(report)
 
 ## 📐 Value Proposition Canvas
 
+```
+┌───────────────────── VALUE MAP ─────────────────────┐
+│  ┌───────────┐ ┌───────────────┐ ┌───────────────┐  │
+│  │ Products  │ │ Pain Relievers│ │ Gain Creators │  │
+│  │ & Services│ │               │ │               │  │
+│  │           │ │ How do you    │ │ How do you    │  │
+│  │ What you  │ │ reduce        │ │ create        │  │
+│  │ offer     │ │ customer      │ │ customer      │  │
+│  │           │ │ pains?        │ │ gains?        │  │
+│  └───────────┘ └───────────────┘ └───────────────┘  │
+│                       │                              │
+│                  FIT SCORE ◄── The goal              │
+└───────────────────────┼──────────────────────────────┘
+                        │
+┌────────────────── CUSTOMER PROFILE ──────────────────┐
+│  ┌───────────┐ ┌───────────────┐ ┌───────────────┐  │
+│  │ Customer  │ │ Customer      │ │ Customer      │  │
+│  │ Jobs      │ │ Pains         │ │ Gains         │  │
+│  │           │ │               │ │               │  │
+│  │ What they │ │ Negative      │ │ Positive      │  │
+│  │ try to    │ │ outcomes,     │ │ outcomes they │  │
+│  │ accomplish│ │ obstacles     │ │ want/expect   │  │
+│  └───────────┘ └───────────────┘ └───────────────┘  │
+└──────────────────────────────────────────────────────┘
+```
+
 The canvas has two sides:
 
 | Side | Elements | Description |
@@ -420,3 +446,9 @@ VPD receives Jobs from [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) 
 ## 📄 License
 
 MIT License — see [LICENSE](LICENSE) for details.
+
+---
+
+**Built with ❤️ as part of the AliDujie UX Research Ecosystem**
+
+[UDM](https://github.com/AliDujie/universal-design-methods) · [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) · [QuantUX](https://github.com/AliDujie/Quantitative-UX-Research) · [Persona](https://github.com/AliDujie/web-persona-skill) · [SWD](https://github.com/AliDujie/storytelling-with-data)
