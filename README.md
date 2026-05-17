@@ -102,6 +102,14 @@ print(canvas)
 
 **One dependency** — `pyyaml` for config customization. Install with `pip install pyyaml`.
 
+> 💡 **Try it now / 立即尝试**:
+> ```python
+> from vpd import VPDSkill
+> skill = VPDSkill("你的产品", "目标用户")
+> canvas = skill.analyze_canvas(product_name="产品", jobs=[{"description": "核心任务", "importance": 5}], pains=[{"description": "主要痛点", "severity": "high"}])
+> print(canvas.fit_score)
+> ```
+
 ## 📋 Real-World Use Cases
 
 | Scenario | What to Use | Outcome |
