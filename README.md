@@ -113,6 +113,17 @@ python -m pytest vpd/tests/test_all.py -v
 | **B2B Competitive Strategy (Blue Ocean)** | Competitive Strategy + CEO Extensions | Build value curves across buying criteria, apply Eliminate-Reduce-Raise-Create grid, produce CEO-ready moat analysis |
 | **New Market Entry Assessment** | Interview Guide + Survey Design + Canvas | Conduct structured discovery interviews, validate with quant surveys, produce value map for the new segment |
 
+## ⏱️ 5-Minute Quick-Start Checklist
+
+- [ ] **Install** — `cp -r value-proposition-design /your/agent/skills/`
+- [ ] **Install deps** — `pip install pyyaml` (only dependency)
+- [ ] **Import** — `from vpd import VPDSkill`
+- [ ] **Initialize** — `skill = VPDSkill("Product", "Target Users")`
+- [ ] **Canvas analysis** — `skill.analyze_canvas(product_name="Product", jobs=[...], pains=[...], gains=[...])`
+- [ ] **Priority calc** — `skill.calculate_priority([...])`
+- [ ] **Competitive strategy** — `skill.analyze_competitor(my_name="Product", factors=[...], players={...})`
+- [ ] **Full report** — `skill.generate_canvas(include_ceo_analysis=True)`
+
 ## ⚡ Quick Start — Continued (More Python Examples)
 
 ```python
