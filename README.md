@@ -438,6 +438,9 @@ Yes. The `analyze_competitor()` function builds value curves across competitive 
 **Q: How does VPD connect to other AliDujie skills?**
 VPD receives Jobs from [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) and research findings from [UDM](https://github.com/AliDujie/universal-design-methods), validates experiments with [QuantUX](https://github.com/AliDujie/Quantitative-UX-Research), and presents results through [SWD](https://github.com/AliDujie/storytelling-with-data). It sits at the center of the product validation pipeline.
 
+**Q: I'm a solo founder — should I still use VPD?**
+Absolutely. The canvas forces you to articulate assumptions you'd otherwise keep in your head. Start with `analyze_canvas()` to map your best guess, then use `design_experiment()` to test the riskiest assumption before writing code. It's cheaper to invalidate a hypothesis on paper than after launch.
+
 ## 📚 Resources
 
 - [INSTALL.md](INSTALL.md) — Detailed installation guide and agent integration
