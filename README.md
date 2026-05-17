@@ -25,6 +25,15 @@ Based on *Value Proposition Design* by Alexander Osterwalder et al. (2014). A co
 
 ## 🌟 Why VPD?
 
+- **Industry-standard methodology** — Based on Alexander Osterwalder's Value Proposition Canvas from Strategyzer
+- **7 executable modules + CEO extensions** — Canvas analysis, priority calculation, competitive strategy (Blue Ocean), interview guides, survey design, experiment validation, and commercialization path analysis
+- **Three fit types covered** — Problem-Solution Fit → Product-Market Fit → Business Model Fit
+- **Blue Ocean strategy built-in** — Value curves + ERRC grid to find differentiation whitespace
+- **Evidence-backed prioritization** — 4-dimension scoring replaces HiPPO decision-making
+- **Ecosystem integration** — Receives Jobs from JTBD, research from UDM, validates with QuantUX, presents through SWD
+
+## Why VPD?
+
 | Challenge | Without VPD | With VPD |
 |-----------|------------|----------|
 | Value Proposition | "We can do everything" — vague | Jobs-Pains-Gains precise mapping |
@@ -343,6 +352,7 @@ value-proposition-design/
 | [CEO Advisor](https://github.com/AliDujie/ceo-advisor) | VPD moat analysis → CEO competitive strategy |
 | [CPO Advisor](https://github.com/AliDujie/cpo-advisor) | VPD canvas → CPO product portfolio & PMF |
 | [CMO Advisor](https://github.com/AliDujie/cmo-advisor) | VPD value proposition → CMO brand positioning |
+| [CTO Advisor](https://github.com/AliDujie/cto-advisor) | VPD tech feasibility → CTO architecture decisions |
 | [Plan CEO Review](https://github.com/AliDujie/plan-ceo-review) | VPD validation → CEO plan adjustment |
 
 ## 🤝 Contributing
