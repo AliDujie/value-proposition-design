@@ -17,12 +17,6 @@
 
 Based on *Value Proposition Design* by Alexander Osterwalder et al. (2014). A complete methodology skill covering customer insights, canvas analysis, priority calculation, competitive strategy, survey design, and experiment validation — with **7 executable modules** that produce structured deliverables for real business scenarios, plus CEO-level commercialization path and competitive moat analysis.
 
-## 💡 为什么选择 VPD？
-
-> **VPD 是整个 AliDujie UX 研究生态的产品-市场验证层。** 当 JTBD 发现 Jobs、UDM 完成用户研究后，VPD 帮你把发现映射到价值主张画布（Jobs-Pains-Gains），用实验验证 PMF，用蓝海战略找差异化路径。7 大可执行模块覆盖从访谈到实验的完整流程，CEO 视角延伸（商业化/护城河/ROI）让产品验证直通商业决策。
->
-> *"VPD 让我们的价值主张从'什么都能做'变成'这三件事最重要'——优先级一下子清晰了。"*
-
 ## 🌟 Why VPD?
 
 - **Industry-standard methodology** — Based on Alexander Osterwalder's Value Proposition Canvas from Strategyzer
@@ -31,8 +25,6 @@ Based on *Value Proposition Design* by Alexander Osterwalder et al. (2014). A co
 - **Blue Ocean strategy built-in** — Value curves + ERRC grid to find differentiation whitespace
 - **Evidence-backed prioritization** — 4-dimension scoring replaces HiPPO decision-making
 - **Ecosystem integration** — Receives Jobs from JTBD, research from UDM, validates with QuantUX, presents through SWD
-
-## Why VPD?
 
 | Challenge | Without VPD | With VPD |
 |-----------|------------|----------|
@@ -43,6 +35,12 @@ Based on *Value Proposition Design* by Alexander Osterwalder et al. (2014). A co
 | Investment Decisions | "Feels right" — intuition | CEO perspective + moat analysis |
 
 > 🏆 **Proven Impact**: Teams using structured Value Proposition Design report **2.3× higher PMF success rates** compared to intuition-driven product development (Strategyzer, 2023). VPD turns "we think users want this" into evidence-backed decisions.
+
+## 💡 为什么选择 VPD？
+
+> **VPD 是整个 AliDujie UX 研究生态的产品-市场验证层。** 当 JTBD 发现 Jobs、UDM 完成用户研究后，VPD 帮你把发现映射到价值主张画布（Jobs-Pains-Gains），用实验验证 PMF，用蓝海战略找差异化路径。7 大可执行模块覆盖从访谈到实验的完整流程，CEO 视角延伸（商业化/护城河/ROI）让产品验证直通商业决策。
+>
+> *"VPD 让我们的价值主张从'什么都能做'变成'这三件事最重要'——优先级一下子清晰了。"*
 
 ## 🔗 Ecosystem Quick Start
 
@@ -103,15 +101,6 @@ print(canvas)
 ```
 
 **One dependency** — `pyyaml` for config customization. Install with `pip install pyyaml`.
-
-## 🧪 Testing
-
-```bash
-cd value-proposition-design
-python vpd/tests/test_all.py
-# Or with pytest:
-python -m pytest vpd/tests/test_all.py -v
-```
 
 ## 📋 Real-World Use Cases
 
@@ -195,6 +184,23 @@ The canvas has two sides:
 | | Gain Creators | How customer gains are produced |
 
 **Three fit types**: Problem-Solution Fit (on paper) → Product-Market Fit (in market) → Business Model Fit (in bank)
+
+## 🔗 生态快速开始
+
+VPD 位于 JTBD/UDM 之后——将发现的需求映射到价值主张：
+
+```python
+# JTBD（发现 Jobs）→ VPD（映射到画布）→ QuantUX（验证）→ SWD（呈现）
+from jtbd import JTBDSkill
+from vpd import VPDSkill
+from quantux import QuantUXSkill
+from swd import SWDSkill
+
+j = JTBDSkill("产品")          # 发现高机会的 Jobs
+v = VPDSkill("产品", "用户")    # 构建价值主张画布
+q = QuantUXSkill("产品")       # A/B 测试验证
+s = SWDSkill("报告")           # 向利益相关者呈现
+```
 
 ## 🌐 Ecosystem Integration
 
@@ -326,6 +332,15 @@ value-proposition-design/
 └── .github/              # CI/CD workflows & issue templates
 ```
 
+## 🧪 Testing
+
+```bash
+cd value-proposition-design
+python vpd/tests/test_all.py
+# Or with pytest:
+python -m pytest vpd/tests/test_all.py -v
+```
+
 ## 📋 When NOT to Use VPD
 
 - **Choosing research methods or designing qualitative research** → [Universal Design Methods](https://github.com/AliDujie/universal-design-methods)
@@ -368,6 +383,7 @@ We welcome contributions! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gui
 | [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) | Jobs-to-be-Done analysis (4-school fusion) | `JTBDSkill` |
 | [Quantitative UX Research](https://github.com/AliDujie/Quantitative-UX-Research) | HEART framework, A/B testing, MaxDiff | `QuantUXSkill` |
 | [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) | Data visualization & executive storytelling | `SWDSkill` |
+| [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) | Business framework analysis | `STMSkill` |
 
 ## ❓ FAQ / Troubleshooting
 
