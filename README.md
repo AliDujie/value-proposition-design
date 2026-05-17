@@ -130,6 +130,17 @@ print(canvas)
 - [ ] **Competitive strategy** — `skill.analyze_competitor(my_name="Product", factors=[...], players={...})`
 - [ ] **Full report** — `skill.generate_canvas(include_ceo_analysis=True)`
 
+### ⏱️ 5 分钟快速开始检查清单
+
+- [ ] **安装** — `cp -r value-proposition-design /your/agent/skills/`
+- [ ] **安装依赖** — `pip install pyyaml`（唯一依赖）
+- [ ] **导入** — `from vpd import VPDSkill`
+- [ ] **初始化** — `skill = VPDSkill("产品", "目标用户")`
+- [ ] **画布分析** — `skill.analyze_canvas(product_name="产品", jobs=[...], pains=[...], gains=[...])`
+- [ ] **优先级计算** — `skill.calculate_priority([...])`
+- [ ] **竞争战略** — `skill.analyze_competitor(my_name="产品", factors=[...], players={...})`
+- [ ] **完整报告** — `skill.generate_canvas(include_ceo_analysis=True)`
+
 ## ⚡ Quick Start — Continued (More Python Examples)
 
 ```python
