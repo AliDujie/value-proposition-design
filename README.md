@@ -394,16 +394,6 @@ python -m pytest vpd/tests/test_all.py -v
 | Testing Business Ideas | David Bland & Alex Osterwalder (2020) | Experiment validation methodology |
 | Blue Ocean Strategy | W. Chan Kim & Renée Mauborgne (2004) | Blue Ocean 4 actions framework |
 
-## 🔗 Extended Ecosystem
-
-| Extended Skill | Collaboration Scenario |
-|---------------|----------------------|
-| [CEO Advisor](https://github.com/AliDujie/ceo-advisor) | VPD moat analysis → CEO competitive strategy |
-| [CPO Advisor](https://github.com/AliDujie/cpo-advisor) | VPD canvas → CPO product portfolio & PMF |
-| [CMO Advisor](https://github.com/AliDujie/cmo-advisor) | VPD value proposition → CMO brand positioning |
-| [CTO Advisor](https://github.com/AliDujie/cto-advisor) | VPD tech feasibility → CTO architecture decisions |
-| [Plan CEO Review](https://github.com/AliDujie/plan-ceo-review) | VPD validation → CEO plan adjustment |
-
 ## 🤝 Contributing
 
 We welcome contributions! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
