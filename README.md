@@ -480,6 +480,17 @@ VPD value validation can be combined with management skills to turn product-mark
 - **Lethal hypotheses win**: Test the assumption that, if wrong, kills the entire idea — before investing in build
 - **Blue Ocean whitespace**: Use `analyze_competitor()` value curves to spot where no one competes — that's where you win
 - **Three fits ≠ one fit**: Problem-Solution Fit ≠ Product-Market Fit ≠ Business Model Fit — validate each stage separately
+- **Quantify everything**: "Users are frustrated" → "73% of primary personas abandon the flow at step 3" — quantified pains drive better decisions
+
+## 🛡️ Common Pitfalls & How to Avoid Them
+
+| Pitfall | How VPD Helps |
+|---------|---------------|
+| "We can do everything" — vague positioning | `analyze_canvas()` forces Jobs-Pains-Gains specificity |
+| Building before validating | `design_experiment()` identifies lethal hypotheses to test first |
+| Feature-by-feature competition | `analyze_competitor()` value curves reveal differentiation whitespace |
+| HiPPO-driven priorities | `calculate_priority()` replaces opinions with 4-dimension scores |
+| PMF that never ships | Three-fit model prevents scaling before Problem-Solution Fit
 
 ## ❓ FAQ / Troubleshooting
 
