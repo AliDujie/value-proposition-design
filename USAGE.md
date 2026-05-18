@@ -2,6 +2,18 @@
 
 > 价值主张设计 · 使用指南
 
+## 📐 Where VPD Fits in the Pipeline
+
+```
+Persona (Who) → JTBD (What) → UDM (Research) → QuantUX (Validate) → VPD (Value) → SWD (Present)
+                                                                        ↑
+                                                                  VPD sits here
+```
+
+- **After** JTBD discovers Jobs and UDM validates user needs
+- **Before** QuantUX experiments confirm fit and SWD presents results
+- **VPD** maps discovered needs to the Value Proposition Canvas (Jobs-Pains-Gains)
+
 ## ⚡ 5-Minute Quick Start / 5分钟快速开始
 
 ```bash
