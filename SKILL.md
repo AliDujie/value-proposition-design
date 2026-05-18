@@ -547,8 +547,6 @@ VPD 是 **AliDujie UX 研究技能生态系统** 的产品-市场验证层，与
 └─────────────────────────────────────────────────────────────┘
 ```
 
-**VPD 的典型协作**：JTBD 发现 Jobs → UDM 用户研究 → VPD 画布填充 → 实验验证 → SWD 汇报 → STM 战略决策
-
 | 技能 | 定位 | 协作模式 |
 |------|------|---------|
 | [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) | 方法论核心 | UDM 用户研究 → VPD 画布填充 |
