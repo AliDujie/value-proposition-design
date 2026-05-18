@@ -110,6 +110,48 @@ print(canvas)
 > print(canvas.fit_score)
 > ```
 
+## 🤖 AI Agent Integration
+
+VPD translates customer insights into structured business artifacts — making it an ideal agent skill for product strategy workflows:
+
+```python
+# Example: VPD as agent tools
+from vpd import VPDSkill
+
+vpd = VPDSkill("Product", "Target Users")
+
+@tool
+def analyze_value_canvas(product_name: str, jobs: list, pains: list, gains: list):
+    """Build and score a Value Proposition Canvas."""
+    return vpd.analyze_canvas(product_name=product_name, jobs=jobs, pains=pains, gains=gains)
+
+@tool
+def score_competitive_landscape(my_name: str, factors: list, players: dict):
+    """Analyze competitive positioning with value curves and Blue Ocean ERRC grid."""
+    return vpd.analyze_competitor(my_name=my_name, factors=factors, players=players)
+
+@tool
+def design_pmF_experiment(hypotheses: list):
+    """Design experiments to validate product-market fit hypotheses."""
+    return vpd.design_experiment(hypotheses=hypotheses)
+```
+
+### Agent Workflow Pattern
+```
+JTBD discovery output → VPD.analyze_canvas() → Canvas with fit score
+     ↓
+Low fit score → VPD.design_experiment() → Lethal hypothesis tests
+     ↓
+Experiments → QuantUX A/B validation → Data-backed PMF evidence
+     ↓
+VPD report → SWD storytelling → Board-ready presentation
+```
+
+### Prompt Engineering Tips
+- **Start with JTBD**: Feed discovered Jobs directly into VPD canvas for immediate value mapping
+- **Lethal-first testing**: Use `design_experiment()` with `lethality="lethal"` to identify and test the riskiest assumptions first
+- **CEO context**: Set `include_ceo_analysis=True` when generating canvases for stakeholder-facing outputs
+
 ## 📋 Real-World Use Cases
 
 | Scenario | What to Use | Outcome |
@@ -419,6 +461,7 @@ We welcome contributions! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gui
 | [Quantitative UX Research](https://github.com/AliDujie/Quantitative-UX-Research) | HEART framework, A/B testing, MaxDiff | `QuantUXSkill` |
 | [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) | Data visualization & executive storytelling | `SWDSkill` |
 | [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) | Business framework analysis | `STMSkill` |
+| [CTO Advisor](https://github.com/AliDujie/cto-advisor) | CTO-level tech strategy & architecture guidance | `CTOSkill` |
 
 ### 🔗 Extended Ecosystem
 
