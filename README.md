@@ -475,6 +475,12 @@ VPD value validation can be combined with management skills to turn product-mark
 | [CTO Advisor](https://github.com/AliDujie/cto-advisor) | VPD tech feasibility → CTO architecture decisions |
 | [Plan CEO Review](https://github.com/AliDujie/plan-ceo-review) | VPD validation → CEO plan review & scope alignment |
 
+### 💡 Pro Tips / 专业技巧
+- **Customer profile first**: Always fill the right side (Jobs/Pains/Gains) before touching the left side — solutions should follow problems
+- **Lethal hypotheses win**: Test the assumption that, if wrong, kills the entire idea — before investing in build
+- **Blue Ocean whitespace**: Use `analyze_competitor()` value curves to spot where no one competes — that's where you win
+- **Three fits ≠ one fit**: Problem-Solution Fit ≠ Product-Market Fit ≠ Business Model Fit — validate each stage separately
+
 ## ❓ FAQ / Troubleshooting
 
 **Q: Why does VPD need pyyaml?**
