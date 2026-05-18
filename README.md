@@ -430,6 +430,17 @@ value-proposition-design/
 └── .github/              # CI/CD workflows & issue templates
 ```
 
+## ⚡ 30-Second Quick Start / 30秒快速开始
+
+```python
+from vpd import VPDSkill
+
+# One-liner: analyze a value proposition canvas
+vpd = VPDSkill("Your Product", "Target Users")
+canvas = vpd.analyze_canvas(product_name="Product", jobs=[{"description": "Core task", "importance": 5}], pains=[{"description": "Main pain", "severity": "high"}])
+print(f"Fit score: {canvas.fit_score}")
+```
+
 ## 🧪 Testing
 
 ```bash
@@ -492,6 +503,7 @@ VPD value validation can be combined with management skills to turn product-mark
 - **Blue Ocean whitespace**: Use `analyze_competitor()` value curves to spot where no one competes — that's where you win
 - **Three fits ≠ one fit**: Problem-Solution Fit ≠ Product-Market Fit ≠ Business Model Fit — validate each stage separately
 - **Quantify everything**: "Users are frustrated" → "73% of primary personas abandon the flow at step 3" — quantified pains drive better decisions
+- **Chain with ecosystem**: [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) discovers Jobs → VPD maps to canvas → [QuantUX](https://github.com/AliDujie/Quantitative-UX-Research) validates → [SWD](https://github.com/AliDujie/storytelling-with-data) presents → [Persona](https://github.com/AliDujie/web-persona-skill) provides user context → [UDM](https://github.com/AliDujie/universal-design-methods) guides research
 
 ## 🛡️ Common Pitfalls & How to Avoid Them
 
@@ -562,8 +574,4 @@ MIT License — see [LICENSE](LICENSE) for details.
 
 [Persona](https://github.com/AliDujie/web-persona-skill) · [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) · [UDM](https://github.com/AliDujie/universal-design-methods) · [QuantUX](https://github.com/AliDujie/Quantitative-UX-Research) · **VPD** · [SWD](https://github.com/AliDujie/storytelling-with-data) · [STM](https://github.com/AliDujie/Structured-Thinking-Model)
 
----
 
-**Built with ❤️ as part of the AliDujie UX Research Ecosystem**
-
-[UDM](https://github.com/AliDujie/universal-design-methods) · [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) · [QuantUX](https://github.com/AliDujie/Quantitative-UX-Research) · [Persona](https://github.com/AliDujie/web-persona-skill) · [SWD](https://github.com/AliDujie/storytelling-with-data)
