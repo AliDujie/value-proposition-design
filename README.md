@@ -485,6 +485,18 @@ We welcome contributions! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gui
 | [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) | Business framework analysis | `STMSkill` |
 | [CTO Advisor](https://github.com/AliDujie/cto-advisor) | CTO-level tech strategy & architecture guidance | `CTOSkill` |
 
+### 🔗 扩展生态 (Extended Ecosystem)
+
+VPD 价值验证可与管理技能结合，将 PMF 数据转化为商业战略：
+
+| 扩展技能 | 协作场景 |
+|---------|----------|
+| [CEO Advisor](https://github.com/AliDujie/ceo-advisor) | VPD 护城河分析 → CEO 竞争战略 |
+| [CPO Advisor](https://github.com/AliDujie/cpo-advisor) | VPD 画布 → CPO 产品组合与 PMF |
+| [CMO Advisor](https://github.com/AliDujie/cmo-advisor) | VPD 价值主张 → CMO 品牌定位 |
+| [CTO Advisor](https://github.com/AliDujie/cto-advisor) | VPD 技术可行性 → CTO 架构决策 |
+| [Plan CEO Review](https://github.com/AliDujie/plan-ceo-review) | VPD 验证结果 → CEO 计划审查与范围对齐 |
+
 ### 🔗 Extended Ecosystem
 
 VPD value validation can be combined with management skills to turn product-market fit into business strategy:
