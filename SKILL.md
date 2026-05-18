@@ -108,81 +108,6 @@ report = vpd.generate_canvas(include_ceo_analysis=True)
 | 客户理解 | 人口统计画像 | 行为驱动的真实 Jobs/Pains |
 | 投资决策 | "感觉能行"——直觉 | CEO 视角 + 护城河分析 |
 
-### 🔗 Ecosystem Quick Start / 生态系统快速上手
-
-VPD 是 7 技能工作流的**产品-市场验证层**——在 JTBD/UDM 完成用户研究后使用。
-
-```python
-# Step 1: VPD 价值主张画布分析
-from vpd import VPDSkill
-vpd = VPDSkill("SaaS协作平台", "中小企业团队负责人")
-canvas = vpd.analyze_canvas(product_name="TeamFlow",
-    jobs=[{"description": "团队协作", "category": "functional", "importance": 5}],
-    pains=[{"description": "沟通不及时", "severity": "critical"}],
-    gains=[{"description": "提升效率", "desire_level": "expected"}])
-
-# Step 2: 实验验证
-experiment = vpd.design_experiment(hypotheses=[{"description": "实时协作减少30%沟通时间", "lethality": "lethal"}])
-
-# Step 3: CEO 视角分析
-report = vpd.generate_canvas(include_ceo_analysis=True)
-```
-
-> 💡 **Try it now / 立即尝试**:
-> ```python
-> from vpd import VPDSkill
-> skill = VPDSkill("你的产品", "目标用户")
-> canvas = skill.analyze_canvas(product_name="产品名", jobs=[{"description": "核心任务"}], pains=[{"description": "痛点"}])
-> ```
-
-### ✅ 5 分钟快速开始检查清单
-
-- [ ] **安装** — `cp -r value-proposition-design /your/agent/skills/`
-- [ ] **导入** — `from vpd import VPDSkill`
-- [ ] **初始化** — `skill = VPDSkill("产品名", "目标用户")`
-- [ ] **画布分析** — `skill.analyze_canvas(product_name="...", jobs=[...], pains=[...])`
-- [ ] **优先级计算** — `skill.calculate_priority([...])`
-- [ ] **实验设计** — `skill.design_experiment(hypotheses=[...])`
-- [ ] **CEO 分析** — `skill.generate_canvas(include_ceo_analysis=True)`
-
-[English](#english) | [中文](#中文说明)
-
-## 🌐 AliDujie 技能生态系统
-
-VPD 是 **产品-市场验证层**，接收 JTBD 的 Jobs 和 UDM 的用户研究，输出价值主张画布和实验验证：
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│                    AliDujie UX Research Ecosystem            │
-│                                                             │
-│   ┌──────────────┐                                          │
-│   │   Persona    │ 👤 用户定义层 — 创建证据驱动的人物角色      │
-│   └──────┬───────┘                                          │
-│          │ 研究数据                                           │
-│   ┌──────▼───────┐    ┌──────────────┐                      │
-│   │  JTBD Skill  │◄──►│  UDM Skill   │ 📖 方法论核心 — 100种 │
-│   └──────┬───────┘    └──────┬───────┘    设计研究方法       │
-│          │ 需求洞察           │ 定性发现                      │
-│   ┌──────▼───────┐    ┌──────▼───────┐                      │
-│   │ VPD 本技能   │◄──►│  QuantUX     │ 📊 定量研究 — HEART/  │
-│   └──────┬───────┘    └──────┬───────┘    A-B/MaxDiff        │
-│          │ 价值主张           │ 定量验证                      │
-│          └──────────┬────────┘                               │
-│                     │ 研究发现                                │
-│              ┌──────▼───────┐                                │
-│              │  SWD Skill   │ 📈 数据叙事 — 数据可视化与汇报    │
-│              └──────┬───────┘                                │
-│                     │ 数据洞察                                │
-│              ┌──────▼───────┐                                │
-│              │  STM Skill   │ 🧠 战略分析 — 商业框架与决策      │
-│              └──────────────┘                                │
-│                                                             │
-│  工作流: Persona → JTBD/UDM → QuantUX → VPD → SWD → STM    │
-└─────────────────────────────────────────────────────────────┘
-```
-
-**VPD 的典型协作**：JTBD 发现 Jobs → UDM 用户研究 → VPD 画布填充 → 实验验证 → SWD 汇报 → STM 战略决策
-
 ## 🌟 为什么选择 VPD？
 
 - **经典方法论** — 基于 Alexander Osterwalder《Value Proposition Design》，全球 100 万+ 商业人士使用的价值主张框架
@@ -643,3 +568,6 @@ VPD 价值验证可与管理层技能结合，将产品-市场匹配转化为商
 | [CPO Advisor](https://github.com/AliDujie/cpo-advisor) | VPD 画布 → CPO 产品组合与 PMF 评估 |
 | [CMO Advisor](https://github.com/AliDujie/cmo-advisor) | VPD 价值主张 → CMO 品牌定位与 messaging |
 | [Plan CEO Review](https://github.com/AliDujie/plan-ceo-review) | VPD 实验验证 → CEO 计划调整与范围扩展 |
+
+### 💡 Pro Tip / 专业技巧
+VPD 是 AliDujie 生态系统的**产品-市场验证层**。最强大的工作流：从 [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) 发现 Jobs → VPD 填充画布并计算契合度 → 用 [QuantUX](https://github.com/AliDujie/Quantitative-UX-Research) A/B 测试验证假设 → 用 [SWD](https://github.com/AliDujie/storytelling-with-data) 向利益相关者呈现结果。VPD 的核心价值在于：在写代码之前，用结构化实验验证你的价值主张是否真正契合用户需求。
