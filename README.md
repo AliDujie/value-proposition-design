@@ -567,14 +567,6 @@ See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 - [SECURITY.md](SECURITY.md) — Security policy and responsible use
 - [references/](references/) — Canvas templates and experiment design guides
 
-## ⚠️ When NOT to Use VPD
-
-- **Creating user personas** → Use [Web Persona](https://github.com/AliDujie/web-persona-skill)
-- **JTBD analysis and opportunity scoring** → Use [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill)
-- **Research method selection** → Use [Universal Design Methods](https://github.com/AliDujie/universal-design-methods)
-- **Statistical analysis / A/B testing** → Use [Quantitative UX Research](https://github.com/AliDujie/Quantitative-UX-Research)
-- **Data visualization and storytelling** → Use [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data)
-
 ## 📄 License
 
 MIT License — see [LICENSE](LICENSE) for details.
