@@ -523,6 +523,28 @@ VPD receives Jobs from [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) 
 **Q: I'm a solo founder — should I still use VPD?**
 Absolutely. The canvas forces you to articulate assumptions you'd otherwise keep in your head. Start with `analyze_canvas()` to map your best guess, then use `design_experiment()` to test the riskiest assumption before writing code. It's cheaper to invalidate a hypothesis on paper than after launch.
 
+## 🏗️ Advanced: Custom Configuration
+
+VPD supports runtime configuration via YAML config (`vpd/config.yaml`):
+
+```python
+from vpd import VPDSkill, AnalysisConfig
+
+config = AnalysisConfig()
+config.set_pain_severity_threshold(0.7)  # Customize pain severity cutoff
+config.set_priority_weights({"importance": 0.4, "dissatisfaction": 0.3, "frequency": 0.2, "viability": 0.1})
+
+skill = VPDSkill("Product", "Users", config=config)
+```
+
+See [INSTALL.md](INSTALL.md) for full configuration options and agent integration guides.
+
+## 📊 Version History
+
+See [CHANGELOG.md](CHANGELOG.md) for full release notes.
+
+**Latest (v2.4.79)**: Added cross-skill collaboration table with ecosystem integration guide, improved Pro Tips section.
+
 ## 📚 Resources
 
 - [INSTALL.md](INSTALL.md) — Detailed installation guide and agent integration
@@ -533,6 +555,12 @@ Absolutely. The canvas forces you to articulate assumptions you'd otherwise keep
 ## 📄 License
 
 MIT License — see [LICENSE](LICENSE) for details.
+
+---
+
+**Built with ❤️ as part of the AliDujie UX Research Ecosystem**
+
+[Persona](https://github.com/AliDujie/web-persona-skill) · [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) · [UDM](https://github.com/AliDujie/universal-design-methods) · [QuantUX](https://github.com/AliDujie/Quantitative-UX-Research) · **VPD** · [SWD](https://github.com/AliDujie/storytelling-with-data) · [STM](https://github.com/AliDujie/Structured-Thinking-Model)
 
 ---
 
