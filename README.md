@@ -19,12 +19,7 @@ Based on *Value Proposition Design* by Alexander Osterwalder et al. (2014). A co
 
 ## 🌟 Why VPD?
 
-- **Industry-standard methodology** — Based on Alexander Osterwalder's Value Proposition Canvas from Strategyzer
-- **7 executable modules + CEO extensions** — Canvas analysis, priority calculation, competitive strategy (Blue Ocean), interview guides, survey design, experiment validation, and commercialization path analysis
-- **Three fit types covered** — Problem-Solution Fit → Product-Market Fit → Business Model Fit
-- **Blue Ocean strategy built-in** — Value curves + ERRC grid to find differentiation whitespace
-- **Evidence-backed prioritization** — 4-dimension scoring replaces HiPPO decision-making
-- **Ecosystem integration** — Receives Jobs from JTBD, research from UDM, validates with QuantUX, presents through SWD
+### 💼 Why Teams Choose VPD
 
 | Challenge | Without VPD | With VPD |
 |-----------|------------|----------|
@@ -36,11 +31,27 @@ Based on *Value Proposition Design* by Alexander Osterwalder et al. (2014). A co
 
 > 🏆 **Proven Impact**: Teams using structured Value Proposition Design report **2.3× higher PMF success rates** compared to intuition-driven product development (Strategyzer, 2023). VPD turns "we think users want this" into evidence-backed decisions.
 
-## 💡 为什么选择 VPD？
+- **Industry-standard methodology** — Based on Alexander Osterwalder's Value Proposition Canvas from Strategyzer
+- **7 executable modules + CEO extensions** — Canvas analysis, priority calculation, competitive strategy (Blue Ocean), interview guides, survey design, experiment validation, and commercialization path analysis
+- **Three fit types covered** — Problem-Solution Fit → Product-Market Fit → Business Model Fit
+- **Blue Ocean strategy built-in** — Value curves + ERRC grid to find differentiation whitespace
+- **Evidence-backed prioritization** — 4-dimension scoring replaces HiPPO decision-making
+- **Ecosystem integration** — Receives Jobs from JTBD, research from UDM, validates with QuantUX, presents through SWD
 
 > **VPD 是整个 AliDujie UX 研究生态的产品-市场验证层。** 当 JTBD 发现 Jobs、UDM 完成用户研究后，VPD 帮你把发现映射到价值主张画布（Jobs-Pains-Gains），用实验验证 PMF，用蓝海战略找差异化路径。7 大可执行模块覆盖从访谈到实验的完整流程，CEO 视角延伸（商业化/护城河/ROI）让产品验证直通商业决策。
 >
 > *"VPD 让我们的价值主张从'什么都能做'变成'这三件事最重要'——优先级一下子清晰了。"*
+
+
+### 🔗 Cross-Skill Collaboration / 跨技能协作
+
+| 上游产出 | 用 VPD 做... | 下游 → |
+|----------|-------------|--------|
+| [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) Jobs | 画布填充 + 契合度评分 | `vpd.analyze_canvas(jobs=jtbd.top_jobs)` |
+| [UDM](https://github.com/AliDujie/universal-design-methods) 研究数据 | 实验设计 + 验证 | `vpd.design_experiment()` based on UDM findings |
+| [Persona](https://github.com/AliDujie/web-persona-skill) 角色目标/痛点 | 客户概况填充 | `vpd.analyze_canvas(jobs=persona.goals, pains=persona.pains)` |
+| VPD 假设 → | [QuantUX](https://github.com/AliDujie/Quantitative-UX-Research) A/B 测试 | `quantux.analyze_ab_test()` |
+| VPD 画布数据 → | [SWD](https://github.com/AliDujie/storytelling-with-data) 可视化 | `swd.build_story(evidence=canvas.findings)` |
 
 ## 🔗 Ecosystem Quick Start
 
