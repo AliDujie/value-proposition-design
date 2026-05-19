@@ -3,7 +3,7 @@
 > **Build Products People Actually Want. Validate Before You Build.**
 
 ![Version](https://img.shields.io/badge/version-2.4.83-blue)
-![Python](https://img.shields.io/badge/Python-3.8%2B-green)
+![Python](https://img.shields.io/badge/Python-3.9%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Dependencies](https://img.shields.io/badge/Dependencies-pyyaml-lightgrey)
 ![Part of AliDujie Skills](https://img.shields.io/badge/AliDujie-UX%20Research%20Ecosystem-purple)

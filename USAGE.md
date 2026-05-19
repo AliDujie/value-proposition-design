@@ -226,3 +226,24 @@ story = swd.build_story(protagonist="VP of Engineering",
     imbalance="40% missed deadlines from dependency issues",
     call_to_action="Launch dependency dashboard in Q3")
 ```
+
+## 📎 Related Documents
+
+| Document | Purpose |
+|----------|---------|
+| [README.md](README.md) | Full documentation, API reference, ecosystem diagram |
+| [SKILL.md](SKILL.md) | Agent-facing skill definition and trigger rules |
+| [INSTALL.md](INSTALL.md) | Installation guide with troubleshooting |
+| [CHANGELOG.md](CHANGELOG.md) | Version history and what's new |
+| [references/knowledge-base.md](references/knowledge-base.md) | Full methodology reference (8 chapters) |
+
+### C-Suite Skills for Commercialization / 管理层技能
+
+After VPD validates product-market fit, extend into commercial strategy:
+
+| Skill | Use when... |
+|-------|-------------|
+| [CEO Advisor](https://github.com/AliDujie/ceo-advisor) | Need competitive strategy, moat building |
+| [CPO Advisor](https://github.com/AliDujie/cpo-advisor) | Need product portfolio, PMF assessment |
+| [CMO Advisor](https://github.com/AliDujie/cmo-advisor) | Need brand positioning, messaging |
+| [CTO Advisor](https://github.com/AliDujie/cto-advisor) | Need technical feasibility, architecture decisions |

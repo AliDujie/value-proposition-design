@@ -127,19 +127,80 @@ vpd = VPDSkill("你的产品名", "目标用户")
 # 价值主张画布分析
 canvas = vpd.analyze_canvas(
     product_name="产品名",
-    jobs=["快速完成任务"],
-    pains=["流程繁琐"],
-    gains=["省时省力"]
-)
+    jobs=[{"description": "快速完成任务", "category": "functional", "importance": 5}],
+    pains=[{"description": "流程繁琐", "severity": "high"}],
+    gains=[{"description": "省时省力", "desire_level": "expected"}])
 
-# 竞争战略画布
-strategy = vpd.analyze_competitor_canvas()
+# 竞争战略画布（Blue Ocean + Value Curve）
+strategy = vpd.analyze_competitor(
+    my_name="我方产品",
+    factors=["价格", "易用性", "集成能力", "客服"],
+    players={"我方产品": [7, 8, 5, 6], "竞品A": [8, 6, 7, 5]})
 
 # 实验设计
-experiment = vpd.design_experiment(hypothesis="一键预订可提升转化率")
+experiment = vpd.design_experiment(
+    hypotheses=[{"description": "一键预订可提升转化率", "lethality": "lethal"}])
 ```
 
 > 💡 **5 分钟上手**: `from vpd import VPDSkill` → 纯标准库，零依赖，开箱即用。
+
+---
+
+## ⚡ Quick Start — English Reference
+
+> VPD is the **product-market validation layer** of the AliDujie UX Research Ecosystem. It maps discovered user Jobs (from JTBD) to a structured Value Proposition Canvas, then validates through experiments.
+
+### When to Use VPD
+
+| You need... | Use VPD | Need something else? |
+|---|---|---|
+| Value proposition canvas, experiment design | ✅ **This skill** | — |
+| Discover user Jobs, opportunity scoring | → [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) first, then VPD | |
+| Quantitative A/B test validation | → [QuantUX](https://github.com/AliDujie/Quantitative-UX-Research) after VPD | |
+| Executive data storytelling | → [SWD](https://github.com/AliDujie/storytelling-with-data) after VPD | |
+
+### Minimal Working Example
+
+```python
+from vpd import VPDSkill
+
+skill = VPDSkill("SaaS Product", "Team Leads")
+canvas = skill.analyze_canvas(
+    product_name="TeamFlow",
+    jobs=[{"description": "Assign tasks", "importance": 5}],
+    pains=[{"description": "Slow communication", "severity": "critical"}],
+    gains=[{"description": "Real-time updates", "desire_level": "expected"}])
+print(f"Fit score: {canvas.fit_score}")
+```
+
+### API Cheat Sheet
+
+| Method | Purpose | Returns |
+|---|---|---|
+| `generate_interview()` | 5-stage interview guide | Markdown |
+| `generate_survey()` | 6-part survey design | Markdown |
+| `calculate_priority()` | 4D priority scoring (P0-P3) | Markdown |
+| `analyze_canvas()` | Value Proposition Canvas + fit score | Markdown |
+| `analyze_competitor()` | Competitive strategy + Blue Ocean | Markdown |
+| `design_experiment()` | Hypothesis testing + test cards | Markdown |
+| `calculate_sample_size()` | Minimum sample size calculation | Markdown |
+| `generate_canvas(include_ceo_analysis=True)` | Canvas + CEO extensions | Markdown |
+| `render_all()` | Full panorama report | Markdown |
+| `summary()` | Structured summary data | dict |
+
+### Ecosystem Integration
+
+```python
+# JTBD → VPD → QuantUX → SWD
+from jtbd import JTBDSkill
+from vpd import VPDSkill
+
+jtbd = JTBDSkill("Project Management")
+vpd = VPDSkill("Project Management", "Engineering Managers")
+# JTBD discovers Jobs → VPD maps to canvas
+```
+
+For full cross-skill examples, see [USAGE.md](USAGE.md) and [README.md](README.md).
 
 ## 一、核心框架
 
@@ -224,7 +285,7 @@ value-proposition-design/
 
 ### 6.1 安装
 
-依赖：Python >= 3.8 + pyyaml >= 6.0。`pip install pyyaml`
+依赖：Python >= 3.9 + pyyaml >= 6.0。`pip install pyyaml`
 
 ### 6.2 VPDSkill 方法一览
 
@@ -571,6 +632,31 @@ VPD 价值验证可与管理层技能结合，将产品-市场匹配转化为商
 ### 💡 Pro Tip / 专业技巧
 VPD 是 AliDujie 生态系统的**产品-市场验证层**。最强大的工作流：从 [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) 发现 Jobs → VPD 填充画布并计算契合度 → 用 [QuantUX](https://github.com/AliDujie/Quantitative-UX-Research) A/B 测试验证假设 → 用 [SWD](https://github.com/AliDujie/storytelling-with-data) 向利益相关者呈现结果。VPD 的核心价值在于：在写代码之前，用结构化实验验证你的价值主张是否真正契合用户需求。
 
+### 🔗 扩展生态：管理层技能 (Extended Ecosystem — C-Suite)
+
+VPD 价值验证可与管理层技能结合，将产品-市场匹配转化为商业战略：
+
+| 扩展技能 | 协作场景 |
+|---------|----------|
+| [CEO Advisor](https://github.com/AliDujie/ceo-advisor) | VPD 护城河分析 → CEO 竞争战略决策 |
+| [CPO Advisor](https://github.com/AliDujie/cpo-advisor) | VPD 画布 → CPO 产品组合与 PMF 评估 |
+| [CMO Advisor](https://github.com/AliDujie/cmo-advisor) | VPD 价值主张 → CMO 品牌定位与 messaging |
+| [CTO Advisor](https://github.com/AliDujie/cto-advisor) | VPD 技术可行性 → CTO 技术投资与架构决策 |
+| [Plan CEO Review](https://github.com/AliDujie/plan-ceo-review) | VPD 实验验证 → CEO 计划调整与范围扩展 |
+
+**协作示例（VPD → CMO Advisor）**：
+```python
+from vpd import VPDSkill
+from cmo import CMOAdvisor
+
+vpd = VPDSkill("SaaS协作平台", "中小企业团队负责人")
+canvas = vpd.analyze_canvas(product_name="TeamFlow", jobs=[...], pains=[...])
+
+cmo = CMOAdvisor("TeamFlow")
+# VPD 验证后的价值主张直接输入 CMO 做品牌定位
+messaging = cmo.generate_messaging(value_proposition="提升团队协作效率")
+```
+
 ## ❓ FAQ / 常见问题
 
 **Q: VPD 和 JTBD 有什么区别？应该先用哪个？**
@@ -584,3 +670,30 @@ JTBD 发现用户要完成的"工作"（Jobs），VPD 将这些 Jobs 映射到�
 
 **Q: 只有定性数据也能用 VPD 吗？**
 可以。`analyze_canvas()` 和 `design_experiment()` 完全适用于 [UDM](https://github.com/AliDujie/universal-design-methods) 访谈的定性发现。后续有流量时再用 [QuantUX](https://github.com/AliDujie/Quantitative-UX-Research) 做定量验证。
+
+---
+
+## ❓ FAQ — English
+
+**Q: What's the difference between VPD and JTBD? Which should I use first?**
+JTBD discovers the user's Jobs. VPD maps those Jobs to a Value Proposition Canvas. Use JTBD first to find high-opportunity Jobs, then VPD to design solutions. Order: JTBD → VPD.
+
+**Q: What fit score is good enough?**
+Fit score ranges 0–1. ≥0.7 = strong match (ready to build), 0.5–0.7 = reasonable but gaps exist (needs experiments), <0.5 = significant mismatch (revisit assumptions).
+
+**Q: What is a "lethal hypothesis"?**
+An hypothesis that, if falsified, would destroy the entire product concept. VPD sorts experiments by lethality — test the riskiest assumptions first to avoid wasting resources on the wrong direction.
+
+**Q: Can I use VPD with only qualitative data?**
+Yes. `analyze_canvas()` and `design_experiment()` work perfectly with qualitative findings from [UDM](https://github.com/AliDujie/universal-design-methods) interviews. When you have traffic, use [QuantUX](https://github.com/AliDujie/Quantitative-UX-Research) for quantitative validation.
+
+**Q: Is there a "lean-start" mode for time-constrained teams?**
+Yes — see the "5-Minute Quick Start Checklist" at the top of [README.md](README.md). For teams with 1 week, use: Canvas (Day 1) → Priority (Day 2) → Experiment Design (Day 3-5) → Read results (Day 6-7). See the full lean-start recipe in the README.
+
+## 📎 Related Documents
+
+- [README.md](README.md) — Full documentation with detailed code examples
+- [USAGE.md](USAGE.md) — Usage guide with core workflows and ecosystem integration
+- [INSTALL.md](INSTALL.md) — Installation guide with troubleshooting
+- [CHANGELOG.md](CHANGELOG.md) — Version history
+- [references/knowledge-base.md](references/knowledge-base.md) — Full knowledge base (8 chapters)
