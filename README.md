@@ -68,6 +68,32 @@ Based on *Value Proposition Design* by Alexander Osterwalder et al. (2014). A co
 | VPD 假设 → | [QuantUX](https://github.com/AliDujie/Quantitative-UX-Research) A/B 测试 | `quantux.analyze_ab_test()` |
 | VPD 画布数据 → | [SWD](https://github.com/AliDujie/storytelling-with-data) 可视化 | `swd.build_story(evidence=canvas.findings)` |
 
+## 🧭 Quick Decision: When to Use VPD?
+
+| Your Need | Recommended Skill |
+|-----------|------------------|
+| Value proposition canvas, PMF validation, competitive strategy | ✅ **VPD (this skill)** |
+| Choose research methods, design interviews | → [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) |
+| Understand user "Jobs", opportunity scoring | → [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) |
+| Quantitative A/B testing, HEART metrics | → [Quantitative UX Research](https://github.com/AliDujie/Quantitative-UX-Research) |
+| Create user personas, user segmentation | → [Web Persona](https://github.com/AliDujie/web-persona-skill) |
+| Turn data into executive presentations | → [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) |
+
+> 💡 VPD is the product-market validation layer: map Jobs to canvas → run experiments → verify PMF.
+
+## 🧭 快速决策：什么时候使用 VPD？
+
+| 你的需求 | 推荐技能 |
+|---------|---------|
+| 需要价值主张画布、PMF 验证、竞争战略 | ✅ **VPD（本技能）** |
+| 需要选择研究方法、设计访谈 | → [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) |
+| 需要理解用户"工作"、机会评分 | → [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) |
+| 需要定量 A/B 测试、HEART 指标 | → [Quantitative UX Research](https://github.com/AliDujie/Quantitative-UX-Research) |
+| 需要创建人物角色、用户细分 | → [Web Persona](https://github.com/AliDujie/web-persona-skill) |
+| 需要将数据转化为高管汇报 | → [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) |
+
+> 💡 VPD 是产品-市场验证层：Jobs 映射画布 → 实验验证 → PMF 确认。
+
 ## 🔗 Ecosystem Quick Start
 
 VPD sits after JTBD/UDM in the research pipeline — it maps discovered needs to a value proposition:
