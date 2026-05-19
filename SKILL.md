@@ -570,3 +570,17 @@ VPD 价值验证可与管理层技能结合，将产品-市场匹配转化为商
 
 ### 💡 Pro Tip / 专业技巧
 VPD 是 AliDujie 生态系统的**产品-市场验证层**。最强大的工作流：从 [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) 发现 Jobs → VPD 填充画布并计算契合度 → 用 [QuantUX](https://github.com/AliDujie/Quantitative-UX-Research) A/B 测试验证假设 → 用 [SWD](https://github.com/AliDujie/storytelling-with-data) 向利益相关者呈现结果。VPD 的核心价值在于：在写代码之前，用结构化实验验证你的价值主张是否真正契合用户需求。
+
+## ❓ FAQ / 常见问题
+
+**Q: VPD 和 JTBD 有什么区别？应该先用哪个？**
+JTBD 发现用户要完成的"工作"（Jobs），VPD 将这些 Jobs 映射到价值主张画布。先用 JTBD 发现高机会 Jobs，再用 VPD 设计解决方案。顺序：JTBD → VPD。
+
+**Q: 画布契合度多少算合格？**
+契合度评分 0-1。≥0.7 强匹配（可以进入开发），0.5-0.7 合理但有缺口（需要实验验证），<0.5 显著不匹配（重新审视假设）。
+
+**Q: 什么是"致命假设"（Lethal Hypothesis）？**
+如果被证伪会毁掉整个产品方案的假设。VPD 按致命性排序实验——先测试最危险的假设，避免在错误的方向上浪费资源。
+
+**Q: 只有定性数据也能用 VPD 吗？**
+可以。`analyze_canvas()` 和 `design_experiment()` 完全适用于 [UDM](https://github.com/AliDujie/universal-design-methods) 访谈的定性发现。后续有流量时再用 [QuantUX](https://github.com/AliDujie/Quantitative-UX-Research) 做定量验证。
