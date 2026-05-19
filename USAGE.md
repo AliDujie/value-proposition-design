@@ -155,3 +155,30 @@ python vpd/tests/test_all.py
 - [SKILL.md](SKILL.md) — Agent-facing skill definition
 - [INSTALL.md](INSTALL.md) — Installation guide
 - [CHANGELOG.md](CHANGELOG.md) — Version history
+
+---
+
+## 🔑 Key Concepts Refresher / 关键概念速查
+
+### Three Fit Types / 三种契合度
+
+- **Problem-Solution Fit (on paper / 纸上契合)** — Your value map addresses the customer's Jobs, Pains, and Gains as stated. It looks good on the canvas but hasn't been tested with real users yet.
+  *你的价值主张在画布上匹配了客户的 Jobs/Pains/Gains，但尚未用真实用户验证。*
+
+- **Product-Market Fit (in the market / 市场中契合)** — Real users demonstrate willingness to adopt/pay for your solution through behavioral evidence (usage, retention, revenue). The hypothesis survives market contact.
+  *真实用户通过行为证据（使用、留存、付费）证明愿意采纳你的方案——假设经受了市场检验。*
+
+- **Business Model Fit (in the bank / 商业模型契合)** — Your value proposition generates sustainable, scalable revenue that exceeds costs. You have a profitable business model, not just happy users.
+  *你的价值主张产生了可持续、可扩展且超过成本的收入——不仅用户满意，而且商业模式盈利。*
+
+### ERRC Grid (Blue Ocean 4 Actions) / 蓝海四步动作框架
+
+| Action | Meaning / 含义 | Question / 问题 |
+|--------|---------------|-----------------|
+| **Eliminate / 剔除** | Remove factors the industry competes on but customers don't value | 行业中哪些竞争要素客户其实不在乎？ |
+| **Reduce / 减少** | Dial down factors that are over-served relative to customer needs | 哪些要素被过度服务了？ |
+| **Raise / 提升** | Increase factors above industry standard where customers care most | 哪些要素应该远超行业标准？ |
+| **Create / 创造** | Introduce entirely new factors the industry has never offered | 哪些要素是行业从未提供过的？ |
+
+> The ERRC grid pushes you to **simultaneously pursue differentiation and low cost** — breaking the value-cost tradeoff. Use `analyze_competitor()` to generate your ERRC grid automatically.
+> ERRC 网格推动你**同时追求差异化和低成本**——打破价值-成本权衡。使用 `analyze_competitor()` 自动生成你的 ERRC 网格。

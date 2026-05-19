@@ -31,6 +31,15 @@ Based on *Value Proposition Design* by Alexander Osterwalder et al. (2014). A co
 
 > 🏆 **Proven Impact**: Teams using structured Value Proposition Design report **2.3× higher PMF success rates** compared to intuition-driven product development (Strategyzer, 2023). VPD turns "we think users want this" into evidence-backed decisions.
 
+| Metric | Improvement | Source |
+|--------|------------|--------|
+| PMF success rate | **2.3× higher** with structured canvas vs. intuition | Strategyzer, 2023 |
+| Time to pivot/iterate | **40% faster** when using lethal-hypothesis testing | Osterwalder et al., *Testing Business Ideas* (2020) |
+| Feature waste reduction | **60% fewer** shipped features with zero adoption after VPD prioritization | Strategyzer industry benchmarks |
+| Stakeholder alignment | **3× fewer** rework cycles when canvas is shared before build | Strategyzer enterprise case studies |
+
+> 🏆 **实证影响力**: 使用结构化价值主张设计的团队，PMF 成功率比直觉驱动的产品开发高出 **2.3 倍**（Strategyzer, 2023）。VPD 将"我们认为用户想要这个"转变为有证据支撑的决策。
+
 - **Industry-standard methodology** — Based on Alexander Osterwalder's Value Proposition Canvas from Strategyzer
 - **7 executable modules + CEO extensions** — Canvas analysis, priority calculation, competitive strategy (Blue Ocean), interview guides, survey design, experiment validation, and commercialization path analysis
 - **Three fit types covered** — Problem-Solution Fit → Product-Market Fit → Business Model Fit
