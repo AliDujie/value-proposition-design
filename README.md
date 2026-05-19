@@ -581,7 +581,9 @@ See [INSTALL.md](INSTALL.md) for full configuration options and agent integratio
 
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
-**Latest (v2.4.80)**: Added Chinese Extended Ecosystem section with CEO/CPO/CMO/CTO advisor links, improving bilingual parity.
+**Latest (v2.4.81)**: Improved pipeline documentation with complete JTBD→VPD→QuantUX→SWD end-to-end example, enhanced competitive strategy examples.
+
+**Previous (v2.4.80)**: Added Chinese Extended Ecosystem section with CEO/CPO/CMO/CTO advisor links, improving bilingual parity.
 
 **Previous (v2.4.79)**: Added cross-skill collaboration table with ecosystem integration guide, improved Pro Tips section.
 
