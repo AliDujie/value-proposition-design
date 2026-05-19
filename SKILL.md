@@ -82,7 +82,7 @@ report = vpd.generate_canvas(include_ceo_analysis=True)
 - [ ] **实验设计** — `skill.design_experiment(hypotheses=[...])`
 - [ ] **CEO 分析** — `skill.generate_canvas(include_ceo_analysis=True)`
 
-[English](#english) | [中文](#中文说明)
+[English](README.md#quick-start-5-minutes) | [中文](#中文说明)
 
 ## 🧭 快速决策：什么时候使用 VPD？
 
