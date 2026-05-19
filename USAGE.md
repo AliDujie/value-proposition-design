@@ -182,3 +182,47 @@ python vpd/tests/test_all.py
 
 > The ERRC grid pushes you to **simultaneously pursue differentiation and low cost** — breaking the value-cost tradeoff. Use `analyze_competitor()` to generate your ERRC grid automatically.
 > ERRC 网格推动你**同时追求差异化和低成本**——打破价值-成本权衡。使用 `analyze_competitor()` 自动生成你的 ERRC 网格。
+
+## 🔗 Related Skills in the Ecosystem / 生态系统中的相关技能
+
+VPD is the **product-market validation layer** — the bridge between research and experimentation:
+
+| Skill | Role | How It Connects with VPD |
+|-------|------|--------------------------|
+| [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) | Demand insight | JTBD Jobs → VPD canvas filling → VPD priority ranking |
+| [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) | Methodology core | UDM user research → VPD canvas data → experiment design |
+| [Quantitative UX Research](https://github.com/AliDujie/Quantitative-UX-Research) | Quantitative validation | VPD hypotheses → QuantUX A/B tests validate product-market fit |
+| [Web Persona](https://github.com/AliDujie/web-persona-skill) | User definition | Persona goals/pains → VPD customer profile → persona validation |
+| [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) | Data storytelling | VPD canvas analysis → SWD chart selection → executive narrative |
+
+> 💡 **Recommended chain:** JTBD (discover Jobs) → UDM (research) → **VPD** (map canvas + validate) → QuantUX (confirm) → SWD (present)
+
+### Quick Cross-Skill Example / 跨技能示例
+
+```python
+from jtbd import JTBDSkill
+from vpd import VPDSkill
+from quantux import QuantUXSkill
+from swd import SWDSkill
+
+# JTBD discovers Jobs and opportunity scores
+jtbd = JTBDSkill("Project Management")
+score = jtbd.score_opportunity("Track dependencies", struggle=4, alternative=3, market=5, budget=4)
+
+# VPD maps Jobs to Value Proposition Canvas
+vpd = VPDSkill("Project Management", "Engineering Managers")
+canvas = vpd.analyze_canvas(product_name="TeamSync",
+    jobs=[{"description": "Track cross-team dependencies", "importance": 5}],
+    pains=[{"description": "Dependencies fall through cracks", "severity": "critical"}])
+print(f"Fit score: {canvas.fit_score}")
+
+# QuantUX validates the hypothesis with A/B testing
+quantux = QuantUXSkill("Project Management")
+n = quantux.calculate_ab_sample_size(baseline=0.35, mde=0.05)
+
+# SWD presents the fit analysis to leadership
+swd = SWDSkill("PMF Review")
+story = swd.build_story(protagonist="VP of Engineering",
+    imbalance="40% missed deadlines from dependency issues",
+    call_to_action="Launch dependency dashboard in Q3")
+```
