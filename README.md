@@ -517,6 +517,20 @@ VPD value validation can be combined with management skills to turn product-mark
 - **Quantify everything**: "Users are frustrated" → "73% of primary personas abandon the flow at step 3" — quantified pains drive better decisions
 - **Chain with ecosystem**: [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) discovers Jobs → VPD maps to canvas → [QuantUX](https://github.com/AliDujie/Quantitative-UX-Research) validates → [SWD](https://github.com/AliDujie/storytelling-with-data) presents → [Persona](https://github.com/AliDujie/web-persona-skill) provides user context → [UDM](https://github.com/AliDujie/universal-design-methods) guides research
 
+### ❓ FAQ / 常见问题
+
+**Q: What's a "lethal hypothesis" and why should I test it first?**
+A lethal hypothesis is an assumption that, if proven wrong, would invalidate the entire product idea. Test these first — they're your biggest risks. If your lethal hypothesis fails, you've saved yourself weeks of wasted engineering effort. VPD's `design_experiment()` auto-sorts hypotheses by lethality.
+
+**Q: How do I know if my canvas fit score is good enough?**
+Fit scores range 0–1. **≥ 0.7** = strong alignment (proceed to build). **0.5–0.7** = reasonable but with gaps (run experiments). **< 0.5** = significant misalignment (revisit assumptions before investing).
+
+**Q: Can VPD work with qualitative data only?**
+Yes. `analyze_canvas()` and `design_experiment()` work perfectly with qualitative findings from [UDM](https://github.com/AliDujie/universal-design-methods) interviews. Add quantitative validation later via [QuantUX](https://github.com/AliDujie/Quantitative-UX-Research) when you have traffic.
+
+**Q: How does VPD differ from JTBD?**
+JTBD discovers *what* users are trying to accomplish (the Job). VPD takes those Jobs and designs *how* your product delivers value (the Canvas). Think JTBD as research, VPD as design — they're sequential, not competing.
+
 ## 🛡️ Common Pitfalls & How to Avoid Them
 
 | Pitfall | How VPD Helps |
