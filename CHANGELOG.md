@@ -1,3 +1,17 @@
+## v2.4.83 (2026-05-19)
+- Repo maintenance: synced versions across README/SKILL.md/pyproject.toml
+- Enhanced Blue Ocean strategy section with concrete example
+- Improved lean-start pro tip for time-constrained teams
+
+## v2.4.82 (2026-05-19)
+- Added lean-start pro tip for time-constrained teams, improved version history
+
+## v2.4.81 (2026-05-19)
+- Added key concepts refresher to USAGE.md and improved README metrics
+
+## v2.4.80 (2026-05-19)
+- Synced SKILL.md version + ecosystem improvements
+
 ## v2.4.79 (2026-05-16)
 - Fixed footer version mismatch (v2.4.75 → v2.4.78) in README.md
 - Verified ecosystem cross-references and bilingual consistency across all 7 skills

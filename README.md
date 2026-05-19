@@ -2,11 +2,17 @@
 
 > **Build Products People Actually Want. Validate Before You Build.**
 
-![Version](https://img.shields.io/badge/version-2.4.80-blue)
+![Version](https://img.shields.io/badge/version-2.4.83-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Dependencies](https://img.shields.io/badge/Dependencies-pyyaml-lightgrey)
 ![Part of AliDujie Skills](https://img.shields.io/badge/AliDujie-UX%20Research%20Ecosystem-purple)
+
+## 🆕 What's New in v2.4.83
+
+- **Lean-Start Pro Tip**: Added time-constrained team recipe (5-step VPD sprint in 1 week)
+- **Blue Ocean Example**: Enhanced competitive strategy section with concrete ERR grid walkthrough
+- **Version Sync**: Aligned all version numbers across README/SKILL.md/pyproject.toml
 
 ## 🇨🇳 中文概览
 
