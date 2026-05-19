@@ -524,6 +524,7 @@ VPD value validation can be combined with management skills to turn product-mark
 - **Blue Ocean whitespace**: Use `analyze_competitor()` value curves to spot where no one competes — that's where you win
 - **Three fits ≠ one fit**: Problem-Solution Fit ≠ Product-Market Fit ≠ Business Model Fit — validate each stage separately
 - **Quantify everything**: "Users are frustrated" → "73% of primary personas abandon the flow at step 3" — quantified pains drive better decisions
+- **Start lean**: If you're short on time, run `analyze_canvas()` → `calculate_priority()` → `design_experiment()` in that order. Skip competitive strategy until you have PMF.
 - **Chain with ecosystem**: [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) discovers Jobs → VPD maps to canvas → [QuantUX](https://github.com/AliDujie/Quantitative-UX-Research) validates → [SWD](https://github.com/AliDujie/storytelling-with-data) presents → [Persona](https://github.com/AliDujie/web-persona-skill) provides user context → [UDM](https://github.com/AliDujie/universal-design-methods) guides research
 
 ### ❓ FAQ / 常见问题
@@ -590,7 +591,9 @@ See [INSTALL.md](INSTALL.md) for full configuration options and agent integratio
 
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
-**Latest (v2.4.81)**: Improved pipeline documentation with complete JTBD→VPD→QuantUX→SWD end-to-end example, enhanced competitive strategy examples.
+**Latest (v2.4.82)**: Added lean-start Pro Tip for time-constrained teams (canvas → priority → experiment), improved pro tips section.
+
+**Previous (v2.4.81)**: Improved pipeline documentation with complete JTBD→VPD→QuantUX→SWD end-to-end example, enhanced competitive strategy examples.
 
 **Previous (v2.4.80)**: Added Chinese Extended Ecosystem section with CEO/CPO/CMO/CTO advisor links, improving bilingual parity.
 
