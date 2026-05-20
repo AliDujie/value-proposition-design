@@ -640,7 +640,7 @@ See [INSTALL.md](INSTALL.md) for full configuration options and agent integratio
 
 1. **Customer Profile before Value Map** — Always start with `analyze_customer_profile()` to understand pains, gains, and jobs before trying to design value creators. You can't create value you don't understand.
 2. **Validate with experiments, not opinions** — Use `design_experiment()` to test assumptions cheaply before building. The evidence score (1-5) tells you how solid your VPD claims are.
-3. **Use Blue Ocean for differentiation** — Run `analyze_competitive_strategy()` and apply the ERRG grid (Eliminate-Reduce-Raise-Grid) to find uncontested market space instead of competing on features.
+3. **Use Blue Ocean for differentiation** — Run `analyze_competitive_strategy()` and apply the ERRC grid (Eliminate-Reduce-Raise-Create) to find uncontested market space instead of competing on features.
 4. **Prioritize by pain severity** — The `calculate_priority()` module weights pain severity × frequency × willingness-to-pay. Focus on high-severity, high-frequency pains that users will pay to solve.
 5. **Chain with JTBD upstream** — Feed JTBD's `create_jobs_atlas()` output into VPD's customer profile for a seamless insight-to-value pipeline.
 
@@ -655,7 +655,7 @@ See [INSTALL.md](INSTALL.md) for full configuration options and agent integratio
 
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
-**Latest (v2.4.84)**: Repo maintenance — added Recommended Learning Path, added Blue Ocean ERR grid quick reference to Pro Tips, unified ecosystem pipeline.
+**Latest (v2.4.85)**: Repo maintenance — added Recommended Learning Path, added Blue Ocean ERRC grid quick reference to Pro Tips, unified ecosystem pipeline, fixed ERRC typo in Best Practices.
 
 **Previous (v2.4.83)**: Added lean-start Pro Tip for time-constrained teams (canvas → priority → experiment), improved pro tips section.
 
