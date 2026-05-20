@@ -2,11 +2,17 @@
 
 > **Build Products People Actually Want. Validate Before You Build.**
 
-![Version](https://img.shields.io/badge/version-2.4.85-blue)
+![Version](https://img.shields.io/badge/version-2.4.87-blue)
 ![Python](https://img.shields.io/badge/Python-3.9%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Dependencies](https://img.shields.io/badge/Dependencies-pyyaml-lightgrey)
 ![Part of AliDujie Skills](https://img.shields.io/badge/AliDujie-UX%20Research%20Ecosystem-purple)
+
+## 🆕 What's New in v2.4.87
+
+- **VPD Canvas Workshop Guides**: Added 3 structured workshop guides (startup/enterprise/pivot)
+- **Fit Score Quick-Ref**: Added problem-solution fit scoring benchmark table
+- **Version Sync**: Aligned version across all files
 
 ## 🆕 What's New in v2.4.85
 
@@ -655,6 +661,44 @@ Yes. `analyze_canvas()` and `design_experiment()` work perfectly with qualitativ
 **Q: How does VPD differ from JTBD?**
 JTBD discovers *what* users are trying to accomplish (the Job). VPD takes those Jobs and designs *how* your product delivers value (the Canvas). Think JTBD as research, VPD as design — they're sequential, not competing.
 
+## 🏗️ VPD Canvas Workshops / 价值主张画布工作坊
+
+3 structured workshop templates for different contexts:
+
+### Workshop 1: Startup Canvas Validation (3 hours)
+**For**: Early-stage teams validating Problem-Solution Fit.
+```python
+from vpd import VPDSkill
+vpd = VPDSkill("Your Startup", "Target Segment")
+canvas = vpd.analyze_canvas(product_name="Your Startup",
+    jobs=[{"description": "Core job", "importance": 5}],
+    pains=[{"description": "Main pain", "severity": "critical"}])
+```
+**Steps**: (1) Map customer profile — Jobs/Pains/Gains, (2) Map value map — Products/Pain Relievers/Gain Creators, (3) Score fit, (4) Identify lethal hypothesis, (5) Design validation experiment.
+
+### Workshop 2: Enterprise Feature Prioritization (2 hours)
+**For**: Product teams deciding which features to build next.
+```python
+vpd.calculate_priority("Feature X", importance=9, current_satisfaction=3,
+    technical_feasibility=4, business_value=8)
+# → Priority Score: 8.5/10 — P0
+```
+
+### Workshop 3: Pivot Canvas (90 min)
+**For**: Teams considering a strategic pivot based on user feedback.
+**Use**: `analyze_competitor()` to map value curves → `blue_ocean_grid()` to find whitespace.
+
+## 📊 Fit Score Quick-Ref / 契合度评分基准
+
+| Score | Fit Level | What It Means | Next Step |
+|-------|-----------|---------------|-----------|
+| ≥ 8.0/10 | Strong fit | PMF likely — scale | Invest in acquisition |
+| 6.0-7.9 | Moderate fit | Iterate on gaps | Refine top 3 Pains/Gains |
+| 4.0-5.9 | Weak fit | Major rework needed | Revisit Jobs → VPD canvas |
+| < 4.0 | No fit | Fundamental mismatch | Consider pivot |
+
+> 📌 Use `vpd.analyze_canvas()` to get your score. Target **≥ 6.0** before committing to build.
+
 ## 🛡️ Common Pitfalls & How to Avoid Them
 
 | Pitfall | How VPD Helps |
@@ -720,7 +764,10 @@ See [INSTALL.md](INSTALL.md) for full configuration options and agent integratio
 
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
-**Latest (v2.4.87)**: Repo maintenance — converted "When NOT to Use VPD" to bilingual CN/EN table format, added Structured Thinking Model cross-reference, enhanced SEO-friendly headings.
+
+**Latest (v2.4.87)**: Repo maintenance — added VPD Canvas Workshop Guides (3 scenarios), added Fit Score Quick-Ref table, synced versions across all files.
+
+**Previous (v2.4.86)**: Repo maintenance — converted "When NOT to Use VPD" to bilingual CN/EN table format, added Structured Thinking Model cross-reference, enhanced SEO-friendly headings.
 
 **Previous (v2.4.85)**: Repo maintenance — added Recommended Learning Path, added Blue Ocean ERRC grid quick reference to Pro Tips, unified ecosystem pipeline, fixed ERRC typo in Best Practices.
 
