@@ -261,3 +261,25 @@ After VPD validates product-market fit, extend into commercial strategy:
 | [CPO Advisor](https://github.com/AliDujie/cpo-advisor) | Need product portfolio, PMF assessment |
 | [CMO Advisor](https://github.com/AliDujie/cmo-advisor) | Need brand positioning, messaging |
 | [CTO Advisor](https://github.com/AliDujie/cto-advisor) | Need technical feasibility, architecture decisions |
+
+## ❓ FAQ / Troubleshooting
+
+**Q: My canvas fit score is low — what should I do first?**
+Look at which dimension scores lowest (Jobs-Pains alignment, Gains coverage, or Differentiation). Fix the weakest link first — usually it's that you've defined too many Pains or not enough concrete Gains.
+*契合度评分低时，先看哪个维度得分最低。通常问题在于痛点定义过多或收益不够具体。先修最弱的一环。*
+
+**Q: How do I know if my value proposition is differentiated enough?**
+Use `analyze_competitive_strategy()` to generate a value curve. If your curve overlaps heavily with competitors on every dimension, you're competing on features, not value. Apply the ERR grid (Eliminate-Reduce-Raise-Create) to find whitespace.
+*用 `analyze_competitive_strategy()` 生成价值曲线。如果你的曲线在每个维度上都和竞品重叠，说明你在功能层面竞争而非价值层面。用 ERR 网格找差异化空间。*
+
+**Q: Can I use VPD without doing JTBD first?**
+You can, but you'll miss the deep "why" behind user needs. JTBD provides the Jobs that populate the canvas. Without it, you risk mapping surface-level features instead of real Jobs.
+*可以不用 JTBD 就开始，但会错过用户行为背后的深层"为什么"。JTBD 提供的 Job 是画布的核心输入。*
+
+**Q: How many experiments should I run to validate PMF?**
+Start with one lethal hypothesis test — the assumption that, if wrong, would kill your product idea. Use `design_experiment()` to structure it. One well-designed test is worth ten vague surveys.
+*从一个"致命假设"测试开始——如果这个假设是错的，产品就不可行。用 `design_experiment()` 结构化设计。一个好实验胜过十个模糊问卷。*
+
+**Q: How does VPD chain with other skills?**
+JTBD provides Jobs → VPD maps to canvas → QuantUX experiments validate → SWD presents results. See the ecosystem pipeline in README.md.
+*JTBD 提供 Job→VPD 映射到画布→QuantUX 实验验证→SWD 呈现结果。*
