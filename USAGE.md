@@ -227,6 +227,20 @@ story = swd.build_story(protagonist="VP of Engineering",
     call_to_action="Launch dependency dashboard in Q3")
 ```
 
+## ⛔ When NOT to Use VPD / 何时不使用
+
+VPD is the product-market validation layer — map Jobs to value, test hypotheses, and analyze competition. Use other AliDujie skills when:
+
+| Need | Use Instead | Why |
+|------|-------------|-----|
+| Create user personas, user segmentation | [Web Persona](https://github.com/AliDujie/web-persona-skill) | Evidence-driven persona creation |
+| Choose research methods, run interviews | [UDM](https://github.com/AliDujie/universal-design-methods) | 100 methods, interview guides, usability tests |
+| Understand user Jobs, opportunity scoring | [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) | JTBD interviews feed VPD canvas |
+| Quantitative A/B testing, HEART metrics | [QuantUX](https://github.com/AliDujie/Quantitative-UX-Research) | Statistical validation of VPD hypotheses |
+| Data visualization, executive stories | [SWD](https://github.com/AliDujie/storytelling-with-data) | VPD canvas → SWD executive narrative |
+
+> 💡 **Better together**: JTBD discovers Jobs → VPD maps to canvas → QuantUX validates → SWD presents.
+
 ## 📎 Related Documents
 
 | Document | Purpose |
