@@ -637,6 +637,7 @@ VPD value validation can be combined with management skills to turn product-mark
 | [CMO Advisor](https://github.com/AliDujie/cmo-advisor) | VPD value proposition → CMO brand positioning |
 | [CTO Advisor](https://github.com/AliDujie/cto-advisor) | VPD tech feasibility → CTO architecture decisions |
 | [Plan CEO Review](https://github.com/AliDujie/plan-ceo-review) | VPD validation → CEO plan review & scope alignment |
+| [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) | STM framework analysis → VPD validates market hypotheses |
 
 ### 💡 Pro Tips / 专业技巧
 - **Customer profile first**: Always fill the right side (Jobs/Pains/Gains) before touching the left side — solutions should follow problems
