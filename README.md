@@ -441,6 +441,62 @@ story = swd.build_story(protagonist="Engineering Managers",
 
 This pipeline turns **customer insight → validated value proposition → tested solution → stakeholder-ready story** in one coherent flow.
 
+## 🎯 VPD Canvas Workshops / VPD 画布工作坊
+
+Structured workshop guides for running VPD sessions with your team:
+
+### Workshop 1: "Map Your First Canvas" (2 hours)
+```python
+from vpd import VPDSkill
+
+vpd = VPDSkill("My Product", "Target Segment")
+
+# Step 1: Customer Profile (right side first!)
+canvas = vpd.analyze_canvas(
+    product_name="My Product",
+    jobs=[
+        {"description": "Complete core task efficiently", "category": "functional", "importance": 5},
+        {"description": "Look competent to my boss", "category": "social", "importance": 4},
+    ],
+    pains=[
+        {"description": "Current tool takes 10+ clicks", "severity": "critical"},
+    ],
+    gains=[
+        {"description": "One-click completion", "desire_level": "required"},
+    ],
+)
+print(f"Fit Score: {canvas.fit_score}")  # Baseline for iteration
+```
+
+### Workshop 2: "Prioritize by Pain" (45 min)
+```python
+priority = vpd.calculate_priority([
+    {"name": "10+ clicks to complete", "importance": 5, "dissatisfaction": 5, "frequency": 5, "viability": 4},
+    {"name": "No mobile app", "importance": 4, "dissatisfaction": 3, "frequency": 2, "viability": 3},
+])
+# → Top pain gets P0, lower scores get P1-P3
+```
+
+### Workshop 3: "Blue Ocean Strategy" (1 hour)
+```python
+strategy = vpd.analyze_competitor(
+    my_name="My Product",
+    factors=["Price", "Speed", "Integration", "Support", "Ease of Use"],
+    players={
+        "My Product": [7, 8, 5, 6, 9],
+        "Competitor A": [8, 6, 7, 5, 4],
+        "Competitor B": [5, 7, 8, 7, 6],
+    }
+)
+# → Value curves reveal where no one competes → that's your Blue Ocean
+```
+
+### 💡 Pro Tip / 专业技巧
+> **Customer Profile FIRST, Value Map SECOND**. Teams that fill the right side (Jobs/Pains/Gains) before the left side (Products/Pain Relievers/Gain Creators) produce 2× higher fit scores. The rule: understand the problem before designing the solution.
+>
+> **先填客户画像，再填价值图**。先填右边（Jobs/Pains/Gains）的团队比先填左边的团队产出 2× 更高的契合度评分。规则：先理解问题，再设计方案。
+
+
 ## 📖 Knowledge Base
 
 All knowledge is organized in `references/knowledge-base.md` covering 8 major themes:
@@ -664,7 +720,7 @@ See [INSTALL.md](INSTALL.md) for full configuration options and agent integratio
 
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
-**Latest (v2.4.86)**: Repo maintenance — converted "When NOT to Use VPD" to bilingual CN/EN table format, added Structured Thinking Model cross-reference, enhanced SEO-friendly headings.
+**Latest (v2.4.87)**: Repo maintenance — converted "When NOT to Use VPD" to bilingual CN/EN table format, added Structured Thinking Model cross-reference, enhanced SEO-friendly headings.
 
 **Previous (v2.4.85)**: Repo maintenance — added Recommended Learning Path, added Blue Ocean ERRC grid quick reference to Pro Tips, unified ecosystem pipeline, fixed ERRC typo in Best Practices.
 
