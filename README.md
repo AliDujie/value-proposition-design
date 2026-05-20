@@ -636,6 +636,21 @@ skill = VPDSkill("Product", "Users", config=config)
 
 See [INSTALL.md](INSTALL.md) for full configuration options and agent integration guides.
 
+## ✅ Best Practices / 最佳实践
+
+1. **Customer Profile before Value Map** — Always start with `analyze_customer_profile()` to understand pains, gains, and jobs before trying to design value creators. You can't create value you don't understand.
+2. **Validate with experiments, not opinions** — Use `design_experiment()` to test assumptions cheaply before building. The evidence score (1-5) tells you how solid your VPD claims are.
+3. **Use Blue Ocean for differentiation** — Run `analyze_competitive_strategy()` and apply the ERRG grid (Eliminate-Reduce-Raise-Grid) to find uncontested market space instead of competing on features.
+4. **Prioritize by pain severity** — The `calculate_priority()` module weights pain severity × frequency × willingness-to-pay. Focus on high-severity, high-frequency pains that users will pay to solve.
+5. **Chain with JTBD upstream** — Feed JTBD's `create_jobs_atlas()` output into VPD's customer profile for a seamless insight-to-value pipeline.
+
+## ⚠️ Limitations / 局限性
+
+- **Canvas is a thinking tool, not a deliverable** — The Value Proposition Canvas structures your thinking but doesn't guarantee product-market fit. Real validation requires customer experiments.
+- **Static snapshot** — VPD captures a moment in time. Customer jobs, pains, and gains evolve; re-run analysis periodically (quarterly recommended).
+- **Requires input data quality** — The customer profile analysis is only as good as the input data. Garbage in, garbage out — pair with real JTBD interviews or user research.
+- **Bilingual documentation only** — Pro Tips and guides are provided in CN/EN only; localization to other languages requires community contributions.
+
 ## 📊 Version History
 
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
