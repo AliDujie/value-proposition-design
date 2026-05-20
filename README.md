@@ -2,11 +2,16 @@
 
 > **Build Products People Actually Want. Validate Before You Build.**
 
-![Version](https://img.shields.io/badge/version-2.4.83-blue)
+![Version](https://img.shields.io/badge/version-2.4.84-blue)
 ![Python](https://img.shields.io/badge/Python-3.9%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Dependencies](https://img.shields.io/badge/Dependencies-pyyaml-lightgrey)
 ![Part of AliDujie Skills](https://img.shields.io/badge/AliDujie-UX%20Research%20Ecosystem-purple)
+
+## 🆕 What's New in v2.4.84
+
+- **Recommended Learning Path**: Added structured 5-step learning guide with VPD→QuantUX pipeline example
+- **Blue Ocean Quick Reference**: Added ERR grid one-liner to Pro Tips for faster competitive analysis
 
 ## 🆕 What's New in v2.4.83
 
@@ -623,13 +628,23 @@ See [INSTALL.md](INSTALL.md) for full configuration options and agent integratio
 
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
-**Latest (v2.4.82)**: Added lean-start Pro Tip for time-constrained teams (canvas → priority → experiment), improved pro tips section.
+**Latest (v2.4.84)**: Repo maintenance — added Recommended Learning Path, added Blue Ocean ERR grid quick reference to Pro Tips, unified ecosystem pipeline.
+
+**Previous (v2.4.83)**: Added lean-start Pro Tip for time-constrained teams (canvas → priority → experiment), improved pro tips section.
 
 **Previous (v2.4.81)**: Improved pipeline documentation with complete JTBD→VPD→QuantUX→SWD end-to-end example, enhanced competitive strategy examples.
 
 **Previous (v2.4.80)**: Added Chinese Extended Ecosystem section with CEO/CPO/CMO/CTO advisor links, improving bilingual parity.
 
 **Previous (v2.4.79)**: Added cross-skill collaboration table with ecosystem integration guide, improved Pro Tips section.
+
+### 📖 Recommended Learning Path
+
+1. **Start with the README** — Quick start + 30-second example
+2. **Read USAGE.md** — Detailed workflows for all 7 modules with code examples
+3. **Explore references/** — Deep dive into 8 major themes: canvas architecture, information gathering, design methods, Blue Ocean strategy, experiment validation
+4. **Try the full pipeline** — Chain JTBD → VPD → QuantUX → SWD end-to-end (see [Complete Pipeline](#-complete-pipeline-jtbd--vpd--quantux--swd))
+5. **Customize via config** — Adjust pain severity thresholds and priority weights (see [INSTALL.md](INSTALL.md))
 
 ## 📚 Resources
 
