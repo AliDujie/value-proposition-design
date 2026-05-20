@@ -508,13 +508,22 @@ python vpd/tests/test_all.py
 python -m pytest vpd/tests/test_all.py -v
 ```
 
-## 📋 When NOT to Use VPD
+## 📋 When NOT to Use VPD / 什么时候不该用 VPD
 
-- **Choosing research methods or designing qualitative research** → [Universal Design Methods](https://github.com/AliDujie/universal-design-methods)
-- **Statistical analysis or A/B testing** → [Quantitative UX Research](https://github.com/AliDujie/Quantitative-UX-Research)
-- **Understanding user Jobs-to-be-Done** → [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill)
-- **Creating user personas** → [Web Persona](https://github.com/AliDujie/web-persona-skill)
-- **Data visualization & storytelling** → [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data)
+| Your Need | Recommended Skill |
+|-----------|------------------|
+| Choosing research methods or designing qualitative research | → [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) |
+| Statistical analysis or A/B testing | → [Quantitative UX Research](https://github.com/AliDujie/Quantitative-UX-Research) |
+| Understanding user Jobs-to-be-Done | → [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) |
+| Creating user personas / user segmentation | → [Web Persona](https://github.com/AliDujie/web-persona-skill) |
+| Data visualization & storytelling | → [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) |
+| Business framework analysis (SWOT, PESTEL) | → [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) |
+| 选择研究方法、设计访谈 | → [Universal Design Methods](https://github.com/AliDujie/universal-design-methods) |
+| 定量统计分析、A/B 测试 | → [Quantitative UX Research](https://github.com/AliDujie/Quantitative-UX-Research) |
+| 理解用户 Jobs、机会评分 | → [JTBD Knowledge](https://github.com/AliDujie/jtbd-knowledge-skill) |
+| 创建用户画像 | → [Web Persona](https://github.com/AliDujie/web-persona-skill) |
+| 数据可视化与故事化呈现 | → [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) |
+| 商业框架分析 | → [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) |
 
 ## 📚 References
 
@@ -655,7 +664,9 @@ See [INSTALL.md](INSTALL.md) for full configuration options and agent integratio
 
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
-**Latest (v2.4.85)**: Repo maintenance — added Recommended Learning Path, added Blue Ocean ERRC grid quick reference to Pro Tips, unified ecosystem pipeline, fixed ERRC typo in Best Practices.
+**Latest (v2.4.86)**: Repo maintenance — converted "When NOT to Use VPD" to bilingual CN/EN table format, added Structured Thinking Model cross-reference, enhanced SEO-friendly headings.
+
+**Previous (v2.4.85)**: Repo maintenance — added Recommended Learning Path, added Blue Ocean ERRC grid quick reference to Pro Tips, unified ecosystem pipeline, fixed ERRC typo in Best Practices.
 
 **Previous (v2.4.83)**: Added lean-start Pro Tip for time-constrained teams (canvas → priority → experiment), improved pro tips section.
 
