@@ -619,18 +619,6 @@ VPD 是 **AliDujie UX 研究技能生态系统** 的产品-市场验证层，与
 | [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) | 数据叙事 | VPD 产出 → SWD 数据故事 |
 | [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) | 战略框架 | STM 商业画布 → VPD 价值验证 |
 
-### 🔗 扩展生态 (Extended Ecosystem)
-
-VPD 价值验证可与管理层技能结合，将产品-市场匹配转化为商业战略：
-
-| 扩展技能 | 协作场景 |
-|---------|----------|
-| [CEO Advisor](https://github.com/AliDujie/ceo-advisor) | VPD 护城河分析 → CEO 竞争战略决策 |
-| [CPO Advisor](https://github.com/AliDujie/cpo-advisor) | VPD 画布 → CPO 产品组合与 PMF 评估 |
-| [CMO Advisor](https://github.com/AliDujie/cmo-advisor) | VPD 价值主张 → CMO 品牌定位与 messaging |
-| [CTO Advisor](https://github.com/AliDujie/cto-advisor) | VPD 技术可行性 → CTO 技术投资与架构决策 |
-| [Plan CEO Review](https://github.com/AliDujie/plan-ceo-review) | VPD 实验验证 → CEO 计划调整与范围扩展 |
-
 ### 💡 Pro Tip / 专业技巧
 VPD 是 AliDujie 生态系统的**产品-市场验证层**。最强大的工作流：从 [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) 发现 Jobs → VPD 填充画布并计算契合度 → 用 [QuantUX](https://github.com/AliDujie/Quantitative-UX-Research) A/B 测试验证假设 → 用 [SWD](https://github.com/AliDujie/storytelling-with-data) 向利益相关者呈现结果。VPD 的核心价值在于：在写代码之前，用结构化实验验证你的价值主张是否真正契合用户需求。
 
