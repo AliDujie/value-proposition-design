@@ -1,3 +1,9 @@
+## v2.4.90 (2026-05-22)
+- Repo maintenance: added 'VPD Canvas Quick-Start' 3-line code example section
+- Enhanced ecosystem cross-reference with complete 6-skill pipeline recipes
+- Added bilingual 'When NOT to use VPD' decision guardrails
+- Updated version across README/SKILL.md/pyproject.toml/__init__.py
+
 ## v2.4.88 (2026-05-21)
 - Added Lean Canvas Recipe (5-step VPD sprint in 1 day for startup teams)
 - Enhanced ecosystem cross-references with ASCII pipeline diagram
