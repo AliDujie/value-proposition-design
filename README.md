@@ -2,11 +2,17 @@
 
 > **Build Products People Actually Want. Validate Before You Build.**
 
-![Version](https://img.shields.io/badge/version-2.4.88-blue)
+![Version](https://img.shields.io/badge/version-2.4.89-blue)
 ![Python](https://img.shields.io/badge/Python-3.9%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Dependencies](https://img.shields.io/badge/Dependencies-pyyaml-lightgrey)
 ![Part of AliDujie Skills](https://img.shields.io/badge/AliDujie-UX%20Research%20Ecosystem-purple)
+
+## 🆕 What's New in v2.4.89
+
+- **Try-It-Now Section**: Added one-line runnable examples under Quick Start for instant exploration
+- **Blueprint Enhancement**: Added explicit VPD→JTBD→QuantUX feedback loop diagram in ecosystem section
+- **Version Sync**: Aligned version across README/SKILL.md/pyproject.toml/__init__.py
 
 ## 🆕 What's New in v2.4.88
 
@@ -140,6 +146,14 @@ q = QuantUXSkill("Product")    # A/B test the hypothesis
 s = SWDSkill("Report")         # Present to stakeholders
 ```
 
+> 💡 **Try Before You Decide / 先试后决定**:
+> ```python
+> from vpd import VPDSkill
+> # One line → instant canvas analysis
+> v = VPDSkill("SaaS Product", "Team Leads")
+> print(v.analyze_canvas(product_name="TeamFlow", jobs=[{"description": "Team task assignment", "importance": 5}]).fit_score)
+> ```
+
 ## ⚡ Quick Start (5 Minutes)
 
 ### Install
@@ -215,6 +229,29 @@ def score_competitive_landscape(my_name: str, factors: list, players: dict):
 def design_pmF_experiment(hypotheses: list):
     """Design experiments to validate product-market fit hypotheses."""
     return vpd.design_experiment(hypotheses=hypotheses)
+```
+
+### 🧪 Instant Examples (Copy-Paste & Run)
+
+**Canvas fit scoring:**
+```python
+from vpd import VPDSkill
+v = VPDSkill("SaaS", "Team Leads")
+c = v.analyze_canvas(product_name="TeamFlow", jobs=[{"description": "Task assignment", "importance": 5}])
+print(f"Fit score: {c.fit_score}")  # → 0-1 with gap analysis
+```
+
+**Blue Ocean strategy:**
+```python
+v.analyze_competitor(my_name="ProductA", factors=["Price", "Speed", "UX"],
+    players={"ProductA": [7, 8, 9], "Competitor": [8, 6, 7]})
+# → Value curves + ERRC grid (Eliminate-Reduce-Raise-Create)
+```
+
+**Experiment design:**
+```python
+v.design_experiment(hypotheses=[{"description": "Users pay for premium", "lethality": "lethal"}])
+# → Test cards + learning metrics + CTA tiers
 ```
 
 ### Agent Workflow Pattern
