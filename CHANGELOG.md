@@ -1,3 +1,13 @@
+## v2.4.88 (2026-05-21)
+- Added Lean Canvas Recipe (5-step VPD sprint in 1 day for startup teams)
+- Enhanced ecosystem cross-references with ASCII pipeline diagram
+- Version sync across README/SKILL.md/pyproject.toml/__init__.py
+
+## v2.4.87 (2026-05-20)
+- Added VPD Canvas Workshop Guides (3 structured scenarios)
+- Added Fit Score Quick-Ref table
+- Version sync across all files
+
 ## v2.4.83 (2026-05-19)
 - Repo maintenance: synced versions across README/SKILL.md/pyproject.toml
 - Enhanced Blue Ocean strategy section with concrete example

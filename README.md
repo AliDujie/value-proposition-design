@@ -2,11 +2,17 @@
 
 > **Build Products People Actually Want. Validate Before You Build.**
 
-![Version](https://img.shields.io/badge/version-2.4.87-blue)
+![Version](https://img.shields.io/badge/version-2.4.88-blue)
 ![Python](https://img.shields.io/badge/Python-3.9%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Dependencies](https://img.shields.io/badge/Dependencies-pyyaml-lightgrey)
 ![Part of AliDujie Skills](https://img.shields.io/badge/AliDujie-UX%20Research%20Ecosystem-purple)
+
+## 🆕 What's New in v2.4.88
+
+- **Lean Canvas Recipe**: Added "5-step VPD sprint in 1 day" recipe card for startup teams
+- **Cross-Reference Enhancement**: Added full ecosystem ASCII diagram to Ecosystem Integration section
+- **Version Sync**: Aligned version across README/SKILL.md/pyproject.toml/__init__.py
 
 ## 🆕 What's New in v2.4.87
 
@@ -766,7 +772,9 @@ See [INSTALL.md](INSTALL.md) for full configuration options and agent integratio
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
 
-**Latest (v2.4.87)**: Repo maintenance — added VPD Canvas Workshop Guides (3 scenarios), added Fit Score Quick-Ref table, synced versions across all files.
+**Latest (v2.4.88)**: Repo maintenance — added Lean Canvas Recipe (5-step VPD sprint), enhanced ecosystem cross-references, synced versions.
+
+**Previous (v2.4.87)**: Repo maintenance — added VPD Canvas Workshop Guides (3 scenarios), added Fit Score Quick-Ref table, synced versions across all files.
 
 **Previous (v2.4.86)**: Repo maintenance — converted "When NOT to Use VPD" to bilingual CN/EN table format, added Structured Thinking Model cross-reference, enhanced SEO-friendly headings.
 
