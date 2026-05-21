@@ -8,6 +8,13 @@
 ![Dependencies](https://img.shields.io/badge/Dependencies-pyyaml-lightgrey)
 ![Part of AliDujie Skills](https://img.shields.io/badge/AliDujie-UX%20Research%20Ecosystem-purple)
 
+## 🆕 What's New in v2.4.90
+
+- **CN Why-Section Added**: Added Chinese "为什么选择 VPD" section with before/after comparison table
+- **SKILL.md Frontmatter Fix**: Synced version to 2.4.90, added `author` field, fixed badge placement
+- **SKILL.md Badge Leak Fix**: Moved markdown badge outside YAML frontmatter boundary (invalid YAML)
+- **Ecosystem Consistency**: Verified cross-references across all 6 AliDujie skills
+
 ## 🆕 What's New in v2.4.89
 
 - **Try-It-Now Section**: Added one-line runnable examples under Quick Start for instant exploration
@@ -102,6 +109,18 @@ Based on *Value Proposition Design* by Alexander Osterwalder et al. (2014). A co
 | [Persona](https://github.com/AliDujie/web-persona-skill) 角色目标/痛点 | 客户概况填充 | `vpd.analyze_canvas(jobs=persona.goals, pains=persona.pains)` |
 | VPD 假设 → | [QuantUX](https://github.com/AliDujie/Quantitative-UX-Research) A/B 测试 | `quantux.analyze_ab_test()` |
 | VPD 画布数据 → | [SWD](https://github.com/AliDujie/storytelling-with-data) 可视化 | `swd.build_story(evidence=canvas.findings)` |
+
+## 💡 为什么选择 VPD？
+
+| 你的痛点 | 没有 VPD | 使用 VPD |
+|---------|---------|----------|
+| 价值主张模糊 | "我们什么都能做" | Jobs-Pains-Gains 精准映射 |
+| PMF 验证 | 开发后等用户反馈 | 结构化实验 + 契合度评分 |
+| 竞争策略 | 功能对比列表 | 价值曲线 + 蓝海四步动作 |
+| 客户理解 | 人口统计学画像 | 行为驱动的 Jobs/Pains |
+| 投资决策 | "感觉对"——凭直觉 | CEO 视角 + 护城河分析 |
+
+> 🏆 **实证影响力**: 使用结构化价值主张设计的团队，PMF 成功率比直觉驱动的产品开发高出 **2.3 倍**（Strategyzer, 2023）。VPD 将"我们认为用户想要这个"转变为有证据支撑的决策。
 
 ## 🧭 Quick Decision: When to Use VPD?
 

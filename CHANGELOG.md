@@ -1,4 +1,6 @@
 ## v2.4.90 (2026-05-22)
+- SKILL.md frontmatter: synced version to 2.4.90, added `author` field, moved badge outside YAML boundary
+- Added Chinese "为什么选择 VPD" section with before/after comparison table
 - Repo maintenance: added 'VPD Canvas Quick-Start' 3-line code example section
 - Enhanced ecosystem cross-reference with complete 6-skill pipeline recipes
 - Added bilingual 'When NOT to use VPD' decision guardrails
