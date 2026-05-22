@@ -2,11 +2,15 @@
 
 > **Build Products People Actually Want. Validate Before You Build.**
 
-![Version](https://img.shields.io/badge/version-2.4.91-blue)
+![Version](https://img.shields.io/badge/version-2.4.92-blue)
 ![Python](https://img.shields.io/badge/Python-3.9%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Dependencies](https://img.shields.io/badge/Dependencies-pyyaml-lightgrey)
 ![Part of AliDujie Skills](https://img.shields.io/badge/AliDujie-UX%20Research%20Ecosystem-purple)
+
+## 🆕 What's New in v2.4.93
+
+- **Version Sync**: Aligned README badge and SKILL.md frontmatter to 2.4.92 (matching __init__.py and pyproject.toml)
 
 ## 🆕 What's New in v2.4.92
 
@@ -69,6 +73,10 @@
 - **CEO 视角延伸**：商业化路径、护城河分析、ROI 估算，从产品验证到商业决策一站式打通
 
 Based on *Value Proposition Design* by Alexander Osterwalder et al. (2014). A complete methodology skill covering customer insights, canvas analysis, priority calculation, competitive strategy, survey design, and experiment validation — with **7 executable modules** that produce structured deliverables for real business scenarios, plus CEO-level commercialization path and competitive moat analysis.
+
+## 🎯 Why Teams Choose VPD
+
+*New here?* VPD (Value Proposition Design) maps customer needs to your product value using the Jobs-Pains-Gains canvas. It validates PMF before you build. Based on Osterwalder et al. (2014).
 
 ## 🌟 Why VPD?
 
