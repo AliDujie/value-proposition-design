@@ -14,10 +14,6 @@
 - **Ecosystem Cross-Reference Verification**: Verified all 6-skill pipeline links across AliDujie skills
 - **Version Bump**: Synced version to 2.4.93
 
-## 🆕 What's New in v2.4.93
-
-- **Version Sync**: Aligned README badge and SKILL.md frontmatter to 2.4.92 (matching __init__.py and pyproject.toml)
-
 ## 🆕 What's New in v2.4.92
 
 - **Structured Thinking Model Cross-Reference**: Added explicit STM skill link in ecosystem footer and pipeline diagram
