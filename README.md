@@ -850,7 +850,17 @@ See [INSTALL.md](INSTALL.md) for full configuration options and agent integratio
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
 
-**Latest (v2.4.88)**: Repo maintenance — added Lean Canvas Recipe (5-step VPD sprint), enhanced ecosystem cross-references, synced versions.
+**Latest (v2.4.93)**: Repo maintenance — version sync across README badge/SKILL.md/pyproject.toml/__init__.py, ecosystem cross-reference verification across all 6 AliDujie skills, removed duplicate changelog entry.
+
+**Previous (v2.4.92)**: Added STM cross-reference, ecosystem pipeline enhancement with feedback loops, added references/ and vpd/ source links to Resources.
+
+**Previous (v2.4.91)**: Ecosystem badge consistency check, version sync across all files.
+
+**Previous (v2.4.90)**: Added Chinese "为什么选择 VPD" section with before/after comparison table, added `author` field to SKILL.md, fixed badge placement.
+
+**Previous (v2.4.89)**: Added one-line runnable examples under Quick Start, added VPD→JTBD→QuantUX feedback loop diagram.
+
+**Previous (v2.4.88)**: Added Lean Canvas Recipe (5-step VPD sprint in 1 day), ecosystem ASCII diagram, synced versions.
 
 **Previous (v2.4.87)**: Repo maintenance — added VPD Canvas Workshop Guides (3 scenarios), added Fit Score Quick-Ref table, synced versions across all files.
 
