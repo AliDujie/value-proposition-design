@@ -672,7 +672,7 @@ JTBD discovers the user's Jobs. VPD maps those Jobs to a Value Proposition Canva
 Fit score ranges 0–1. ≥0.7 = strong match (ready to build), 0.5–0.7 = reasonable but gaps exist (needs experiments), <0.5 = significant mismatch (revisit assumptions).
 
 **Q: What is a "lethal hypothesis"?**
-An hypothesis that, if falsified, would destroy the entire product concept. VPD sorts experiments by lethality — test the riskiest assumptions first to avoid wasting resources on the wrong direction.
+A hypothesis that, if falsified, would destroy the entire product concept. VPD sorts experiments by lethality — test the riskiest assumptions first to avoid wasting resources on the wrong direction.
 
 **Q: Can I use VPD with only qualitative data?**
 Yes. `analyze_canvas()` and `design_experiment()` work perfectly with qualitative findings from [UDM](https://github.com/AliDujie/universal-design-methods) interviews. When you have traffic, use [QuantUX](https://github.com/AliDujie/Quantitative-UX-Research) for quantitative validation.

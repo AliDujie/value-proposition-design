@@ -194,8 +194,9 @@ VPD is the **product-market validation layer** — the bridge between research a
 | [Quantitative UX Research](https://github.com/AliDujie/Quantitative-UX-Research) | Quantitative validation | VPD hypotheses → QuantUX A/B tests validate product-market fit |
 | [Web Persona](https://github.com/AliDujie/web-persona-skill) | User definition | Persona goals/pains → VPD customer profile → persona validation |
 | [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) | Data storytelling | VPD canvas analysis → SWD chart selection → executive narrative |
+| [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) | Strategic framework | VPD business analysis → STM strategic framework → STM decision support |
 
-> 💡 **Recommended chain:** JTBD (discover Jobs) → UDM (research) → **VPD** (map canvas + validate) → QuantUX (confirm) → SWD (present)
+> 💡 **Recommended chain:** JTBD (discover Jobs) → UDM (research) → **VPD** (map canvas + validate) → QuantUX (confirm) → SWD (present) → STM (strategic decision)
 
 ### Quick Cross-Skill Example / 跨技能示例
 
@@ -239,7 +240,7 @@ VPD is the product-market validation layer — map Jobs to value, test hypothese
 | Quantitative A/B testing, HEART metrics | [QuantUX](https://github.com/AliDujie/Quantitative-UX-Research) | Statistical validation of VPD hypotheses |
 | Data visualization, executive stories | [SWD](https://github.com/AliDujie/storytelling-with-data) | VPD canvas → SWD executive narrative |
 
-> 💡 **Better together**: JTBD discovers Jobs → VPD maps to canvas → QuantUX validates → SWD presents.
+> 💡 **Better together**: JTBD discovers Jobs → VPD maps to canvas → QuantUX validates → SWD presents → STM structures strategic decisions.
 
 ## 📎 Related Documents
 
@@ -250,6 +251,7 @@ VPD is the product-market validation layer — map Jobs to value, test hypothese
 | [INSTALL.md](INSTALL.md) | Installation guide with troubleshooting |
 | [CHANGELOG.md](CHANGELOG.md) | Version history and what's new |
 | [references/knowledge-base.md](references/knowledge-base.md) | Full methodology reference (8 chapters) |
+| [references/04-ecosystem-collaboration.md](references/04-ecosystem-collaboration.md) | Cross-skill workflows for all 6 ecosystem skills |
 
 ### C-Suite Skills for Commercialization / 管理层技能
 
