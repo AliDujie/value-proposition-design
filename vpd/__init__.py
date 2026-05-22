@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-__version__ = "2.4.91"
+__version__ = "2.4.92"
 
 """
 Value Proposition Design (VPD) - Python工具包
