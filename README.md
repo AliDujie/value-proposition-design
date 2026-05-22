@@ -2,11 +2,17 @@
 
 > **Build Products People Actually Want. Validate Before You Build.**
 
-![Version](https://img.shields.io/badge/version-2.4.92-blue)
+![Version](https://img.shields.io/badge/version-2.4.93-blue)
 ![Python](https://img.shields.io/badge/Python-3.9%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Dependencies](https://img.shields.io/badge/Dependencies-pyyaml-lightgrey)
 ![Part of AliDujie Skills](https://img.shields.io/badge/AliDujie-UX%20Research%20Ecosystem-purple)
+
+## 🆕 What's New in v2.4.93
+
+- **Repo Maintenance**: Version sync across README badge, SKILL.md, pyproject.toml, __init__.py
+- **Ecosystem Cross-Reference Verification**: Verified all 6-skill pipeline links across AliDujie skills
+- **Version Bump**: Synced version to 2.4.93
 
 ## 🆕 What's New in v2.4.93
 
