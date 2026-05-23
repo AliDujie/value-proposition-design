@@ -2,11 +2,17 @@
 
 > **Build Products People Actually Want. Validate Before You Build.**
 
-![Version](https://img.shields.io/badge/version-2.4.93-blue)
+![Version](https://img.shields.io/badge/version-2.4.94-blue)
 ![Python](https://img.shields.io/badge/Python-3.9%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Dependencies](https://img.shields.io/badge/Dependencies-pyyaml-lightgrey)
 ![Part of AliDujie Skills](https://img.shields.io/badge/AliDujie-UX%20Research%20Ecosystem-purple)
+
+## 🆕 What's New in v2.4.94
+
+- **Ecosystem Pipeline Diagram**: Added ASCII visual showing full 6-skill flow with VPD as the validation layer
+- **Cross-Skill Handoff Examples**: Added explicit JTBD→VPD canvas handoff and VPD→QuantUX experiment validation examples
+- **Version Bump**: Synced version to 2.4.94
 
 ## 🆕 What's New in v2.4.93
 
