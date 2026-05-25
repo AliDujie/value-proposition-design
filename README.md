@@ -2,7 +2,7 @@
 
 > **Build Products People Actually Want. Validate Before You Build.**
 
-![Version](https://img.shields.io/badge/version-2.4.94-blue)
+![Version](https://img.shields.io/badge/version-2.4.95-blue)
 ![Python](https://img.shields.io/badge/Python-3.9%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Dependencies](https://img.shields.io/badge/Dependencies-pyyaml-lightgrey)
@@ -174,6 +174,39 @@ Based on *Value Proposition Design* by Alexander Osterwalder et al. (2014). A co
 | 需要将数据转化为高管汇报 | → [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) |
 
 > 💡 VPD 是产品-市场验证层：Jobs 映射画布 → 实验验证 → PMF 确认。
+
+### 🍳 Quick Recipes
+
+**Recipe 1: Canvas Analysis in 10 Minutes (Lean Startup)**
+```python
+from vpd import VPDSkill
+vpd = VPDSkill("Fitness App", "Busy Professionals")
+
+canvas = vpd.analyze_canvas(
+    product_name="FitQuick",
+    jobs=[{"description": "Quick 15-min workout routines", "importance": 5},
+          {"description": "Track progress on the go", "importance": 4}],
+    pains=[{"description": "No time for gym", "severity": "critical"},
+           {"description": "Workout apps are too complex", "severity": "moderate"}],
+    gains=[{"description": "Feel accomplished", "desirability": 4}]
+)
+print(f"Fit Score: {canvas.fit_score}")
+# → If ≥ 0.7: strong fit. If 0.5-0.7: iterate on gaps. If < 0.5: revisit assumptions.
+```
+
+**Recipe 2: Competitor Blue Ocean Analysis in 15 Minutes**
+```python
+from vpd import VPDSkill
+vpd = VPDSkill("Fitness App", "Busy Professionals")
+
+# Map competitor value curves
+competitor = vpd.analyze_competitor("FitQuick",
+    factors=["Price", "Workout variety", "Personalization", "Social features", "Progress tracking"],
+    competitor_scores={"Competitor A": [5, 3, 2, 4, 3], "Competitor B": [3, 5, 4, 2, 4]}
+)
+print(competitor)
+# → ERRC grid: Eliminate (social), Reduce (price), Raise (personalization), Create (AI coaching)
+```
 
 ## 🔗 Ecosystem Quick Start
 
