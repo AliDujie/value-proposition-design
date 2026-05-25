@@ -13,11 +13,6 @@
 - **Duplicate Header Consolidation**: Merged `🎯 Why Teams Choose VPD` + `🌟 Why VPD?` + `💼 Why Teams Choose VPD` into one bilingual section `🎯 Why Teams Choose VPD / 为什么选择 VPD`. Removed duplicate `💡 为什么选择 VPD？` section.
 - **Version Bump**: Synced to 2.4.95
 
-## 🆕 What's New in v2.4.95
-
-- **Duplicate Header Consolidation**: Merged `🎯 Why Teams Choose VPD` + `🌟 Why VPD?` + `💼 Why Teams Choose VPD` into one bilingual section `🎯 Why Teams Choose VPD / 为什么选择 VPD`. Removed duplicate `💡 为什么选择 VPD？` section.
-- **Version Bump**: Synced to 2.4.95
-
 ## 🆕 What's New in v2.4.94
 
 - **Ecosystem Audit**: Audited all 6 AliDujie skill repos for cross-reference consistency, version alignment, and documentation completeness
