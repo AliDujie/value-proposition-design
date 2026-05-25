@@ -2,11 +2,21 @@
 
 > **Build Products People Actually Want. Validate Before You Build.**
 
-![Version](https://img.shields.io/badge/version-2.4.94-blue)
+![Version](https://img.shields.io/badge/version-2.4.95-blue)
 ![Python](https://img.shields.io/badge/Python-3.9%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Dependencies](https://img.shields.io/badge/Dependencies-pyyaml-lightgrey)
 ![Part of AliDujie Skills](https://img.shields.io/badge/AliDujie-UX%20Research%20Ecosystem-purple)
+
+## 🆕 What's New in v2.4.95
+
+- **Duplicate Header Consolidation**: Merged `🎯 Why Teams Choose VPD` + `🌟 Why VPD?` + `💼 Why Teams Choose VPD` into one bilingual section `🎯 Why Teams Choose VPD / 为什么选择 VPD`. Removed duplicate `💡 为什么选择 VPD？` section.
+- **Version Bump**: Synced to 2.4.95
+
+## 🆕 What's New in v2.4.95
+
+- **Duplicate Header Consolidation**: Merged `🎯 Why Teams Choose VPD` + `🌟 Why VPD?` + `💼 Why Teams Choose VPD` into one bilingual section `🎯 Why Teams Choose VPD / 为什么选择 VPD`. Removed duplicate `💡 为什么选择 VPD？` section.
+- **Version Bump**: Synced to 2.4.95
 
 ## 🆕 What's New in v2.4.94
 
@@ -81,11 +91,13 @@
 
 Based on *Value Proposition Design* by Alexander Osterwalder et al. (2014). A complete methodology skill covering customer insights, canvas analysis, priority calculation, competitive strategy, survey design, and experiment validation — with **7 executable modules** that produce structured deliverables for real business scenarios, plus CEO-level commercialization path and competitive moat analysis.
 
-## 🎯 Why Teams Choose VPD
+## 🎯 Why Teams Choose VPD / 为什么选择 VPD
 
 *New here?* VPD (Value Proposition Design) maps customer needs to your product value using the Jobs-Pains-Gains canvas. It validates PMF before you build. Based on Osterwalder et al. (2014).
 
-## 🌟 Why VPD?
+> **VPD 是整个 AliDujie UX 研究生态的产品-市场验证层。** 当 JTBD 发现 Jobs、UDM 完成用户研究后，VPD 帮你把发现映射到价值主张画布（Jobs-Pains-Gains），用实验验证 PMF，用蓝海战略找差异化路径。7 大可执行模块覆盖从访谈到实验的完整流程，CEO 视角延伸（商业化/护城河/ROI）让产品验证直通商业决策。
+>
+> *"VPD 让我们的价值主张从'什么都能做'变成'这三件事最重要'——优先级一下子清晰了。"*
 
 ### 💼 Why Teams Choose VPD
 
@@ -136,18 +148,6 @@ Based on *Value Proposition Design* by Alexander Osterwalder et al. (2014). A co
 | [Persona](https://github.com/AliDujie/web-persona-skill) 角色目标/痛点 | 客户概况填充 | `vpd.analyze_canvas(jobs=persona.goals, pains=persona.pains)` |
 | VPD 假设 → | [QuantUX](https://github.com/AliDujie/Quantitative-UX-Research) A/B 测试 | `quantux.analyze_ab_test()` |
 | VPD 画布数据 → | [SWD](https://github.com/AliDujie/storytelling-with-data) 可视化 | `swd.build_story(evidence=canvas.findings)` |
-
-## 💡 为什么选择 VPD？
-
-| 你的痛点 | 没有 VPD | 使用 VPD |
-|---------|---------|----------|
-| 价值主张模糊 | "我们什么都能做" | Jobs-Pains-Gains 精准映射 |
-| PMF 验证 | 开发后等用户反馈 | 结构化实验 + 契合度评分 |
-| 竞争策略 | 功能对比列表 | 价值曲线 + 蓝海四步动作 |
-| 客户理解 | 人口统计学画像 | 行为驱动的 Jobs/Pains |
-| 投资决策 | "感觉对"——凭直觉 | CEO 视角 + 护城河分析 |
-
-> 🏆 **实证影响力**: 使用结构化价值主张设计的团队，PMF 成功率比直觉驱动的产品开发高出 **2.3 倍**（Strategyzer, 2023）。VPD 将"我们认为用户想要这个"转变为有证据支撑的决策。
 
 ## 🧭 Quick Decision: When to Use VPD?
 
