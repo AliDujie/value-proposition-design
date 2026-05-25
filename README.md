@@ -2,11 +2,16 @@
 
 > **Build Products People Actually Want. Validate Before You Build.**
 
-![Version](https://img.shields.io/badge/version-2.4.93-blue)
+![Version](https://img.shields.io/badge/version-2.4.94-blue)
 ![Python](https://img.shields.io/badge/Python-3.9%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Dependencies](https://img.shields.io/badge/Dependencies-pyyaml-lightgrey)
 ![Part of AliDujie Skills](https://img.shields.io/badge/AliDujie-UX%20Research%20Ecosystem-purple)
+
+## 🆕 What's New in v2.4.94
+
+- **Ecosystem Audit**: Audited all 6 AliDujie skill repos for cross-reference consistency, version alignment, and documentation completeness
+- **Version Bump**: Synced version to 2.4.94 across README badge, SKILL.md, pyproject.toml, __init__.py
 
 ## 🆕 What's New in v2.4.93
 
@@ -850,7 +855,9 @@ See [INSTALL.md](INSTALL.md) for full configuration options and agent integratio
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
 
-**Latest (v2.4.93)**: Repo maintenance — version sync across README badge/SKILL.md/pyproject.toml/__init__.py, ecosystem cross-reference verification across all 6 AliDujie skills, removed duplicate changelog entry.
+**Latest (v2.4.94)**: Ecosystem audit across all 6 AliDujie skill repos — cross-reference verification, version alignment, documentation completeness check.
+
+**Previous (v2.4.93)**: Repo maintenance — version sync across README badge/SKILL.md/pyproject.toml/__init__.py, ecosystem cross-reference verification across all 6 AliDujie skills, removed duplicate changelog entry.
 
 **Previous (v2.4.92)**: Added STM cross-reference, ecosystem pipeline enhancement with feedback loops, added references/ and vpd/ source links to Resources.
 
