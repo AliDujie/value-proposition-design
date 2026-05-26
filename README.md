@@ -2,12 +2,17 @@
 
 > **Build Products People Actually Want. Validate Before You Build.**
 
-![Version](https://img.shields.io/badge/version-2.4.94-blue)
+![Version](https://img.shields.io/badge/version-2.4.95-blue)
 ![Python](https://img.shields.io/badge/Python-3.9%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Dependencies](https://img.shields.io/badge/Dependencies-pyyaml-lightgrey)
 ![Part of AliDujie Skills](https://img.shields.io/badge/AliDujie-UX%20Research%20Ecosystem-purple)
 ![Examples](https://img.shields.io/badge/Examples-2%20runnable%20scripts-brightgreen)
+
+## 🆕 What's New in v2.4.95
+
+- **Repo Maintenance**: Corrected Version History "Latest" entry (v2.4.88 → v2.4.94), ecosystem cross-reference audit across all 6 AliDujie skills
+- **Version Bump**: Synced to 2.4.95
 
 ## 🆕 What's New in v2.4.94
 
@@ -873,7 +878,7 @@ See [INSTALL.md](INSTALL.md) for full configuration options and agent integratio
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
 
-**Latest (v2.4.88)**: Repo maintenance — added Lean Canvas Recipe (5-step VPD sprint), enhanced ecosystem cross-references, synced versions.
+**Latest (v2.4.94)**: Added Ecosystem Pipeline Diagram, explicit JTBD→VPD canvas handoff and VPD→QuantUX experiment validation examples, version sync across all files.
 
 **Previous (v2.4.87)**: Repo maintenance — added VPD Canvas Workshop Guides (3 scenarios), added Fit Score Quick-Ref table, synced versions across all files.
 
