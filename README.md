@@ -9,6 +9,21 @@
 ![Part of AliDujie Skills](https://img.shields.io/badge/AliDujie-UX%20Research%20Ecosystem-purple)
 ![Examples](https://img.shields.io/badge/Examples-5%20runnable%20scripts-brightgreen)
 
+## 📑 Table of Contents
+
+- [Why Teams Choose VPD](#-why-teams-choose-vpd)
+- [Quick Decision: When to Use VPD?](#-quick-decision-when-to-use-vpd)
+- [Quick Start](#-quick-start-5-minutes)
+- [Ecosystem Quick Start](#-ecosystem-quick-start)
+- [Core Capabilities](#-7-executable-modules)
+- [Real-World Use Cases](#-real-world-use-cases)
+- [AI Agent Integration](#-ai-agent-integration)
+- [VPD Canvas Workshops](#-vpd-canvas-workshops--vpd-画布工作坊)
+- [FAQ / Troubleshooting](#-faq--常见问题)
+- [Resources](#-resources)
+
+---
+
 ## 🆕 What's New in v2.4.95
 
 - **Repo Maintenance**: Corrected Version History "Latest" entry (v2.4.88 → v2.4.94), ecosystem cross-reference audit across all 6 AliDujie skills
