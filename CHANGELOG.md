@@ -1,4 +1,11 @@
-## v2.4.94 (2026-05-25)
+## v2.4.97 (2026-05-26)
+
+- Repo maintenance: added Examples badge (3 runnable scripts), added examples/ reference to Resources section, ecosystem cross-reference audit
+- Version sync across README badge/SKILL.md/pyproject.toml/__init__.py
+
+## v2.4.96 (2026-05-25)
+
+## v2.4.95 (2026-05-25)
 
 - Ecosystem audit across all 6 AliDujie skill repos
 - Verified cross-reference consistency, version alignment, documentation completeness

@@ -2,11 +2,22 @@
 
 > **Build Products People Actually Want. Validate Before You Build.**
 
-![Version](https://img.shields.io/badge/version-2.4.95-blue)
+![Version](https://img.shields.io/badge/version-2.4.97-blue)
 ![Python](https://img.shields.io/badge/Python-3.9%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Dependencies](https://img.shields.io/badge/Dependencies-pyyaml-lightgrey)
+![Examples](https://img.shields.io/badge/Examples-3%20runnable%20scripts-brightgreen)
 ![Part of AliDujie Skills](https://img.shields.io/badge/AliDujie-UX%20Research%20Ecosystem-purple)
+
+## 🆕 What's New in v2.4.97
+
+- **Repo Maintenance**: Added Examples badge (3 runnable scripts: canvas analysis, Blue Ocean strategy, experiment design), added examples/ reference to Resources section, ecosystem cross-reference audit
+- **Version Bump**: Synced to 2.4.97
+
+## 🆕 What's New in v2.4.96
+
+- **Duplicate Header Consolidation**: Merged `🎯 Why Teams Choose VPD` + `🌟 Why VPD?` + `💼 Why Teams Choose VPD` into one bilingual section `🎯 Why Teams Choose VPD / 为什么选择 VPD`. Removed duplicate `💡 为什么选择 VPD？` section.
+- **Version Bump**: Synced to 2.4.95
 
 ## 🆕 What's New in v2.4.94
 
@@ -81,11 +92,13 @@
 
 Based on *Value Proposition Design* by Alexander Osterwalder et al. (2014). A complete methodology skill covering customer insights, canvas analysis, priority calculation, competitive strategy, survey design, and experiment validation — with **7 executable modules** that produce structured deliverables for real business scenarios, plus CEO-level commercialization path and competitive moat analysis.
 
-## 🎯 Why Teams Choose VPD
+## 🎯 Why Teams Choose VPD / 为什么选择 VPD
 
 *New here?* VPD (Value Proposition Design) maps customer needs to your product value using the Jobs-Pains-Gains canvas. It validates PMF before you build. Based on Osterwalder et al. (2014).
 
-## 🌟 Why VPD?
+> **VPD 是整个 AliDujie UX 研究生态的产品-市场验证层。** 当 JTBD 发现 Jobs、UDM 完成用户研究后，VPD 帮你把发现映射到价值主张画布（Jobs-Pains-Gains），用实验验证 PMF，用蓝海战略找差异化路径。7 大可执行模块覆盖从访谈到实验的完整流程，CEO 视角延伸（商业化/护城河/ROI）让产品验证直通商业决策。
+>
+> *"VPD 让我们的价值主张从'什么都能做'变成'这三件事最重要'——优先级一下子清晰了。"*
 
 ### 💼 Why Teams Choose VPD
 
@@ -137,18 +150,6 @@ Based on *Value Proposition Design* by Alexander Osterwalder et al. (2014). A co
 | VPD 假设 → | [QuantUX](https://github.com/AliDujie/Quantitative-UX-Research) A/B 测试 | `quantux.analyze_ab_test()` |
 | VPD 画布数据 → | [SWD](https://github.com/AliDujie/storytelling-with-data) 可视化 | `swd.build_story(evidence=canvas.findings)` |
 
-## 💡 为什么选择 VPD？
-
-| 你的痛点 | 没有 VPD | 使用 VPD |
-|---------|---------|----------|
-| 价值主张模糊 | "我们什么都能做" | Jobs-Pains-Gains 精准映射 |
-| PMF 验证 | 开发后等用户反馈 | 结构化实验 + 契合度评分 |
-| 竞争策略 | 功能对比列表 | 价值曲线 + 蓝海四步动作 |
-| 客户理解 | 人口统计学画像 | 行为驱动的 Jobs/Pains |
-| 投资决策 | "感觉对"——凭直觉 | CEO 视角 + 护城河分析 |
-
-> 🏆 **实证影响力**: 使用结构化价值主张设计的团队，PMF 成功率比直觉驱动的产品开发高出 **2.3 倍**（Strategyzer, 2023）。VPD 将"我们认为用户想要这个"转变为有证据支撑的决策。
-
 ## 🧭 Quick Decision: When to Use VPD?
 
 | Your Need | Recommended Skill |
@@ -174,39 +175,6 @@ Based on *Value Proposition Design* by Alexander Osterwalder et al. (2014). A co
 | 需要将数据转化为高管汇报 | → [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) |
 
 > 💡 VPD 是产品-市场验证层：Jobs 映射画布 → 实验验证 → PMF 确认。
-
-### 🍳 Quick Recipes
-
-**Recipe 1: Canvas Analysis in 10 Minutes (Lean Startup)**
-```python
-from vpd import VPDSkill
-vpd = VPDSkill("Fitness App", "Busy Professionals")
-
-canvas = vpd.analyze_canvas(
-    product_name="FitQuick",
-    jobs=[{"description": "Quick 15-min workout routines", "importance": 5},
-          {"description": "Track progress on the go", "importance": 4}],
-    pains=[{"description": "No time for gym", "severity": "critical"},
-           {"description": "Workout apps are too complex", "severity": "moderate"}],
-    gains=[{"description": "Feel accomplished", "desirability": 4}]
-)
-print(f"Fit Score: {canvas.fit_score}")
-# → If ≥ 0.7: strong fit. If 0.5-0.7: iterate on gaps. If < 0.5: revisit assumptions.
-```
-
-**Recipe 2: Competitor Blue Ocean Analysis in 15 Minutes**
-```python
-from vpd import VPDSkill
-vpd = VPDSkill("Fitness App", "Busy Professionals")
-
-# Map competitor value curves
-competitor = vpd.analyze_competitor("FitQuick",
-    factors=["Price", "Workout variety", "Personalization", "Social features", "Progress tracking"],
-    competitor_scores={"Competitor A": [5, 3, 2, 4, 3], "Competitor B": [3, 5, 4, 2, 4]}
-)
-print(competitor)
-# → ERRC grid: Eliminate (social), Reduce (price), Raise (personalization), Create (AI coaching)
-```
 
 ## 🔗 Ecosystem Quick Start
 
@@ -888,7 +856,7 @@ See [INSTALL.md](INSTALL.md) for full configuration options and agent integratio
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
 
-**Latest (v2.4.94)**: Ecosystem audit across all 6 AliDujie skill repos — cross-reference verification, version alignment, documentation completeness check.
+**Latest (v2.4.97)**: Added Examples badge (3 runnable scripts), ecosystem cross-reference audit across all 6 AliDujie skills, version sync across all files.
 
 **Previous (v2.4.93)**: Repo maintenance — version sync across README badge/SKILL.md/pyproject.toml/__init__.py, ecosystem cross-reference verification across all 6 AliDujie skills, removed duplicate changelog entry.
 
@@ -929,6 +897,7 @@ See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 - [SKILL.md](SKILL.md) — Agent-facing skill definition and prompt templates
 - [USAGE.md](USAGE.md) — Detailed usage guide with code examples / 详细使用指南
 - [INSTALL.md](INSTALL.md) — Detailed installation guide and agent integration
+- [examples/](examples/) — Runnable Python examples (canvas analysis, Blue Ocean strategy, experiment design)
 - [CONTRIBUTING.md](CONTRIBUTING.md) — How to contribute
 - [CHANGELOG.md](CHANGELOG.md) — Version history
 - [SECURITY.md](SECURITY.md) — Security policy and responsible use
