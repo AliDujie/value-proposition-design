@@ -9,6 +9,21 @@
 ![Examples](https://img.shields.io/badge/Examples-3%20runnable%20scripts-brightgreen)
 ![Part of AliDujie Skills](https://img.shields.io/badge/AliDujie-UX%20Research%20Ecosystem-purple)
 
+## 📑 Table of Contents
+
+- [What's New](#-whats-new-in-v2498)
+- [Why Teams Choose VPD](#-why-teams-choose-vpd--为什么选择-vpd)
+- [Quick Decision Guide](#-quick-decision-when-to-use-vpd)
+- [Quick Start](#-quick-start-5-minutes)
+- [Core Capabilities](#️-core-capabilities--核心能力)
+- [Real-World Use Cases](#-real-world-use-cases)
+- [Ecosystem Integration](#-ecosystem-integration)
+- [AI Agent Integration](#-ai-agent-integration)
+- [When NOT to Use VPD](#-when-not-to-use-vpd--什么时候不该用-vpd)
+- [Resources](#-resources)
+
+---
+
 ## 🆕 What's New in v2.4.98
 
 - **Who This Skill Is For**: Added dedicated audience section targeting PMs, founders, strategists, UX researchers, and AI agent developers
