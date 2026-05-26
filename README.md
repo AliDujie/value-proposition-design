@@ -2,12 +2,17 @@
 
 > **Build Products People Actually Want. Validate Before You Build.**
 
-![Version](https://img.shields.io/badge/version-2.4.97-blue)
+![Version](https://img.shields.io/badge/version-2.4.98-blue)
 ![Python](https://img.shields.io/badge/Python-3.9%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Dependencies](https://img.shields.io/badge/Dependencies-pyyaml-lightgrey)
 ![Examples](https://img.shields.io/badge/Examples-3%20runnable%20scripts-brightgreen)
 ![Part of AliDujie Skills](https://img.shields.io/badge/AliDujie-UX%20Research%20Ecosystem-purple)
+
+## 🆕 What's New in v2.4.98
+
+- **Who This Skill Is For**: Added dedicated audience section targeting PMs, founders, strategists, UX researchers, and AI agent developers
+- **Version Bump**: Synced to 2.4.98
 
 ## 🆕 What's New in v2.4.97
 
@@ -316,6 +321,14 @@ VPD report → SWD storytelling → Board-ready presentation
 - **Start with JTBD**: Feed discovered Jobs directly into VPD canvas for immediate value mapping
 - **Lethal-first testing**: Use `design_experiment()` with `lethality="lethal"` to identify and test the riskiest assumptions first
 - **CEO context**: Set `include_ceo_analysis=True` when generating canvases for stakeholder-facing outputs
+
+## 👥 Who This Skill Is For
+
+- **Product Managers** — Map Jobs-Pains-Gains to validate product-market fit before building
+- **Startup Founders** — Use the canvas to articulate value propositions to investors and early customers
+- **Strategists** — Run Blue Ocean competitive analysis with Eliminate-Reduce-Raise-Create grids
+- **UX Researchers** — Bridge qualitative findings into structured value propositions with CEO-ready reports
+- **AI Agent Developers** — Drop into any Python agent, generate canvas analyses and experiment designs
 
 ## 📋 Real-World Use Cases
 
