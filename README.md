@@ -339,6 +339,19 @@ VPD report → SWD storytelling → Board-ready presentation
 - **Lethal-first testing**: Use `design_experiment()` with `lethality="lethal"` to identify and test the riskiest assumptions first
 - **CEO context**: Set `include_ceo_analysis=True` when generating canvases for stakeholder-facing outputs
 
+## 🚫 Common Mistakes / 常见错误
+
+| Mistake | What Happens | Fix |
+|---------|-------------|-----|
+| Filling the Value Map before Customer Profile | Designing solutions before understanding problems | Always start with Jobs → Pains → Gains, then map your value |
+| "We can do everything" positioning | Vague value proposition nobody understands | Use `analyze_canvas()` to force specificity on each Jobs-Pains-Gains element |
+| Skipping lethal hypothesis testing | Building the wrong thing confidently | Run `design_experiment()` — test the assumption that kills the idea first |
+| Feature-by-feature competition | Racing to the bottom on specs | Use `analyze_competitor()` value curves + Blue Ocean ERRC grid to find whitespace |
+| Treating one fit score as final | PMF isn't a one-time checkbox | Three fits (Problem-Solution → Product-Market → Business Model) — validate each stage |
+
+> **先画价值图再填客户画像？永远先Jobs→Pains→Gains。"我们什么都能做"？用 `analyze_canvas()` 强制具体化。跳过致命假设测试？用 `design_experiment()` 先测最危险的假设。功能对功能竞争？用价值曲线+蓝海ERRC找空白。**
+
+
 ## 📋 Real-World Use Cases
 
 | Scenario | What to Use | Outcome |
