@@ -155,6 +155,14 @@ Based on *Value Proposition Design* by Alexander Osterwalder et al. (2014). A co
 | VPD 假设 → | [QuantUX](https://github.com/AliDujie/Quantitative-UX-Research) A/B 测试 | `quantux.analyze_ab_test()` |
 | VPD 画布数据 → | [SWD](https://github.com/AliDujie/storytelling-with-data) 可视化 | `swd.build_story(evidence=canvas.findings)` |
 
+## 👥 Who This Skill Is For
+
+- **Product Managers & Founders** — Need to validate product-market fit before investing in development. VPD turns assumptions into testable hypotheses
+- **Startup Teams** — Want a structured way to map customer pains, gains, and jobs to value propositions using the proven Canvas framework
+- **Growth & Strategy** — Looking to analyze competitive positioning with Blue Ocean ERRG grids and design experiments for feature validation
+- **Innovation Teams** — Need to challenge incumbent solutions by systematically mapping how value is created, delivered, and captured
+- **Designers** — Want to connect persona insights and JTBD discoveries to concrete value propositions that can be tested and iterated
+
 ## 🧭 Quick Decision: When to Use VPD?
 
 | Your Need | Recommended Skill |
@@ -305,6 +313,18 @@ v.analyze_competitor(my_name="ProductA", factors=["Price", "Speed", "UX"],
 v.design_experiment(hypotheses=[{"description": "Users pay for premium", "lethality": "lethal"}])
 # → Test cards + learning metrics + CTA tiers
 ```
+
+### 🚫 Common Mistakes / 常见错误
+
+| Mistake | What Happens | Fix |
+|---------|-------------|-----|
+| Filling canvas without evidence | Guessing pains and gains | Feed `analyze_canvas()` with real JTBD + Persona data |
+| Treating VPD as a one-time exercise | Stale canvas doesn't reflect market shifts | Re-run `analyze_canvas()` after each research sprint |
+| Confusing customer with user | Value prop misaligned with decision-maker | Specify `customer_profile` separately from `user_profile` |
+| Blue Ocean without competitor data | ERRC grid based on assumptions | Include at least 2 real competitors in `analyze_competitor()` |
+| Skipping experiment lethality | Testing "nice to know" instead of riskiest assumptions | Use `design_experiment()` with `lethality="lethal"` first |
+
+> **没有证据就填画布？用 JTBD + Persona 数据喂给 `analyze_canvas()`。VPD 做一次就行？每次研究冲刺后重跑。混淆客户和用户？分别指定 `customer_profile` 和 `user_profile`。**
 
 ### Agent Workflow Pattern
 ```
