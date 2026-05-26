@@ -7,6 +7,7 @@
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Dependencies](https://img.shields.io/badge/Dependencies-pyyaml-lightgrey)
 ![Part of AliDujie Skills](https://img.shields.io/badge/AliDujie-UX%20Research%20Ecosystem-purple)
+![Examples](https://img.shields.io/badge/Examples-2%20runnable%20scripts-brightgreen)
 
 ## 🆕 What's New in v2.4.94
 
@@ -149,6 +150,22 @@ Based on *Value Proposition Design* by Alexander Osterwalder et al. (2014). A co
 | 投资决策 | "感觉对"——凭直觉 | CEO 视角 + 护城河分析 |
 
 > 🏆 **实证影响力**: 使用结构化价值主张设计的团队，PMF 成功率比直觉驱动的产品开发高出 **2.3 倍**（Strategyzer, 2023）。VPD 将"我们认为用户想要这个"转变为有证据支撑的决策。
+
+## 👥 Who This Skill Is For
+
+- **Product Managers** — Need to validate PMF before building, avoid shipping features nobody wants
+- **Startup Founders** — Want to map customer pains to value propositions using the proven Jobs-Pains-Gains canvas
+- **UX Researchers** — Translate user research findings into structured value maps with fit scoring
+- **Strategy Consultants** — Apply Blue Ocean ERRC grid to find competitive differentiation whitespace
+- **AI Agent Developers** — Need a structured VPD toolkit for canvas analysis, experiment design, and competitive strategy
+
+### 👥 这个技能适合谁
+
+- **产品经理** — 需要在开发前验证 PMF，避免交付没人要的功能
+- **创业者** — 想用成熟的 Jobs-Pains-Gains 画布映射客户痛点与价值主张
+- **UX 研究员** — 将研究发现转化为带契合度评分的结构化价值图
+- **战略顾问** — 应用蓝海 ERRC 网格寻找竞争差异化空间
+- **AI Agent 开发者** — 需要结构化的 VPD 工具包用于画布分析、实验设计和竞争战略
 
 ## 🧭 Quick Decision: When to Use VPD?
 
@@ -885,6 +902,7 @@ See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 - [SKILL.md](SKILL.md) — Agent-facing skill definition and prompt templates
 - [USAGE.md](USAGE.md) — Detailed usage guide with code examples / 详细使用指南
 - [INSTALL.md](INSTALL.md) — Detailed installation guide and agent integration
+- [examples/](examples/) — Runnable Python examples (canvas generation, competitor analysis)
 - [CONTRIBUTING.md](CONTRIBUTING.md) — How to contribute
 - [CHANGELOG.md](CHANGELOG.md) — Version history
 - [SECURITY.md](SECURITY.md) — Security policy and responsible use
