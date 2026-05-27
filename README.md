@@ -2,7 +2,7 @@
 
 > **Build Products People Actually Want. Validate Before You Build.**
 
-![Version](https://img.shields.io/badge/version-2.4.95-blue)
+![Version](https://img.shields.io/badge/version-2.4.96-blue)
 ![Python](https://img.shields.io/badge/Python-3.9%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Dependencies](https://img.shields.io/badge/Dependencies-pyyaml-lightgrey)
@@ -22,10 +22,16 @@
 - [Common Mistakes](#-common-mistakes--常见错误)
 - [AI Agent Integration](#-ai-agent-integration)
 - [VPD Canvas Workshops](#-vpd-canvas-workshops--vpd-画布工作坊)
+- [Quick Recipes](#-quick-recipes--快速食谱)
 - [FAQ / Troubleshooting](#-faq--常见问题)
 - [Resources](#-resources)
 
 ---
+
+## 🆕 What's New in v2.4.96
+
+- **Repo Maintenance**: Added Quick Recipes section (3 recipes: canvas fit scoring, Blue Ocean competitive analysis, lethal hypothesis testing), ecosystem cross-reference audit across all 6 AliDujie skills, confirmed bilingual section parity
+- **Version Bump**: Synced to 2.4.96
 
 ## 🆕 What's New in v2.4.95
 
@@ -356,6 +362,70 @@ VPD report → SWD storytelling → Board-ready presentation
 - **Start with JTBD**: Feed discovered Jobs directly into VPD canvas for immediate value mapping
 - **Lethal-first testing**: Use `design_experiment()` with `lethality="lethal"` to identify and test the riskiest assumptions first
 - **CEO context**: Set `include_ceo_analysis=True` when generating canvases for stakeholder-facing outputs
+
+## 🍽️ Quick Recipes / 快速食谱
+
+### Recipe: "Does our product actually solve a real problem?" (30 min)
+```python
+from vpd import VPDSkill
+
+vpd = VPDSkill("Team Collaboration Tool", "Team Leads")
+
+# Fill the Customer Profile (right side) first
+canvas = vpd.analyze_canvas(
+    product_name="TeamFlow",
+    jobs=[
+        {"description": "Assign tasks to team members", "importance": 5},
+        {"description": "Track project progress", "importance": 4},
+    ],
+    pains=[
+        {"description": "Information scattered across tools", "severity": "critical"},
+        {"description": "No real-time status updates", "severity": "high"},
+    ],
+    gains=[
+        {"description": "One-click status reports", "desire_level": "required"},
+        {"description": "Visual project timeline", "desire_level": "nice-to-have"},
+    ]
+)
+print(f"Fit Score: {canvas.fit_score}")
+# → Fit score + gap analysis shows what's missing
+```
+
+### Recipe: "Should we compete head-on or find a niche?" (1 hour)
+```python
+vpd = VPDSkill("Project Manager", "Small Teams")
+
+# Analyze competitive landscape with value curves
+comp = vpd.analyze_competitor(
+    my_name="TeamFlow",
+    factors=["Price", "Ease of Use", "Integrations", "Support"],
+    players={
+        "TeamFlow":    [7, 9, 5, 6],
+        "Asana":       [6, 7, 9, 8],
+        "Monday":      [5, 6, 8, 7],
+        "Trello":      [8, 8, 4, 3],
+    }
+)
+# → Value curves + ERRC grid: Eliminate/Reduce/Raise/Create recommendations
+```
+
+### Recipe: "Which hypothesis should we test first?" (15 min)
+```python
+vpd = VPDSkill("SaaS Platform", "Enterprise")
+
+# Design lethal hypothesis tests — fail fast, learn faster
+exp = vpd.design_experiment(
+    hypotheses=[
+        {"description": "Users will pay $50/month for analytics", "lethality": "lethal"},
+        {"description": "Dashboard customization matters", "lethality": "important"},
+    ]
+)
+# → Test cards with learning metrics, ordered by risk
+```
+
+> 💡 **Pro Tip**: Always fill the Customer Profile (Jobs/Pains/Gains) before the Value Map. Understanding the problem before designing the solution produces 2× higher fit scores.
+>
+> **先填客户画像再填价值图**。先理解问题再设计方案，产出 2× 更高的契合度评分。
 
 ## 🚫 Common Mistakes / 常见错误
 
@@ -909,7 +979,7 @@ See [INSTALL.md](INSTALL.md) for full configuration options and agent integratio
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
 
-**Latest (v2.4.94)**: Added Ecosystem Pipeline Diagram, explicit JTBD→VPD canvas handoff and VPD→QuantUX experiment validation examples, version sync across all files.
+**Latest (v2.4.95)**: Added Ecosystem Pipeline Diagram, explicit JTBD→VPD canvas handoff and VPD→QuantUX experiment validation examples, version sync across all files.
 
 **Previous (v2.4.87)**: Repo maintenance — added VPD Canvas Workshop Guides (3 scenarios), added Fit Score Quick-Ref table, synced versions across all files.
 
