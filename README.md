@@ -11,12 +11,15 @@
 
 ## 📑 Table of Contents
 
+- [What's New](#-whats-new-in-v2495)
 - [Why Teams Choose VPD](#-why-teams-choose-vpd)
+- [Who This Skill Is For](#-who-this-skill-is-for)
 - [Quick Decision: When to Use VPD?](#-quick-decision-when-to-use-vpd)
 - [Quick Start](#-quick-start-5-minutes)
 - [Ecosystem Quick Start](#-ecosystem-quick-start)
 - [Core Capabilities](#-7-executable-modules)
 - [Real-World Use Cases](#-real-world-use-cases)
+- [Common Mistakes](#-common-mistakes--常见错误)
 - [AI Agent Integration](#-ai-agent-integration)
 - [VPD Canvas Workshops](#-vpd-canvas-workshops--vpd-画布工作坊)
 - [FAQ / Troubleshooting](#-faq--常见问题)
