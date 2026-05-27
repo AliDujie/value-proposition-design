@@ -11,7 +11,7 @@
 
 ## 📑 Table of Contents
 
-- [What's New](#-whats-new-in-v2495)
+- [What's New](#-whats-new-in-v2496)
 - [Why Teams Choose VPD](#-why-teams-choose-vpd)
 - [Who This Skill Is For](#-who-this-skill-is-for)
 - [Quick Decision: When to Use VPD?](#-quick-decision-when-to-use-vpd)
@@ -27,6 +27,11 @@
 - [Resources](#-resources)
 
 ---
+
+## 🆕 What's New in v2.4.97
+
+- **Repo Maintenance**: Fixed stale What's New TOC link (v2495 → v2496), updated Version History "Latest" entry (v2.4.95 → v2.4.96), ecosystem cross-reference audit across all 6 AliDujie skills
+- **Version Bump**: Synced to 2.4.97
 
 ## 🆕 What's New in v2.4.96
 
@@ -979,7 +984,7 @@ See [INSTALL.md](INSTALL.md) for full configuration options and agent integratio
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
 
-**Latest (v2.4.95)**: Added Ecosystem Pipeline Diagram, explicit JTBD→VPD canvas handoff and VPD→QuantUX experiment validation examples, version sync across all files.
+**Latest (v2.4.96)**: Fixed stale What's New TOC link (v2495 → v2496), updated Version History latest entry, ecosystem cross-reference audit across all 6 AliDujie skills.
 
 **Previous (v2.4.87)**: Repo maintenance — added VPD Canvas Workshop Guides (3 scenarios), added Fit Score Quick-Ref table, synced versions across all files.
 
