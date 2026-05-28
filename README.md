@@ -2,7 +2,7 @@
 
 > **Build Products People Actually Want. Validate Before You Build.**
 
-![Version](https://img.shields.io/badge/version-2.4.97-blue)
+![Version](https://img.shields.io/badge/version-2.4.98-blue)
 ![Python](https://img.shields.io/badge/Python-3.9%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Dependencies](https://img.shields.io/badge/Dependencies-pyyaml-lightgrey)
@@ -25,6 +25,7 @@
 - [Quick Recipes](#-quick-recipes--快速食谱)
 - [FAQ / Troubleshooting](#-faq--常见问题)
 - [Resources](#-resources)
+- [When NOT to Use VPD](#-when-not-to-use-vpd--什么时候不该用-vpd)
 
 ---
 
@@ -32,6 +33,11 @@
 
 - **Repo Maintenance**: Fixed stale What's New TOC link (v2495 → v2496), updated Version History "Latest" entry (v2.4.95 → v2.4.96), ecosystem cross-reference audit across all 6 AliDujie skills
 - **Version Bump**: Synced to 2.4.97
+
+## 🆕 What's New in v2.4.98
+
+- **TOC Audit**: Added missing "When NOT to Use VPD" TOC entry, ecosystem cross-reference audit across all 6 AliDujie skills
+- **Version Bump**: Synced to 2.4.98
 
 ## 🆕 What's New in v2.4.96
 
