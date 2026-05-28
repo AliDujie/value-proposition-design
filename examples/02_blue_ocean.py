@@ -1,21 +1,30 @@
 #!/usr/bin/env python3
-"""Example: Blue Ocean Strategy Analysis with ERRC Grid.
+"""Example: Competitive Analysis with Blue Ocean ERRC Grid.
 
 Scenario: Finding whitespace in the competitive project management market.
 """
+import sys, os
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
+
 from vpd import VPDSkill
 
-vpd = VPDSkill("Project Management Tool")
+vpd = VPDSkill("Project Management Tool", "Tech startups")
 
 print("=" * 60)
-print("Blue Ocean Analysis: Project Management")
+print("Competitive Analysis: Project Management Market")
 print("=" * 60)
 
-analysis = vpd.competitive_strategy(
-    industry="Project Management Software",
-    competitors=["Asana", "Jira", "Trello", "Monday.com"],
+analysis = vpd.analyze_competitor(
+    my_name="Our PM Tool",
     factors=["Ease of use", "Customization", "Price", "Integrations",
-             "AI automation", "Mobile experience", "Reporting"]
+             "AI automation", "Mobile experience", "Reporting"],
+    players={
+        "Asana":       [4, 3, 2, 4, 2, 4, 3],
+        "Jira":        [2, 5, 3, 4, 2, 2, 4],
+        "Trello":      [5, 2, 4, 2, 1, 3, 1],
+        "Monday.com":  [4, 4, 2, 3, 3, 4, 3],
+        "Our PM Tool": [4, 4, 4, 3, 5, 4, 3],
+    }
 )
 print(analysis)
 
