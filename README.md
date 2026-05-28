@@ -2,7 +2,7 @@
 
 > **Build Products People Actually Want. Validate Before You Build.**
 
-![Version](https://img.shields.io/badge/version-2.4.98-blue)
+![Version](https://img.shields.io/badge/version-2.4.99-blue)
 ![Python](https://img.shields.io/badge/Python-3.9%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Dependencies](https://img.shields.io/badge/Dependencies-pyyaml-lightgrey)
@@ -11,7 +11,7 @@
 
 ## 📑 Table of Contents
 
-- [What's New](#-whats-new-in-v2497)
+- [What's New](#-whats-new-in-v2498)
 - [Why Teams Choose VPD](#-why-teams-choose-vpd)
 - [Who This Skill Is For](#-who-this-skill-is-for)
 - [Quick Decision: When to Use VPD?](#-quick-decision-when-to-use-vpd)
@@ -28,6 +28,11 @@
 - [When NOT to Use VPD](#-when-not-to-use-vpd--什么时候不该用-vpd)
 
 ---
+
+## 🆕 What's New in v2.4.98
+
+- **Version Sync**: Bumped internal versions (SKILL.md, pyproject.toml, vpd/__init__.py) to 2.4.98, updated Version History "Latest" entry, ecosystem cross-reference audit across all AliDujie skill repos
+- **Version Bump**: README badge synced to 2.4.99
 
 ## 🆕 What's New in v2.4.97
 
@@ -990,7 +995,9 @@ See [INSTALL.md](INSTALL.md) for full configuration options and agent integratio
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
 
-**Latest (v2.4.97)**: Fixed stale What's New TOC link (v2.4.96 → v2.4.97), updated Version History latest entry (v2.4.96 → v2.4.97), ecosystem cross-reference audit across all 6 AliDujie skills.
+**Latest (v2.4.98)**: Version sync across README badge, SKILL.md, pyproject.toml, __init__.py (all bumped to 2.4.98), README badge synced to 2.4.99, ecosystem cross-reference audit across all AliDujie skill repos.
+
+**Previous (v2.4.97)**: Fixed stale What's New TOC link (v2.4.96 → v2.4.97), updated Version History latest entry (v2.4.96 → v2.4.97), ecosystem cross-reference audit across all 6 AliDujie skills.
 
 **Previous (v2.4.87)**: Repo maintenance — added VPD Canvas Workshop Guides (3 scenarios), added Fit Score Quick-Ref table, synced versions across all files.
 
