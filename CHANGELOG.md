@@ -1,3 +1,19 @@
+## v2.4.100 (2026-05-29)
+
+- Sync versions to 2.4.100 across README/SKILL.md/pyproject.toml/__init__.py
+- Ecosystem cross-reference audit across all 6 AliDujie skills
+
+## v2.4.99 (2026-05-29)
+
+- Merge duplicate "What's New in v2.4.98" entries
+- Update examples/ to use current API signatures (analyze_canvas Dict format, analyze_competitor, design_experiment)
+- Bump internal versions (SKILL.md, pyproject.toml, vpd/__init__.py) to 2.4.99
+- Ecosystem cross-reference audit across all 6 AliDujie skills
+
+## v2.4.98 (2026-05-29)
+
+- (Maintenance cycle - version sync)
+
 ## v2.4.97 (2026-05-26)
 
 - Repo maintenance: added Examples badge (3 runnable scripts), added examples/ reference to Resources section, ecosystem cross-reference audit
