@@ -2,7 +2,7 @@
 
 > **Build Products People Actually Want. Validate Before You Build.**
 
-![Version](https://img.shields.io/badge/version-2.4.99-blue)
+![Version](https://img.shields.io/badge/version-2.4.100-blue)
 ![Python](https://img.shields.io/badge/Python-3.9%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Dependencies](https://img.shields.io/badge/Dependencies-pyyaml-lightgrey)
@@ -11,7 +11,7 @@
 
 ## 📑 Table of Contents
 
-- [What's New](#-whats-new-in-v2499)
+- [What's New](#-whats-new-in-v24100)
 - [Why Teams Choose VPD](#-why-teams-choose-vpd)
 - [Who This Skill Is For](#-who-this-skill-is-for)
 - [Quick Decision: When to Use VPD?](#-quick-decision-when-to-use-vpd)
@@ -28,6 +28,10 @@
 - [When NOT to Use VPD](#-when-not-to-use-vpd--什么时候不该用-vpd)
 
 ---
+
+## 🆕 What's New in v2.4.100
+
+- **Version Bump**: Synced to 2.4.100, ecosystem cross-reference audit across all 6 AliDujie skills
 
 ## 🆕 What's New in v2.4.99
 
@@ -987,7 +991,7 @@ See [INSTALL.md](INSTALL.md) for full configuration options and agent integratio
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
 
-**Latest (v2.4.99)**: Merged duplicate "What's New in v2.4.98" entries, updated examples/ to use current API signatures (analyze_canvas Dict format, analyze_competitor, design_experiment with hypotheses/test_cards), ecosystem cross-reference audit, version sync across all files.
+**Latest (v2.4.100)**: Version bump to 2.4.100, ecosystem cross-reference audit across all 6 AliDujie skills.
 
 **Previous (v2.4.97)**: Fixed stale What's New TOC link (v2.4.96 → v2.4.97), updated Version History latest entry (v2.4.96 → v2.4.97), ecosystem cross-reference audit across all 6 AliDujie skills.
 
