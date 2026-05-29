@@ -1,3 +1,7 @@
+## v2.4.103 (2026-05-29)
+
+- Repo maintenance: version bump 2.4.102→2.4.103, ecosystem cross-reference audit across all 6 AliDujie skills
+
 ## v2.4.101 (2026-05-29)
 
 - Document missing example scripts (01_canvas_analysis, 02_blue_ocean, 03_experiment_design) in examples/README.md
