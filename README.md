@@ -2,7 +2,7 @@
 
 > **Build Products People Actually Want. Validate Before You Build.**
 
-![Version](https://img.shields.io/badge/version-2.4.103-blue)
+![Version](https://img.shields.io/badge/version-2.4.104-blue)
 ![Python](https://img.shields.io/badge/Python-3.9%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Dependencies](https://img.shields.io/badge/Dependencies-pyyaml-lightgrey)
@@ -11,7 +11,7 @@
 
 ## 📑 Table of Contents
 
-- [What's New](#-whats-new-in-v24103)
+- [What's New](#-whats-new-in-v24104)
 - [Why Teams Choose VPD](#-why-teams-choose-vpd)
 - [Who This Skill Is For](#-who-this-skill-is-for)
 - [Quick Decision: When to Use VPD?](#-quick-decision-when-to-use-vpd)
@@ -28,6 +28,11 @@
 - [When NOT to Use VPD](#-when-not-to-use-vpd--什么时候不该用-vpd)
 
 ---
+
+## 🆕 What's New in v2.4.104
+
+- **Repo Maintenance**: Version bump 2.4.103→2.4.104, ecosystem cross-reference audit across all 6 AliDujie skills
+- **Version Bump**: Synced to 2.4.104
 
 ## 🆕 What's New in v2.4.103
 
@@ -1017,7 +1022,7 @@ See [INSTALL.md](INSTALL.md) for full configuration options and agent integratio
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
 
-**Latest (v2.4.103)**: Version History "Latest" entry corrected (was stale v2.4.100 while badge showed 2.4.102), filled empty v2.4.100 section, added missing v2.4.97/v2.4.98 changelog entries, ecosystem cross-reference audit across all 6 AliDujie skills.
+**Latest (v2.4.104)**: Version bump, ecosystem cross-reference audit across all 6 AliDujie skills.
 
 **Previous (v2.4.97)**: Fixed stale What's New TOC link (v2.4.96 → v2.4.97), updated Version History latest entry (v2.4.96 → v2.4.97), ecosystem cross-reference audit across all 6 AliDujie skills.
 

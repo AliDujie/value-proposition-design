@@ -1,3 +1,7 @@
+## v2.4.104 (2026-05-29)
+
+- Repo maintenance: version bump 2.4.103→2.4.104, ecosystem cross-reference audit
+
 ## v2.4.103 (2026-05-29)
 
 - Repo maintenance: version bump 2.4.102→2.4.103, ecosystem cross-reference audit across all 6 AliDujie skills
