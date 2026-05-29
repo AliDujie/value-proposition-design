@@ -1012,7 +1012,7 @@ See [INSTALL.md](INSTALL.md) for full configuration options and agent integratio
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
 
-**Latest (v2.4.100)**: Version bump to 2.4.100, ecosystem cross-reference audit across all 6 AliDujie skills.
+**Latest (v2.4.102)**: Version History "Latest" entry corrected (was stale v2.4.100 while badge showed 2.4.102), filled empty v2.4.100 section, added missing v2.4.97/v2.4.98 changelog entries, ecosystem cross-reference audit across all 6 AliDujie skills.
 
 **Previous (v2.4.97)**: Fixed stale What's New TOC link (v2.4.96 → v2.4.97), updated Version History latest entry (v2.4.96 → v2.4.97), ecosystem cross-reference audit across all 6 AliDujie skills.
 
