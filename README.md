@@ -2,7 +2,7 @@
 
 > **Build Products People Actually Want. Validate Before You Build.**
 
-![Version](https://img.shields.io/badge/version-2.4.100-blue)
+![Version](https://img.shields.io/badge/version-2.4.101-blue)
 ![Python](https://img.shields.io/badge/Python-3.9%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Dependencies](https://img.shields.io/badge/Dependencies-pyyaml-lightgrey)
@@ -28,6 +28,12 @@
 - [When NOT to Use VPD](#-when-not-to-use-vpd--什么时候不该用-vpd)
 
 ---
+
+## 🆕 What's New in v2.4.101
+
+- **Version Bump**: Bumped to 2.4.101 — aligned README badge, SKILL.md, pyproject.toml, __init__.py
+- **Repo Maintenance**: Documented all example scripts in examples/README.md (canvas analysis, blue ocean ERRC, experiment design were missing), ecosystem cross-reference audit across all 6 AliDujie skills
+
 
 ## 🆕 What's New in v2.4.100
 
