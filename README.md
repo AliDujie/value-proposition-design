@@ -2,7 +2,7 @@
 
 > **Build Products People Actually Want. Validate Before You Build.**
 
-![Version](https://img.shields.io/badge/version-2.4.101-blue)
+![Version](https://img.shields.io/badge/version-2.4.102-blue)
 ![Python](https://img.shields.io/badge/Python-3.9%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Dependencies](https://img.shields.io/badge/Dependencies-pyyaml-lightgrey)
@@ -11,7 +11,7 @@
 
 ## 📑 Table of Contents
 
-- [What's New](#-whats-new-in-v24100)
+- [What's New](#-whats-new-in-v24102)
 - [Why Teams Choose VPD](#-why-teams-choose-vpd)
 - [Who This Skill Is For](#-who-this-skill-is-for)
 - [Quick Decision: When to Use VPD?](#-quick-decision-when-to-use-vpd)
@@ -29,15 +29,20 @@
 
 ---
 
+## 🆕 What's New in v2.4.102
+
+- **Repo Maintenance**: Filled empty v2.4.100 section, added missing v2.4.97/v2.4.98 changelog entries, updated Version History "Latest" entry to v2.4.102, ecosystem cross-reference audit across all 6 AliDujie skills
+- **Version Bump**: Synced to 2.4.102
+
 ## 🆕 What's New in v2.4.101
 
 - **Version Bump**: Bumped to 2.4.101 — aligned README badge, SKILL.md, pyproject.toml, __init__.py
 - **Repo Maintenance**: Documented all example scripts in examples/README.md (canvas analysis, blue ocean ERRC, experiment design were missing), ecosystem cross-reference audit across all 6 AliDujie skills
 
-
 ## 🆕 What's New in v2.4.100
 
-- **Version Bump**: Synced to 2.4.100, ecosystem cross-reference audit across all 6 AliDujie skills
+- **Repo Maintenance**: Ecosystem cross-reference audit across all 6 AliDujie skills
+- **Version Bump**: Synced to 2.4.100
 
 ## 🆕 What's New in v2.4.99
 
@@ -45,6 +50,16 @@
 - **Example Scripts Updated**: Updated examples/ to use current API signatures (analyze_canvas Dict format, analyze_competitor, design_experiment with hypotheses/test_cards)
 - **Version Sync**: Bumped internal versions (SKILL.md, pyproject.toml, vpd/__init__.py) to 2.4.99
 - **Version Bump**: README badge synced to 2.4.100
+
+## 🆕 What's New in v2.4.98
+
+- **Repo Maintenance**: Version sync across README badge, SKILL.md, pyproject.toml, __init__.py, ecosystem cross-reference audit
+- **Version Bump**: Synced to 2.4.98
+
+## 🆕 What's New in v2.4.97
+
+- **Repo Maintenance**: Confirmed bilingual section parity, ecosystem cross-reference audit across all 6 AliDujie skills
+- **Version Bump**: Synced to 2.4.97
 
 ## 🆕 What's New in v2.4.96
 
