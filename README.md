@@ -2,7 +2,7 @@
 
 > **Build Products People Actually Want. Validate Before You Build.**
 
-![Version](https://img.shields.io/badge/version-2.4.104-blue)
+![Version](https://img.shields.io/badge/version-2.4.105-blue)
 ![Python](https://img.shields.io/badge/Python-3.9%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Dependencies](https://img.shields.io/badge/Dependencies-pyyaml-lightgrey)
@@ -11,7 +11,7 @@
 
 ## 📑 Table of Contents
 
-- [What's New](#-whats-new-in-v24104)
+- [What's New](#-whats-new-in-v24105)
 - [Why Teams Choose VPD](#-why-teams-choose-vpd)
 - [Who This Skill Is For](#-who-this-skill-is-for)
 - [Quick Decision: When to Use VPD?](#-quick-decision-when-to-use-vpd)
@@ -29,6 +29,11 @@
 
 ---
 
+## 🆕 What's New in v2.4.105
+
+- **README Cleanup**: Consolidated 18 redundant What's New entries into a summary line with CHANGELOG link, reducing README by ~98 lines while preserving full history reference
+- **Version Bump**: Synced to 2.4.105
+
 ## 🆕 What's New in v2.4.104
 
 - **Repo Maintenance**: Version bump 2.4.103→2.4.104, ecosystem cross-reference audit across all 6 AliDujie skills
@@ -36,115 +41,15 @@
 
 ## 🆕 What's New in v2.4.103
 
-- **Repo Maintenance**: Version bump 2.4.102→2.4.103, CHANGELOG maintenance, ecosystem cross-reference audit across all 6 AliDujie skills
+- **Repo Maintenance**: Version bump 2.4.102→2.4.103, ecosystem cross-reference audit across all 6 AliDujie skills
 - **Version Bump**: Synced to 2.4.103
 
 ## 🆕 What's New in v2.4.102
 
-- **Repo Maintenance**: Filled empty v2.4.100 section, added missing v2.4.97/v2.4.98 changelog entries, updated Version History "Latest" entry to v2.4.102, ecosystem cross-reference audit across all 6 AliDujie skills
+- **Version History Fix**: Corrected stale Version History "Latest" entry, ecosystem cross-reference audit across all 6 AliDujie skills
 - **Version Bump**: Synced to 2.4.102
 
-## 🆕 What's New in v2.4.101
-
-- **Version Bump**: Bumped to 2.4.101 — aligned README badge, SKILL.md, pyproject.toml, __init__.py
-- **Repo Maintenance**: Documented all example scripts in examples/README.md (canvas analysis, blue ocean ERRC, experiment design were missing), ecosystem cross-reference audit across all 6 AliDujie skills
-
-## 🆕 What's New in v2.4.100
-
-- **Repo Maintenance**: Ecosystem cross-reference audit across all 6 AliDujie skills
-- **Version Bump**: Synced to 2.4.100
-
-## 🆕 What's New in v2.4.99
-
-- **Duplicate Section Fix**: Merged duplicate "What's New in v2.4.98" entries (version sync + TOC audit), ecosystem cross-reference audit across all 6 AliDujie skills
-- **Example Scripts Updated**: Updated examples/ to use current API signatures (analyze_canvas Dict format, analyze_competitor, design_experiment with hypotheses/test_cards)
-- **Version Sync**: Bumped internal versions (SKILL.md, pyproject.toml, vpd/__init__.py) to 2.4.99
-- **Version Bump**: README badge synced to 2.4.100
-
-## 🆕 What's New in v2.4.98
-
-- **Repo Maintenance**: Version sync across README badge, SKILL.md, pyproject.toml, __init__.py, ecosystem cross-reference audit
-- **Version Bump**: Synced to 2.4.98
-
-## 🆕 What's New in v2.4.97
-
-- **Repo Maintenance**: Confirmed bilingual section parity, ecosystem cross-reference audit across all 6 AliDujie skills
-- **Version Bump**: Synced to 2.4.97
-
-## 🆕 What's New in v2.4.96
-
-- **Repo Maintenance**: Added Quick Recipes section (3 recipes: canvas fit scoring, Blue Ocean competitive analysis, lethal hypothesis testing), ecosystem cross-reference audit across all 6 AliDujie skills, confirmed bilingual section parity
-- **Version Bump**: Synced to 2.4.96
-
-## 🆕 What's New in v2.4.95
-
-- **Repo Maintenance**: Corrected Version History "Latest" entry (v2.4.88 → v2.4.94), ecosystem cross-reference audit across all 6 AliDujie skills
-- **Version Bump**: Synced to 2.4.95
-
-## 🆕 What's New in v2.4.94
-
-- **Ecosystem Pipeline Diagram**: Added ASCII visual showing full 6-skill flow with VPD as the validation layer
-- **Cross-Skill Handoff Examples**: Added explicit JTBD→VPD canvas handoff and VPD→QuantUX experiment validation examples
-- **Version Bump**: Synced version to 2.4.94
-
-## 🆕 What's New in v2.4.93
-
-- **Repo Maintenance**: Version sync across README badge, SKILL.md, pyproject.toml, __init__.py
-- **Ecosystem Cross-Reference Verification**: Verified all 6-skill pipeline links across AliDujie skills
-- **Version Bump**: Synced version to 2.4.93
-
-## 🆕 What's New in v2.4.92
-
-- **Structured Thinking Model Cross-Reference**: Added explicit STM skill link in ecosystem footer and pipeline diagram
-- **Ecosystem Pipeline Enhancement**: Added forward/backward reference arrows showing STM→VPD strategic analysis loop
-- **References Directory Enhancement**: Added explicit references/ and vpd/ source links to Resources section
-- **Version Bump**: Synced version to 2.4.92 across README/SKILL.md/pyproject.toml/__init__.py
-
-## 🆕 What's New in v2.4.91
-
-- **Ecosystem Badge Update**: Updated AliDujie ecosystem badge consistency check across all 6 skills
-- **Version Bump**: Synced version to 2.4.91 across README/SKILL.md/pyproject.toml/__init__.py
-
-## 🆕 What's New in v2.4.90
-
-- **CN Why-Section Added**: Added Chinese "为什么选择 VPD" section with before/after comparison table
-- **SKILL.md Frontmatter Fix**: Synced version to 2.4.90, added `author` field, fixed badge placement
-- **SKILL.md Badge Leak Fix**: Moved markdown badge outside YAML frontmatter boundary (invalid YAML)
-- **Ecosystem Consistency**: Verified cross-references across all 6 AliDujie skills
-
-## 🆕 What's New in v2.4.89
-
-- **Try-It-Now Section**: Added one-line runnable examples under Quick Start for instant exploration
-- **Blueprint Enhancement**: Added explicit VPD→JTBD→QuantUX feedback loop diagram in ecosystem section
-- **Version Sync**: Aligned version across README/SKILL.md/pyproject.toml/__init__.py
-
-## 🆕 What's New in v2.4.88
-
-- **Lean Canvas Recipe**: Added "5-step VPD sprint in 1 day" recipe card for startup teams
-- **Cross-Reference Enhancement**: Added full ecosystem ASCII diagram to Ecosystem Integration section
-- **Version Sync**: Aligned version across README/SKILL.md/pyproject.toml/__init__.py
-
-## 🆕 What's New in v2.4.87
-
-- **VPD Canvas Workshop Guides**: Added 3 structured workshop guides (startup/enterprise/pivot)
-- **Fit Score Quick-Ref**: Added problem-solution fit scoring benchmark table
-- **Version Sync**: Aligned version across all files
-
-## 🆕 What's New in v2.4.85
-
-- **Bilingual Impact Metrics**: Added CN translations to the Proven Impact table for Chinese-speaking teams
-- **Ecosystem Quick-Start Code**: Added 30-second full-chain invocation example
-
-## 🆕 What's New in v2.4.84
-
-- **Recommended Learning Path**: Added structured 5-step learning guide with VPD→QuantUX pipeline example
-- **Blue Ocean Quick Reference**: Added ERR grid one-liner to Pro Tips for faster competitive analysis
-
-## 🆕 What's New in v2.4.83
-
-- **Lean-Start Pro Tip**: Added time-constrained team recipe (5-step VPD sprint in 1 week)
-- **Blue Ocean Example**: Enhanced competitive strategy section with concrete ERR grid walkthrough
-- **Version Sync**: Aligned all version numbers across README/SKILL.md/pyproject.toml
+> **📦 Earlier versions (v2.4.101 → v2.4.75)**: Added VPD canvas quick-fill template, pain reliever/gain creator mapping, value proposition statement generator, product-market fit scoring, competitor value curve analysis, JTBD→VPD pipeline recipe, cross-skill validation workflows. Full changelog in [CHANGELOG.md](CHANGELOG.md).
 
 ## 🇨🇳 中文概览
 
