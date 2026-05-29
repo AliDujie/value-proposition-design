@@ -2,7 +2,9 @@
 
 > **Build Products People Actually Want. Validate Before You Build.**
 
-![Version](https://img.shields.io/badge/version-2.4.105-blue)
+📖 [GitHub Repository](https://github.com/AliDujie/value-proposition-design)
+
+![Version](https://img.shields.io/badge/version-2.4.106-blue)
 ![Python](https://img.shields.io/badge/Python-3.9%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Dependencies](https://img.shields.io/badge/Dependencies-pyyaml-lightgrey)

@@ -10,8 +10,8 @@ cd examples/
 python 01_canvas_generation.py
 python 01_canvas_analysis.py
 python 02_competitor_analysis.py
-python 02_blue_ocean.py
-python 03_experiment_design.py
+python 03_blue_ocean.py
+python 04_experiment_design.py
 ```
 
 All examples use **zero dependencies** — pure Python standard library only.
@@ -49,24 +49,24 @@ Competitive positioning analysis across key factors.
 python 02_competitor_analysis.py
 ```
 
-### 02_blue_ocean.py
+### 03_blue_ocean.py
 Competitive analysis with Blue Ocean ERRC Grid (Eliminate-Reduce-Raise-Create).
 使用蓝海 ERRC 网格（消除-减少-提升-创造）进行竞争分析。
 
 **Use when / 适用场景**: Finding whitespace in a crowded market.
 
 ```bash
-python 02_blue_ocean.py
+python 03_blue_ocean.py
 ```
 
-### 03_experiment_design.py
+### 04_experiment_design.py
 Design and evaluate value proposition experiments.
 设计和评估价值主张实验。
 
 **Use when / 适用场景**: Testing hypotheses about your value proposition before scaling.
 
 ```bash
-python 03_experiment_design.py
+python 04_experiment_design.py
 ```
 
 ## Tips / 提示
