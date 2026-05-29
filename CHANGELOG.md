@@ -1,3 +1,10 @@
+## v2.4.101 (2026-05-29)
+
+- Document missing example scripts (01_canvas_analysis, 02_blue_ocean, 03_experiment_design) in examples/README.md
+- Update main README examples reference to include all 5 scripts
+- Version sync across README/SKILL.md/pyproject.toml/__init__.py
+
+
 ## v2.4.100 (2026-05-29)
 
 - Sync versions to 2.4.100 across README/SKILL.md/pyproject.toml/__init__.py
