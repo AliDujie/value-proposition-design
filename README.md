@@ -23,6 +23,7 @@
 - [Real-World Use Cases](#-real-world-use-cases)
 - [Common Mistakes](#-common-mistakes--常见错误)
 - [AI Agent Integration](#-ai-agent-integration)
+- [Ecosystem Integration](#-ecosystem-integration)
 - [VPD Canvas Workshops](#-vpd-canvas-workshops--vpd-画布工作坊)
 - [Quick Recipes](#-quick-recipes--快速食谱)
 - [FAQ / Troubleshooting](#-faq--常见问题)
@@ -30,6 +31,7 @@
 - [When NOT to Use VPD](#-when-not-to-use-vpd--什么时候不该用-vpd)
 - [Best Practices](#-best-practices--最佳实践)
 - [Limitations](#-limitations--局限性)
+- [Recommended Learning Path](#-recommended-learning-path)
 
 ---
 
