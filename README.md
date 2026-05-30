@@ -4,7 +4,7 @@
 
 📖 [GitHub Repository](https://github.com/AliDujie/value-proposition-design)
 
-![Version](https://img.shields.io/badge/version-2.4.107-blue)
+![Version](https://img.shields.io/badge/version-2.4.108-blue)
 ![Python](https://img.shields.io/badge/Python-3.9%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Dependencies](https://img.shields.io/badge/Dependencies-pyyaml-lightgrey)
@@ -35,9 +35,9 @@
 
 ---
 
-## 🆕 What's New in v2.4.107
+## 🆕 What's New in v2.4.108
 
-- **CHANGELOG Sync**: Backfilled v2.4.104→v2.4.107 entries in CHANGELOG.md (was 3 versions behind), ecosystem cross-reference audit across all 6 AliDujie skills
+- **CHANGELOG Sync**: Backfilled v2.4.104→v2.4.108 entries in CHANGELOG.md (was 3 versions behind), ecosystem cross-reference audit across all 6 AliDujie skills
 - **Version Bump**: Synced to 2.4.107
 
 > **📦 Recent versions (v2.4.105 → v2.4.102)**: CHANGELOG sync, README cleanup, Version History fixes. Full changelog in [CHANGELOG.md](CHANGELOG.md).
@@ -935,7 +935,7 @@ See [INSTALL.md](INSTALL.md) for full configuration options and agent integratio
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
 
-**Latest (v2.4.107)**: CHANGELOG sync (backfilled 3 missing version entries), consolidated redundant What's New entries, ecosystem cross-reference audit across all 6 AliDujie skills.
+**Latest (v2.4.108)**: CHANGELOG sync (backfilled 3 missing version entries), consolidated redundant What's New entries, ecosystem cross-reference audit across all 6 AliDujie skills.
 
 **Previous (v2.4.104)**: Version bump, ecosystem cross-reference audit across all 6 AliDujie skills.
 
