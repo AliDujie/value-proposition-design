@@ -28,6 +28,8 @@
 - [FAQ / Troubleshooting](#-faq--常见问题)
 - [Resources](#-resources)
 - [When NOT to Use VPD](#-when-not-to-use-vpd--什么时候不该用-vpd)
+- [Best Practices](#-best-practices--最佳实践)
+- [Limitations](#-limitations--局限性)
 
 ---
 
