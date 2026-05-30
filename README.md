@@ -4,7 +4,7 @@
 
 📖 [GitHub Repository](https://github.com/AliDujie/value-proposition-design)
 
-![Version](https://img.shields.io/badge/version-2.4.106-blue)
+![Version](https://img.shields.io/badge/version-2.4.107-blue)
 ![Python](https://img.shields.io/badge/Python-3.9%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Dependencies](https://img.shields.io/badge/Dependencies-pyyaml-lightgrey)
@@ -30,6 +30,11 @@
 - [When NOT to Use VPD](#-when-not-to-use-vpd--什么时候不该用-vpd)
 
 ---
+
+## 🆕 What's New in v2.4.107
+
+- **Repo Maintenance**: Enhanced Quick Start with Instant Examples section, added additional code examples, ecosystem cross-reference audit across all 6 AliDujie skills
+- **Version Bump**: Synced to 2.4.107
 
 ## 🆕 What's New in v2.4.105
 
@@ -295,6 +300,21 @@ v.analyze_competitor(my_name="ProductA", factors=["Price", "Speed", "UX"],
 ```python
 v.design_experiment(hypotheses=[{"description": "Users pay for premium", "lethality": "lethal"}])
 # → Test cards + learning metrics + CTA tiers
+```
+
+**Priority scoring:**
+```python
+v.calculate_priority([
+    {"name": "Slow onboarding", "importance": 5, "dissatisfaction": 5, "frequency": 4, "viability": 4},
+    {"name": "No mobile app", "importance": 3, "dissatisfaction": 3, "frequency": 2, "viability": 3},
+])
+# → P0-P3 graded priority matrix with 4D scoring
+```
+
+**CEO extensions:**
+```python
+v.generate_canvas(include_ceo_analysis=True)
+# → Canvas + commercialization path + moat analysis + ROI estimate
 ```
 
 ### Agent Workflow Pattern
@@ -929,7 +949,9 @@ See [INSTALL.md](INSTALL.md) for full configuration options and agent integratio
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
 
-**Latest (v2.4.104)**: Version bump, ecosystem cross-reference audit across all 6 AliDujie skills.
+**Latest (v2.4.107)**: Enhanced Quick Start with Instant Examples section, added additional code examples, ecosystem cross-reference audit across all 6 AliDujie skills.
+
+**Previous (v2.4.104)**: Version bump, ecosystem cross-reference audit across all 6 AliDujie skills.
 
 **Previous (v2.4.97)**: Fixed stale What's New TOC link (v2.4.96 → v2.4.97), updated Version History latest entry (v2.4.96 → v2.4.97), ecosystem cross-reference audit across all 6 AliDujie skills.
 
