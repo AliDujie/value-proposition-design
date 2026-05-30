@@ -13,7 +13,7 @@
 
 ## 📑 Table of Contents
 
-- [What's New](#-whats-new-in-v24105)
+- [What's New](#-whats-new-in-v24107)
 - [Why Teams Choose VPD](#-why-teams-choose-vpd)
 - [Who This Skill Is For](#-who-this-skill-is-for)
 - [Quick Decision: When to Use VPD?](#-quick-decision-when-to-use-vpd)
@@ -33,28 +33,10 @@
 
 ## 🆕 What's New in v2.4.107
 
-- **Repo Maintenance**: Enhanced Quick Start with Instant Examples section, added additional code examples, ecosystem cross-reference audit across all 6 AliDujie skills
+- **CHANGELOG Sync**: Backfilled v2.4.104→v2.4.107 entries in CHANGELOG.md (was 3 versions behind), ecosystem cross-reference audit across all 6 AliDujie skills
 - **Version Bump**: Synced to 2.4.107
 
-## 🆕 What's New in v2.4.105
-
-- **README Cleanup**: Consolidated 18 redundant What's New entries into a summary line with CHANGELOG link, reducing README by ~98 lines while preserving full history reference
-- **Version Bump**: Synced to 2.4.105
-
-## 🆕 What's New in v2.4.104
-
-- **Repo Maintenance**: Version bump 2.4.103→2.4.104, ecosystem cross-reference audit across all 6 AliDujie skills
-- **Version Bump**: Synced to 2.4.104
-
-## 🆕 What's New in v2.4.103
-
-- **Repo Maintenance**: Version bump 2.4.102→2.4.103, ecosystem cross-reference audit across all 6 AliDujie skills
-- **Version Bump**: Synced to 2.4.103
-
-## 🆕 What's New in v2.4.102
-
-- **Version History Fix**: Corrected stale Version History "Latest" entry, ecosystem cross-reference audit across all 6 AliDujie skills
-- **Version Bump**: Synced to 2.4.102
+> **📦 Recent versions (v2.4.105 → v2.4.102)**: CHANGELOG sync, README cleanup, Version History fixes. Full changelog in [CHANGELOG.md](CHANGELOG.md).
 
 > **📦 Earlier versions (v2.4.101 → v2.4.75)**: Added VPD canvas quick-fill template, pain reliever/gain creator mapping, value proposition statement generator, product-market fit scoring, competitor value curve analysis, JTBD→VPD pipeline recipe, cross-skill validation workflows. Full changelog in [CHANGELOG.md](CHANGELOG.md).
 
@@ -949,7 +931,7 @@ See [INSTALL.md](INSTALL.md) for full configuration options and agent integratio
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
 
-**Latest (v2.4.107)**: Enhanced Quick Start with Instant Examples section, added additional code examples, ecosystem cross-reference audit across all 6 AliDujie skills.
+**Latest (v2.4.107)**: CHANGELOG sync (backfilled 3 missing version entries), consolidated redundant What's New entries, ecosystem cross-reference audit across all 6 AliDujie skills.
 
 **Previous (v2.4.104)**: Version bump, ecosystem cross-reference audit across all 6 AliDujie skills.
 
