@@ -4,7 +4,7 @@
 
 📖 [GitHub Repository](https://github.com/AliDujie/value-proposition-design)
 
-![Version](https://img.shields.io/badge/version-2.4.108-blue)
+![Version](https://img.shields.io/badge/version-2.4.109-blue)
 ![Python](https://img.shields.io/badge/Python-3.9%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Dependencies](https://img.shields.io/badge/Dependencies-pyyaml-lightgrey)
@@ -34,6 +34,11 @@
 - [Recommended Learning Path](#-recommended-learning-path)
 
 ---
+
+## 🆕 What's New in v2.4.109
+
+- **Repo Maintenance 2026-05-31**: README quality audit across all 6 AliDujie skill repos — verified structural completeness, TOC links, code examples, ecosystem cross-references, and bilingual coverage
+- **Version Bump**: Synced to 2.4.109
 
 ## 🆕 What's New in v2.4.108
 
