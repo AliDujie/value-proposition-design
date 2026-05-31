@@ -13,7 +13,7 @@
 
 ## 📑 Table of Contents
 
-- [What's New](#-whats-new-in-v24107)
+- [What's New](#-whats-new-in-v24110)
 - [Why Teams Choose VPD](#-why-teams-choose-vpd)
 - [Who This Skill Is For](#-who-this-skill-is-for)
 - [Quick Decision: When to Use VPD?](#-quick-decision-when-to-use-vpd)
@@ -37,8 +37,9 @@
 
 ## 🆕 What's New in v2.4.110
 
+- **Repo maintenance 2026-06-01**: TOC anchor version fix (v24107 → v24110), ecosystem cross-reference audit across all 6 AliDujie skills
 - **Repo Maintenance 2026-05-31**: README quality audit across all 6 AliDujie skill repos — verified structural completeness, TOC links, code examples, ecosystem cross-references, and bilingual coverage
-- **Version Bump**: Synced to 2.4.109
+- **Version Bump**: Synced to 2.4.110
 
 ## 🆕 What's New in v2.4.108
 
@@ -940,7 +941,9 @@ See [INSTALL.md](INSTALL.md) for full configuration options and agent integratio
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
 
-**Latest (v2.4.108)**: CHANGELOG sync (backfilled 3 missing version entries), consolidated redundant What's New entries, ecosystem cross-reference audit across all 6 AliDujie skills.
+**Latest (v2.4.110)**: TOC anchor version fix (v24107 → v24110), What's New version sync, ecosystem cross-reference audit across all 6 AliDujie skills.
+
+**Previous (v2.4.108)**: CHANGELOG sync (backfilled 3 missing version entries), consolidated redundant What's New entries, ecosystem cross-reference audit across all 6 AliDujie skills.
 
 **Previous (v2.4.104)**: Version bump, ecosystem cross-reference audit across all 6 AliDujie skills.
 
