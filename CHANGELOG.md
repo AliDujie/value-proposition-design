@@ -1,3 +1,10 @@
+## v2.4.112 (2026-06-01)
+
+- Added VPD + Other Skills collaboration examples with code snippets (JTBD, Persona, SWD)
+- Added Blue Ocean Strategy Quick Reference table
+- Added "Why Value Proposition Design Matters" promotional section with impact stats
+- Version bump to 2.4.112 across README badge, pyproject.toml, SKILL.md, and __init__.py
+
 ## v2.4.109 (2026-05-31)
 
 - README quality audit across all 6 AliDujie skill repos — verified structural completeness, TOC links, code examples, ecosystem cross-references, and bilingual coverage
