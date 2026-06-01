@@ -13,25 +13,25 @@
 
 ## 📑 Table of Contents
 
-- [What's New](#-whats-new-in-v24116)
-- [Why Teams Choose VPD](#-why-teams-choose-vpd)
-- [Who This Skill Is For](#-who-this-skill-is-for)
-- [Quick Decision: When to Use VPD?](#-quick-decision-when-to-use-vpd)
-- [Quick Start](#-quick-start-5-minutes)
-- [Ecosystem Quick Start](#-ecosystem-quick-start)
-- [Core Capabilities](#-7-executable-modules)
-- [Real-World Use Cases](#-real-world-use-cases)
-- [Common Mistakes](#-common-mistakes--常见错误)
-- [AI Agent Integration](#-ai-agent-integration)
-- [Ecosystem Integration](#-ecosystem-integration)
-- [VPD Canvas Workshops](#-vpd-canvas-workshops--vpd-画布工作坊)
-- [Quick Recipes](#-quick-recipes--快速食谱)
-- [FAQ / Troubleshooting](#-faq--常见问题)
-- [Resources](#-resources)
-- [When NOT to Use VPD](#-when-not-to-use-vpd--什么时候不该用-vpd)
-- [Best Practices](#-best-practices--最佳实践)
-- [Limitations](#-limitations--局限性)
-- [Recommended Learning Path](#-recommended-learning-path)
+- [What's New](#whats-new-in-v24116)
+- [Why Teams Choose VPD](#why-teams-choose-vpd)
+- [Who This Skill Is For](#who-this-skill-is-for)
+- [Quick Decision: When to Use VPD?](#quick-decision-when-to-use-vpd)
+- [Quick Start](#quick-start-5-minutes)
+- [Ecosystem Quick Start](#ecosystem-quick-start)
+- [Core Capabilities](#7-executable-modules)
+- [Real-World Use Cases](#real-world-use-cases)
+- [Common Mistakes](#common-mistakes)
+- [AI Agent Integration](#ai-agent-integration)
+- [Ecosystem Integration](#ecosystem-integration)
+- [VPD Canvas Workshops](#vpd-canvas-workshops-vpd)
+- [Quick Recipes](#quick-recipes)
+- [FAQ / Troubleshooting](#faq)
+- [Resources](#resources)
+- [When NOT to Use VPD](#when-not-to-use-vpd-vpd)
+- [Best Practices](#best-practices)
+- [Limitations](#limitations)
+- [Recommended Learning Path](#recommended-learning-path)
 
 ---
 
@@ -1062,7 +1062,7 @@ See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 1. **Start with the README** — Quick start + 30-second example
 2. **Read USAGE.md** — Detailed workflows for all 7 modules with code examples
 3. **Explore references/** — Deep dive into 8 major themes: canvas architecture, information gathering, design methods, Blue Ocean strategy, experiment validation
-4. **Try the full pipeline** — Chain JTBD → VPD → QuantUX → SWD end-to-end (see [Complete Pipeline](#-complete-pipeline-jtbd--vpd--quantux--swd))
+4. **Try the full pipeline** — Chain JTBD → VPD → QuantUX → SWD end-to-end (see [Complete Pipeline](#complete-pipeline-jtbd-vpd-quantux-swd))
 5. **Customize via config** — Adjust pain severity thresholds and priority weights (see [INSTALL.md](INSTALL.md))
 
 ## 🌐 Ecosystem FAQ / 生态常见问题
