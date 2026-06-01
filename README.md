@@ -4,7 +4,7 @@
 
 📖 [GitHub Repository](https://github.com/AliDujie/value-proposition-design)
 
-![Version](https://img.shields.io/badge/version-2.4.112-blue)
+![Version](https://img.shields.io/badge/version-2.4.113-blue)
 ![Python](https://img.shields.io/badge/Python-3.9%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Dependencies](https://img.shields.io/badge/Dependencies-pyyaml-lightgrey)
@@ -35,24 +35,12 @@
 
 ---
 
-## 🆕 What's New in v2.4.112
+## 🆕 What's New in v2.4.113
 
-- **Repo maintenance 2026-06-01**: Added VPD + ecosystem collaboration examples with code snippets, enhanced "Why VPD Matters" promotional section, added Blue Ocean Strategy quick reference. Version bump.
+- **Repo maintenance 2026-06-01: consolidated 3 What's New sections to 1 + archive, added VPD Lifecycle phases diagram, ecosystem cross-reference audit across all 6 AliDujie skills**: Added VPD + ecosystem collaboration examples with code snippets, enhanced "Why VPD Matters" promotional section, added Blue Ocean Strategy quick reference. Version bump.
 
-## 🆕 What's New in v2.4.111
 
-- **Repo maintenance 2026-06-01**: TOC anchor version fix (v24107 → v24110), ecosystem cross-reference audit across all 6 AliDujie skills
-- **Repo Maintenance 2026-05-31**: README quality audit across all 6 AliDujie skill repos — verified structural completeness, TOC links, code examples, ecosystem cross-references, and bilingual coverage
-- **Version Bump**: Synced to 2.4.110
-
-## 🆕 What's New in v2.4.108
-
-- **CHANGELOG Sync**: Backfilled v2.4.104→v2.4.108 entries in CHANGELOG.md (was 3 versions behind), ecosystem cross-reference audit across all 6 AliDujie skills
-- **Version Bump**: Synced to 2.4.107
-
-> **📦 Recent versions (v2.4.105 → v2.4.102)**: CHANGELOG sync, README cleanup, Version History fixes. Full changelog in [CHANGELOG.md](CHANGELOG.md).
-
-> **📦 Earlier versions (v2.4.101 → v2.4.75)**: Added VPD canvas quick-fill template, pain reliever/gain creator mapping, value proposition statement generator, product-market fit scoring, competitor value curve analysis, JTBD→VPD pipeline recipe, cross-skill validation workflows. Full changelog in [CHANGELOG.md](CHANGELOG.md).
+> **📦 Earlier versions (v2.4.111 → v2.4.75)**: TOC anchor fixes, CHANGELOG sync, ecosystem cross-reference audits, VPD canvas quick-fill template, pain reliever/gain creator mapping, value proposition statement generator, PMF scoring, competitor value curve analysis, JTBD→VPD pipeline recipe, cross-skill validation workflows. Full changelog in [CHANGELOG.md](CHANGELOG.md).
 
 ## 🇨🇳 中文概览
 
@@ -756,6 +744,26 @@ All knowledge is organized in `references/knowledge-base.md` covering 8 major th
 | VII: Quantitative Methods | 4-dimension priority model, sample size calculation, statistical significance |
 | VIII: Decision Support | Data trap checking, iteration suggestions, business model fit validation |
 
+
+## 📐 VPD Lifecycle / 价值主张生命周期
+
+```
+Phase 1          Phase 2              Phase 3              Phase 4               Phase 5
+Customer        Customer             Value              Product-Market          Business
+Understanding ─► Profiling  ──────► Proposition ──────► Fit Validation ──────► Strategy
+(T1-T2)         (T3-T4)              (T5)                (T6)                   (T7)
+  │                │                    │                    │                     │
+  ├─ Interview     ├─ Priority          ├─ Value Prop        ├─ Experiment         ├─ Business model
+  ├─ Questionnaire ├─ Calculation       ├─ Canvas            ├─ Design             ├─ Moat analysis
+  └─ Research      └─ Segmentation      └─ Statement         └─ Scoring            └─ ROI estimation
+```
+
+1. **Customer Understanding** (T1-T2) — Gather user data via interviews and surveys
+2. **Customer Profiling** (T3-T4) — Calculate priorities, segment users
+3. **Value Proposition** (T5) — Build canvas, generate value proposition statements
+4. **Product-Market Fit Validation** (T6) — Design experiments, score PMF
+5. **Business Strategy** (T7) — Business model design, moat analysis, ROI estimation
+
 ## 📁 Project Structure
 
 ```
@@ -1054,6 +1062,19 @@ See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 3. **Explore references/** — Deep dive into 8 major themes: canvas architecture, information gathering, design methods, Blue Ocean strategy, experiment validation
 4. **Try the full pipeline** — Chain JTBD → VPD → QuantUX → SWD end-to-end (see [Complete Pipeline](#-complete-pipeline-jtbd--vpd--quantux--swd))
 5. **Customize via config** — Adjust pain severity thresholds and priority weights (see [INSTALL.md](INSTALL.md))
+
+## 🌐 Ecosystem FAQ / 生态常见问题
+
+**Q: VPD vs JTBD — what's the difference?**
+A: JTBD discovers *what Jobs* users are trying to accomplish. VPD takes those Jobs and designs *how* your product delivers value (the Canvas). JTBD is research; VPD is design. Use JTBD first, then VPD.
+
+**Q: VPD vs QuantUX — when do I switch from canvas to testing?**
+A: VPD helps you design the value proposition and identify lethal hypotheses. QuantUX runs the A/B tests and statistical validation. The handoff: VPD experiments → QuantUX analysis.
+
+**Q: Can VPD work without other AliDujie skills?**
+A: Yes — VPD is fully self-contained. But chaining with JTBD (Jobs discovery) and QuantUX (validation) gives you the full insight-to-validation pipeline.
+
+---
 
 ## 📚 Resources
 
