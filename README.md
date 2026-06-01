@@ -4,7 +4,7 @@
 
 📖 [GitHub Repository](https://github.com/AliDujie/value-proposition-design)
 
-![Version](https://img.shields.io/badge/version-2.4.113-blue)
+![Version](https://img.shields.io/badge/version-2.4.115-blue)
 ![Python](https://img.shields.io/badge/Python-3.9%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Dependencies](https://img.shields.io/badge/Dependencies-pyyaml-lightgrey)
@@ -13,7 +13,7 @@
 
 ## 📑 Table of Contents
 
-- [What's New](#-whats-new-in-v24110)
+- [What's New](#-whats-new-in-v24114)
 - [Why Teams Choose VPD](#-why-teams-choose-vpd)
 - [Who This Skill Is For](#-who-this-skill-is-for)
 - [Quick Decision: When to Use VPD?](#-quick-decision-when-to-use-vpd)
@@ -35,9 +35,9 @@
 
 ---
 
-## 🆕 What's New in v2.4.113
+## 🆕 What's New in v2.4.115
 
-- **Repo maintenance 2026-06-01: consolidated 3 What's New sections to 1 + archive, added VPD Lifecycle phases diagram, ecosystem cross-reference audit across all 6 AliDujie skills**: Added VPD + ecosystem collaboration examples with code snippets, enhanced "Why VPD Matters" promotional section, added Blue Ocean Strategy quick reference. Version bump.
+- **Repo maintenance 2026-06-01**: Fixed TOC What's New anchor (v24110 → v24115), version sync across SKILL.md (2.4.113 → 2.4.115), pyproject.toml (2.4.114 → 2.4.115), vpd/__init__.py (2.4.113 → 2.4.115), README badge (2.4.113 → 2.4.115). Consolidated redundant What's New archive entries, ecosystem cross-reference audit across all 6 AliDujie skills.
 
 
 > **📦 Earlier versions (v2.4.111 → v2.4.75)**: TOC anchor fixes, CHANGELOG sync, ecosystem cross-reference audits, VPD canvas quick-fill template, pain reliever/gain creator mapping, value proposition statement generator, PMF scoring, competitor value curve analysis, JTBD→VPD pipeline recipe, cross-skill validation workflows. Full changelog in [CHANGELOG.md](CHANGELOG.md).
