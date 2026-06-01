@@ -13,7 +13,7 @@
 
 ## 📑 Table of Contents
 
-- [What's New](#-whats-new-in-v24114)
+- [What's New](#-whats-new-in-v24115)
 - [Why Teams Choose VPD](#-why-teams-choose-vpd)
 - [Who This Skill Is For](#-who-this-skill-is-for)
 - [Quick Decision: When to Use VPD?](#-quick-decision-when-to-use-vpd)
