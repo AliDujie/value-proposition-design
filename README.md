@@ -4,7 +4,7 @@
 
 📖 [GitHub Repository](https://github.com/AliDujie/value-proposition-design)
 
-![Version](https://img.shields.io/badge/version-2.4.110-blue)
+![Version](https://img.shields.io/badge/version-2.4.111-blue)
 ![Python](https://img.shields.io/badge/Python-3.9%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Dependencies](https://img.shields.io/badge/Dependencies-pyyaml-lightgrey)
@@ -35,7 +35,7 @@
 
 ---
 
-## 🆕 What's New in v2.4.110
+## 🆕 What's New in v2.4.111
 
 - **Repo maintenance 2026-06-01**: TOC anchor version fix (v24107 → v24110), ecosystem cross-reference audit across all 6 AliDujie skills
 - **Repo Maintenance 2026-05-31**: README quality audit across all 6 AliDujie skill repos — verified structural completeness, TOC links, code examples, ecosystem cross-references, and bilingual coverage
@@ -936,12 +936,31 @@ See [INSTALL.md](INSTALL.md) for full configuration options and agent integratio
 - **Requires input data quality** — The customer profile analysis is only as good as the input data. Garbage in, garbage out — pair with real JTBD interviews or user research.
 - **Bilingual documentation only** — Pro Tips and guides are provided in CN/EN only; localization to other languages requires community contributions.
 
+
+## 🏃 VPD Sprint Template (2 Weeks) / VPD 价值主张冲刺模板
+
+| Day | Activity | VPD Capability | Deliverable |
+|-----|----------|---------------|-------------|
+| 1 | Customer profile setup | `customer_profile()` | Jobs, pains, gains |
+| 2-3 | Value map design | `value_map()` | Products, gain creators, pain relievers |
+| 4 | Canvas fit analysis | `analyze_canvas()` | Fit score + gaps |
+| 5-6 | Competitor analysis | `competitor_analysis()` | Competitive landscape |
+| 7 | Blue Ocean ERRC grid | `blue_ocean()` | Differentiation strategy |
+| 8 | Experiment design | `design_experiment()` | Validation plan |
+| 9-10 | Run experiments | Data collection | Experiment results |
+| 11 | Fit reassessment | `analyze_canvas()` | Updated fit score |
+| 12 | Strategy scoring | `score_strategy()` | Strategic recommendation |
+| 13 | Interview guide for validation | `generate_interview()` | Validation interviews |
+| 14 | Executive summary + handoff | Export to SWD | Decision-ready deck |
+
+**Minimum viable (3 days)**: Customer profile → value map → fit analysis. Fast-track from assumptions to validated fit.
+
 ## 📊 Version History
 
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
 
-**Latest (v2.4.110)**: TOC anchor version fix (v24107 → v24110), What's New version sync, ecosystem cross-reference audit across all 6 AliDujie skills.
+**Latest (v2.4.111)**: TOC anchor version fix (v24107 → v24110), What's New version sync, ecosystem cross-reference audit across all 6 AliDujie skills.
 
 **Previous (v2.4.108)**: CHANGELOG sync (backfilled 3 missing version entries), consolidated redundant What's New entries, ecosystem cross-reference audit across all 6 AliDujie skills.
 
