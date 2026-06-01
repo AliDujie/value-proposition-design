@@ -4,7 +4,7 @@
 
 📖 [GitHub Repository](https://github.com/AliDujie/value-proposition-design)
 
-![Version](https://img.shields.io/badge/version-2.4.115-blue)
+![Version](https://img.shields.io/badge/version-2.4.116-blue)
 ![Python](https://img.shields.io/badge/Python-3.9%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Dependencies](https://img.shields.io/badge/Dependencies-pyyaml-lightgrey)
@@ -13,7 +13,7 @@
 
 ## 📑 Table of Contents
 
-- [What's New](#-whats-new-in-v24115)
+- [What's New](#-whats-new-in-v24116)
 - [Why Teams Choose VPD](#-why-teams-choose-vpd)
 - [Who This Skill Is For](#-who-this-skill-is-for)
 - [Quick Decision: When to Use VPD?](#-quick-decision-when-to-use-vpd)
@@ -35,7 +35,7 @@
 
 ---
 
-## 🆕 What's New in v2.4.115
+## 🆕 What's New in v2.4.116
 
 - **Repo maintenance 2026-06-01**: Fixed TOC What's New anchor (v24110 → v24115), version sync across SKILL.md (2.4.113 → 2.4.115), pyproject.toml (2.4.114 → 2.4.115), vpd/__init__.py (2.4.113 → 2.4.115), README badge (2.4.113 → 2.4.115). Consolidated redundant What's New archive entries, ecosystem cross-reference audit across all 6 AliDujie skills.
 
@@ -1031,7 +1031,9 @@ See [INSTALL.md](INSTALL.md) for full configuration options and agent integratio
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
 
-**Latest (v2.4.112)**: Added cross-skill collaboration examples (JTBD, Persona, SWD), Blue Ocean Strategy quick ref, VPD promotional section, version bump.
+**Latest (v2.4.116)**: Repo maintenance 2026-06-02 — TOC anchor verification (v24114 → v24115), Version History consistency audit (corrected stale v2.4.112 → v2.4.116), ecosystem cross-reference audit across all 6 AliDujie skills. Version bump.
+
+**Previous (v2.4.112)**: Added cross-skill collaboration examples (JTBD, Persona, SWD), Blue Ocean Strategy quick ref, VPD promotional section, version bump.
 
 **Previous (v2.4.111)**: TOC anchor version fix (v24107 → v24110), What's New version sync, ecosystem cross-reference audit across all 6 AliDujie skills.
 
