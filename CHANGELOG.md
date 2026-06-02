@@ -2,19 +2,13 @@
 
 - Version sync: align SKILL.md and CHANGELOG with pyproject.toml/README badge (2.4.119)
 
-## v2.4.113 (2026-06-01)
+## [2.4.118] - 2026-06-02
+
+- Repo maintenance: Version bump to 2.4.118, ecosystem cross-reference audit across all 6 AliDujie skills.
+
 ## [2.4.117] - 2026-06-02
 
 - Repo maintenance: Version bump to 2.4.117, ecosystem cross-reference audit across all 6 AliDujie skills.
-
-
-- Consolidated 3 What's New sections to 1 + archive note
-- Added VPD Lifecycle phases diagram (5-phase workflow visualization)
-- Added VPD + ecosystem collaboration code examples (JTBD, Persona, SWD)
-- Added Blue Ocean Strategy Quick Reference table
-- Added "Why Value Proposition Design Matters" promotional section with impact stats
-- Ecosystem cross-reference audit across all 6 AliDujie skills
-- Version bump: 2.4.112 → 2.4.113
 
 ## v2.4.109 (2026-05-31)
 
