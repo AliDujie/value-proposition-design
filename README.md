@@ -4,7 +4,7 @@
 
 📖 [GitHub Repository](https://github.com/AliDujie/value-proposition-design)
 
-![Version](https://img.shields.io/badge/version-2.4.117-blue)
+![Version](https://img.shields.io/badge/version-2.4.118-blue)
 ![Python](https://img.shields.io/badge/Python-3.9%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Dependencies](https://img.shields.io/badge/Dependencies-pyyaml-lightgrey)
@@ -13,7 +13,7 @@
 
 ## 📑 Table of Contents
 
-- [What's New](#whats-new-in-v24117)
+- [What's New](#whats-new-in-v24118)
 - [Why Teams Choose VPD](#why-teams-choose-vpd)
 - [Who This Skill Is For](#who-this-skill-is-for)
 - [Quick Decision: When to Use VPD?](#quick-decision-when-to-use-vpd)
@@ -35,7 +35,7 @@
 
 ---
 
-## 🆕 What's New in v2.4.117
+## 🆕 What's New in v2.4.118
 
 - **Repo Maintenance 2026-06-02**: Version bump to 2.4.117, ecosystem cross-reference audit across all 6 AliDujie skills.
 
@@ -871,6 +871,7 @@ VPD 价值验证可与管理技能结合，将 PMF 数据转化为商业战略�
 | [CMO Advisor](https://github.com/AliDujie/cmo-advisor) | VPD 价值主张 → CMO 品牌定位 |
 | [CTO Advisor](https://github.com/AliDujie/cto-advisor) | VPD 技术可行性 → CTO 架构决策 |
 | [Plan CEO Review](https://github.com/AliDujie/plan-ceo-review) | VPD 验证结果 → CEO 计划审查与范围对齐 |
+| [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) | STM 框架分析 → VPD 验证市场假设 |
 
 ### 🔗 Extended Ecosystem
 
