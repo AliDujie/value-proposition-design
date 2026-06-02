@@ -4,7 +4,7 @@
 
 📖 [GitHub Repository](https://github.com/AliDujie/value-proposition-design)
 
-![Version](https://img.shields.io/badge/version-2.4.118-blue)
+![Version](https://img.shields.io/badge/version-2.4.119-blue)
 ![Python](https://img.shields.io/badge/Python-3.9%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Dependencies](https://img.shields.io/badge/Dependencies-pyyaml-lightgrey)
@@ -13,7 +13,7 @@
 
 ## 📑 Table of Contents
 
-- [What's New](#whats-new-in-v24118)
+- [What's New](#whats-new-in-v24119)
 - [Why Teams Choose VPD](#why-teams-choose-vpd)
 - [Who This Skill Is For](#who-this-skill-is-for)
 - [Quick Decision: When to Use VPD?](#quick-decision-when-to-use-vpd)
@@ -34,6 +34,10 @@
 - [Recommended Learning Path](#recommended-learning-path)
 
 ---
+
+## 🆕 What's New in v2.4.119
+
+- **Repo Maintenance 2026-06-03**: Added Beginner's First VPD Canvas (60-min value proposition workshop with 6 steps), version bump 2.4.118→2.4.119.
 
 ## 🆕 What's New in v2.4.118
 
@@ -1090,6 +1094,140 @@ A: Yes — VPD is fully self-contained. But chaining with JTBD (Jobs discovery) 
 - [SECURITY.md](SECURITY.md) — Security policy and responsible use
 - [references/](references/) — Canvas templates and experiment design guides
 - [vpd/](vpd/) — Core Python module source code
+
+## 🧪 Beginner's First VPD Canvas — 60-Minute Value Proposition Workshop / 新手入门教程
+
+> **Goal:** Build a complete Value Proposition Canvas and validate product-market fit.
+> **目标：** 构建完整的价值主张画布并验证产品市场契合度。
+> **Time:** ~60 minutes | **Prerequisites:** Python 3.8+
+
+### Step 1: Initialize (1 min)
+
+VPD requires a product name and target customer:
+
+```python
+from vpd import VPDSkill
+vpd = VPDSkill("FreshMart 生鲜电商", "Busy Professionals / 忙碌职场人")
+```
+
+### Step 2: Analyze the Canvas (15 min)
+
+Fill in the 6 blocks of the Value Proposition Canvas — Customer Profile (Jobs, Pains, Gains) and Value Map (Products, Pain Relievers, Gain Creators):
+
+```python
+canvas = vpd.analyze_canvas(
+    product_name="FreshMart 生鲜电商",
+    jobs=[
+        {"description": "Buy fresh ingredients quickly", "importance": "high"},
+        {"description": "Compare prices across stores", "importance": "medium"},
+        {"description": "Get recipe suggestions", "importance": "low"}
+    ],
+    pains=[
+        {"description": "Supermarket takes too much time", "intensity": "high"},
+        {"description": "Worried about produce freshness", "intensity": "high"},
+        {"description": "Hard to find specialty ingredients", "intensity": "medium"}
+    ],
+    gains=[
+        {"description": "30-minute delivery", "importance": "high"},
+        {"description": "Quality guarantee with easy returns", "importance": "high"}
+    ],
+    products=["FreshMart App", "30-min delivery", "Quality-checked produce"],
+    pain_relievers=["Next-day freshness guarantee", "One-click reorder"],
+    gain_creators=["Recipe-based shopping lists", "Seasonal recommendations"]
+)
+print(canvas)
+```
+
+### Step 3: Get Fit Score (5 min)
+
+VPD calculates a fit score (0-100) based on how well your Value Map matches the Customer Profile:
+
+```python
+print(f"Fit Score: {canvas['fit_score']}")
+# → Fit Score: 72/100 — Good, with room for improvement
+```
+
+| Fit Score | Verdict | Action |
+|-----------|---------|--------|
+| 80-100 | 🟢 Strong fit | Scale and iterate |
+| 60-79 | 🟡 Emerging fit | Address top gaps |
+| 40-59 | 🟠 Weak fit | Pivot or refine |
+| < 40 | 🔴 No fit | Redesign value prop |
+
+### Step 4: Analyze Competitors (10 min)
+
+See where you stand vs. alternatives:
+
+```python
+competitor = vpd.analyze_competitor(
+    competitors=[
+        {"name": "Traditional Supermarket", "strength": "Price", "weakness": "Time cost"},
+        {"name": "Competitor App A", "strength": "Speed", "weakness": "Quality inconsistency"},
+        {"name": "Competitor App B", "strength": "Selection", "weakness": "Complex UX"}
+    ]
+)
+print(competitor)
+```
+
+### Step 5: Blue Ocean ERRC (10 min)
+
+Identify strategic moves to differentiate:
+
+```python
+errc = vpd.business_scenario(
+    eliminate=["In-store shopping time", "Checkout queues"],
+    reduce=["Price premium vs supermarket"],
+    raise=["Delivery speed", "Freshness guarantee"],
+    create=["Recipe-based shopping", "Nutrition tracking"]
+)
+print(errc)
+```
+
+### Step 6: Design Validation Experiments (10 min)
+
+VPD helps you design experiments to test your hypotheses:
+
+```python
+experiment = vpd.design_experiment(
+    hypothesis="Users will pay ¥5 premium for guaranteed 30-min delivery",
+    method="conjoint",
+    success_metric="Conversion rate > 15%"
+)
+print(experiment)
+```
+
+### ✅ Tutorial Checklist
+
+- [ ] Initialized VPD with product + customer segment
+- [ ] Filled in all 6 canvas blocks
+- [ ] Got fit score and identified gaps
+- [ ] Analyzed 2+ competitors
+- [ ] Completed Blue Ocean ERRC grid
+- [ ] Designed at least 1 validation experiment
+
+### 🔀 What's Next?
+
+Chain VPD with upstream research and downstream presentation:
+
+```python
+# JTBD opportunities → VPD canvas → QuantUX validation → SWD presentation
+from jtbd import JTBDSkill
+from vpd import VPDSkill
+from quantux import QuantUXSkill
+from swd import SWDSkill
+
+jtbd = JTBDSkill("FreshMart")
+opportunity = jtbd.score_opportunity("Get fresh dinner fast", struggle=4, alternative=3, market=4, budget=4)
+
+vpd = VPDSkill("FreshMart", "Busy Professionals")
+canvas = vpd.analyze_canvas(product_name="FreshMart", jobs=[{"description": "Get dinner ingredients fast"}])
+
+qx = QuantUXSkill("FreshMart")
+ab = qx.calculate_ab_sample_size(baseline=0.30, mde=0.05)  # Validate value prop
+
+swd = SWDSkill("VPD Findings")
+story = swd.build_story(context="Value proposition canvas analysis", use_case="executive_presentation")
+```
 
 ## 📄 License
 
