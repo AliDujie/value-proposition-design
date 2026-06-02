@@ -75,3 +75,15 @@ python 04_experiment_design.py
 - No `pip install` required — VPD is zero-dependency
 - Feed JTBD insights into VPD canvas jobs/pains/gains for alignment
 - See [USAGE.md](../USAGE.md) for detailed API documentation
+
+## 🔗 Ecosystem Integration / 生态集成
+
+VPD is the "value" layer of the AliDujie UX Research Ecosystem. Chain it with other skills:
+
+- **Persona → VPD**: [Persona](https://github.com/AliDujie/web-persona-skill) user profiles → VPD canvas filling
+- **JTBD → VPD**: [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) customer jobs → VPD pains/gains mapping
+- **UDM → VPD**: [UDM](https://github.com/AliDujie/universal-design-methods) research pain points → VPD pain relievers
+- **VPD → QuantUX**: VPD experiment design → [QuantUX](https://github.com/AliDujie/Quantitative-UX-Research) validation
+- **VPD → SWD**: VPD canvas scores → [SWD](https://github.com/AliDujie/storytelling-with-data) value proposition stories
+
+See the [full pipeline example](../README.md#complete-pipeline-example) in README.md for a 6-skill end-to-end workflow.
