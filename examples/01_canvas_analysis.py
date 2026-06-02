@@ -22,18 +22,18 @@ analysis = vpd.analyze_canvas(
         {"description": "Save time during weeknights", "category": "functional", "importance": 4},
     ],
     pains=[
-        {"description": "Food arrives cold", "category": "emotional", "importance": 3},
-        {"description": "Limited healthy options", "category": "functional", "importance": 2},
-        {"description": "Too expensive for daily use", "category": "financial", "importance": 4},
+        {"description": "Food arrives cold", "severity": "severe", "category": "emotional", "importance": 3},
+        {"description": "Limited healthy options", "severity": "moderate", "category": "functional", "importance": 2},
+        {"description": "Too expensive for daily use", "severity": "severe", "category": "financial", "importance": 4},
     ],
     gains=[
-        {"description": "30-minute delivery guarantee", "category": "functional", "importance": 5},
-        {"description": "Nutritionist-designed menus", "category": "functional", "importance": 3},
-        {"description": "Family-sized portions", "category": "functional", "importance": 2},
+        {"description": "30-minute delivery guarantee", "desire_level": "expected", "category": "functional", "importance": 5},
+        {"description": "Nutritionist-designed menus", "desire_level": "desired", "category": "functional", "importance": 3},
+        {"description": "Family-sized portions", "desire_level": "desired", "category": "functional", "importance": 2},
     ],
     products=[
-        {"description": "30-min hot delivery", "category": "feature"},
-        {"description": "Weekly meal plans", "category": "feature"},
+        {"description": "30-min hot delivery", "category": "intangible"},
+        {"description": "Weekly meal plans", "category": "digital"},
     ],
     pain_relievers=[
         {"description": "Insulated packaging keeps food hot", "target_pain": "Food arrives cold", "coverage": "full"},
