@@ -40,7 +40,7 @@
 - **Repo Maintenance 2026-06-02**: Version bump to 2.4.117, ecosystem cross-reference audit across all 6 AliDujie skills.
 
 
-> **📦 Earlier versions (v2.4.111 → v2.4.75)**: TOC anchor fixes, CHANGELOG sync, ecosystem cross-reference audits, VPD canvas quick-fill template, pain reliever/gain creator mapping, value proposition statement generator, PMF scoring, competitor value curve analysis, JTBD→VPD pipeline recipe, cross-skill validation workflows. Full changelog in [CHANGELOG.md](CHANGELOG.md).
+> **📦 Earlier versions (v2.4.113 → v2.4.75)**: TOC anchor fixes, CHANGELOG sync, ecosystem cross-reference audits, VPD canvas quick-fill template, pain reliever/gain creator mapping, value proposition statement generator, PMF scoring, competitor value curve analysis, JTBD→VPD pipeline recipe, cross-skill validation workflows. Full changelog in [CHANGELOG.md](CHANGELOG.md).
 
 ## 🇨🇳 中文概览
 
