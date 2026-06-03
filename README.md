@@ -13,7 +13,7 @@
 
 ## 📑 Table of Contents
 
-- [What's New](#whats-new-in-v24120)
+- [What's New](#whats-new-in-v24121)
 - [Why Teams Choose VPD](#why-teams-choose-vpd)
 - [Who This Skill Is For](#who-this-skill-is-for)
 - [Quick Decision: When to Use VPD?](#quick-decision-when-to-use-vpd)
@@ -1044,7 +1044,7 @@ See [INSTALL.md](INSTALL.md) for full configuration options and agent integratio
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
 
-**Latest (v2.4.119)**: Repo maintenance 2026-06-02 — TOC anchor verification, Version History consistency audit, ecosystem cross-reference audit across all 6 AliDujie skills. Version bump.
+**Latest (v2.4.121)**: Repo maintenance 2026-06-03 — Updated TOC anchor (v2.4.120 → v2.4.121), ecosystem cross-reference audit across all 6 AliDujie skills. Version bump.
 
 **Previous (v2.4.112)**: Added cross-skill collaboration examples (JTBD, Persona, SWD), Blue Ocean Strategy quick ref, VPD promotional section, version bump.
 
