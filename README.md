@@ -35,6 +35,10 @@
 
 ---
 
+## 🆕 What's New in v2.4.121
+
+- **Repo Maintenance 2026-06-03**: Enhanced Quick Start with 30-second runnable examples, improved cross-skill pipeline (JTBD→VPD→QuantUX→SWD) with CEO analysis integration, version bump 2.4.120→2.4.121.
+
 ## 🆕 What's New in v2.4.120
 
 - **Repo Maintenance 2026-06-03**: Version sync fix (`__version__` in `__init__.py` aligned with `pyproject.toml` 2.4.120), TOC anchor verification, ecosystem cross-reference audit across all 6 AliDujie skills.
