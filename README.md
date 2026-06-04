@@ -4,7 +4,7 @@
 
 📖 [GitHub Repository](https://github.com/AliDujie/value-proposition-design)
 
-![Version](https://img.shields.io/badge/version-2.4.122-blue)
+![Version](https://img.shields.io/badge/version-2.4.123-blue)
 ![Python](https://img.shields.io/badge/Python-3.9%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Dependencies](https://img.shields.io/badge/Dependencies-pyyaml-lightgrey)
@@ -1048,7 +1048,7 @@ See [INSTALL.md](INSTALL.md) for full configuration options and agent integratio
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
 
-**Latest (v2.4.121)**: Repo maintenance 2026-06-03 — Updated TOC anchor (v2.4.120 → v2.4.121), ecosystem cross-reference audit across all 6 AliDujie skills. Version bump.
+**Latest (v2.4.122)**: Repo maintenance 2026-06-03 — Updated TOC anchor (v2.4.120 → v2.4.121), ecosystem cross-reference audit across all 6 AliDujie skills. Version bump.
 
 **Previous (v2.4.112)**: Added cross-skill collaboration examples (JTBD, Persona, SWD), Blue Ocean Strategy quick ref, VPD promotional section, version bump.
 

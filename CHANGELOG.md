@@ -1,3 +1,11 @@
+## [2.4.123] - 2026-06-04
+
+- Repo maintenance: CHANGELOG backfill for v2.4.122 entry, updated Version History Latest entry to v2.4.122, version consistency audit across all files, ecosystem cross-reference audit across all 6 AliDujie skills. Version bump 2.4.122→2.4.123.
+
+## [2.4.122] - 2026-06-04
+
+- Repo maintenance: Fixed duplicate example file numbering (01_canvas_generation.py → 05_canvas_generation.py), cleaned up .gitkeep in references/, audit completed, verified version consistency across all files, confirmed ecosystem cross-references are intact across all 6 AliDujie skills. Version bump 2.4.121→2.4.122.
+
 ## [2.4.121] - 2026-06-03
 
 - Repo maintenance: CHANGELOG backfill for v2.4.121, TOC anchor verification, ecosystem cross-reference audit across all 6 AliDujie skills. Version bump 2.4.120→2.4.121.
