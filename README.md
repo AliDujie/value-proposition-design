@@ -4,7 +4,7 @@
 
 📖 [GitHub Repository](https://github.com/AliDujie/value-proposition-design)
 
-![Version](https://img.shields.io/badge/version-2.4.125-blue)
+![Version](https://img.shields.io/badge/version-2.4.126-blue)
 ![Python](https://img.shields.io/badge/Python-3.9%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Dependencies](https://img.shields.io/badge/Dependencies-pyyaml-lightgrey)
@@ -13,7 +13,7 @@
 
 ## 📑 Table of Contents
 
-- [What's New](#whats-new-in-v24125)
+- [What's New](#whats-new-in-v24126)
 - [Why Teams Choose VPD](#why-teams-choose-vpd)
 - [Who This Skill Is For](#who-this-skill-is-for)
 - [Quick Decision: When to Use VPD?](#quick-decision-when-to-use-vpd)
@@ -35,9 +35,9 @@
 
 ---
 
-## 🆕 What's New in v24125
+## 🆕 What's New in v24126
 
-- **Repo Maintenance 2026-06-04 (PM)**: Verified version consistency across all files (README badge, SKILL.md, pyproject.toml, __init__.py), ecosystem cross-reference audit across all 6 AliDujie skills, fixed stale TOC anchor, version bump 2.4.124→2.4.125.
+- **Repo Maintenance 2026-06-05 (PM)**: Version bump 2.4.125→2.4.126, ecosystem cross-reference audit across all 6 AliDujie skills.
 
 ## 🆕 What's New in v2.4.124
 
