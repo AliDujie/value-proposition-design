@@ -4,7 +4,7 @@
 
 📖 [GitHub Repository](https://github.com/AliDujie/value-proposition-design)
 
-![Version](https://img.shields.io/badge/version-2.4.128-blue)
+![Version](https://img.shields.io/badge/version-2.4.129-blue)
 ![Python](https://img.shields.io/badge/Python-3.9%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Dependencies](https://img.shields.io/badge/Dependencies-pyyaml-lightgrey)
@@ -13,7 +13,7 @@
 
 ## 📑 Table of Contents
 
-- [What's New](#whats-new-in-v24128)
+- [What's New](#whats-new-in-v24129)
 - [Why Teams Choose VPD](#why-teams-choose-vpd)
 - [Who This Skill Is For](#who-this-skill-is-for)
 - [Quick Decision: When to Use VPD?](#quick-decision-when-to-use-vpd)
@@ -32,6 +32,11 @@
 - [Best Practices](#best-practices)
 - [Limitations](#limitations)
 - [Recommended Learning Path](#recommended-learning-path)
+- [Beginner's First VPD Canvas](#beginners-first-vpd-canvas--60-minute-value-proposition-workshop--新手入门教程)
+
+## 🆕 What's New in v2.4.129
+
+- **Repo Maintenance 2026-06-06 (Night)**: SKILL.md version sync (2.4.127→2.4.129 to match pyproject.toml/__init__.py/README badge), added missing Beginner's First VPD Canvas TOC entry. Version bump 2.4.128→2.4.129.
 
 ---
 
@@ -1113,6 +1118,10 @@ A: VPD helps you design the value proposition and identify lethal hypotheses. Qu
 **Q: Can VPD work without other AliDujie skills?**
 A: Yes — VPD is fully self-contained. But chaining with JTBD (Jobs discovery) and QuantUX (validation) gives you the full insight-to-validation pipeline.
 
+## 🆕 What's New in v2.4.129
+
+- **Repo Maintenance 2026-06-06 (Night)**: SKILL.md version sync (2.4.127→2.4.129 to match pyproject.toml/__init__.py/README badge), added missing Beginner's First VPD Canvas TOC entry. Version bump 2.4.128→2.4.129.
+
 ---
 
 ## 📚 Resources
@@ -1264,6 +1273,10 @@ story = swd.build_story(context="Value proposition canvas analysis", use_case="e
 ## 📄 License
 
 MIT License — see [LICENSE](LICENSE) for details.
+
+## 🆕 What's New in v2.4.129
+
+- **Repo Maintenance 2026-06-06 (Night)**: SKILL.md version sync (2.4.127→2.4.129 to match pyproject.toml/__init__.py/README badge), added missing Beginner's First VPD Canvas TOC entry. Version bump 2.4.128→2.4.129.
 
 ---
 
