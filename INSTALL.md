@@ -50,7 +50,7 @@ print("Value Proposition Design Skill installed successfully! ✓")
 ## Dependencies / 依赖
 
 - Python >= 3.9
-- **No external dependencies** (pure standard library) / **无外部依赖**（纯标准库）
+- **pyyaml >= 6.0** (for YAML export/import)
 - Compatible with macOS, Linux, and Windows / 兼容 macOS、Linux 和 Windows
 
 ## Troubleshooting / 故障排查
