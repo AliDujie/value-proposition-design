@@ -4,11 +4,7 @@
 
 📖 [GitHub Repository](https://github.com/AliDujie/value-proposition-design)
 
-<<<<<<< HEAD
-![Version](https://img.shields.io/badge/version-2.4.127-blue)
-=======
-[![Version](https://img.shields.io/badge/version-2.4.130-blue)](CHANGELOG.md)
->>>>>>> 64aef756852a0e2386521923d8624a78cd453321
+![Version](https://img.shields.io/badge/version-2.4.131-blue)
 ![Python](https://img.shields.io/badge/Python-3.9%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Dependencies](https://img.shields.io/badge/Dependencies-pyyaml-lightgrey)
@@ -17,11 +13,7 @@
 
 ## 📑 Table of Contents
 
-<<<<<<< HEAD
 - [What's New](#whats-new-in-v24126)
-=======
-- [What's New](#whats-new-in-v24129)
->>>>>>> 64aef756852a0e2386521923d8624a78cd453321
 - [Why Teams Choose VPD](#why-teams-choose-vpd)
 - [Who This Skill Is For](#who-this-skill-is-for)
 - [Quick Decision: When to Use VPD?](#quick-decision-when-to-use-vpd)
@@ -40,39 +32,16 @@
 - [Best Practices](#best-practices)
 - [Limitations](#limitations)
 - [Recommended Learning Path](#recommended-learning-path)
-- [Beginner's First VPD Canvas](#beginners-first-vpd-canvas--60-minute-value-proposition-workshop--新手入门教程)
-
-## 🆕 What's New in v2.4.130
-
-- **Repo Maintenance 2026-06-07 (Morning)**: Duplicate "What's New" entry cleanup across FAQ and License sections. All stray duplicate What's New entries removed (found 2 instances after line 1100). Ecosystem cross-reference validation. Version bump 2.4.129→2.4.130.
 
 ---
 
-<<<<<<< HEAD
 ## 🆕 What's New in v24126
 
 - **Repo Maintenance 2026-06-05**: Version consistency audit across all files (README badge, SKILL.md, pyproject.toml, __init__.py), ecosystem cross-reference audit across all 6 AliDujie skills, verified TOC anchors, cleaned up duplicate SECURITY.md entry in web-persona-skill Resources table. Version bump 2.4.125→2.4.126.
 
 ## 🆕 What's New in v24125
-=======
-## 🆕 What's New in v2.4.129
->>>>>>> 64aef756852a0e2386521923d8624a78cd453321
 
-- **Repo Maintenance 2026-06-06 (Night)**: SKILL.md version sync (2.4.127→2.4.129 to match pyproject.toml/__init__.py/README badge), added missing Beginner's First VPD Canvas TOC entry. Version bump 2.4.128→2.4.129.
-
----
-
-## 🆕 What's New in v2.4.128
-
-- **Repo Maintenance 2026-06-06 (Evening)**: TOC anchor verification, version consistency audit, duplicate entry cleanup, ecosystem cross-reference validation across all 6 AliDujie skills. Version bump 2.4.127→2.4.128.
-
-## 🆕 What's New in v2.4.127
-
-- **Repo Maintenance 2026-06-05 (Evening)**: Added PR template and CODEOWNERS, ecosystem cross-reference audit across all 6 AliDujie skills. Version bump 2.4.126→2.4.127.
-
-## 🆕 What's New in v2.4.126
-
-- **Repo Maintenance 2026-06-05 (PM)**: Version bump 2.4.125→2.4.126, ecosystem cross-reference audit across all 6 AliDujie skills.
+- **Repo Maintenance 2026-06-04 (PM)**: Verified version consistency across all files (README badge, SKILL.md, pyproject.toml, __init__.py), ecosystem cross-reference audit across all 6 AliDujie skills, fixed stale TOC anchor, version bump 2.4.124→2.4.125.
 
 ## 🆕 What's New in v2.4.124
 
@@ -1142,6 +1111,8 @@ A: VPD helps you design the value proposition and identify lethal hypotheses. Qu
 **Q: Can VPD work without other AliDujie skills?**
 A: Yes — VPD is fully self-contained. But chaining with JTBD (Jobs discovery) and QuantUX (validation) gives you the full insight-to-validation pipeline.
 
+---
+
 ## 📚 Resources
 
 - [SKILL.md](SKILL.md) — Agent-facing skill definition and prompt templates
@@ -1291,6 +1262,8 @@ story = swd.build_story(context="Value proposition canvas analysis", use_case="e
 ## 📄 License
 
 MIT License — see [LICENSE](LICENSE) for details.
+
+---
 
 **Built with ❤️ as part of the AliDujie UX Research Ecosystem**
 

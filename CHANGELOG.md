@@ -154,6 +154,11 @@
 
 # Changelog
 
+## [2.4.131] - 2026-06-09
+
+- **Repo Maintenance**: merge conflict resolution + version sync + README restore + ecosystem audit
+
+
 ## v2.4.78 (2026-05-16)
 
 - Repo maintenance: Added `__version__` to `__all__` export list for proper `from vpd import __version__`
