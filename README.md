@@ -4,7 +4,7 @@
 
 📖 [GitHub Repository](https://github.com/AliDujie/value-proposition-design)
 
-![Version](https://img.shields.io/badge/version-2.4.126-blue)
+![Version](https://img.shields.io/badge/version-2.4.127-blue)
 ![Python](https://img.shields.io/badge/Python-3.9%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Dependencies](https://img.shields.io/badge/Dependencies-pyyaml-lightgrey)
@@ -232,6 +232,7 @@ VPD includes built-in Blue Ocean Strategy tools for finding uncontested market s
 | Quantitative A/B testing, HEART metrics | → [Quantitative UX Research](https://github.com/AliDujie/Quantitative-UX-Research) |
 | Create user personas, user segmentation | → [Web Persona](https://github.com/AliDujie/web-persona-skill) |
 | Turn data into executive presentations | → [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) |
+| Business framework analysis (SWOT, PESTEL, etc.) | → [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) |
 
 > 💡 VPD is the product-market validation layer: map Jobs to canvas → run experiments → verify PMF.
 
@@ -245,6 +246,7 @@ VPD includes built-in Blue Ocean Strategy tools for finding uncontested market s
 | 需要定量 A/B 测试、HEART 指标 | → [Quantitative UX Research](https://github.com/AliDujie/Quantitative-UX-Research) |
 | 需要创建人物角色、用户细分 | → [Web Persona](https://github.com/AliDujie/web-persona-skill) |
 | 需要将数据转化为高管汇报 | → [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) |
+| 商业框架分析（SWOT、PESTEL 等） | → [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) |
 
 > 💡 VPD 是产品-市场验证层：Jobs 映射画布 → 实验验证 → PMF 确认。
 
