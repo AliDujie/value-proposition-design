@@ -35,40 +35,11 @@
 
 ---
 
-## 🆕 What's New in v24126
+## 🆕 What's New in v2.4.131
 
-- **Repo Maintenance 2026-06-05**: Version consistency audit across all files (README badge, SKILL.md, pyproject.toml, __init__.py), ecosystem cross-reference audit across all 6 AliDujie skills, verified TOC anchors, cleaned up duplicate SECURITY.md entry in web-persona-skill Resources table. Version bump 2.4.125→2.4.126.
+- **Repo Maintenance 2026-06-10**: Consolidated 8 What's New entries into 1, synced CHANGELOG to v2.4.131, ecosystem cross-reference audit across all 6 AliDujie skills
 
-## 🆕 What's New in v24125
-
-- **Repo Maintenance 2026-06-04 (PM)**: Verified version consistency across all files (README badge, SKILL.md, pyproject.toml, __init__.py), ecosystem cross-reference audit across all 6 AliDujie skills, fixed stale TOC anchor, version bump 2.4.124→2.4.125.
-
-## 🆕 What's New in v2.4.124
-
-- **Repo Maintenance 2026-06-04 (PM)**: Verified version consistency across all files (README badge, SKILL.md, pyproject.toml, __init__.py), ecosystem cross-reference audit across all 6 AliDujie skills, fixed stale TOC anchor (v24122 → v24124), version bump 2.4.123→2.4.124.
-
-## 🆕 What's New in v2.4.122
-
-- **Repo Maintenance 2026-06-04**: Fixed duplicate example file numbering (01_canvas_generation.py → 05_canvas_generation.py), cleaned up .gitkeep in references/, version bump 2.4.121→2.4.122.
-
-## 🆕 What's New in v2.4.121
-
-- **Repo Maintenance 2026-06-03**: Enhanced Quick Start with 30-second runnable examples, improved cross-skill pipeline (JTBD→VPD→QuantUX→SWD) with CEO analysis integration, version bump 2.4.120→2.4.121.
-
-## 🆕 What's New in v2.4.120
-
-- **Repo Maintenance 2026-06-03**: Version sync fix (`__version__` in `__init__.py` aligned with `pyproject.toml` 2.4.120), TOC anchor verification, ecosystem cross-reference audit across all 6 AliDujie skills.
-
-## 🆕 What's New in v2.4.119
-
-- **Repo Maintenance 2026-06-03**: Added Beginner's First VPD Canvas (60-min value proposition workshop with 6 steps), version bump 2.4.118→2.4.119.
-
-## 🆕 What's New in v2.4.118
-
-- **Repo Maintenance 2026-06-02**: Version bump to 2.4.118, ecosystem cross-reference audit across all 6 AliDujie skills.
-
-
-> **📦 Earlier versions (v2.4.113 → v2.4.75)**: TOC anchor fixes, CHANGELOG sync, ecosystem cross-reference audits, VPD canvas quick-fill template, pain reliever/gain creator mapping, value proposition statement generator, PMF scoring, competitor value curve analysis, JTBD→VPD pipeline recipe, cross-skill validation workflows. Full changelog in [CHANGELOG.md](CHANGELOG.md).
+> **📦 Full history**: See [CHANGELOG.md](CHANGELOG.md) for complete version details.
 
 ## 🇨🇳 中文概览
 
