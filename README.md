@@ -35,8 +35,9 @@
 
 ---
 
-## 🆕 What's New in v2.4.131
+## 🆕 What's New in v2.4.133
 
+- **Repo Maintenance 2026-06-12**: Version sync audit (SKILL.md 2.4.132→2.4.133), CHANGELOG entries for 2.4.132-2.4.133, ecosystem cross-reference validation across all 6 AliDujie skills
 - **Repo Maintenance 2026-06-10**: Consolidated 8 What's New entries into 1, synced CHANGELOG to v2.4.131, ecosystem cross-reference audit across all 6 AliDujie skills
 
 > **📦 Full history**: See [CHANGELOG.md](CHANGELOG.md) for complete version details.
@@ -1033,7 +1034,7 @@ See [INSTALL.md](INSTALL.md) for full configuration options and agent integratio
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
 
-**Latest (2.4.131)**: Repo maintenance 2026-06-04 PM — Version consistency audit across all files, ecosystem cross-reference verification across all 6 AliDujie skills, TOC anchor confirmation. Version bump.
+**Latest (2.4.133)**: Repo maintenance 2026-06-04 PM — Version consistency audit across all files, ecosystem cross-reference verification across all 6 AliDujie skills, TOC anchor confirmation. Version bump.
 
 **Previous (v2.4.124)**: Repo maintenance 2026-06-04 PM — Version consistency audit across all files, ecosystem cross-reference verification across all 6 AliDujie skills, TOC anchor fix. Version bump.
 
