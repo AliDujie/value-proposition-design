@@ -264,6 +264,44 @@ After VPD validates product-market fit, extend into commercial strategy:
 | [CMO Advisor](https://github.com/AliDujie/cmo-advisor) | Need brand positioning, messaging |
 | [CTO Advisor](https://github.com/AliDujie/cto-advisor) | Need technical feasibility, architecture decisions |
 
+## 💡 Best Practices / 最佳实践
+
+1. **Customer Profile before Value Map — always**
+   Fill the right side (Jobs/Pains/Gains) before touching the left side (Products/Pain Relievers/Gain Creators). Solutions should follow problems, not precede them.
+   *先填客户画像再填价值图。先理解问题再设计方案，永远不要反过来。*
+
+2. **Test lethal hypotheses first — fail fast, learn faster**
+   Use `design_experiment()` with `lethality="lethal"` to identify the assumption that, if wrong, kills the entire product idea. Test it before writing any code.
+   *先测"致命假设"——如果这个假设是错的，整个产品就不可行。在写代码之前先验证。*
+
+3. **Blue Ocean whitespace beats feature parity**
+   Use `analyze_competitor()` value curves + ERRC grid (Eliminate-Reduce-Raise-Create) to find where no one competes — that's your Blue Ocean, not another feature checkbox.
+   *用价值曲线+ERRC 网格找蓝海空间，而不是功能清单上的另一个勾。*
+
+4. **Three fits ≠ one fit — validate each stage**
+   Problem-Solution Fit ≠ Product-Market Fit ≠ Business Model Fit. Don't skip stages. A canvas that looks great on paper (PSF) still needs market validation (PMF) and revenue proof (BMF).
+   *三种契合度不是一回事——纸上契合≠市场契合≠商业模式契合，逐级验证。*
+
+5. **Quantify everything — "frustrated" → "73% abandon at step 3"**
+   Vague pains drive vague solutions. "Users are frustrated" becomes actionable when you add: "73% of primary personas abandon the flow at step 3, losing ¥200/order."
+   *量化一切——「用户沮丧」变成「73% 的首要角色在第 3 步流失，每单损失 200 元」才是可行动的洞察。*
+
+6. **Chain JTBD → VPD → QuantUX for full validation**
+   JTBD discovers high-opportunity Jobs → VPD maps them to canvas → QuantUX validates with A/B tests. Each skill's output is the next skill's input.
+   *JTBD 发现 Jobs → VPD 映射画布 → QuantUX A/B 验证——每个技能的产出都是下一个的输入。*
+
+## 🔗 Extended Ecosystem / 扩展生态
+
+VPD value validation can be combined with management skills to turn product-market fit into business strategy:
+
+| Extended Skill | Collaboration Scenario |
+|---------------|------------------------|
+| [CEO Advisor](https://github.com/AliDujie/ceo-advisor) | VPD moat analysis → CEO competitive strategy / VPD 护城河分析 → CEO 竞争战略 |
+| [CPO Advisor](https://github.com/AliDujie/cpo-advisor) | VPD canvas → CPO product portfolio & PMF / VPD 画布 → CPO 产品组合 |
+| [CMO Advisor](https://github.com/AliDujie/cmo-advisor) | VPD value proposition → CMO brand positioning / VPD 价值主张 → CMO 品牌定位 |
+| [CTO Advisor](https://github.com/AliDujie/cto-advisor) | VPD tech feasibility → CTO architecture decisions / VPD 技术可行性 → CTO 架构决策 |
+| [Plan CEO Review](https://github.com/AliDujie/plan-ceo-review) | VPD validation → CEO plan review & scope alignment / VPD 验证 → CEO 计划审查 |
+
 ## ❓ FAQ / Troubleshooting
 
 **Q: My canvas fit score is low — what should I do first?**
