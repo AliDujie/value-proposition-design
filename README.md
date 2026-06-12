@@ -37,7 +37,8 @@
 
 ## 🆕 What's New in v2.4.133
 
-- **Repo Maintenance 2026-06-12**: Version sync audit (SKILL.md 2.4.132→2.4.133), CHANGELOG entries for 2.4.132-2.4.133, ecosystem cross-reference validation across all 6 AliDujie skills
+- **Repo Maintenance 2026-06-12 PM**: Bilingual "What's Next / 下一步" cross-skill navigation tables added, Quick Start section enhanced with CN translations, ecosystem cross-reference validation
+- **Repo Maintenance 2026-06-12 AM**: Version sync audit (SKILL.md 2.4.132→2.4.133), CHANGELOG entries for 2.4.132-2.4.133, ecosystem cross-reference validation across all 6 AliDujie skills
 - **Repo Maintenance 2026-06-10**: Consolidated 8 What's New entries into 1, synced CHANGELOG to v2.4.131, ecosystem cross-reference audit across all 6 AliDujie skills
 
 > **📦 Full history**: See [CHANGELOG.md](CHANGELOG.md) for complete version details.
@@ -272,11 +273,13 @@ s = SWDSkill("Report")          # 向利益相关者汇报
 > print(v.analyze_canvas(product_name="TeamFlow", jobs=[{"description": "团队任务分配", "importance": 5}]).fit_score)
 > ```
 
-## ⚡ Quick Start (5 Minutes)
+## ⚡ Quick Start (5 Minutes) / 快速开始（5 分钟）
 
-### Install
+### Install / 安装
 
 ```bash
+# Copy the skill to your agent's skills directory
+# 将技能复制到你 Agent 的技能目录
 cp -r value-proposition-design /your/agent/skills/
 pip install pyyaml  # Only dependency
 ```
@@ -1203,9 +1206,18 @@ print(experiment)
 - [ ] Completed Blue Ocean ERRC grid
 - [ ] Designed at least 1 validation experiment
 
-### 🔀 What's Next?
+### 🔀 What's Next? / 下一步？
 
 Chain VPD with upstream research and downstream presentation:
+
+将 VPD 与上游研究和下游呈现串联：
+
+| 阶段 | 推荐技能 | 作用 |
+|------|---------|------|
+| 需求发现 | [JTBD](https://github.com/AliDujie/jtbd-knowledge-skill) | 发现未满足的 Jobs |
+| 定性洞察 | [UDM](https://github.com/AliDujie/universal-design-methods) | 用户研究数据 |
+| 定量验证 | [QuantUX](https://github.com/AliDujie/Quantitative-UX-Research) | A/B 测试验证 |
+| 数据呈现 | [SWD](https://github.com/AliDujie/storytelling-with-data) | 高管级汇报 |
 
 ```python
 # JTBD opportunities → VPD canvas → QuantUX validation → SWD presentation
