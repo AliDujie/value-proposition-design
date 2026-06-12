@@ -247,6 +247,31 @@ s = SWDSkill("Report")         # Present to stakeholders
 > print(v.analyze_canvas(product_name="TeamFlow", jobs=[{"description": "Team task assignment", "importance": 5}]).fit_score)
 > ```
 
+## 🔗 生态快速开始
+
+VPD 在研究管线中位于 JTBD/UDM 之后——它将已发现的需求映射为价值主张：
+
+```python
+# JTBD（发现 Jobs）→ VPD（映射到画布）→ QuantUX（验证）→ SWD（汇报）
+from jtbd import JTBDSkill
+from vpd import VPDSkill
+from quantux import QuantUXSkill
+from swd import SWDSkill
+
+j = JTBDSkill("Product")        # 发现高机会的 Jobs
+v = VPDSkill("Product", "users") # 构建价值主张画布
+q = QuantUXSkill("Product")     # A/B 测试假设
+s = SWDSkill("Report")          # 向利益相关者汇报
+```
+
+> 💡 **一行代码快速体验**:
+> ```python
+> from vpd import VPDSkill
+> # 一行 → 即时画布分析
+> v = VPDSkill("SaaS 产品", "团队负责人")
+> print(v.analyze_canvas(product_name="TeamFlow", jobs=[{"description": "团队任务分配", "importance": 5}]).fit_score)
+> ```
+
 ## ⚡ Quick Start (5 Minutes)
 
 ### Install
