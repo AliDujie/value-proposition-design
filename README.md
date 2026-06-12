@@ -13,7 +13,7 @@
 
 ## 📑 Table of Contents
 
-- [What's New](#whats-new-in-v24131)
+- [What's New](#whats-new-in-v24133)
 - [Why Teams Choose VPD](#why-teams-choose-vpd)
 - [Who This Skill Is For](#who-this-skill-is-for)
 - [Quick Decision: When to Use VPD?](#quick-decision-when-to-use-vpd)
@@ -862,31 +862,19 @@ We welcome contributions! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gui
 | [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) | Business framework analysis | `STMSkill` |
 | [CTO Advisor](https://github.com/AliDujie/cto-advisor) | CTO-level tech strategy & architecture guidance | `CTOSkill` |
 
-### 🔗 扩展生态 (Extended Ecosystem)
+## 🔗 Extended Ecosystem / 扩展生态
 
+VPD value validation can be combined with management skills to turn product-market fit into business strategy.
 VPD 价值验证可与管理技能结合，将 PMF 数据转化为商业战略：
 
-| 扩展技能 | 协作场景 |
-|---------|----------|
-| [CEO Advisor](https://github.com/AliDujie/ceo-advisor) | VPD 护城河分析 → CEO 竞争战略 |
-| [CPO Advisor](https://github.com/AliDujie/cpo-advisor) | VPD 画布 → CPO 产品组合与 PMF |
-| [CMO Advisor](https://github.com/AliDujie/cmo-advisor) | VPD 价值主张 → CMO 品牌定位 |
-| [CTO Advisor](https://github.com/AliDujie/cto-advisor) | VPD 技术可行性 → CTO 架构决策 |
-| [Plan CEO Review](https://github.com/AliDujie/plan-ceo-review) | VPD 验证结果 → CEO 计划审查与范围对齐 |
-| [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) | STM 框架分析 → VPD 验证市场假设 |
-
-### 🔗 Extended Ecosystem
-
-VPD value validation can be combined with management skills to turn product-market fit into business strategy:
-
-| Extended Skill | Collaboration Scenario |
-|---------------|----------------------|
-| [CEO Advisor](https://github.com/AliDujie/ceo-advisor) | VPD moat analysis → CEO competitive strategy |
-| [CPO Advisor](https://github.com/AliDujie/cpo-advisor) | VPD canvas → CPO product portfolio & PMF |
-| [CMO Advisor](https://github.com/AliDujie/cmo-advisor) | VPD value proposition → CMO brand positioning |
-| [CTO Advisor](https://github.com/AliDujie/cto-advisor) | VPD tech feasibility → CTO architecture decisions |
-| [Plan CEO Review](https://github.com/AliDujie/plan-ceo-review) | VPD validation → CEO plan review & scope alignment |
-| [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) | STM framework analysis → VPD validates market hypotheses |
+| Extended Skill 扩展技能 | Collaboration Scenario 协作场景 |
+|----------------------|--------------------------------|
+| [CEO Advisor](https://github.com/AliDujie/ceo-advisor) | VPD moat analysis → CEO competitive strategy / VPD 护城河分析 → CEO 竞争战略 |
+| [CPO Advisor](https://github.com/AliDujie/cpo-advisor) | VPD canvas → CPO product portfolio & PMF / VPD 画布 → CPO 产品组合与 PMF |
+| [CMO Advisor](https://github.com/AliDujie/cmo-advisor) | VPD value proposition → CMO brand positioning / VPD 价值主张 → CMO 品牌定位 |
+| [CTO Advisor](https://github.com/AliDujie/cto-advisor) | VPD tech feasibility → CTO architecture decisions / VPD 技术可行性 → CTO 架构决策 |
+| [Plan CEO Review](https://github.com/AliDujie/plan-ceo-review) | VPD validation → CEO plan review & scope alignment / VPD 验证结果 → CEO 计划审查与范围对齐 |
+| [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) | STM framework analysis → VPD validates market hypotheses / STM 框架分析 → VPD 验证市场假设 |
 
 ### 💡 Pro Tips / 专业技巧
 - **Customer profile first**: Always fill the right side (Jobs/Pains/Gains) before touching the left side — solutions should follow problems
