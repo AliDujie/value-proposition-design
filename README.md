@@ -600,23 +600,6 @@ The canvas has two sides:
 
 **Three fit types**: Problem-Solution Fit (on paper) → Product-Market Fit (in market) → Business Model Fit (in bank)
 
-## 🔗 生态快速开始
-
-VPD 位于 JTBD/UDM 之后——将发现的需求映射到价值主张：
-
-```python
-# JTBD（发现 Jobs）→ VPD（映射到画布）→ QuantUX（验证）→ SWD（呈现）
-from jtbd import JTBDSkill
-from vpd import VPDSkill
-from quantux import QuantUXSkill
-from swd import SWDSkill
-
-j = JTBDSkill("产品")          # 发现高机会的 Jobs
-v = VPDSkill("产品", "用户")    # 构建价值主张画布
-q = QuantUXSkill("产品")       # A/B 测试验证
-s = SWDSkill("报告")           # 向利益相关者呈现
-```
-
 ## 🌐 Ecosystem Integration
 
 VPD is the **product-market validation layer** — it receives Jobs from JTBD and user research from UDM, then outputs value proposition canvases and experiment validation:
