@@ -4,7 +4,7 @@
 
 📖 [GitHub Repository](https://github.com/AliDujie/value-proposition-design)
 
-![Version](https://img.shields.io/badge/version-2.4.137-blue)
+![Version](https://img.shields.io/badge/version-2.4.138-blue)
 ![Python](https://img.shields.io/badge/Python-3.9%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Dependencies](https://img.shields.io/badge/Dependencies-pyyaml-lightgrey)
@@ -13,7 +13,7 @@
 
 ## 📑 Table of Contents
 
-- [What's New](#whats-new-in-v24136)
+- [What's New](#whats-new-in-v24138)
 - [Why Teams Choose VPD](#why-teams-choose-vpd)
 - [Who This Skill Is For](#who-this-skill-is-for)
 - [Quick Decision: When to Use VPD?](#quick-decision-when-to-use-vpd)
@@ -35,7 +35,9 @@
 
 ---
 
-## 🆕 What's New in v2.4.137
+## 🆕 What's New in v2.4.138
+
+- **Repo Maintenance 2026-06-14 PM**: Fixed stale What's New TOC anchor (v24137 → v24138), consolidated maintenance entries, enhanced Python version badge parity check, consolidated maintenance entries
 
 - **Repo Maintenance 2026-06-14**: Ecosystem cross-reference parity audit, consolidated maintenance entries, version sync across all artifacts (2.4.136 → 2.4.137), README readability improvements
 
@@ -1041,7 +1043,9 @@ See [INSTALL.md](INSTALL.md) for full configuration options and agent integratio
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
 
-**Latest (v2.4.136)**: Repo maintenance 2026-06-13 PM — Enhanced "Why Teams Choose VPD" section with ecosystem pipeline diagram and bilingual impact metrics, consolidated What's New entries, version sync across all artifacts (README/pyproject.toml/SKILL.md/__init__.py: 2.4.135 → 2.4.136), ecosystem cross-reference validation across all 6 AliDujie skills.
+**Latest (v2.4.137)**: Repo maintenance 2026-06-14 PM — Fixed stale What's New TOC anchor (v24137 → v24138), consolidated maintenance entries, consolidated maintenance entries.
+
+**Previous (v2.4.136)**: Repo maintenance 2026-06-13 PM — Enhanced "Why Teams Choose VPD" section with ecosystem pipeline diagram and bilingual impact metrics, consolidated What's New entries, version sync across all artifacts (README/pyproject.toml/SKILL.md/__init__.py: 2.4.135 → 2.4.136), ecosystem cross-reference validation across all 6 AliDujie skills.
 
 **Previous (v2.4.135)**: TOC anchor fix (#whats-new-in-v24133 → v24135), version sync across all artifacts (README/pyproject.toml/SKILL.md: 2.4.134 → 2.4.135), ecosystem cross-reference validation.
 
