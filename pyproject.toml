@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "value-proposition-design"
-version = "2.4.134"
+version = "2.4.135"
 description = "Value Proposition Design toolkit — canvas analysis, experiment design, competitive strategy, prioritization and sample size calculation (价值主张设计工具包 — 画布分析、实验设计、竞争战略、优先级排序与样本量计算)"
 readme = "README.md"
 requires-python = ">=3.9"
