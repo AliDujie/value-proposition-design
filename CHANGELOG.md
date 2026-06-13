@@ -1,4 +1,7 @@
 ## [2.4.136] - 2026-06-13
+## v2.4.137 (2026-06-14)
+
+- Ecosystem cross-reference parity audit, consolidated maintenance entries, version sync across all artifacts
 
 - Enhanced "Why Teams Choose VPD" section with ecosystem pipeline diagram and bilingual impact metrics
 - Consolidated What's New entries for clarity
