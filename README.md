@@ -1039,21 +1039,11 @@ See [INSTALL.md](INSTALL.md) for full configuration options and agent integratio
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
 
-**Latest (2.4.133)**: Repo maintenance 2026-06-04 PM — Version consistency audit across all files, ecosystem cross-reference verification across all 6 AliDujie skills, TOC anchor confirmation. Version bump.
+**Latest (v2.4.136)**: Repo maintenance 2026-06-13 PM — Enhanced "Why Teams Choose VPD" section with ecosystem pipeline diagram and bilingual impact metrics, consolidated What's New entries, version sync across all artifacts (README/pyproject.toml/SKILL.md/__init__.py: 2.4.135 → 2.4.136), ecosystem cross-reference validation across all 6 AliDujie skills.
 
-**Previous (v2.4.124)**: Repo maintenance 2026-06-04 PM — Version consistency audit across all files, ecosystem cross-reference verification across all 6 AliDujie skills, TOC anchor fix. Version bump.
+**Previous (v2.4.135)**: TOC anchor fix (#whats-new-in-v24133 → v24135), version sync across all artifacts (README/pyproject.toml/SKILL.md: 2.4.134 → 2.4.135), ecosystem cross-reference validation.
 
-**Previous (v2.4.122)**: Repo maintenance 2026-06-03 — Fixed duplicate example file numbering (01_canvas_generation.py → 05_canvas_generation.py), cleaned up .gitkeep in references/, version bump 2.4.121→2.4.122.
-
-**Previous (v2.4.112)**: Added cross-skill collaboration examples (JTBD, Persona, SWD), Blue Ocean Strategy quick ref, VPD promotional section, version bump.
-
-**Previous (v2.4.111)**: TOC anchor version fix (v24107 → v24110), What's New version sync, ecosystem cross-reference audit across all 6 AliDujie skills.
-
-**Previous (v2.4.108)**: CHANGELOG sync (backfilled 3 missing version entries), consolidated redundant What's New entries, ecosystem cross-reference audit across all 6 AliDujie skills.
-
-**Previous (v2.4.104)**: Version bump, ecosystem cross-reference audit across all 6 AliDujie skills.
-
-**Previous (v2.4.97)**: Fixed stale What's New TOC link (v2.4.96 → v2.4.97), updated Version History latest entry (v2.4.96 → v2.4.97), ecosystem cross-reference audit across all 6 AliDujie skills.
+**Previous (v2.4.134)**: Enhanced "What's Next" pipeline code example to include all 6 skills (Persona → JTBD → UDM → QuantUX → VPD → SWD end-to-end), ecosystem cross-reference validation.
 
 **Previous (v2.4.87)**: Repo maintenance — added VPD Canvas Workshop Guides (3 scenarios), added Fit Score Quick-Ref table, synced versions across all files.
 
