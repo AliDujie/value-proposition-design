@@ -4,7 +4,7 @@
 
 📖 [GitHub Repository](https://github.com/AliDujie/value-proposition-design)
 
-![Version](https://img.shields.io/badge/version-2.4.135-blue)
+![Version](https://img.shields.io/badge/version-2.4.136-blue)
 ![Python](https://img.shields.io/badge/Python-3.9%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Dependencies](https://img.shields.io/badge/Dependencies-pyyaml-lightgrey)
@@ -13,7 +13,7 @@
 
 ## 📑 Table of Contents
 
-- [What's New](#whats-new-in-v24135)
+- [What's New](#whats-new-in-v24136)
 - [Why Teams Choose VPD](#why-teams-choose-vpd)
 - [Who This Skill Is For](#who-this-skill-is-for)
 - [Quick Decision: When to Use VPD?](#quick-decision-when-to-use-vpd)
@@ -35,7 +35,9 @@
 
 ---
 
-## 🆕 What's New in v2.4.135
+## 🆕 What's New in v2.4.136
+
+- **Repo Maintenance 2026-06-13 PM**: Enhanced "Why Teams Choose VPD" section with ecosystem pipeline diagram after Why section, improved bilingual impact metrics table, consolidated What's New entries
 
 - **Repo Maintenance 2026-06-13 AM**: TOC anchor fix (v24133→v24135), version sync across all artifacts (README/pyproject.toml/SKILL.md), ecosystem cross-reference validation
 
