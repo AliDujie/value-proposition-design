@@ -85,5 +85,6 @@ VPD is the "value" layer of the AliDujie UX Research Ecosystem. Chain it with ot
 - **UDM → VPD**: [UDM](https://github.com/AliDujie/universal-design-methods) research pain points → VPD pain relievers
 - **VPD → QuantUX**: VPD experiment design → [QuantUX](https://github.com/AliDujie/Quantitative-UX-Research) validation
 - **VPD → SWD**: VPD canvas scores → [SWD](https://github.com/AliDujie/storytelling-with-data) value proposition stories
+- **VPD → STM**: VPD competitive analysis → [STM](https://github.com/AliDujie/Structured-Thinking-Model) strategic frameworks
 
-See the [full pipeline example](../README.md#complete-pipeline-example) in README.md for a 6-skill end-to-end workflow.
+See the [full pipeline example](../README.md#complete-pipeline-example) in README.md for a 7-skill end-to-end workflow.
