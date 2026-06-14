@@ -37,9 +37,9 @@
 
 ## 🆕 What's New in v2.4.138
 
-- **Repo Maintenance 2026-06-14 PM**: Fixed stale What's New TOC anchor (v24137 → v24138), consolidated maintenance entries, enhanced Python version badge parity check, consolidated maintenance entries
+- **Repo Maintenance 2026-06-14 PM**: Fixed stale What's New TOC anchor (v24137 → v24138), enhanced Python version badge parity check
 
-- **Repo Maintenance 2026-06-14**: Ecosystem cross-reference parity audit, consolidated maintenance entries, version sync across all artifacts (2.4.136 → 2.4.137), README readability improvements
+- **Repo Maintenance 2026-06-14**: Ecosystem cross-reference parity audit, version sync across all artifacts (2.4.136 → 2.4.137), README readability improvements
 
 - **Repo Maintenance 2026-06-13 PM**: Enhanced "Why Teams Choose VPD" section with ecosystem pipeline diagram after Why section, improved bilingual impact metrics table, consolidated What's New entries
 
@@ -1043,7 +1043,7 @@ See [INSTALL.md](INSTALL.md) for full configuration options and agent integratio
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
 
-**Latest (v2.4.137)**: Repo maintenance 2026-06-14 PM — Fixed stale What's New TOC anchor (v24137 → v24138), consolidated maintenance entries, consolidated maintenance entries.
+**Latest (v2.4.138)**: Repo maintenance 2026-06-14 PM — Fixed stale What's New TOC anchor (v24137 → v24138), version sync across all artifacts.
 
 **Previous (v2.4.136)**: Repo maintenance 2026-06-13 PM — Enhanced "Why Teams Choose VPD" section with ecosystem pipeline diagram and bilingual impact metrics, consolidated What's New entries, version sync across all artifacts (README/pyproject.toml/SKILL.md/__init__.py: 2.4.135 → 2.4.136), ecosystem cross-reference validation across all 6 AliDujie skills.
 
