@@ -1,3 +1,11 @@
+## v2.4.143 (2026-06-15)
+
+- Repo Maintenance 2026-06-15 PM: Version bump, What's New entry, ecosystem documentation consistency audit.
+
+## v2.4.142 (2026-06-15)
+
+- Repo Maintenance 2026-06-15 PM: Version bump, What's New entry, ecosystem documentation consistency audit.
+
 ## v2.4.141 (2026-06-14)
 
 - Fixed stale TOC anchor (#whats-new-in-v24139 → v24141), version badge sync (README 2.4.140 → 2.4.141), ecosystem cross-reference validation.
