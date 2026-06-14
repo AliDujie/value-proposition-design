@@ -7,27 +7,17 @@ These examples demonstrate Value Proposition Design capabilities with real-world
 
 ```bash
 cd examples/
-python 01_canvas_generation.py
 python 01_canvas_analysis.py
 python 02_competitor_analysis.py
 python 03_blue_ocean.py
 python 04_experiment_design.py
+python 05_canvas_generation.py
 ```
 
 All examples use **zero dependencies** — pure Python standard library only.
 所有示例使用**零依赖** — 仅 Python 标准库。
 
 ## Available Examples / 可用示例
-
-### 01_canvas_generation.py
-Generate a complete Value Proposition Canvas with fit analysis.
-生成完整的价值主张画布并分析契合度。
-
-**Use when / 适用场景**: Designing or evaluating a product-market fit proposition.
-
-```bash
-python 01_canvas_generation.py
-```
 
 ### 01_canvas_analysis.py
 Analyze a complete Value Proposition Canvas with all 7 components and fit scoring.
@@ -67,6 +57,16 @@ Design and evaluate value proposition experiments.
 
 ```bash
 python 04_experiment_design.py
+```
+
+### 05_canvas_generation.py
+Generate a complete Value Proposition Canvas with fit analysis.
+生成完整的价值主张画布并分析契合度。
+
+**Use when / 适用场景**: Designing or evaluating a product-market fit proposition.
+
+```bash
+python 05_canvas_generation.py
 ```
 
 ## Tips / 提示
