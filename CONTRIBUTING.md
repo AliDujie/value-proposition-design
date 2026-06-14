@@ -67,6 +67,7 @@ When contributing, consider how VPD fits into the broader AliDujie UX Research e
 - [Quantitative UX Research](https://github.com/AliDujie/Quantitative-UX-Research) — VPD 价值假设可用 QuantUX 实验设计验证
 - [Web Persona](https://github.com/AliDujie/web-persona-skill) — Persona 客户画像可直接用于 VPD 画布
 - [Storytelling with Data](https://github.com/AliDujie/storytelling-with-data) — VPD 实验结果可交给 SWD 进行数据叙事
+- [Structured Thinking Model](https://github.com/AliDujie/Structured-Thinking-Model) — VPD 商业决策可用 STM 战略框架支撑
 
 ---
 
