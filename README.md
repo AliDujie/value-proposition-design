@@ -1,10 +1,12 @@
+- **Repo Maintenance 2026-06-14 PM**: Version bump 2.4.139 → 2.4.140, consolidated daily maintenance entries, finalized ecosystem documentation across all 6 AliDujie skills
+
 # Value Proposition Design (VPD) Skill
 
 > **Build Products People Actually Want. Validate Before You Build.**
 
 📖 [GitHub Repository](https://github.com/AliDujie/value-proposition-design)
 
-![Version](https://img.shields.io/badge/version-2.4.139-blue)
+![Version](https://img.shields.io/badge/version-2.4.140-blue)
 ![Python](https://img.shields.io/badge/Python-3.9%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Dependencies](https://img.shields.io/badge/Dependencies-pyyaml-lightgrey)
@@ -35,7 +37,7 @@
 
 ---
 
-## 🆕 What's New in v2.4.139
+## 🆕 What's New in v2.4.140
 
 - **Repo Maintenance 2026-06-14**: Version sync across all artifacts (2.4.138 → 2.4.139), added Structured Thinking Model (STM) cross-reference to examples/README.md ecosystem section, enhanced ecosystem documentation consistency
 
@@ -1045,7 +1047,9 @@ See [INSTALL.md](INSTALL.md) for full configuration options and agent integratio
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
 
-**Latest (v2.4.138)**: Repo maintenance 2026-06-14 PM — Fixed stale What's New TOC anchor (v24137 → v24138), version sync across all artifacts.
+**Latest (v2.4.140)**: Repo maintenance 2026-06-14 PM — Version bump 2.4.139 → 2.4.140, consolidated daily maintenance entries, finalized ecosystem documentation across all 6 AliDujie skills.
+
+**Previous (v2.4.139)**: Repo maintenance 2026-06-14 PM — Fixed stale What's New TOC anchor (v24137 → v24138), enhanced Python version badge parity check.: Repo maintenance 2026-06-14 PM — Fixed stale What's New TOC anchor (v24137 → v24138), version sync across all artifacts.
 
 **Previous (v2.4.136)**: Repo maintenance 2026-06-13 PM — Enhanced "Why Teams Choose VPD" section with ecosystem pipeline diagram and bilingual impact metrics, consolidated What's New entries, version sync across all artifacts (README/pyproject.toml/SKILL.md/__init__.py: 2.4.135 → 2.4.136), ecosystem cross-reference validation across all 6 AliDujie skills.
 
