@@ -1,6 +1,6 @@
 ## v2.4.141 (2026-06-14)
 
-- Fixed stale TOC anchor (#whats-new-in-v24139 → v24141), version sync across all artifacts (2.4.140 → 2.4.141), ecosystem cross-reference validation.
+- Fixed stale TOC anchor (#whats-new-in-v24139 → v24141), version badge sync (README 2.4.140 → 2.4.141), ecosystem cross-reference validation.
 
 ## v2.4.139 (2026-06-14)
 

@@ -6,7 +6,7 @@
 
 📖 [GitHub Repository](https://github.com/AliDujie/value-proposition-design)
 
-![Version](https://img.shields.io/badge/version-2.4.140-blue)
+![Version](https://img.shields.io/badge/version-2.4.141-blue)
 ![Python](https://img.shields.io/badge/Python-3.9%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Dependencies](https://img.shields.io/badge/Dependencies-pyyaml-lightgrey)
@@ -15,7 +15,7 @@
 
 ## 📑 Table of Contents
 
-- [What's New](#whats-new-in-v24139)
+- [What's New](#whats-new-in-v24141)
 - [Why Teams Choose VPD](#why-teams-choose-vpd)
 - [Who This Skill Is For](#who-this-skill-is-for)
 - [Quick Decision: When to Use VPD?](#quick-decision-when-to-use-vpd)
@@ -37,7 +37,9 @@
 
 ---
 
-## 🆕 What's New in v2.4.140
+## 🆕 What's New in v2.4.141
+
+- **Repo Maintenance 2026-06-14 PM**: Fixed stale TOC anchor (#whats-new-in-v24139 → v24141), version badge sync (README 2.4.140 → 2.4.141), ecosystem cross-reference validation.
 
 - **Repo Maintenance 2026-06-14**: Version sync across all artifacts (2.4.138 → 2.4.139), added Structured Thinking Model (STM) cross-reference to examples/README.md ecosystem section, enhanced ecosystem documentation consistency
 
