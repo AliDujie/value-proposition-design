@@ -20,6 +20,8 @@ This directory contains methodology reference documents for the Value Propositio
 
 These reference documents are consulted by the AI Agent during value proposition analysis. `knowledge-base.md` contains the complete VPD methodology system, `02-ecosystem-workflows.md` and `03-ecosystem-collaboration.md` provide cross-skill collaboration overviews, and `04-ecosystem-collaboration.md` contains detailed per-skill workflow guides with code examples.
 
+> 💡 **完整生态链**: Persona (用户定义) → JTBD (深层需求) → UDM (方法引擎) → VPD (价值设计) → QuantUX (数据验证) → SWD (数据叙事) → [STM](https://github.com/AliDujie/Structured-Thinking-Model) (战略决策)
+
 ## 🌐 技能生态关联 / Skill Ecosystem Connections
 
 VPD 负责将用户洞察转化为可验证的价值假设：
@@ -29,6 +31,7 @@ VPD 负责将用户洞察转化为可验证的价值假设：
 - **UDM → VPD**: UDM 的综合方法（亲和图） → VPD 客户洞察输入
 - **VPD → QuantUX**: VPD 的价值假设 → QuantUX 实验验证设计
 - **VPD → SWD**: VPD 的实验结果 → SWD 制作商业汇报叙事
+- **VPD → STM**: VPD 的竞争分析可输入 [STM](https://github.com/AliDujie/Structured-Thinking-Model) 进行 SWOT/波特五力分析
 
 ## 来源 / Source
 
