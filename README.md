@@ -1,4 +1,4 @@
-- **Repo Maintenance 2026-06-14 PM**: Version bump 2.4.139 → 2.4.140, consolidated daily maintenance entries, finalized ecosystem documentation across all 6 AliDujie skills
+- **Repo Maintenance 2026-06-14 PM**: Version bump 2.4.140 → 2.4.141, consolidated daily maintenance entries, finalized ecosystem documentation across all 6 AliDujie skills
 
 # Value Proposition Design (VPD) Skill
 
@@ -1047,7 +1047,9 @@ See [INSTALL.md](INSTALL.md) for full configuration options and agent integratio
 See [CHANGELOG.md](CHANGELOG.md) for full release notes.
 
 
-**Latest (v2.4.140)**: Repo maintenance 2026-06-14 PM — Version bump 2.4.139 → 2.4.140, consolidated daily maintenance entries, finalized ecosystem documentation across all 6 AliDujie skills.
+**Latest (v2.4.141)**: Repo maintenance 2026-06-14 PM — Version bump 2.4.140 → 2.4.141, consolidated daily maintenance entries, finalized ecosystem documentation across all 6 AliDujie skills.
+
+**Previous (v2.4.140)**: Repo maintenance 2026-06-14 PM — Version sync across all artifacts (2.4.139 → 2.4.140), ecosystem cross-reference validation.
 
 **Previous (v2.4.139)**: Repo maintenance 2026-06-14 PM — Fixed stale What's New TOC anchor (v24137 → v24138), enhanced Python version badge parity check.: Repo maintenance 2026-06-14 PM — Fixed stale What's New TOC anchor (v24137 → v24138), version sync across all artifacts.
 
