@@ -1,3 +1,7 @@
+## v2.4.145 (2026-06-15)
+
+- Version bump 2.4.144 → 2.4.145, fixed stale Version History Latest entry (v2.4.142→v2.4.145), ecosystem documentation consistency audit.
+
 ## v2.4.144 (2026-06-15)
 
 - Repo Maintenance 2026-06-15: Version bump 2.4.143 → 2.4.144, ecosystem documentation consistency audit, cross-skill collaboration table validation, consolidated legacy What's New entries.
