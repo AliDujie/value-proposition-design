@@ -78,6 +78,14 @@
 
 Based on *Value Proposition Design* by Alexander Osterwalder et al. (2014). A complete methodology skill covering customer insights, canvas analysis, priority calculation, competitive strategy, survey design, and experiment validation — with **7 executable modules** that produce structured deliverables for real business scenarios, plus CEO-level commercialization path and competitive moat analysis.
 
+**Try it in 3 lines / 三行代码开始使用:**
+
+```python
+from vpd import VPDSkill
+skill = VPDSkill("Your Product", "Target Segment")
+result = skill.analyze_canvas(jobs=[{"description": "Get things done quickly"}])  # Canvas analysis
+```
+
 ## 🎯 Why Teams Choose VPD
 
 *New here?* VPD (Value Proposition Design) maps customer needs to your product value using the Jobs-Pains-Gains canvas. It validates PMF before you build. Based on Osterwalder et al. (2014).

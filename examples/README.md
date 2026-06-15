@@ -19,6 +19,17 @@ All examples use **zero dependencies** — pure Python standard library only.
 
 ## Available Examples / 可用示例
 
+### Expected Output Preview / 输出预览
+
+```
+>>> Value Proposition Canvas: FreshMart (Efficient Users)
+>>>
+>>>  Customer Jobs: "Quickly order groceries and get them delivered"
+>>>  Pains: "Takes too many clicks to find items", "Delivery times are unreliable"
+>>>  Gains: "Same-day delivery", "Personalized recommendations"
+>>>  Fit Score: 6.8/10 — Moderate fit. Consider addressing top 2 pains.
+```
+
 ### 01_canvas_analysis.py
 Analyze a complete Value Proposition Canvas with all 7 components and fit scoring.
 分析包含全部 7 个组件的完整价值主张画布并评估契合度。
